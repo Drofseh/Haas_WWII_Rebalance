@@ -9,7 +9,7 @@
 </p>
 -->
 
-#### Haas WWII Rebalance is a mod for ARMA3, intended for use with 2. Panzer Division.
+#### Haas WWII Rebalance is a mod for ARMA3, intended for use with 2. Panzer Division ARMA Community.
 http://2panzer.wixsite.com/home
 
 #### Both IFA3 Lite and FOW are required dependencies.
