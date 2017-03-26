@@ -1,13 +1,8 @@
 ## Haas WWII Rebalance
 
 <p align="center">
-    <img src="https://github.com/Drofseh/Haas_WWII_Rebalance/blob/master/2PzDLogo.png" width="240">
+    <img src="https://c2.staticflickr.com/6/5524/30201576222_3b9546362d_o.png" width="480">
 </p>
-<!---
-<p align="center">
-    <img src="https://c2.staticflickr.com/6/5524/30201576222_3b9546362d_o.png" width="960">
-</p>
--->
 
 #### Haas WWII Rebalance is a mod for ARMA3, intended for use with 2. Panzer Division ARMA Community.
 http://2panzer.wixsite.com/home
