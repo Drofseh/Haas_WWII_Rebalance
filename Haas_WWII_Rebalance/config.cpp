@@ -14,9 +14,12 @@ class Mode_FullAuto;
 class cfgMagazines {
 
 class CA_Magazine;
-class CA_LauncherMagazine : CA_Magazine {};
-class VehicleMagazine : CA_Magazine {};
-class LIB_50Rnd_792x57_Veh : VehicleMagazine {};
+ class CA_LauncherMagazine : CA_Magazine {};
+ class VehicleMagazine : CA_Magazine {};
+  class LIB_50Rnd_792x57_Veh : VehicleMagazine {};
+ class HandGrenade : CA_Magazine {
+  mass = 8.87;
+ };
 
 #include "FOW_Magazines.h"
 
