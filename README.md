@@ -18,6 +18,9 @@
 * Adds missing firemodes
 * Adds a couple of weapons and magazines
 
+#### Releases
+Releases can be found [here](https://github.com/Drofseh/Haas_WWII_Rebalance/releases)
+
 #### Feature Requests, Issues, Pull Requests
 Please check the [here](https://github.com/Drofseh/Haas_WWII_Rebalance/blob/master/.github/CONTRIBUTING.md) for information on these topic.
 
