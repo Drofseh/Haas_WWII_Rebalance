@@ -103,12 +103,14 @@
  class fow_50Rnd_M1919 : VehicleMagazine {
   descriptionShort = ".30-06, 50 Rounds, for use in M1919 Machine Guns";
   displayName = "M1919 50 Round Belt (FOW)";
-  initSpeed = 750;
-  mass = 100;
+  initSpeed = 840;
+  mass = 20;
+  tracersEvery = 3;
  };
   class fow_250Rnd_M1919 : fow_50Rnd_M1919 {
   descriptionShort = ".30-06, 250 Rounds, for use in M1919 Machine Guns";
   displayName = "M1919 250 Round Belt (FOW)";
+  mass = 100;
   };
  
  class fow_5Rnd_77x58 : CA_Magazine {

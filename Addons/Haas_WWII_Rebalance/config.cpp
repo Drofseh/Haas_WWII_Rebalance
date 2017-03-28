@@ -9,7 +9,7 @@ class CfgPatches {
 
 class Mode_SemiAuto;
 class Mode_Burst;
-class Mode_FullAuto;
+class Mode_FullAuto : Mode_SemiAuto {};
  
 class cfgMagazines {
 
