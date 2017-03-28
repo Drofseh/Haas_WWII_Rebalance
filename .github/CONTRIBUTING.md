@@ -15,12 +15,11 @@ Add a descriptive title and complete the issue template.
 Pictures or a video of the issue might be helpful in resolving it faster.
 
 # Feature Requests
-## Requesting a feature
 A single issue has been created for tracking [feature requests](https://github.com/Drofseh/Haas_WWII_Rebalance/issues/3).
 
 Please post a comment there if you have a feature request.
 
 It will be evaluated and responded to.
 
-## Pull Requests
-Alternatively if you're willing to do the work, please feel free to create a [pull request](https://github.com/Drofseh/Haas_WWII_Rebalance/pulls) with your new feature in it.
+# Pull Requests
+As an alternative to reporting issues or requesting feature, if you're willing to do the work, please feel free to create a [pull request](https://github.com/Drofseh/Haas_WWII_Rebalance/pulls) with your new feature in it.
