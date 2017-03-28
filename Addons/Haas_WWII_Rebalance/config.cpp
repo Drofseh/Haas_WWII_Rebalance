@@ -66,6 +66,7 @@ class fow_rifle_base : Rifle_Base_F
   {
     class WeaponSlotsInfo;
   };
+class fow_w_m1919 : fow_rifle_base{};
 
 #include "FOW_Weapons.h"
 

@@ -1,5 +1,5 @@
  class fow_w_bren : fow_rifle_base {
-   descriptionShort = "[UK] Bren Gun";
+   descriptionShort = "Bren Gun";
    displayName = "[UK] Bren Gun (2PzD)";
    recoil = "recoil_mk200";
    class FullAuto : Mode_FullAuto {
@@ -21,12 +21,16 @@
   };
 
  class fow_w_leeenfield_no4mk1 : fow_rifle_base {
-   descriptionShort = "[UK] Lee Enfield No. 4 Mk I";
+   descriptionShort = "Rifle, No. 4 Mk I";
    displayName = "[UK] Lee Enfield No. 4 Mk I (2PzD)";
    recoil = "recoil_rifle_1";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 88.037;
    };
+  };
+  class fow_w_leeenfield_no4mk1_redwood : fow_w_leeenfield_no4mk1 {
+   descriptionShort = "Rifle, No. 4 Mk I";
+   displayName = "[UK] Lee Enfield No. 4 Mk I (Red Wood) (2PzD)";
   };
 
  class fow_w_m1_carbine : fow_rifle_base {
@@ -87,6 +91,26 @@
    };
   };
 
+ class fow_w_m1919a4 : fow_w_m1919 {
+   descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A4";
+   displayName = "[US] M1919A4 (2PzD)";
+   magazines[] = {"fow_250Rnd_792x57"};
+   recoil = "recoil_mk200";
+   class WeaponSlotsInfo : WeaponSlotsInfo {
+   mass = 310.178;
+   };
+   class FullAuto : Mode_FullAuto {
+   reloadTime = 0.12;
+   };
+  };
+  class fow_w_m1919a6 : fow_w_m1919a4 {
+   descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A6";
+   displayName = "[US] M1919A6 (2PzD)";
+   class WeaponSlotsInfo : WeaponSlotsInfo {
+   mass = 320.184;
+   };
+  };
+
  class fow_w_m1a1_thompson : fow_rifle_base {
    descriptionShort = "Submachine Gun, Caliber .45, M1A1";
    displayName = "[US] M1A1 Thompson (2PzD)";
@@ -98,6 +122,11 @@
    class Full : Mode_FullAuto {
    reloadTime = 0.086;
    };
+  };
+
+ class fow_w_m2_flamethrower : fow_rifle_base {
+   descriptionShort = "M2 Flamethrower";
+   displayName = "[US] M2 Flamethrower (Do Not Use, Not Working, Shoots Bullets)";
   };
 
  class fow_w_m3 : fow_rifle_base {
@@ -143,8 +172,22 @@
    };
   };
 
+class fow_w_stg44 : fow_rifle_base {
+   descriptionShort = "Maschinenpistole 44";
+   displayName = "[GER] MP44 (2PzD)";
+   magazines[] = {"LIB_30Rnd_792x33","fow_30Rnd_792x33"};
+   modes[] = {"Single","Full","Far","Medium","Short"};
+   recoil = "recoil_mx";
+   class WeaponSlotsInfo : WeaponSlotsInfo {
+   mass = 97.588;
+   };
+   class Full : Mode_FullAuto {
+   reloadTime = 0.104;
+   };
+  };
+
  class fow_w_sten_mk2 : fow_rifle_base {
-   descriptionShort = "[UK] Sten Mk II";
+   descriptionShort = "Sten Mk II";
    displayName = "[UK] Sten Mk II (2PzD)";
    magazines[] = {"fow_32Rnd_9x19_sten","LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40"};
    recoil = "recoil_smg_02";
@@ -155,12 +198,21 @@
    reloadTime = 0.109;
    };
   };
+  class fow_w_sten_mk5 : fow_w_sten_mk2 {
+   descriptionShort = "Sten Mk V";
+   displayName = "[UK] Sten Mk V (2PzD)";
+   class WeaponSlotsInfo : WeaponSlotsInfo {
+   mass = 79.632;
+   };
+   class Full : Mode_FullAuto {
+   reloadTime = 0.1;
+   };
+  };
 
  class fow_w_type100 : fow_rifle_base {
    descriptionShort = "Type 100 Submachine Gun";
    displayName = "[IJA] Type 100 SMG (2PzD)";
    recoil = "recoil_smg_02";
-   reloadTime = 0.133;
    class Full : Mode_FullAuto {
    reloadTime = 0.133;
    };
@@ -171,7 +223,6 @@
   class fow_w_type100_44_2PzD : fow_w_type100 {
    descriptionShort = "Type 100/44 Submachine Gun";
    displayName = "[IJA] Type 100/44 SMG (2PzD)";
-   reloadTime = 0.075;
    class Full : Full {
    reloadTime = 0.075;
    };
@@ -190,7 +241,6 @@
    descriptionShort = "Type 99 Light Machine Gun";
    displayName = "[IJA] Type 99 LMG (2PzD)";
    recoil = "recoil_mk200";
-   reloadTime = 0.086;
    class FullAuto : Mode_FullAuto {
    reloadTime = 0.086;
    };

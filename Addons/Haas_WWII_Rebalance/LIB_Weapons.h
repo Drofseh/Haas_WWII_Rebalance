@@ -223,7 +223,7 @@ class LIB_M1895 : LIB_PISTOL {
 
  class LIB_MG42 : LIB_LMG {
    descriptionShort = "Maschinengewehr 42";
-   displayName = "MG 42 (2PzD)";
+   displayName = "MG42 (2PzD)";
    magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_250Rnd_792x57","LIB_250Rnd_792x57_SMK","LIB_250Rnd_792x57_sS","fow_50Rnd_792x57","fow_250Rnd_792x57"};
    recoil = "recoil_mk200";
    class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -236,7 +236,7 @@ class LIB_M1895 : LIB_PISTOL {
 
  class LIB_MP40 : LIB_SMG {
    descriptionShort = "Maschinenpistole 40";
-   displayName = "MP 40 (2PzD)";
+   displayName = "MP40 (2PzD)";
    magazines[] = {"LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40","fow_32Rnd_9x19_sten"};
    recoil = "recoil_smg_02";
    class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -249,7 +249,8 @@ class LIB_M1895 : LIB_PISTOL {
 
 class LIB_MP44 : LIB_RIFLE {
    descriptionShort = "Maschinenpistole 44";
-   displayName = "MP 44 (2PzD)";
+   displayName = "MP44 (2PzD)";
+   magazines[] = {"LIB_30Rnd_792x33","fow_30Rnd_792x33"};
    modes[] = {"Single","Full","Far","Medium","Short"};
    recoil = "recoil_mx";
    class WeaponSlotsInfo : WeaponSlotsInfo {

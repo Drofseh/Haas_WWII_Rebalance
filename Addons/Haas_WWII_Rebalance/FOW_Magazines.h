@@ -19,6 +19,11 @@
   displayName = "M1918A2 BAR 20 Round Magazine (FOW)";
  };
 
+ class fow_30Rnd_762x63 : CA_Magazine {
+  descriptionShort = ".30-06, 30 Rounds, for use in M1919 Machine Guns";
+  displayName = "M1919 30 Round Magazine (FOW)";
+ };
+
  class fow_30Rnd_303_bren : CA_Magazine {
   descriptionShort = ".303 British, 30 Rounds, for use in Bren Gun";
   displayName = "Bren Gun 30 Round Magazine (FOW)";
@@ -65,6 +70,11 @@
   displayName = "Type 99 LMG 30 Round Magazine (FOW)";
  };
 
+ class fow_30Rnd_792x33 : CA_Magazine {
+  descriptionShort = "7.92x33mm, 30 Rounds, for use in MP44";
+  displayName = "MP44 30 Round Magazine (FOW)";
+ };
+
  class fow_32Rnd_8x22 : CA_Magazine {
   count = 30;
   descriptionShort = "8x22mm Nambu, 30 Rounds, for use in Type 100 SMG";
@@ -90,6 +100,17 @@
   displayName = "MG42 250 Round Belt (FOW)";
   };
 
+ class fow_50Rnd_M1919 : VehicleMagazine {
+  descriptionShort = ".30-06, 50 Rounds, for use in M1919 Machine Guns";
+  displayName = "M1919 50 Round Belt (FOW)";
+  initSpeed = 750;
+  mass = 100;
+ };
+  class fow_250Rnd_M1919 : fow_50Rnd_M1919 {
+  descriptionShort = ".30-06, 250 Rounds, for use in M1919 Machine Guns";
+  displayName = "M1919 250 Round Belt (FOW)";
+  };
+ 
  class fow_5Rnd_77x58 : CA_Magazine {
   descriptionShort = "7.7x58mm, 5 Rounds, for use in Type 99 Rifle";
   displayName = "Type 99 Rifle 5 Round Clip (FOW)";
