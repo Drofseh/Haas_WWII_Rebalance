@@ -269,8 +269,8 @@ class LIB_MP44 : LIB_RIFLE {
    };
   };
   class LIB_P08 : LIB_P38 {
-   descriptionShort = "P08 Luger";
-   displayName = "P08 Luger (2PzD)";
+   descriptionShort = "P08";
+   displayName = "P08 (2PzD)";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 18.419;
    };
@@ -294,6 +294,7 @@ class LIB_PPSh41_m : LIB_SMG {
    displayName = "PPSh-41 (Drum) (2PzD)";
    magazines[] = {"lib_71Rnd_762x25","lib_71Rnd_762x25_t","lib_71Rnd_762x25_t2","lib_71Rnd_762x25_ap","lib_35Rnd_762x25","lib_35Rnd_762x25_t","lib_35Rnd_762x25_t2","lib_35Rnd_762x25_ap"};
    modes[] = {"Full","Single","Far","Medium","Short"};
+   scope = 2;
   };
 
 class LIB_PzFaust_30m : LIB_LAUNCHER {

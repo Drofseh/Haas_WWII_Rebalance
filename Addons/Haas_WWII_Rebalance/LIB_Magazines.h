@@ -239,6 +239,6 @@ class LIB_1Rnd_RPzB : CA_LauncherMagazine {
   displayName = "P38 8 Round Magazine";
  };
   class LIB_8Rnd_9x19_P08 : LIB_8Rnd_9x19 {
-  descriptionShort = "9x19mm, 8 Rounds, for use in P08 Luger";
-  displayName = "P08 Luger 8 Round Magazine";
+  descriptionShort = "9x19mm, 8 Rounds, for use in P08";
+  displayName = "P08 8 Round Magazine";
   };
