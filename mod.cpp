@@ -7,4 +7,3 @@ logoOver = "Images\logo.paa";
 logoSmall = "Images\logo.paa";
 picture = "Images\picture.paa";
 tooltip = "Haas WWII Rebalance";
-tooltipOwned = "ACE3 Owned";
