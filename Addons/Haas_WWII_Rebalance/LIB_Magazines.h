@@ -51,16 +51,16 @@ class LIB_1Rnd_RPzB : CA_LauncherMagazine {
    displayName = "SVT-40 10 Round Magazine, T30 Tracer";
   };
    class LIB_10Rnd_762x54_t302 : LIB_10Rnd_762x54_t30 {
-   descriptionShort = "7.62x54mm, 10 Rounds, Last Round T30 Tracer, for use in SVT-40";
-   displayName = "SVT-40 10 Round Magazine, Last Rnd T30 Tracer";
+    descriptionShort = "7.62x54mm, 10 Rounds, Last Round T30 Tracer, for use in SVT-40";
+    displayName = "SVT-40 10 Round Magazine, Last Rnd T30 Tracer";
    };
   class LIB_10Rnd_762x54_t46 : LIB_10Rnd_762x54 {
    descriptionShort = "7.62x54mm, 10 Rounds, T46 Tracer, for use in SVT-40";
    displayName = "SVT-40 10 Round Magazine, T46 Tracer";
   };
    class LIB_10Rnd_762x54_t462 : LIB_10Rnd_762x54_t46 {
-   descriptionShort = "7.62x54mm, 10 Rounds, Last Round T46 Tracer, for use in SVT-40";
-   displayName = "SVT-40 10 Round Magazine, Last Rnd T46 Tracer";
+    descriptionShort = "7.62x54mm, 10 Rounds, Last Round T46 Tracer, for use in SVT-40";
+    displayName = "SVT-40 10 Round Magazine, Last Rnd T46 Tracer";
    };
 
  class LIB_5Rnd_792x57 : CA_Magazine {

@@ -34,8 +34,8 @@
   displayName = "(Legacy For Zeus Spawn) Works in Thompson and Grease Gun";
  };
   class fow_30Rnd_45acp_T : fow_30Rnd_45acp {
-  descriptionShort = "(Legacy For Zeus Spawn) Works in Thompson and Grease Gun, which is not right";
-  displayName = "(Legacy For Zeus Spawn) Works in Thompson and Grease Gun";
+   descriptionShort = "(Legacy For Zeus Spawn) Works in Thompson and Grease Gun, which is not right";
+   displayName = "(Legacy For Zeus Spawn) Works in Thompson and Grease Gun";
   };
   class fow_20Rnd_45acp_M1_2PzD : fow_30Rnd_45acp {
    count = 20;
