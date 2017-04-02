@@ -101,16 +101,19 @@
    };
 
  class fow_50Rnd_M1919 : VehicleMagazine {
+  ammo = "fow_B_762x63_Ball";
   descriptionShort = ".30-06, 50 Rounds, for use in M1919 Machine Guns";
   displayName = "M1919 50 Round Belt (FOW)";
-  initSpeed = 840;
+  initSpeed = 860;
   mass = 20;
   tracersEvery = 3;
   };
   class fow_250Rnd_M1919 : fow_50Rnd_M1919 {
    descriptionShort = ".30-06, 250 Rounds, for use in M1919 Machine Guns";
    displayName = "M1919 250 Round Belt (FOW)";
+   initSpeed = 860;
    mass = 100;
+   tracersEvery = 3;
    };
  
  class fow_5Rnd_77x58 : CA_Magazine {
