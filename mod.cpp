@@ -7,3 +7,4 @@ logoOver = "Images\logo.paa";
 logoSmall = "Images\logo.paa";
 picture = "Images\picture.paa";
 tooltip = "Haas WWII Rebalance";
+action = "https://github.com/Drofseh/Haas_WWII_Rebalance";
