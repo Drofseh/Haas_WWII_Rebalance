@@ -7,7 +7,7 @@
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 24.375;
    };
- };
+  };
 
  class LIB_M1895 : LIB_PISTOL {
   descriptionShort = "Nagant M1895 Revolver";
@@ -16,7 +16,7 @@
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 17.647;
    };
- };
+  };
 
  class LIB_P38 : LIB_PISTOL {
   descriptionShort = "P38";
@@ -24,14 +24,14 @@
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 17.647;
    };
- };
+  };
  class LIB_P08 : LIB_P38 {
   descriptionShort = "P08";
   displayName = "P08 (2PzD)";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 18.419;
    };
- };
+  };
 
  class LIB_TT33 : LIB_PISTOL {
   descriptionShort = "Pistolet Tokareva Obraztsa 1933 goda";
@@ -40,7 +40,7 @@
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 18.309;
    };
- };
+  };
 //End Pistols
 
 //Rifles
@@ -52,7 +52,7 @@
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 90.441;
    };
- };
+  };
 
  class LIB_K98 : LIB_RIFLE {
   descriptionShort = "Karabiner 98 kurz";
@@ -62,7 +62,7 @@
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 87.993;
    };
- };
+  };
 
  class LIB_G3340 : LIB_K98 {
   descriptionShort = "Gewehr 33/40 (t) (Puška vz. 33)";
@@ -70,7 +70,7 @@
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 73.897;
    };
- };
+  };
 
  class LIB_K98ZF39 : LIB_SRIFLE {
   descriptionShort = "Karabiner 98 kurz with ZF39 sight";
@@ -80,7 +80,7 @@
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 93.066;
    };
- };
+  };
 
  class LIB_M1_Carbine : LIB_RIFLE {
   descriptionShort = "Carbine, Caliber .30, M1";
@@ -92,14 +92,14 @@
    };
    class Single : Mode_SemiAuto {
    };
- };
+  };
   class LIB_M1A1_Carbine : LIB_M1_Carbine {
    descriptionShort = "Carbine, Caliber .30, M1A1";
    displayName = "M1A1 Carbine (2PzD)";
     class WeaponSlotsInfo : WeaponSlotsInfo {
     mass = 59.520;
     };
-  };
+   };
   class LIB_M2_Carbine_2PzD : LIB_M1_Carbine {
    descriptionShort = "Carbine, Cal .30, M2";
    displayName = "M2 Carbine (2PzD)";
@@ -116,7 +116,7 @@
     reloadTime = 0.08;
     textureType = "fullAuto";
     };
-  };
+   };
 
  class LIB_M1_Garand : LIB_RIFLE {
   descriptionShort = "Rifle, Caliber .30, M1";
@@ -126,7 +126,7 @@
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 95.074;
    };
- };
+  };
 
  class LIB_M1903A3_Springfield : LIB_RIFLE {
   descriptionShort = "Rifle, Caliber .30-06, Model 1903A3";
@@ -134,7 +134,7 @@
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 86.912;
    };
- };
+  };
 
  class LIB_M1903A4_Springfield : LIB_SRIFLE {
   descriptionShort = "Rifle, Caliber .30-06, Model 1903A4";
@@ -142,7 +142,7 @@
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 91.985;
    };
- };
+  };
 
  class LIB_M9130 : LIB_RIFLE {
   descriptionShort = "Mosin M91/30";
@@ -150,7 +150,7 @@
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 87.353;
    };
- };
+  };
 
  class LIB_M9130PU : LIB_SRIFLE {
   descriptionShort = "Mosin M91/30 with PU sight";
@@ -158,7 +158,7 @@
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 92.426;
    };
- };
+  };
 
  class LIB_M38 : LIB_M9130 {
   descriptionShort = "Mosin M38";
@@ -166,7 +166,7 @@
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 75.044;
    };
- };
+  };
 
  class LIB_M44 : LIB_M9130 {
   descriptionShort = "Mosin M44";
@@ -174,9 +174,9 @@
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 90.000;
    };
- };
+  };
 
-class LIB_MP44 : LIB_RIFLE {
+ class LIB_MP44 : LIB_RIFLE {
   descriptionShort = "Sturmgewehr 44";
   displayName = "StG44 (2PzD)";
   magazines[] = {"LIB_30Rnd_792x33","fow_30Rnd_792x33"};
@@ -184,13 +184,13 @@ class LIB_MP44 : LIB_RIFLE {
   recoil = "recoil_mx";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 97.588;
-  };
-  class Full : Mode_FullAuto {
-  reloadTime = 0.104;
    };
- };
+   class Full : Mode_FullAuto {
+   reloadTime = 0.104;
+   };
+  };
 
-class LIB_SVT_40 : LIB_RIFLE {
+ class LIB_SVT_40 : LIB_RIFLE {
   descriptionShort = "Samozaryadnaya Vintovka Tokareva, Obrazets 1940 goda";
   displayName = "SVT-40 (2PzD)";
   magazines[] = {"LIB_10Rnd_762x54","LIB_10Rnd_762x54_t30","LIB_10Rnd_762x54_t302","LIB_10Rnd_762x54_t46","LIB_10Rnd_762x54_t462","LIB_10Rnd_762x54_d","LIB_10Rnd_762x54_b30","lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK","fow_5Rnd_792x57"};
@@ -200,7 +200,7 @@ class LIB_SVT_40 : LIB_RIFLE {
    };
    class Single : Mode_SemiAuto {
    };
- };
+  };
   class LIB_AVT_40_2PzD : LIB_SVT_40 {
    descriptionShort = "AVT-40";
    displayName = "AVT-40 (2PzD)";
@@ -212,7 +212,7 @@ class LIB_SVT_40 : LIB_RIFLE {
     };
     class Full : Single {
     autoFire = 1;
-   displayName = "Full";
+    displayName = "Full";
     reloadTime = 0.080;
     textureType = "fullAuto";
     };
@@ -231,7 +231,7 @@ class LIB_SVT_40 : LIB_RIFLE {
    class Full : Mode_FullAuto {
    reloadTime = 0.086;
    };
- };
+  };
 
  class LIB_MP40 : LIB_SMG {
   descriptionShort = "Maschinenpistole 40";
@@ -244,9 +244,9 @@ class LIB_SVT_40 : LIB_RIFLE {
    class Full : Mode_FullAuto {
    reloadTime = 0.114;
    };
- };
+  };
 
-class LIB_PPSh41_m : LIB_SMG {
+ class LIB_PPSh41_m : LIB_SMG {
   descriptionShort = "Pistolet-Pulemyot Shpagina 41 (Stick)";
   displayName = "PPSh-41 (Stick) (2PzD)";
   magazines[] = {"lib_35Rnd_762x25","lib_35Rnd_762x25_t","lib_35Rnd_762x25_t2","lib_35Rnd_762x25_ap","lib_71Rnd_762x25","lib_71Rnd_762x25_t","lib_71Rnd_762x25_t2","lib_71Rnd_762x25_ap"};
@@ -258,14 +258,14 @@ class LIB_PPSh41_m : LIB_SMG {
    class Full : Mode_FullAuto {
    reloadTime = 0.063;
    };
- };
- class LIB_PPSh41_d : LIB_PPSh41_m {
-  descriptionShort = "Pistolet-Pulemyot Shpagina 41 (Drum)";
-  displayName = "PPSh-41 (Drum) (2PzD)";
-  magazines[] = {"lib_71Rnd_762x25","lib_71Rnd_762x25_t","lib_71Rnd_762x25_t2","lib_71Rnd_762x25_ap","lib_35Rnd_762x25","lib_35Rnd_762x25_t","lib_35Rnd_762x25_t2","lib_35Rnd_762x25_ap"};
-  modes[] = {"Full","Single","Far","Medium","Short"};
-  scope = 2;
- };
+  };
+  class LIB_PPSh41_d : LIB_PPSh41_m {
+   descriptionShort = "Pistolet-Pulemyot Shpagina 41 (Drum)";
+   displayName = "PPSh-41 (Drum) (2PzD)";
+   magazines[] = {"lib_71Rnd_762x25","lib_71Rnd_762x25_t","lib_71Rnd_762x25_t2","lib_71Rnd_762x25_ap","lib_35Rnd_762x25","lib_35Rnd_762x25_t","lib_35Rnd_762x25_t2","lib_35Rnd_762x25_ap"};
+   modes[] = {"Full","Single","Far","Medium","Short"};
+   scope = 2;
+   };
 //End Submachine Guns
 
 //Machineguns
@@ -279,7 +279,7 @@ class LIB_PPSh41_m : LIB_SMG {
    class Full : Mode_FullAuto {
    reloadTime = 0.109;
    };
- };
+  };
 
  class LIB_DT : LIB_LMG {
   descriptionShort = "Degtyaryova Tankovy Machine Gun";
@@ -291,7 +291,7 @@ class LIB_PPSh41_m : LIB_SMG {
    class Full : Mode_FullAuto {
    reloadTime = 0.109;
    };
- };
+  };
 
  class LIB_DT_OPTIC : LIB_DT {
   descriptionShort = "Degtyaryova Tankovy Machine Gun with optic";
@@ -300,7 +300,7 @@ class LIB_PPSh41_m : LIB_SMG {
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 231.618;
    };
- };
+  };
 
  class LIB_M1918A2_BAR : LIB_LMG {
   descriptionShort = "Rifle, Caliber .30, Automatic, Browning, M1918A2";
@@ -318,7 +318,7 @@ class LIB_PPSh41_m : LIB_SMG {
    reloadTime = 0.092;
    textureType = "fullAuto";
    };
- };
+  };
 
  class LIB_MG42 : LIB_LMG {
   descriptionShort = "Maschinengewehr 42";
@@ -331,7 +331,7 @@ class LIB_PPSh41_m : LIB_SMG {
    class Full : Mode_FullAuto {
    reloadTime = 0.05;
    };
- };
+  };
 //End Machineguns
 
 //Other
@@ -341,25 +341,25 @@ class LIB_PPSh41_m : LIB_SMG {
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 127.941;
    };
- };
+  };
 
-class LIB_PzFaust_30m : LIB_LAUNCHER {
+ class LIB_PzFaust_30m : LIB_LAUNCHER {
   descriptionShort = "Panzerfaust 30";
   displayName = "Panzerfaust 30 (2PzD)";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 115.147;
    };
- };
+  };
 
-class LIB_RPzB : LIB_LAUNCHER {
+ class LIB_RPzB : LIB_LAUNCHER {
   descriptionShort = "Panzerschreck RPzB 54";
   displayName = "Panzerschreck RPzB 54 (2PzD)";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 242.647;
    };
- };
- class LIB_RPzB_w : LIB_RPzB {
-  descriptionShort = "Panzerschreck RPzB 54 (Winter)";
-  displayName = "Panzerschreck RPzB 54 (Winter) (2PzD)";
   };
+  class LIB_RPzB_w : LIB_RPzB {
+   descriptionShort = "Panzerschreck RPzB 54 (Winter)";
+   displayName = "Panzerschreck RPzB 54 (Winter) (2PzD)";
+   };
 //End Other
