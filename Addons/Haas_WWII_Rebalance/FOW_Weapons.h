@@ -177,7 +177,7 @@ class fow_w_stg44 : fow_rifle_base {
  class fow_w_m1919a4 : fow_w_m1919 {
   descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A4";
   displayName = "M1919A4 (FOW) (2PzD)";
-  magazines[] = {"fow_250Rnd_M1919"};
+  magazines[] = {"fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
   recoil = "recoil_mk200";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 310.178;
@@ -186,7 +186,7 @@ class fow_w_stg44 : fow_rifle_base {
 class fow_w_m1919a6 : fow_w_m1919 {
   descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A6";
   displayName = "M1919A6 (FOW) (2PzD)";
-  magazines[] = {"fow_250Rnd_M1919"};
+  magazines[] = {"fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
   recoil = "recoil_mk200";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 320.184;
