@@ -115,7 +115,31 @@
    mass = 100;
    tracersEvery = 3;
    };
- 
+  class fow_200Rnd_M1919_2PzD : fow_250Rnd_M1919 {
+   count = 200;
+   descriptionShort = ".30-06, 200 Rounds, for use in M1919 Machine Guns";
+   displayName = "M1919 200 Round Belt (FOW)";
+   initSpeed = 860;
+   mass = 80;
+   tracersEvery = 3;
+   };
+  class fow_150Rnd_M1919_2PzD : fow_250Rnd_M1919 {
+   count = 150;
+   descriptionShort = ".30-06, 150 Rounds, for use in M1919 Machine Guns";
+   displayName = "M1919 150 Round Belt (FOW)";
+   initSpeed = 860;
+   mass = 60;
+   tracersEvery = 3;
+   };
+  class fow_100Rnd_M1919_2PzD : fow_250Rnd_M1919 {
+   count = 100;
+   descriptionShort = ".30-06, 100 Rounds, for use in M1919 Machine Guns";
+   displayName = "M1919 100 Round Belt (FOW)";
+   initSpeed = 860;
+   mass = 40;
+   tracersEvery = 3;
+   };
+
  class fow_5Rnd_77x58 : CA_Magazine {
   descriptionShort = "7.7x58mm, 5 Rounds, for use in Type 99 Rifle";
   displayName = "Type 99 Rifle 5 Round Clip (FOW)";
