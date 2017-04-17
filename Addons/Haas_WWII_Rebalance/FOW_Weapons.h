@@ -249,7 +249,7 @@ class fow_w_m1919a6 : fow_w_m1919 {
   };
 //End Machine Guns
 
-//Other
+//Other Weapons
  class fow_w_m2_flamethrower : fow_rifle_base {
   descriptionShort = "M2 Flamethrower";
   displayName = "M2 Flamethrower (Do Not Use, Not Working, Shoots Bullets) (FOW)";

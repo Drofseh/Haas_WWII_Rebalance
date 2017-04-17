@@ -65,8 +65,29 @@ class fow_rifle_base : Rifle_Base_F {
   };
 class fow_w_m1919 : fow_rifle_base{};
 
+class fow_v_base;
+class VestItem;
+
 #include "FOW_Weapons.h"
 
 #include "LIB_Weapons.h"
 
+#include "FOW_Vests.h"
+
  }; //End cfgWeapons
+
+class cfgVehicles {
+
+class ReammoBox_F;
+ class LIB_ReammoBox_base : ReammoBox_F {
+  maximumLoad = 4000;
+  };
+//  class LIB_BasicAmmunitionBox_GER : LIB_ReammoBox_base {
+//  maximumLoad = 4000;
+//  };
+
+class Bag_Base;
+
+#include "FOW_Backpacks.h"
+
+}; //End cfgVehicles

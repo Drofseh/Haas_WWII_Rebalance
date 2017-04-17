@@ -182,14 +182,17 @@ class LIB_1Rnd_RPzB : CA_LauncherMagazine {
   class LIB_250Rnd_792x57 : LIB_50Rnd_792x57_Veh {
    descriptionShort = "7.92x57mm, 250 Rounds, for use in MG42";
    displayName = "MG42 250 Round Belt";
+   mass = 72.75;
    };
   class LIB_250Rnd_792x57_SMK : LIB_250Rnd_792x57 {
    descriptionShort = "7.92x57mm, 250 Rounds, S.m.K. AP, for use in MG42";
    displayName = "MG42 250 Round Belt, S.m.K. AP";
+   mass = 72.75;
    };
   class LIB_250Rnd_792x57_sS : LIB_250Rnd_792x57 {
    descriptionShort = "7.92x57mm, 250 Rounds, s.S. Heavy, for use in MG42";
    displayName = "MG42 250 Round Belt, s.S. Heavy";
+   mass = 72.75;
    };
 
  class LIB_63Rnd_762x54 : LIB_47Rnd_762x54 {

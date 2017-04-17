@@ -94,10 +94,12 @@
  class fow_50Rnd_792x57 : CA_Magazine {
   descriptionShort = "7.92x57mm, 50 Rounds, for use in MG42";
   displayName = "MG42 50 Round Drum (FOW)";
+  mass = 14.55;
   };
   class fow_250Rnd_792x57 : fow_50Rnd_792x57 {
    descriptionShort = "7.92x57mm, 250 Rounds, for use in MG42";
    displayName = "MG42 250 Round Belt (FOW)";
+   mass = 72.75;
    };
 
  class fow_50Rnd_M1919 : VehicleMagazine {
@@ -105,14 +107,14 @@
   descriptionShort = ".30-06, 50 Rounds, for use in M1919 Machine Guns";
   displayName = "M1919 50 Round Belt (FOW)";
   initSpeed = 860;
-  mass = 20;
+  mass = 14.55;
   tracersEvery = 3;
   };
   class fow_250Rnd_M1919 : fow_50Rnd_M1919 {
    descriptionShort = ".30-06, 250 Rounds, for use in M1919 Machine Guns";
    displayName = "M1919 250 Round Belt (FOW)";
    initSpeed = 860;
-   mass = 100;
+   mass = 72.75;
    tracersEvery = 3;
    };
   class fow_200Rnd_M1919_2PzD : fow_250Rnd_M1919 {
@@ -120,7 +122,7 @@
    descriptionShort = ".30-06, 200 Rounds, for use in M1919 Machine Guns";
    displayName = "M1919 200 Round Belt (FOW)";
    initSpeed = 860;
-   mass = 80;
+   mass = 58.2;
    tracersEvery = 3;
    };
   class fow_150Rnd_M1919_2PzD : fow_250Rnd_M1919 {
@@ -128,7 +130,7 @@
    descriptionShort = ".30-06, 150 Rounds, for use in M1919 Machine Guns";
    displayName = "M1919 150 Round Belt (FOW)";
    initSpeed = 860;
-   mass = 60;
+   mass = 43.65;
    tracersEvery = 3;
    };
   class fow_100Rnd_M1919_2PzD : fow_250Rnd_M1919 {
@@ -136,7 +138,7 @@
    descriptionShort = ".30-06, 100 Rounds, for use in M1919 Machine Guns";
    displayName = "M1919 100 Round Belt (FOW)";
    initSpeed = 860;
-   mass = 40;
+   mass = 29.1;
    tracersEvery = 3;
    };
 
