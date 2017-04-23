@@ -66,6 +66,7 @@ class fow_rifle_base : Rifle_Base_F {
 class fow_w_m1919 : fow_rifle_base{};
 
 class fow_v_base;
+class V_LIB_Vest_Camo_Base;
 class VestItem;
 
 #include "FOW_Weapons.h"
@@ -73,6 +74,8 @@ class VestItem;
 #include "LIB_Weapons.h"
 
 #include "FOW_Vests.h"
+
+#include "LIB_Vests.h"
 
  }; //End cfgWeapons
 
