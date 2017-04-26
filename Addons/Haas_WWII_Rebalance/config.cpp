@@ -121,10 +121,13 @@ class VestItem;
 
 class cfgVehicles {
 
-class ReammoBox_F;
- class LIB_ReammoBox_base : ReammoBox_F {
+class ThingX;
+ class ReammoBox_F : ThingX {
   maximumLoad = 4000;
   };
+// class LIB_ReammoBox_base : ReammoBox_F {
+//  maximumLoad = 4000;
+//  };
 //  class LIB_BasicAmmunitionBox_GER : LIB_ReammoBox_base {
 //  maximumLoad = 4000;
 //  };
