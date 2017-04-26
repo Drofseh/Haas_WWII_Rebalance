@@ -315,11 +315,11 @@
    };
    class Full : Mode_FullAuto {
    reloadTime = 0.200;
-   textureType = "burst";
+   textureType = "fullAuto";
    };
    class Full_Rapid : Full {
    reloadTime = 0.092;
-   textureType = "fullAuto";
+   textureType = "fastAuto";
    };
   };
 
