@@ -9,6 +9,7 @@
 #### Required dependencies:
 * IFA3 Lite - Preview v19
 * FOW - Release II
+* LEN Weapons v1.0
 
 
 #### Haas WWII Rebalance does the following:
@@ -17,7 +18,7 @@
 * Corrects the weight of weapons to real life values
 * Corrects the decriptions and display names of weapons and magazines
 * Corrects full auto rates of fire
-* Adds compatibility for magazines, both for weapons that share magazines, and for weapons that are in both IFA3 and FOW
+* Adds compatibility for magazines, both for weapons that share magazines, and for weapons that are in two or more of IFA3, FOW, or LEN
 * Adds missing firemodes
 * Adds a couple of weapons and magazines
 

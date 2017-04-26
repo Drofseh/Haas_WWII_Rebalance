@@ -185,6 +185,9 @@
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 97.588;
    };
+   class Single : Mode_SemiAuto {
+   reloadTime = 0.104;
+   };
    class Full : Mode_FullAuto {
    reloadTime = 0.104;
    };
@@ -193,7 +196,7 @@
  class LIB_SVT_40 : LIB_RIFLE {
   descriptionShort = "Samozaryadnaya Vintovka Tokareva, Obrazets 1940 goda";
   displayName = "SVT-40 (2PzD)";
-  magazines[] = {"LIB_10Rnd_762x54","LIB_10Rnd_762x54_t30","LIB_10Rnd_762x54_t302","LIB_10Rnd_762x54_t46","LIB_10Rnd_762x54_t462","LIB_10Rnd_762x54_d","LIB_10Rnd_762x54_b30","lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK","fow_5Rnd_792x57"};
+  magazines[] = {"LIB_10Rnd_762x54","LIB_10Rnd_762x54_t30","LIB_10Rnd_762x54_t302","LIB_10Rnd_762x54_t46","LIB_10Rnd_762x54_t462","LIB_10Rnd_762x54_d","LIB_10Rnd_762x54_b30","lib_5Rnd_762x54","lib_5Rnd_762x54_t46","lib_5Rnd_762x54_t30","lib_5Rnd_762x54_D","lib_5Rnd_762x54_b30"};
   recoil = "recoil_rifle_1";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 84.926;
@@ -236,7 +239,7 @@
  class LIB_MP40 : LIB_SMG {
   descriptionShort = "Maschinenpistole 40";
   displayName = "MP40 (2PzD)";
-  magazines[] = {"LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40","fow_32Rnd_9x19_sten"};
+  magazines[] = {"LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40","LEN_32Rnd_9x19","fow_32Rnd_9x19_sten"};
   recoil = "recoil_smg_02";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 87.551;
@@ -334,7 +337,7 @@
   };
 //End Machineguns
 
-//Other
+//Other Weapons
  class LIB_M1A1_Bazooka : LIB_LAUNCHER {
   descriptionShort = "Rocket Launcher, M1A1";
   displayName = "M1A1 Bazooka (2PzD)";
@@ -362,4 +365,4 @@
    descriptionShort = "Panzerschreck RPzB 54 (Winter)";
    displayName = "Panzerschreck RPzB 54 (Winter) (2PzD)";
    };
-//End Other
+//End Other Weapons

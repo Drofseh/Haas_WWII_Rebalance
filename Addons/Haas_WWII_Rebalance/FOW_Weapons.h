@@ -12,6 +12,7 @@
  class fow_w_leeenfield_no4mk1 : fow_rifle_base {
   descriptionShort = "Rifle, No. 4 Mk I";
   displayName = "Lee Enfield No. 4 Mk I (FOW) (2PzD)";
+  magazines[] = {"fow_10Rnd_303","LEN_10Rnd_303"};
   recoil = "recoil_rifle_1";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 88.037;
@@ -104,7 +105,7 @@ class fow_w_stg44 : fow_rifle_base {
   descriptionShort = "Submachine Gun, Caliber .45, M3";
   displayName = "M3 GreaseGun (FOW) (2PzD)";
   modes[] = {"Full","Single","Far","Medium","Short"};
-  magazines[] = {"fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp"};
+  magazines[] = {"fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp_T_M3_2PzD","LEN_30Rnd_45ACP_M3","LIB_30Rnd_45ACP","fow_30Rnd_45acp"};
   recoil = "recoil_smg_02";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 79.412;
@@ -120,7 +121,7 @@ class fow_w_stg44 : fow_rifle_base {
  class fow_w_mp40 : fow_rifle_base {
   descriptionShort = "Maschinenpistole 40";
   displayName = "MP40 (FOW) (2PzD)";
-  magazines[] = {"LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40","fow_32Rnd_9x19_sten"};
+  magazines[] = {"LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40","LEN_32Rnd_9x19","fow_32Rnd_9x19_sten"};
   recoil = "recoil_smg_02";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 87.551;
@@ -133,7 +134,7 @@ class fow_w_stg44 : fow_rifle_base {
  class fow_w_sten_mk2 : fow_rifle_base {
   descriptionShort = "Sten Mk II";
   displayName = "Sten Mk II (FOW) (2PzD)";
-  magazines[] = {"fow_32Rnd_9x19_sten","LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40"};
+  magazines[] = {"fow_32Rnd_9x19_sten","LEN_32Rnd_9x19","LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40"};
   recoil = "recoil_smg_02";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 65.074;
@@ -254,4 +255,4 @@ class fow_w_m1919a6 : fow_w_m1919 {
   descriptionShort = "M2 Flamethrower";
   displayName = "M2 Flamethrower (Do Not Use, Not Working, Shoots Bullets) (FOW)";
   };
-//End Other
+//End Other Weapons
