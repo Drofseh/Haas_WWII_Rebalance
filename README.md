@@ -7,9 +7,9 @@
 #### Haas WWII Rebalance is a mod for ARMA3, intended for use with the [2. Panzer Division ARMA Community](http://2panzer.wixsite.com/home).
 
 #### Required dependencies:
-* IFA3 Lite - Preview v19
-* FOW - Release II
-* LEN Weapons v1.0
+* [IFA3 Lite](https://forums.bistudio.com/forums/topic/190809-iron-front-in-arm3-lite-preview-versions/) - Preview v19
+* [FOW](https://forums.bistudio.com/forums/topic/198194-faces-of-war-ww2/) - Release II
+* [LEN Weapons](https://forums.bistudio.com/forums/topic/200914-len-weapons-pack-for-ifa3-lite/) v1.0
 
 
 #### Haas WWII Rebalance does the following:
