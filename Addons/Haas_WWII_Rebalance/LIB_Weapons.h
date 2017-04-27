@@ -65,7 +65,7 @@
   };
 
  class LIB_G3340 : LIB_K98 {
-  descriptionShort = "Gewehr 33/40 (t) (Puška vz. 33)";
+  descriptionShort = "Puška vz. 33, known as the Gewehr 33/40(t) in Wehrmacht service";
   displayName = "G33/40 (2PzD)";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 73.897;
