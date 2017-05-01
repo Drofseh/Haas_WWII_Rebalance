@@ -103,9 +103,19 @@ class fow_rifle_base : Rifle_Base_F {
   };
 class fow_w_m1919 : fow_rifle_base{};
 
-class fow_v_base;
-class V_LIB_Vest_Camo_Base;
+
 class VestItem;
+class Vest_Camo_Base;
+ class fow_v_base : Vest_Camo_Base {
+   class ItemInfo : VestItem {
+   containerClass = "Supply90";
+   };
+  };
+ class V_LIB_Vest_Camo_Base : Vest_Camo_Base {
+   class ItemInfo : VestItem {
+   containerClass = "Supply90";
+   };
+  };
 
 #include "FOW_Weapons.h"
 
