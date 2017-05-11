@@ -27,6 +27,8 @@
  class fow_30Rnd_303_bren : CA_Magazine {
   descriptionShort = ".303 British, 30 Rounds, for use in the Bren Gun";
   displayName = "Bren Gun 30 Round Magazine (FOW)";
+  lastRoundsTracer = 3;
+  tracersEvery = 3;
   };
 
  class fow_30Rnd_45acp : CA_Magazine {
@@ -107,6 +109,7 @@
   descriptionShort = ".30-06, 50 Rounds, for use in the M1919 Machine Guns";
   displayName = "M1919 50 Round Belt (FOW)";
   initSpeed = 860;
+  lastRoundsTracer = 3;
   mass = 14.55;
   tracersEvery = 3;
   };
