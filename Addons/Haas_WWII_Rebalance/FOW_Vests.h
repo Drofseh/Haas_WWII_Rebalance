@@ -115,39 +115,42 @@
  class fow_v_uk_base : fow_v_base {
    class ItemInfo : VestItem {
    containerClass = "Supply90";
+   hiddenSelections[] = {"camo"};
    };
   };
-
+/*
  class fow_v_uk_base_green : fow_v_uk_base {
-   class ItemInfo : VestItem {
+   class ItemInfo : ItemInfo {
    containerClass = "Supply90";
    };
   };
-
+*/
  class fow_v_uk_bren : fow_v_base {
    class ItemInfo : VestItem {
    containerClass = "Supply120";
+   hiddenSelections[] = {"camo"};
    };
   };
-
+/*
  class fow_v_uk_bren_green : fow_v_uk_bren {
-   class ItemInfo : VestItem {
+   class ItemInfo : ItemInfo {
    containerClass = "Supply120";
    };
   };
-
+*/
  class fow_v_uk_officer : fow_v_base {
    class ItemInfo : VestItem {
    containerClass = "Supply70";
+   hiddenSelections[] = {"camo"};
    };
   };
-
+/*
  class fow_v_uk_officer_green : fow_v_uk_officer {
-   class ItemInfo : VestItem {
+   class ItemInfo : ItemInfo {
    containerClass = "Supply70";
    };
   };
-
+*/
  class fow_v_uk_para_base : fow_v_base {
    class ItemInfo : VestItem {
    containerClass = "Supply120";
@@ -163,21 +166,23 @@
  class fow_v_uk_para_sten : fow_v_base {
    class ItemInfo : VestItem {
    containerClass = "Supply100";
+   hiddenSelections[] = {"camo"};
    };
   };
 
  class fow_v_uk_sten : fow_v_base {
    class ItemInfo : VestItem {
    containerClass = "Supply90";
+   hiddenSelections[] = {"camo"};
    };
   };
-
+/*
  class fow_v_uk_sten_green : fow_v_uk_sten {
-   class ItemInfo : VestItem {
+   class ItemInfo : ItemInfo {
    containerClass = "Supply90";
    };
   };
-
+*/
  class fow_v_us_45 : fow_v_base {
    class ItemInfo : VestItem {
    containerClass = "Supply30";

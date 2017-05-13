@@ -86,6 +86,21 @@ class BaseSoundModeType;
 class cfgAmmo {
 
 class BulletBase;
+/*
+class FlareBase;
+ class F_40mm_White : FlareBase {
+  brightness = 500;
+ };
+  class F_40mm_Red : F_40mm_White {
+   brightness = 500;
+  };
+  class F_40mm_Yellow : F_40mm_White {
+   brightness = 500;
+  };
+  class F_40mm_Green : F_40mm_White {
+   brightness = 500;
+  };
+  */
 
 #include "FOW_Ammo.h"
 
