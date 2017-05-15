@@ -68,7 +68,7 @@ class CfgPatches {
                        "ww2_assets_t_weapons_mortars_t","ww2_assets_t_weapons_optics_t",
                        "ww2_assets_t_weapons_pistols_t","ww2_assets_t_weapons_rifles_t",
                        "ww2_assets_t_weapons_sniperrifles_t","ww2_assets_t_weapons_weaponsmagazines_t",
-                       "fow_sys_backpack.pbo","fow_veh_weapons_c.pbo","fow_weapons.pbo","fow_weapons_c.pbo",
+                       "fow_veh_weapons_c.pbo","fow_weapons.pbo","fow_weapons_c.pbo",
                        "fow_characters.pbo","fow_characters_c.pbo","fow_functions.pbo","fow_main.pbo",
                        "fow_map_tarawa.pbo","fow_map_tarawa_c.pbo",
                        "len_ifa3_wp_cfg","len_ifa3_wp"
