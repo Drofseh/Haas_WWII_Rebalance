@@ -219,7 +219,10 @@ class ThingX;
 //  };
 
 class Bag_Base;
+class B_LIB_AssaultPack_Base;
 
 #include "FOW_Backpacks.h"
+
+#include "LIB_Backpacks.h"
 
 }; //End cfgVehicles

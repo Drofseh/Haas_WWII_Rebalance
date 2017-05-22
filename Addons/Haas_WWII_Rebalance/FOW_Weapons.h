@@ -105,7 +105,7 @@ class fow_w_stg44 : fow_rifle_base {
   descriptionShort = "Submachine Gun, Caliber .45, M3";
   displayName = "M3 GreaseGun (2PzD)";
   modes[] = {"Full","Single","Far","Medium","Short"};
-  magazines[] = {"fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp_T_M3_2PzD","LEN_30Rnd_45ACP_M3","LIB_30Rnd_45ACP","fow_30Rnd_45acp"};
+  magazines[] = {"fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp_T_M3_2PzD","LEN_30Rnd_45ACP_M3","fow_30Rnd_45acp"};
   recoil = "recoil_smg_02";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 79.412;
