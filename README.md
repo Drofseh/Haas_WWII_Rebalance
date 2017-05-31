@@ -26,7 +26,7 @@
 Releases can be found [here](https://github.com/Drofseh/Haas_WWII_Rebalance/releases)
 
 #### Feature Requests, Issues, Pull Requests
-Please check the [here](https://github.com/Drofseh/Haas_WWII_Rebalance/blob/master/.github/CONTRIBUTING.md) for information on these topic.
+Please check the [here](https://github.com/Drofseh/Haas_WWII_Rebalance/blob/master/.github/CONTRIBUTING.md) for information on these topics.
 
 #### Acknowlegements
 [IFA3 Lite](https://forums.bistudio.com/forums/topic/190809-iron-front-in-arm3-lite-preview-versions/) and [FOW](https://forums.bistudio.com/forums/topic/198194-faces-of-war-ww2/) teams for their respective mods, both of which provide essential assets for ARMA3 gameplay in a WWII setting.
