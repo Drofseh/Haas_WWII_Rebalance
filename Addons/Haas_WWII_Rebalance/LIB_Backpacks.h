@@ -143,6 +143,14 @@
   maximumLoad = 50;
   };
 
+ class B_LIB_US_M36 : B_LIB_AssaultPack_Base {
+  maximumLoad = 150;
+  };
+
+ class B_LIB_US_M36_Rope : B_LIB_US_M36 {
+  maximumLoad = 150;
+  };
+
  class B_LIB_US_MGbag : B_LIB_AssaultPack_Base {
   maximumLoad = 150;
   };

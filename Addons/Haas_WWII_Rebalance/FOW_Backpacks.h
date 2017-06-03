@@ -79,11 +79,11 @@
   };
 
  class fow_b_us_bandoleer : Bag_Base {
-  maximumLoad = 150;
+  maximumLoad = 50;
   };
 
  class fow_b_us_m1928 : Bag_Base {
-  maximumLoad = 50;
+  maximumLoad = 150;
   };
 
  class fow_b_us_m1928_asst_bar : fow_b_us_m1928 {

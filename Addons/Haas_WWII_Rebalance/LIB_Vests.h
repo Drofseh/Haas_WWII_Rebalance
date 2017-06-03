@@ -262,6 +262,48 @@
    };
   };
 
+ class V_LIB_US_AB_Vest_Bar : V_LIB_Vest_Camo_Base {
+   class ItemInfo : VestItem {
+   containerClass = "Supply120";
+   };
+  };
+
+ class V_LIB_US_AB_Vest_Carbine : V_LIB_Vest_Camo_Base {
+   class ItemInfo : VestItem {
+   containerClass = "Supply100";
+   };
+  };
+
+ class V_LIB_US_AB_Vest_Carbine_nco : V_LIB_Vest_Camo_Base {
+   class ItemInfo : VestItem {
+   containerClass = "Supply100";
+   };
+  };
+
+ class V_LIB_US_AB_Vest_Garand : V_LIB_Vest_Camo_Base {
+   class ItemInfo : VestItem {
+   containerClass = "Supply130";
+   };
+  };
+
+ class V_LIB_US_AB_Vest_Grenadier : V_LIB_Vest_Camo_Base {
+   class ItemInfo : VestItem {
+   containerClass = "Supply200";
+   };
+  };
+
+ class V_LIB_US_AB_Vest_Thompson : V_LIB_Vest_Camo_Base {
+   class ItemInfo : VestItem {
+   containerClass = "Supply150";
+   };
+  };
+
+ class V_LIB_US_AB_Vest_Thompson_nco : V_LIB_Vest_Camo_Base {
+   class ItemInfo : VestItem {
+   containerClass = "Supply100";
+   };
+  };
+
  class V_LIB_US_Vest_45 : V_LIB_Vest_Camo_Base {
    class ItemInfo : VestItem {
    containerClass = "Supply30";
@@ -306,7 +348,7 @@
 
  class V_LIB_US_Vest_Grenadier : V_LIB_Vest_Camo_Base {
    class ItemInfo : VestItem {
-   containerClass = "Supply100";
+   containerClass = "Supply200";
    };
   };
 

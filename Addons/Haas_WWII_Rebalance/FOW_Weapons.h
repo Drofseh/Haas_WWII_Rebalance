@@ -178,7 +178,7 @@ class fow_w_stg44 : fow_rifle_base {
  class fow_w_m1919a4 : fow_w_m1919 {
   descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A4";
   displayName = "M1919A4 (2PzD)";
-  magazines[] = {"fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
+  magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD""LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
   recoil = "recoil_mk200";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 310.178;
@@ -187,7 +187,7 @@ class fow_w_stg44 : fow_rifle_base {
 class fow_w_m1919a6 : fow_w_m1919 {
   descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A6";
   displayName = "M1919A6 (2PzD)";
-  magazines[] = {"fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
+  magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD""LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
   recoil = "recoil_mk200";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 320.184;
@@ -227,7 +227,7 @@ class fow_w_m1919a6 : fow_w_m1919 {
  class fow_w_mg42 : fow_rifle_base {
   descriptionShort = "Maschinengewehr 42";
   displayName = "MG42 (2PzD)";
-  magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_250Rnd_792x57","LIB_250Rnd_792x57_SMK","LIB_250Rnd_792x57_sS","fow_50Rnd_792x57","fow_250Rnd_792x57"};
+  magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SMK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SMK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SMK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SMK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};
   recoil = "recoil_mk200";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 255.221;

@@ -167,32 +167,155 @@ class LIB_1Rnd_RPzB : CA_LauncherMagazine {
    displayName = "DP28 47 Round Magazine, Type D Heavy";
    };
 
+ class LIB_50Rnd_762x63 : CA_Magazine {
+  descriptionShort = ".30-06, 50 Rounds, for use in the M1919 Machine Guns";
+  displayName = "M1919 50 Round Belt";
+  };
+  class LIB_100Rnd_762x63 : LIB_50Rnd_762x63 {
+   descriptionShort = ".30-06, 100 Rounds, for use in the M1919 Machine Guns";
+   displayName = "M1919 100 Round Belt";
+   mass = 29.1;
+   };
+  class LIB_150Rnd_762x63_2PzD : LIB_50Rnd_762x63 {
+   count = 150;
+   descriptionShort = ".30-06, 150 Rounds, for use in the M1919 Machine Guns";
+   displayName = "M1919 150 Round Belt";
+   mass = 43.65;
+   };
+  class LIB_200Rnd_762x63_2PzD : LIB_50Rnd_762x63 {
+   count = 200;
+   descriptionShort = ".30-06, 200 Rounds, for use in the M1919 Machine Guns";
+   displayName = "M1919 200 Round Belt";
+   mass = 58.2;
+   };
+  class LIB_250Rnd_762x63_2PzD : LIB_50Rnd_762x63 {
+   count = 250;
+   descriptionShort = ".30-06, 250 Rounds, for use in the M1919 Machine Guns";
+   displayName = "M1919 250 Round Belt";
+   mass = 72.75;
+   };
+
  class LIB_50Rnd_792x57 : CA_Magazine {
-  descriptionShort = "7.92x57mm, 50 Rounds, for use in the MG42";
-  displayName = "MG42 50 Round Drum";
+  descriptionShort = "7.92x57mm, 50 Rounds, for use in the MG34 or MG42";
+  displayName = "MG34/MG42 50 Round Drum";
   };
   class LIB_50Rnd_792x57_SMK : LIB_50Rnd_792x57 {
-   descriptionShort = "7.92x57mm, 50 Rounds, S.m.K. AP, for use in the MG42";
-   displayName = "MG42 50 Round Drum, S.m.K. AP";
+   descriptionShort = "7.92x57mm, 50 Rounds, S.m.K. AP, for use in the MG34 or MG42";
+   displayName = "MG34/MG42 50 Round Drum, S.m.K. AP";
    };
   class LIB_50Rnd_792x57_sS : LIB_50Rnd_792x57 {
-   descriptionShort = "7.92x57mm, 50 Rounds, S.m.E. Semi-AP, for use in the MG42";
-   displayName = "MG42 50 Round Drum, S.m.E. Semi-AP";
+   descriptionShort = "7.92x57mm, 50 Rounds, S.m.E. Semi-AP, for use in the MG34 or MG42";
+   displayName = "MG34/MG42 50 Round Drum, S.m.E. Semi-AP";
    };
-  class LIB_250Rnd_792x57 : LIB_50Rnd_792x57_Veh {
-   descriptionShort = "7.92x57mm, 250 Rounds, for use in the MG42";
-   displayName = "MG42 250 Round Belt";
-   mass = 72.75;
+  class LIB_100Rnd_792x57 : LIB_50Rnd_792x57 {
+   descriptionShort = "7.92x57mm, 100 Rounds, for use in the MG34 or MG42";
+   displayName = "MG34/MG42 100 Round Belt";
+   count = 100;
+   mass = 29.1;
    };
-  class LIB_250Rnd_792x57_SMK : LIB_250Rnd_792x57 {
-   descriptionShort = "7.92x57mm, 250 Rounds, S.m.K. AP, for use in the MG42";
-   displayName = "MG42 250 Round Belt, S.m.K. AP";
-   mass = 72.75;
+  class LIB_100Rnd_792x57_SMK_2PzD : LIB_50Rnd_792x57_SMK {
+   descriptionShort = "7.92x57mm, 100 Rounds, S.m.K. AP, for use in the MG34 or MG42";
+   displayName = "MG34/MG42 100 Round Belt, S.m.K. AP";
+   count = 100;
+   mass = 29.1;
+   model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
+   picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
+   type = "3* 256";
    };
-  class LIB_250Rnd_792x57_sS : LIB_250Rnd_792x57 {
-   descriptionShort = "7.92x57mm, 250 Rounds, s.S. Heavy, for use in the MG42";
-   displayName = "MG42 250 Round Belt, s.S. Heavy";
+  class LIB_100Rnd_792x57_sS_2PzD : LIB_50Rnd_792x57_sS {
+   descriptionShort = "7.92x57mm, 100 Rounds, S.m.E. Semi-AP, for use in the MG34 or MG42";
+   displayName = "MG34/MG42 100 Round Belt, S.m.E. Semi-AP";
+   count = 100;
+   mass = 29.1;
+   model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
+   picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
+   type = "3* 256";
+   };
+  class LIB_150Rnd_792x57_2PzD : LIB_50Rnd_792x57 {
+   descriptionShort = "7.92x57mm, 150 Rounds, for use in the MG34 or MG42";
+   displayName = "MG34/MG42 150 Round Belt";
+   count = 150;
+   mass = 43.65;
+   model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
+   picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
+   type = "3* 256";
+   };
+  class LIB_150Rnd_792x57_SMK_2PzD : LIB_50Rnd_792x57_SMK {
+   descriptionShort = "7.92x57mm, 150 Rounds, S.m.K. AP, for use in the MG34 or MG42";
+   displayName = "MG34/MG42 150 Round Belt, S.m.K. AP";
+   count = 150;
+   mass = 43.65;
+   model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
+   picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
+   type = "3* 256";
+   };
+  class LIB_150Rnd_792x57_sS_2PzD : LIB_50Rnd_792x57_sS {
+   descriptionShort = "7.92x57mm, 150 Rounds, S.m.E. Semi-AP, for use in the MG34 or MG42";
+   displayName = "MG34/MG42 150 Round Belt, S.m.E. Semi-AP";
+   count = 150;
+   mass = 43.65;
+   model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
+   picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
+   type = "3* 256";
+   };
+  class LIB_200Rnd_792x57_2PzD : LIB_50Rnd_792x57 {
+   descriptionShort = "7.92x57mm, 200 Rounds, for use in the MG34 or MG42";
+   displayName = "MG34/MG42 200 Round Belt";
+   count = 200;
+   mass = 58.2;
+   model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
+   picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
+   type = "3* 256";
+   };
+  class LIB_200Rnd_792x57_SMK_2PzD : LIB_50Rnd_792x57_SMK {
+   descriptionShort = "7.92x57mm, 200 Rounds, S.m.K. AP, for use in the MG34 or MG42";
+   displayName = "MG34/MG42 200 Round Belt, S.m.K. AP";
+   count = 200;
+   mass = 58.2;
+   model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
+   picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
+   type = "3* 256";
+   };
+  class LIB_200Rnd_792x57_sS_2PzD : LIB_50Rnd_792x57_sS {
+   descriptionShort = "7.92x57mm, 200 Rounds, S.m.E. Semi-AP, for use in the MG34 or MG42";
+   displayName = "MG34/MG42 200 Round Belt, S.m.E. Semi-AP";
+   count = 200;
+   mass = 58.2;
+   model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
+   picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
+   type = "3* 256";
+   };
+ class LIB_250Rnd_792x57_2PzD : LIB_50Rnd_792x57 {
+   descriptionShort = "7.92x57mm, 250 Rounds, for use in the MG34 or MG42";
+   displayName = "MG34/MG42 250 Round Belt";
+   count = 250;
    mass = 72.75;
+   model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
+   picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
+   type = "3* 256";
+   };
+  class LIB_250Rnd_792x57_SMK_2PzD : LIB_50Rnd_792x57_SMK {
+   descriptionShort = "7.92x57mm, 250 Rounds, S.m.K. AP, for use in the MG34 or MG42";
+   displayName = "MG34/MG42 250 Round Belt, S.m.K. AP";
+   count = 250;
+   mass = 72.75;
+   model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
+   picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
+   type = "3* 256";
+   };
+  class LIB_250Rnd_792x57_sS_2PzD : LIB_50Rnd_792x57_sS {
+   descriptionShort = "7.92x57mm, 250 Rounds, s.S. Heavy, for use in the MG34 or MG42";
+   displayName = "MG34/MG42 250 Round Belt, s.S. Heavy";
+   count = 250;
+   mass = 72.75;
+   model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
+   picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
+   type = "3* 256";
+   };
+
+  class LIB_75Rnd_792x57 : LIB_50Rnd_792x57 {
+   descriptionShort = "7.92x57mm, 50 Rounds, for use in the MG34 (PT34)";
+   displayName = "MG34 (PT34) 75 Round Drum";
    };
 
  class LIB_63Rnd_762x54 : LIB_47Rnd_762x54 {
