@@ -147,7 +147,9 @@ class PistolCore;
 class Pistol : PistolCore {
   class WeaponSlotsInfo;
  };
- class Pistol_Base_F : Pistol {};
+ class Pistol_Base_F : Pistol {
+  class WeaponSlotsInfo;
+ };
  class hgun_Rook40_F : Pistol_Base_F {
   class WeaponSlotsInfo;
  };
@@ -186,7 +188,12 @@ class LIB_SRIFLE : Rifle_Long_Base_F {
 class fow_rifle_base : Rifle_Base_F {
   class WeaponSlotsInfo;
   };
-class fow_w_m1919 : fow_rifle_base{};
+ class fow_rifleBolt_base : fow_rifle_base {
+   class WeaponSlotsInfo;
+   };
+class fow_w_m1919 : fow_rifle_base{
+  class WeaponSlotsInfo;
+  };
 
 class VestItem;
 class Vest_Camo_Base;

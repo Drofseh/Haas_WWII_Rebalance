@@ -1,5 +1,42 @@
+//Pistols
+ class fow_w_type10 : Pistol_Base_F {
+  descriptionShort = "Type 10 Flare Pistol";
+  displayName = "Type 10 Flare Pistol (2PzD)";
+   class WeaponSlotsInfo : WeaponSlotsInfo {
+   mass = 25.806;
+   };
+  };
+
+ class fow_w_type14 : Pistol_Base_F {
+  descriptionShort = "Type 14 Nambu";
+  displayName = "Type 14 Nambu (2PzD)";
+   class WeaponSlotsInfo : WeaponSlotsInfo {
+   mass = 19.8;
+   };
+  };
+
+ class fow_w_webley : Pistol_Base_F {
+  descriptionShort = "Webley Mk IV";
+  displayName = "Webley Mk IV (2PzD)";
+  recoil = "recoil_pistol_acpc2";
+   class WeaponSlotsInfo : WeaponSlotsInfo {
+   mass = 19.8;
+   };
+  };
+
+ class fow_w_m1911 : Pistol_Base_F {
+  descriptionShort = "Automatic Pistol, Caliber .45, M1911A1";
+  displayName = "M1911A1 (2PzD)";
+  magazines[] = {"LIB_7Rnd_45ACP","fow_7Rnd_45acp"};
+  recoil = "recoil_pistol_acpc2";
+   class WeaponSlotsInfo : WeaponSlotsInfo {
+   mass = 24.375;
+   };
+  };
+//End Pistols
+
 //Rifles
- class fow_w_k98 : fow_rifle_base {
+ class fow_w_k98 : fow_rifleBolt_base {
   descriptionShort = "Karabiner 98 kurz";
   displayName = "Kar98k (2PzD)";
   magazines[] = {"lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK","lib_10Rnd_792x57_T","lib_10Rnd_792x57_T2","lib_10Rnd_792x57_sS","lib_10Rnd_792x57_SMK","fow_5Rnd_792x57"};
@@ -9,7 +46,7 @@
    };
   };
 
- class fow_w_leeenfield_no4mk1 : fow_rifle_base {
+ class fow_w_leeenfield_no4mk1 : fow_rifleBolt_base {
   descriptionShort = "Rifle, No. 4 Mk I";
   displayName = "Lee Enfield No. 4 Mk I (2PzD)";
   magazines[] = {"fow_10Rnd_303","LEN_10Rnd_303"};
@@ -63,7 +100,7 @@
    };
   };
 
-class fow_w_stg44 : fow_rifle_base {
+ class fow_w_stg44 : fow_rifle_base {
   descriptionShort = "Sturmgewehr 44";
   displayName = "StG44 (2PzD)";
   magazines[] = {"LIB_30Rnd_792x33","fow_30Rnd_792x33"};
@@ -77,7 +114,7 @@ class fow_w_stg44 : fow_rifle_base {
    };
   };
 
- class fow_w_type99 : fow_rifle_base {
+ class fow_w_type99 : fow_rifleBolt_base {
   descriptionShort = "Type 99 Arisaka";
   displayName = "Type 99 Arisaka (2PzD)";
   recoil = "recoil_rifle_1";
@@ -85,6 +122,14 @@ class fow_w_stg44 : fow_rifle_base {
    mass = 82.500;
    };
   };
+  class fow_w_type99_sniper : fow_w_type99 {
+   descriptionShort = "Type 99 Arisaka Sniper";
+   displayName = "Type 99 Sniper (2PzD)";
+   recoil = "recoil_rifle_1";
+    class WeaponSlotsInfo : WeaponSlotsInfo {
+    mass = 105.500;
+    };
+   };
 //End Rifles
 
 //Submachine Guns
@@ -118,6 +163,19 @@ class fow_w_stg44 : fow_rifle_base {
    };
   };
 
+ class fow_w_m55_reising : fow_rifle_base {
+  descriptionShort = "Submachine Gun, Caliber .45, M55";
+  displayName = "M55 Reising (2PzD)";
+  magazines[] = {"fow_20Rnd_45acp","fow_12Rnd_45acp_2PzD"};
+  recoil = "recoil_smg_01";
+   class WeaponSlotsInfo : WeaponSlotsInfo {
+   mass = 61.82;
+   };
+   class Full : Mode_FullAuto {
+   reloadTime = 0.075;
+   };
+  };
+
  class fow_w_mp40 : fow_rifle_base {
   descriptionShort = "Maschinenpistole 40";
   displayName = "MP40 (2PzD)";
@@ -134,7 +192,7 @@ class fow_w_stg44 : fow_rifle_base {
  class fow_w_sten_mk2 : fow_rifle_base {
   descriptionShort = "Sten Mk II";
   displayName = "Sten Mk II (2PzD)";
-  magazines[] = {"fow_32Rnd_9x19_sten","LEN_32Rnd_9x19","LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40"};
+  magazines[] = {"LEN_32Rnd_9x19","fow_32Rnd_9x19_sten","LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40"};
   recoil = "recoil_smg_02";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 65.074;
@@ -175,37 +233,6 @@ class fow_w_stg44 : fow_rifle_base {
 //End Submachine Guns
 
 //Machine Guns
- class fow_w_m1919a4 : fow_w_m1919 {
-  descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A4";
-  displayName = "M1919A4 (2PzD)";
-  magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD""LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
-  recoil = "recoil_mk200";
-   class WeaponSlotsInfo : WeaponSlotsInfo {
-   mass = 310.178;
-   };
-  };
-class fow_w_m1919a6 : fow_w_m1919 {
-  descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A6";
-  displayName = "M1919A6 (2PzD)";
-  magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD""LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
-  recoil = "recoil_mk200";
-   class WeaponSlotsInfo : WeaponSlotsInfo {
-   mass = 320.184;
-   };
-  };
-
- class fow_w_bren : fow_rifle_base {
-  descriptionShort = "Bren Gun";
-  displayName = "Bren Gun (2PzD)";
-  recoil = "recoil_mk200";
-   class FullAuto : Mode_FullAuto {
-   reloadTime = 0.118;
-   };
-   class WeaponSlotsInfo : WeaponSlotsInfo {
-   mass = 228.309;
-   };
-  };
-
  class fow_w_m1918a2 : fow_rifle_base {
   descriptionShort = "Rifle, Caliber .30, Automatic, Browning, M1918A2";
   displayName = "M1918A2 BAR (2PzD)";
@@ -221,6 +248,41 @@ class fow_w_m1919a6 : fow_w_m1919 {
    class FullAuto_650 : Mode_FullAuto {
    reloadTime = 0.092;
    textureType = "fastAuto";
+   };
+  };
+  class fow_w_m1918a2_bak : fow_w_m1918a2 {
+   descriptionShort = "Rifle, Caliber .30, Automatic, Browning, M1918A2";
+   displayName = "M1918A2 BAR (BAK) (2PzD)";
+   };
+
+ class fow_w_m1919a4 : fow_w_m1919 {
+  descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A4";
+  displayName = "M1919A4 (2PzD)";
+  magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD","LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_762x63"};
+  recoil = "recoil_mk200";
+   class WeaponSlotsInfo : WeaponSlotsInfo {
+   mass = 310.178;
+   };
+  };
+  class fow_w_m1919a6 : fow_w_m1919 {
+   descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A6";
+   displayName = "M1919A6 (2PzD)";
+   magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD","LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_762x63"};
+   recoil = "recoil_mk200";
+    class WeaponSlotsInfo : WeaponSlotsInfo {
+    mass = 320.184;
+    };
+   };
+
+ class fow_w_bren : fow_rifle_base {
+  descriptionShort = "Bren Gun";
+  displayName = "Bren Gun (2PzD)";
+  recoil = "recoil_mk200";
+   class FullAuto : Mode_FullAuto {
+   reloadTime = 0.118;
+   };
+   class WeaponSlotsInfo : WeaponSlotsInfo {
+   mass = 228.309;
    };
   };
 
@@ -250,9 +312,26 @@ class fow_w_m1919a6 : fow_w_m1919 {
   };
 //End Machine Guns
 
-//Other Weapons
+//Other Weapons, Tripod, Launchers
+ class fow_w_m1a1_bazooka : Launcher_Base_F {
+  descriptionShort = "Rocket Launcher, M1A1";
+  displayName = "M1A1 Bazooka (2PzD)";
+  magazines[] = {"LIB_1Rnd_60mm_M6","fow_1Rnd_m6a1"};
+   class WeaponSlotsInfo : WeaponSlotsInfo {
+   mass = 127.941;
+   };
+  };
+  
+ class fow_w_piat : Launcher_Base_F {
+  descriptionShort = "Projector, Infantry, Anti Tank Mk I";
+  displayName = "PIAT (2PzD)";
+   class WeaponSlotsInfo : WeaponSlotsInfo {
+   mass = 320;
+   };
+  };
+
  class fow_w_m2_flamethrower : fow_rifle_base {
   descriptionShort = "M2 Flamethrower";
   displayName = "M2 Flamethrower (Do Not Use, Not Working, Shoots Bullets) (FOW)";
   };
-//End Other Weapons
+//End Other Weapons, Tripod, Launchers

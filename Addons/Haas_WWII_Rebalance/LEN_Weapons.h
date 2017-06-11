@@ -191,7 +191,7 @@
  class LEN_StenMk2 : LIB_MP40 {
   descriptionShort = "Sten Mk II";
   displayName = "Sten Mk II (2PzD)";
-  magazines[] = {"fow_32Rnd_9x19_sten","LEN_32Rnd_9x19","LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40"};
+  magazines[] = {"LEN_32Rnd_9x19","fow_32Rnd_9x19_sten","LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40"};
   recoil = "recoil_smg_02";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 65.074;

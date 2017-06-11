@@ -2,7 +2,7 @@
  class LIB_Colt_M1911 : LIB_PISTOL {
   descriptionShort = "Automatic Pistol, Caliber .45, M1911A1";
   displayName = "M1911A1 (2PzD)";
-  magazines[] = {"LIB_7Rnd_45ACP"};
+  magazines[] = {"LIB_7Rnd_45ACP","fow_7Rnd_45acp"};
   recoil = "recoil_pistol_acpc2";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 24.375;
@@ -314,7 +314,14 @@
    displayName = "PPSh-41 (Drum) (2PzD)";
    magazines[] = {"lib_71Rnd_762x25","lib_71Rnd_762x25_t","lib_71Rnd_762x25_t2","lib_71Rnd_762x25_ap","lib_35Rnd_762x25","lib_35Rnd_762x25_t","lib_35Rnd_762x25_t2","lib_35Rnd_762x25_ap"};
    modes[] = {"Full","Single","Far","Medium","Short"};
+   recoil = "recoil_smg_02";
    scope = 2;
+    class WeaponSlotsInfo : WeaponSlotsInfo {
+    mass = 80.074;
+    };
+    class Full : Full {
+    reloadTime = 0.063;
+    };
    };
 //End Submachine Guns
 
@@ -372,8 +379,8 @@
 
  class LIB_M1919A4 : LIB_LMG {
   descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A4";
-  displayName = "M1919A4 (2PzD)";
-  magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD""LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
+  displayName = "M1919A4 (2PzD)";  
+  magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD","LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_762x63"};
   recoil = "recoil_mk200";
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 310.178;
@@ -382,7 +389,7 @@
   class LIB_M1919A6 : LIB_M1919A4 {
    descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A6";
    displayName = "M1919A6 (2PzD)";
-   magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD""LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
+   magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD","LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_762x63"};
    recoil = "recoil_mk200";
     class WeaponSlotsInfo : WeaponSlotsInfo {
     mass = 320.184;
@@ -433,6 +440,7 @@
  class LIB_M1A1_Bazooka : LIB_LAUNCHER {
   descriptionShort = "Rocket Launcher, M1A1";
   displayName = "M1A1 Bazooka (2PzD)";
+  magazines[] = {"LIB_1Rnd_60mm_M6","fow_1Rnd_m6a1"};
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 127.941;
    };
@@ -486,6 +494,6 @@
  class LIB_Laffete_Tripod : LIB_Slung_Static_Weapon_Base {
   descriptionShort = "Laffete Tripod for MG34 and MG42";
   displayName = "Laffete Tripod (2PzD)";
-  magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_250Rnd_792x57","LIB_250Rnd_792x57_SMK","LIB_250Rnd_792x57_sS","fow_50Rnd_792x57","fow_250Rnd_792x57"};
+  magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SMK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SMK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SMK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SMK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};
   };
-//End Other Weapons
+//End Other Weapons, Tripod, Launchers

@@ -58,10 +58,6 @@
   maximumLoad = 150;
   };
 
- class fow_b_uk_p37_blanco : fow_b_uk_p37 {
-  maximumLoad = 150;
-  };
-
  class fow_b_uk_p37_medic : fow_b_uk_p37 {
   maximumLoad = 150;
   };
