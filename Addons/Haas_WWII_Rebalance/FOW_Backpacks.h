@@ -66,6 +66,10 @@
   maximumLoad = 150;
   };
 
+ class fow_b_uk_piat : fow_b_uk_p37 {
+  maximumLoad = 75;
+  };
+
  class fow_b_uk_bergenpack : fow_b_uk_p37 {
   maximumLoad = 250;
   };

@@ -3,6 +3,16 @@ class LIB_1Rnd_60mm_M6 : CA_LauncherMagazine {
   displayName = "Bazooka, 2.36-Inch Anti-Tank Rocket M6";
   };
 
+ class LIB_1Rnd_G_Mk2 : CA_Magazine {
+  descriptionShort = "Mk2 Fragmentation Grenade, for use in the M7 Grenade Launcher";
+  displayName = "Grenade, Rifle, Fragmentation, Mk 2";
+  };
+
+ class LIB_1Rnd_G_M9A1 : LIB_1Rnd_G_Mk2 {
+  descriptionShort = "M9A1 HEAT Rifle Grenade, for use in the M7 Grenade Launcher";
+  displayName = "Grenade, Rifle, Antitank, M9A1";
+  };
+
 class LIB_1Rnd_RPzB : CA_LauncherMagazine {
   descriptionShort = "88mm Gr. 4322 HEAT Rocket, for use in the Panzerschreck RPzB 54";
   displayName = "Panzerschreck, 88mm Gr. 4322 HEAT Rocket";

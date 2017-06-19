@@ -8,6 +8,11 @@
   displayName = "Bazooka, 2.36-Inch Anti-Tank Rocket M6 (FOW)";
   };
 
+ class fow_1Rnd_m9a1 : 1Rnd_HE_Grenade_shell {
+  descriptionShort = "M9A1 HEAT Rifle Grenade, for use in the M7 Grenade Launcher";
+  displayName = "Grenade, Rifle, Antitank, M9A1 (FOW)";
+  };
+
  class fow_1Rnd_piat : CA_LauncherMagazine {
   descriptionShort = "High Explosive Anti-Tank bomb, for use in the PIAT";
   displayName = "PIAT, HEAT Bomb (FOW)";
@@ -25,6 +30,11 @@
  class fow_1Rnd_type10 : CA_Magazine {
   descriptionShort = "White Flare, for use in the M1 Carbine";
   displayName = "Type 10 Flare Pistol, White Flare (FOW)";
+  };
+
+ class fow_1Rnd_type2_40 : 1Rnd_HE_Grenade_shell {
+  descriptionShort = "Type 2 Rifle Grenade, 40mm, for use in the Type 99 Arisaka";
+  displayName = "Type 2 Rifle Grenade, 40mm (FOW)";
   };
 
  class fow_15Rnd_762x33 : CA_Magazine {
@@ -142,7 +152,7 @@
 
  class fow_30Rnd_792x33 : CA_Magazine {
   descriptionShort = "7.92x33mm, 30 Rounds, for use in the StG44";
-  displayName = "StG44 30, Round Magazine (FOW)";
+  displayName = "StG44, 30 Round Magazine (FOW)";
   };
 
  class fow_32Rnd_8x22 : CA_Magazine {

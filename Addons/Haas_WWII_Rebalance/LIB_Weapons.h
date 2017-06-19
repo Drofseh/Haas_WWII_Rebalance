@@ -379,7 +379,7 @@
 
  class LIB_M1919A4 : LIB_LMG {
   descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A4";
-  displayName = "M1919A4 (2PzD)";  
+  displayName = "M1919A4 (2PzD)";
   magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD","LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_762x63"};
   recoil = "recoil_mk200";
    class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -488,7 +488,7 @@
  class LIB_M2_Tripod : LIB_Slung_Static_Weapon_Base {
   descriptionShort = "M2 Tripod for M1919A4";
   displayName = "M1919A4 M2 Tripod (2PzD)";
-  magazines[] = {"LIB_50Rnd_762x63","LIB_200Rnd_762x63_2PzD""LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
+  magazines[] = {"LIB_50Rnd_762x63","LIB_200Rnd_762x63_2PzD","LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
   };
 
  class LIB_Laffete_Tripod : LIB_Slung_Static_Weapon_Base {

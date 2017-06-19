@@ -73,9 +73,8 @@ class CfgPatches {
                        "ww2_assets_t_weapons_mortars_t","ww2_assets_t_weapons_optics_t",
                        "ww2_assets_t_weapons_pistols_t","ww2_assets_t_weapons_rifles_t",
                        "ww2_assets_t_weapons_sniperrifles_t","ww2_assets_t_weapons_weaponsmagazines_t",
-                       "fow_veh_weapons_c.pbo","fow_weapons.pbo","fow_weapons_c.pbo",
-                       "fow_characters.pbo","fow_characters_c.pbo","fow_functions.pbo","fow_main.pbo",
-                       "fow_map_tarawa.pbo","fow_map_tarawa_c.pbo",
+                       "fow_weapons.pbo","fow_weapons_c.pbo","fow_characters.pbo",
+                       "fow_characters_c.pbo","fow_functions.pbo","fow_main.pbo",
                        "len_ifa3_wp_cfg","len_ifa3_wp"
                        };
   };
@@ -122,6 +121,7 @@ class CA_Magazine;
  class HandGrenade : CA_Magazine {
   mass = 8.87;
  };
+ class 1Rnd_HE_Grenade_shell;
  class VehicleMagazine;
   class LIB_50Rnd_792x57_Veh : VehicleMagazine {};
 
