@@ -241,3 +241,59 @@ class B_LIB_AssaultPack_Base;
 #include "LIB_Backpacks.h"
 
 }; //End cfgVehicles
+
+class CfgEditorSubcategories {
+
+class EdSubcat_2PzD_1_Essentials {
+ displayName = "2PzD !Essentials";
+};
+
+class EdSubcat_2PzD_Belgian {
+ displayName = "2PzD Belgium";
+};
+
+class EdSubcat_2PzD_Canadian {
+ displayName = "2PzD Canada";
+};
+
+class EdSubcat_2PzD_Civilains {
+ displayName = "2PzD Civilian";
+};
+
+class EdSubcat_2PzD_French {
+ displayName = "2PzD France";
+};
+
+class EdSubcat_2PzD_German {
+ displayName = "2PzD Germany";
+};
+
+class EdSubcat_2PzD_Japan {
+ displayName = "2PzD Japan";
+};
+
+class EdSubcat_2PzD_Netherlands {
+ displayName = "2PzD Netherlands";
+};
+
+class EdSubcat_2PzD_Partisan {
+ displayName = "2PzD Partisans";
+};
+
+class EdSubcat_2PzD_PHA {
+ displayName = "2PzD Poland";
+};
+
+class EdSubcat_2PzD_Russian {
+ displayName = "2PzD Russia";
+};
+
+class EdSubcat_2PzD_United_Kingdom {
+ displayName = "2PzD United Kingdom";
+};
+
+class EdSubcat_2PzD_United_States {
+ displayName = "2PzD United States";
+};
+
+}; //End CfgEditorSubcategories
