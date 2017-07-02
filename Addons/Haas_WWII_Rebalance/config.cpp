@@ -21,22 +21,16 @@ class CfgPatches {
                 "LEN_SMLE_No4Mk1T","LEN_M3a1","LEN_PPS43","LEN_StenMk2","LEN_StenMk2S","LEN_StenMk5",
                 "LEN_M12"
                 };
-   requiredAddons[] = {"ww2_assets_t_weapons_machinegun_light_t","ww2_assets_t_weapons_machinegun_sub_t",
-                       "ww2_assets_t_weapons_mines_t","ww2_assets_t_weapons_misc_t",
-                       "ww2_assets_t_weapons_mortars_t","ww2_assets_t_weapons_optics_t",
-                       "ww2_assets_t_weapons_pistols_t","ww2_assets_t_weapons_rifles_t",
-                       "ww2_assets_t_weapons_sniperrifles_t","ww2_assets_t_weapons_weaponsmagazines_t",
-                       "ww2_assets_c_characters_americans_c","ww2_assets_c_characters_core_c",
-                       "ww2_assets_c_characters_germans_c",
-                       "ww2_assets_c_characters_polish_c","ww2_assets_c_characters_soviets_c",
-                       "ww2_assets_c_characters_winter_c","ww2_assets_c_weapons_ammoboxes_c",
+   requiredAddons[] = {"ww2_assets_c_characters_americans_c","ww2_assets_c_characters_core_c",
+                       "ww2_assets_c_characters_germans_c","ww2_assets_c_characters_polish_c",
+                       "ww2_assets_c_characters_soviets_c","ww2_assets_c_characters_winter_c",
+                       "ww2_assets_c_weapons_ammoboxes_c","ww2_assets_c_vehicles_weapons_c",
                        "ww2_assets_c_weapons_ammoparameters_c","ww2_assets_c_weapons_backpacks_c",
                        "ww2_assets_c_weapons_effects_c","ww2_assets_c_weapons_infantryweapons_c",
                        "ww2_assets_c_weapons_launchers_c","ww2_assets_c_weapons_mines_c",
                        "ww2_assets_c_weapons_misc_c","ww2_assets_c_weapons_recoil_c",
                        "ww2_assets_c_weapons_weaponparameters_c","ww2_assets_c_weapons_weaponsmagazines_c",
-                       "ww2_assets_m_characters_americans_m",
-                       "ww2_assets_m_characters_germans_m",
+                       "ww2_assets_m_characters_americans_m","ww2_assets_m_characters_germans_m",
                        "ww2_assets_m_characters_polish_m","ww2_assets_m_characters_soviets_m",
                        "ww2_assets_m_weapons_ammoboxes_m","ww2_assets_m_weapons_backpacks_m",
                        "ww2_assets_m_weapons_binoculars_m","ww2_assets_m_weapons_grenades_m",
@@ -47,8 +41,7 @@ class CfgPatches {
                        "ww2_assets_m_weapons_pistols_m","ww2_assets_m_weapons_rifles_m",
                        "ww2_assets_m_weapons_sniperrifles_m","ww2_assets_m_weapons_weaponsammo_m",
                        "ww2_assets_m_weapons_weaponsmagazines_m","ww2_assets_r_characters_americans_r",
-                       "ww2_assets_r_characters_customfaces_r",
-                       "ww2_assets_r_characters_germans_r",
+                       "ww2_assets_r_characters_customfaces_r","ww2_assets_r_characters_germans_r",
                        "ww2_assets_r_characters_polish_r","ww2_assets_r_characters_soviets_r",
                        "ww2_assets_r_weapons_ammoboxes_r","ww2_assets_r_weapons_backpacks_r",
                        "ww2_assets_r_weapons_binoculars_r","ww2_assets_r_weapons_grenades_r",
@@ -69,12 +62,17 @@ class CfgPatches {
                        "ww2_assets_t_weapons_binoculars_t","ww2_assets_t_weapons_grenades_t",
                        "ww2_assets_t_weapons_launchers_t","ww2_assets_t_weapons_machinegun_heavy_t",
                        "ww2_assets_t_weapons_machinegun_light_t","ww2_assets_t_weapons_machinegun_sub_t",
+                       "ww2_assets_t_weapons_machinegun_light_t","ww2_assets_t_weapons_machinegun_sub_t",
+                       "ww2_assets_t_weapons_mines_t","ww2_assets_t_weapons_misc_t",
                        "ww2_assets_t_weapons_mines_t","ww2_assets_t_weapons_misc_t",
                        "ww2_assets_t_weapons_mortars_t","ww2_assets_t_weapons_optics_t",
+                       "ww2_assets_t_weapons_mortars_t","ww2_assets_t_weapons_optics_t",
+                       "ww2_assets_t_weapons_pistols_t","ww2_assets_t_weapons_rifles_t",
                        "ww2_assets_t_weapons_pistols_t","ww2_assets_t_weapons_rifles_t",
                        "ww2_assets_t_weapons_sniperrifles_t","ww2_assets_t_weapons_weaponsmagazines_t",
-                       "fow_weapons.pbo","fow_weapons_c.pbo","fow_characters.pbo",
-                       "fow_characters_c.pbo","fow_functions.pbo","fow_main.pbo",
+                       "ww2_assets_t_weapons_sniperrifles_t","ww2_assets_t_weapons_weaponsmagazines_t",
+                       "fow_main.pbo","fow_weapons_c.pbo","fow_characters_c.pbo",
+                       "fow_functions.pbo","fow_statics_c",
                        "len_ifa3_wp_cfg","len_ifa3_wp"
                        };
   };
@@ -90,25 +88,12 @@ class BaseSoundModeType;
 class cfgAmmo {
 
 class BulletBase;
-/*
-class FlareBase;
- class F_40mm_White : FlareBase {
-  brightness = 500;
- };
-  class F_40mm_Red : F_40mm_White {
-   brightness = 500;
-  };
-  class F_40mm_Yellow : F_40mm_White {
-   brightness = 500;
-  };
-  class F_40mm_Green : F_40mm_White {
-   brightness = 500;
-  };
-  */
 
 #include "FOW_Ammo.h"
 
  };
+
+class Eventhandlers;
 
 //cfgMagazines
 class cfgMagazines {
@@ -163,6 +148,8 @@ class Launcher;
  class LIB_Slung_Static_Weapon_Base;
 class MGunCore;
  class MGun : MGunCore{};
+ class HMG_M2;
+ class LIB_MLMG_base;
 class LIB_MG34_coax;
 class LIB_MLMG42;
 class LIB_M1919A4_coax;
@@ -232,6 +219,19 @@ class ThingX;
 //  class LIB_BasicAmmunitionBox_GER : LIB_ReammoBox_base {
 //  maximumLoad = 4000;
 //  };
+
+class LIB_Plane_base;
+class LIB_US_Plane_base;
+ class LIB_C47_Skytrain : LIB_US_Plane_base {
+  maximumLoad = 4000;
+  }
+ class LIB_CG4_WACO : LIB_US_Plane_base {
+  maximumLoad = 1000;
+  }
+ class LIB_HORSA : LIB_US_Plane_base {
+  maximumLoad = 2000;
+  }
+
 
 class Bag_Base;
 class B_LIB_AssaultPack_Base;
