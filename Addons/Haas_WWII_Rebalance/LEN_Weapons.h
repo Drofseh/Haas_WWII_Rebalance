@@ -44,7 +44,7 @@
  class LEN_FG42 : LIB_MP44 {
   descriptionShort = "Fallschirmjägergewehr 42 Ausführung G";
   displayName = "FG42 (2PzD)";
-  //fow_burstLenght = {1,1,2,3};
+  //fow_burstLength = 3;
   magazines[] = {"len_20Rnd_792x57"};
   modes[] = {"Single","FullAuto"};
   recoil = "recoil_rifle_1";
@@ -84,7 +84,7 @@
  class LEN_MP44 : LIB_MP44 {
   descriptionShort = "Sturmgewehr 44";
   displayName = "StG44 (2PzD)";
-  //fow_burstLenght = {1,1,2,3};
+  //fow_burstLength = 3;
   magazines[] = {"LIB_30Rnd_792x33","fow_30Rnd_792x33"};
   recoil = "recoil_mx";
    class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -172,7 +172,7 @@
  class LEN_M3a1 : LIB_M1A1_Thompson {
   descriptionShort = "Submachine Gun, Caliber .45, M3A1";
   displayName = "M3A1 GreaseGun (2PzD)";
-  //fow_burstLenght = {2,3,3,4};
+  //fow_burstLength = 4;
   modes[] = {"Full","Far","Medium","Short"};
   magazines[] = {"fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp_T_M3_2PzD","LEN_30Rnd_45ACP_M3","fow_30Rnd_45acp"};
   recoil = "recoil_smg_02";
@@ -196,7 +196,7 @@
  class LEN_PPS43 : LIB_PPSh41_m {
   descriptionShort = "Pistolet-Pulemyot Sudayeva 43";
   displayName = "PPS-43 (2PzD)";
-  //fow_burstLenght = {2,3,4,4,5,5};
+  //fow_burstLength = 5;
   magazines[] = {"LEN_35Rnd_762x25_2PzD"};
   recoil = "recoil_smg_02";
    class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -215,7 +215,7 @@
  class LEN_StenMk2 : LIB_MP40 {
   descriptionShort = "Sten Mk II";
   displayName = "Sten Mk II (2PzD)";
-  //fow_burstLenght = {2,3,3,4};
+  //fow_burstLength = 4;
   magazines[] = {"LEN_32Rnd_9x19","fow_32Rnd_9x19_sten","LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40"};
   recoil = "recoil_smg_02";
    class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -233,7 +233,7 @@
   class LEN_StenMk2S : LEN_StenMk2 {
   descriptionShort = "Sten Mk IIS";
   displayName = "Sten Mk IIS (2PzD)";
-  //fow_burstLenght = {2,3,3,4};
+  //fow_burstLength = 4;
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 77.644;
    };
@@ -249,7 +249,7 @@
   class LEN_StenMk5 : LEN_StenMk2 {
   descriptionShort = "Sten Mk V";
   displayName = "Sten Mk V (2PzD)";
-  //fow_burstLenght = {2,3,3,4};
+  //fow_burstLength = 4;
    class WeaponSlotsInfo : WeaponSlotsInfo {
    mass = 79.632;
    };/*

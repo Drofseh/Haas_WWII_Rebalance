@@ -73,7 +73,8 @@ class CfgPatches {
                        "ww2_assets_t_weapons_sniperrifles_t","ww2_assets_t_weapons_weaponsmagazines_t",
                        "fow_main.pbo","fow_weapons_c.pbo","fow_characters_c.pbo",
                        "fow_functions.pbo","fow_statics_c",
-                       "len_ifa3_wp_cfg","len_ifa3_wp"
+                       "len_ifa3_wp_cfg","len_ifa3_wp",
+                       "ace_trenches"
                        };
   };
  }; //End CfgPatches
@@ -209,16 +210,18 @@ class Vest_Camo_Base;
 
 class cfgVehicles {
 
-class ThingX;
- class ReammoBox_F : ThingX {
-  maximumLoad = 4000;
+class Bag_Base;
+class B_LIB_AssaultPack_Base;
+
+class BagFence_base_F;
+ class ACE_envelope_small: BagFence_base_F {
+  ace_trenches_diggingDuration = 90;
+  ace_trenches_removalDuration = 30;
   };
-// class LIB_ReammoBox_base : ReammoBox_F {
-//  maximumLoad = 4000;
-//  };
-//  class LIB_BasicAmmunitionBox_GER : LIB_ReammoBox_base {
-//  maximumLoad = 4000;
-//  };
+ class ACE_envelope_big: BagFence_base_F {
+  ace_trenches_diggingDuration = 90;
+  ace_trenches_removalDuration = 30;
+  };
 
 class LIB_Plane_base;
 class LIB_US_Plane_base;
@@ -232,9 +235,16 @@ class LIB_US_Plane_base;
   maximumLoad = 2000;
   }
 
-
-class Bag_Base;
-class B_LIB_AssaultPack_Base;
+class ThingX;
+ class ReammoBox_F : ThingX {
+  maximumLoad = 4000;
+  };
+// class LIB_ReammoBox_base : ReammoBox_F {
+//  maximumLoad = 4000;
+//  };
+//  class LIB_BasicAmmunitionBox_GER : LIB_ReammoBox_base {
+//  maximumLoad = 4000;
+//  };
 
 #include "FOW_Backpacks.h"
 
@@ -246,54 +256,54 @@ class CfgEditorSubcategories {
 
 class EdSubcat_2PzD_1_Essentials {
  displayName = "2PzD !Essentials";
-};
+ };
 
 class EdSubcat_2PzD_Belgian {
  displayName = "2PzD Belgium";
-};
+ };
 
 class EdSubcat_2PzD_Canadian {
  displayName = "2PzD Canada";
-};
+ };
 
 class EdSubcat_2PzD_Civilains {
  displayName = "2PzD Civilian";
-};
+ };
 
 class EdSubcat_2PzD_French {
  displayName = "2PzD France";
-};
+ };
 
 class EdSubcat_2PzD_German {
  displayName = "2PzD Germany";
-};
+ };
 
 class EdSubcat_2PzD_Japan {
  displayName = "2PzD Japan";
-};
+ };
 
 class EdSubcat_2PzD_Netherlands {
  displayName = "2PzD Netherlands";
-};
+ };
 
 class EdSubcat_2PzD_Partisan {
  displayName = "2PzD Partisans";
-};
+ };
 
 class EdSubcat_2PzD_PHA {
  displayName = "2PzD Poland";
-};
+ };
 
 class EdSubcat_2PzD_Russian {
  displayName = "2PzD Russia";
-};
+ };
 
 class EdSubcat_2PzD_United_Kingdom {
  displayName = "2PzD United Kingdom";
-};
+ };
 
 class EdSubcat_2PzD_United_States {
  displayName = "2PzD United States";
-};
+ };
 
 }; //End CfgEditorSubcategories
