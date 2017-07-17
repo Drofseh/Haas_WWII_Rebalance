@@ -102,18 +102,18 @@
   maximumLoad = 200;
   };
 
- class fow_b_us_m1928 : Bag_Base {
+ class fow_b_usmc_m1928 : Bag_Base {
   maximumLoad = 150;
   };
 
- class fow_b_usmc_m1928_asst_bar : fow_b_us_m1928 {
+ class fow_b_usmc_m1928_asst_bar : fow_b_usmc_m1928 {
   maximumLoad = 150;
   };
 
- class fow_b_usmc_m1928_medic : fow_b_us_m1928 {
+ class fow_b_usmc_m1928_medic : fow_b_usmc_m1928 {
   maximumLoad = 150;
   };
 
- class fow_b_usmc_m1928_rifleman : fow_b_us_m1928 {
+ class fow_b_usmc_m1928_rifleman : fow_b_usmc_m1928 {
   maximumLoad = 150;
   };

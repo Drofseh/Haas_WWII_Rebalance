@@ -28,7 +28,7 @@
    };
   };
 
- class fow_v_heer_k98_bayo : fow_v_base {
+ class fow_v_heer_k98_light : fow_v_base {
    class ItemInfo : VestItem {
    containerClass = "Supply50";
    };
