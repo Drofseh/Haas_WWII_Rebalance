@@ -265,7 +265,7 @@
         //fow_burstLength = 4;
         recoil = "recoil_smg_02";
         class Full : Mode_FullAuto {
-            reloadTime = 0.133;
+            reloadTime = 0.15;
         };
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 75.000;
