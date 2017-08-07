@@ -130,6 +130,46 @@
         maximumLoad = 150;
     };
 
+    class B_LIB_US_Backpack_AR_2PzD : B_LIB_US_Backpack {
+        scope = 1;
+        class TransportMagazines {
+            class _xx_LIB_20Rnd_762x63 {
+                count = 10;
+                magazine = "LIB_20Rnd_762x63";
+            };
+        };
+    };
+
+    class B_LIB_US_Backpack_ARAB_2PzD : B_LIB_US_Backpack {
+        scope = 1;
+        class TransportMagazines {
+            class _xx_LIB_20Rnd_762x63 {
+                count = 15;
+                magazine = "LIB_20Rnd_762x63";
+            };
+        };
+    };
+
+    class B_LIB_US_Backpack_MGTL_2PzD : B_LIB_US_Backpack {
+        scope = 1;
+        class TransportMagazines {
+            class _xx_LIB_250Rnd_762x63_2PzD {
+                count = 2;
+                magazine = "LIB_250Rnd_762x63_2PzD";
+            };
+        };
+    };
+
+    class B_LIB_US_Backpack_Tool_2PzD : B_LIB_US_Backpack {
+        scope = 1;
+        class TransportItems {
+            class _xx_ToolKit {
+                count = 1;
+                magazine = "ToolKit";
+            };
+        };
+    };
+
     class B_LIB_US_Backpack_dday : B_LIB_US_Backpack {
         maximumLoad = 150;
     };
@@ -144,6 +184,16 @@
 
     class B_LIB_US_M2Flamethrower : B_LIB_AssaultPack_Base {
         maximumLoad = 440.94;
+    };
+
+    class B_LIB_US_M2Flamethrower_2PzD : B_LIB_US_M2Flamethrower {
+        scope = 1;
+        class TransportMagazines {
+            class _xx_LIB_M2_Flamethrower_Mag {
+                count = 1;
+                magazine = "LIB_M2_Flamethrower_Mag";
+            };
+        };
     };
 
     class B_LIB_US_M36 : B_LIB_AssaultPack_Base {
@@ -162,6 +212,36 @@
         maximumLoad = 150;
     };
 
+    class B_LIB_US_MGbag_MGA_2PzD : B_LIB_US_MGbag_Empty {
+        scope = 1;
+        class TransportMagazines {
+            class _xx_LIB_250Rnd_762x63_2PzD {
+                count = 2;
+                magazine = "LIB_250Rnd_762x63_2PzD";
+            };
+        };
+    };
+
+    class B_LIB_US_MGbag_MortTL_2PzD : B_LIB_US_MGbag_Empty {
+        scope = 1;
+        class TransportMagazines {
+            class _xx_LIB_1Rnd_60mm_Mo_HE {
+                count = 5;
+                magazine = "LIB_1Rnd_60mm_Mo_HE";
+            };
+        };
+    };
+
+    class B_LIB_US_MGbag_Mort_2PzD : B_LIB_US_MGbag_Empty {
+        scope = 1;
+        class TransportMagazines {
+            class _xx_LIB_1Rnd_60mm_Mo_HE {
+                count = 8;
+                magazine = "LIB_1Rnd_60mm_Mo_HE";
+            };
+        };
+    };
+
     class B_LIB_US_MGbag_Big_Empty : B_LIB_US_MGbag_Empty {
         maximumLoad = 150;
     };
@@ -172,6 +252,16 @@
 
     class B_LIB_US_RocketBag_Empty : B_LIB_US_RocketBag {
         maximumLoad = 200;
+    };
+
+    class B_LIB_US_RocketBag_AT_2PzD : B_LIB_US_RocketBag_Empty {
+        scope = 1;
+        class TransportMagazines {
+            class _xx_LIB_1Rnd_60mm_M6 {
+                count = 3;
+                magazine = "LIB_1Rnd_60mm_M6";
+            };
+        };
     };
 
     class B_LIB_US_RocketBag_Big_Empty : B_LIB_US_RocketBag_Empty {
