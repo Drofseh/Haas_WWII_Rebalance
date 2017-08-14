@@ -74,7 +74,7 @@ class CfgPatches {
                             "ww2_assets_t_weapons_sniperrifles_t","ww2_assets_t_weapons_weaponsmagazines_t",
                             "fow_main","fow_weapons_c","fow_characters_c","fow_functions","fow_statics_c",
                             "len_ifa3_wp_data","len_ifa3_wp",
-                            "ace_trenches"
+                            "ace_frag","ace_trenches"
                             };
     };
  }; //End CfgPatches
@@ -92,6 +92,16 @@ class BaseSoundModeType;
 class cfgAmmo {
 
     class BulletBase;
+
+    class Grenade;
+    class GrenadeHand : Grenade {
+        ace_frag_classes[] = {"ace_frag_tiny_HD","ACE_frag_small_HD","ACE_frag_small_HD"};
+        ace_frag_enabled = 1;
+        ace_frag_force = 1;
+        ace_frag_gurney_k = "3/5";
+        ace_frag_skip = 0;
+        ace_grenades_pullPinSound[] = {"A3\sounds_f\weapons\grenades\Grenade_PullPin.wss",1.5,1,10};
+    };
 
     #include "FOW_Ammo.h"
 

@@ -10,7 +10,7 @@
 * [IFA3 Lite](https://forums.bistudio.com/forums/topic/190809-iron-front-in-arm3-lite-preview-versions/) - Preview v22
 * [FOW](https://forums.bistudio.com/forums/topic/198194-faces-of-war-ww2/) - Release III
 * [LEN Weapons](https://forums.bistudio.com/forums/topic/200914-len-weapons-pack-for-ifa3-lite/) v1.0
-* [ACE3](https://github.com/acemod/ACE3) Trenches
+* [ACE3](https://github.com/acemod/ACE3) Fragmentation & Trenches
 
 
 #### Haas WWII Rebalance does the following:
