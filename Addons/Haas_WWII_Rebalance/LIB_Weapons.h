@@ -621,7 +621,7 @@
         descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A4 on M2 Tripod";
         displayName = "M1919A4 on M2 Tripod (2PzD)";
         //fow_burstLength = 7;
-        magazines[] = {"LIB_50Rnd_762x63","LIB_200Rnd_762x63_2PzD""LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
+        magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD","LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
         recoil = "recoil_mk200";
         /*class Eventhandlers: Eventhandlers {
             class fow_mgRoF {
