@@ -2,7 +2,7 @@
     class LIB_Colt_M1911 : LIB_PISTOL {
         descriptionShort = "Automatic Pistol, Caliber .45, M1911A1";
         displayName = "M1911A1 (2PzD)";
-        magazines[] = {"LIB_7Rnd_45ACP","fow_7Rnd_45acp","LIB_11Rnd_45ACP_2PzD"};
+        magazines[] = {"LIB_7Rnd_45ACP","fow_7Rnd_45acp"};
         recoil = "recoil_pistol_acpc2";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 24.375;
@@ -47,7 +47,7 @@
     class LIB_DELISLE : LIB_RIFLE {
         descriptionShort = "De Lisle Carbine";
         displayName = "De Lisle Carbine (2PzD)";
-        magazines[] = {"LIB_7Rnd_45ACP","LIB_11Rnd_45ACP_2PzD","fow_7Rnd_45acp"};
+        magazines[] = {"LIB_7Rnd_45ACP_2PzD","LIB_11Rnd_45ACP_2PzD"};
         recoil = "recoil_smg_01";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 90.441;

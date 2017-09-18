@@ -368,7 +368,12 @@
         descriptionShort = ".45 ACP, 7 Rounds, for use in the M1911A1";
         displayName = "M1911A1, 7 Round Magazine";
     };
-    class LIB_11Rnd_45ACP_2PzD : LIB_7Rnd_45ACP {
+    class LIB_7Rnd_45ACP_2PzD : LIB_7Rnd_45ACP {
+        count = 7;
+        descriptionShort = ".45 ACP, 7 Rounds, for use in the De Lisle Carbine";
+        displayName = "De Lisle Carbine, 7 Round Magazine";
+    };
+    class LIB_11Rnd_45ACP_2PzD : LIB_7Rnd_45ACP_2PzD {
         count = 11;
         descriptionShort = ".45 ACP, 11 Rounds, for use in the De Lisle Carbine";
         displayName = "De Lisle Carbine, 11 Round Magazine";
