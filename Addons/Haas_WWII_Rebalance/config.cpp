@@ -1,27 +1,11 @@
+﻿
+    #include "definitions.h"
+
 class CfgPatches {
     class Haas_WWII_Rebalance {
         author = "Wilhelm Haas";
         units[] = {};
-        weapons[] = {"LIB_Colt_M1911","LIB_M1895","LIB_P38","LIB_P08","LIB_TT33","LIB_G43","LIB_K98",
-                    "LIB_G3340","LIB_K98ZF39","LIB_M1_Carbine","LIB_M1A1_Carbine","LIB_M2_Carbine_2PzD",
-                    "LIB_M1_Garand","LIB_M1903A3_Springfield","LIB_M1903A4_Springfield","LIB_M9130",
-                    "LIB_M9130PU","LIB_M38","LIB_M44","LIB_MP44","LIB_SVT_40","LIB_AVT_40_2PzD","LIB_PTRD",
-                    "LIB_M1A1_Thompson","LIB_M1928_Thompson","LIB_M1928_Thompson_d","LIB_M1928A1_Thompson",
-                    "LIB_MP40","LIB_PPSh41_m","LIB_PPSh41_d","LIB_DP28","LIB_DT","LIB_DT_OPTIC",
-                    "LIB_M1918A2_BAR","LIB_M1919A4","LIB_M1919A6","LIB_MG34","LIB_MG34_PT","LIB_MG42",
-                    "LIB_M1A1_Bazooka","LIB_PzFaust_30m","LIB_RPzB","LIB_RPzB_w","LIB_M1919A4_tripod",
-                    "LIB_MG34_Tripod","LIB_MG42_Tripod","LIB_M2_Tripod","LIB_Laffete_Tripod",
-                    "LIB_DELISLE","LIB_M2_Flamethrower",
-                    "fow_w_k98","fow_w_leeenfield_no4mk1","fow_w_leeenfield_no4mk1_redwood",
-                    "fow_w_m1_carbine","fow_w_m2_carbine_2PzD","fow_w_m1_garand","fow_w_stg44",
-                    "fow_w_type99","fow_w_m1a1_thompson","fow_w_m3","fow_w_mp40","fow_w_sten_mk2",
-                    "fow_w_sten_mk5","fow_w_type100","fow_w_type100_44_2PzD","fow_w_m1919a4",
-                    "fow_w_m1919a6","fow_w_bren","fow_w_m1918a2","fow_w_mg42","fow_w_type99_lmg",
-                    "fow_w_m2_flamethrower",
-                    "LEN_P35","LEN_P640b","LEN_PPK","LEN_Welrod","LEN_FG42","LEN_MP44","LEN_SMLE_No4Mk1",
-                    "LEN_SMLE_No4Mk1T","LEN_M3a1","LEN_PPS43","LEN_StenMk2","LEN_StenMk2S","LEN_StenMk5",
-                    "LEN_M12"
-                    };
+        weapons[] = {WEAPONSARRAY};
         requiredAddons[] = {"ww2_assets_c_characters_americans_c","ww2_assets_c_characters_core_c",
                             "ww2_assets_c_characters_germans_c","ww2_assets_c_characters_polish_c",
                             "ww2_assets_c_characters_soviets_c","ww2_assets_c_characters_winter_c",
@@ -74,7 +58,7 @@ class CfgPatches {
                             "ww2_assets_t_weapons_sniperrifles_t","ww2_assets_t_weapons_weaponsmagazines_t",
                             "fow_main","fow_weapons_c","fow_characters_c","fow_functions","fow_statics_c",
                             "len_ifa3_wp_data","len_ifa3_wp",
-                            "ace_frag","ace_trenches"
+                            "ace_frag","ace_trenches","ace_captives","ace_overpressure"
                             };
     };
  }; //End CfgPatches
@@ -180,15 +164,27 @@ class cfgWeapons {
         class WeaponSlotsInfo;
     };
 
+    class MGun;
+
+    class MGunCore;
+
     class LIB_Slung_Static_Weapon_Base;
 
     class LIB_MLMG_base;
+    
+    class LIB_TankMGun_base;
 
-    class LIB_MG34_coax;
+    class LIB_MG34_coax : LIB_TankMGun_base {
+        class manual;
+    };
 
-    class LIB_MLMG42;
+    class LIB_MLMG42 : LIB_MLMG_base {
+        class manual;
+    };
 
-    class LIB_M1919A4_coax;
+    class LIB_M1919A4_coax : LIB_TankMGun_base {
+        class manual;
+    };
 
     class LIB_LMG : Rifle_Long_Base_F {
         class WeaponSlotsInfo;
@@ -213,10 +209,6 @@ class cfgWeapons {
     class LIB_SRIFLE : Rifle_Long_Base_F {
         class WeaponSlotsInfo;
     };
-
-    class MGunCore;
-
-    class MGun;
 
     class fow_rifle_base : Rifle_Base_F {
         class WeaponSlotsInfo;
@@ -244,6 +236,11 @@ class cfgWeapons {
             containerClass = "Supply90";
         };
     };
+
+    class ACE_ItemCore;
+    class CBA_MiscItem_ItemInfo;
+
+    #include "ACE_Weapons.h"
 
     #include "FOW_Weapons.h"
 

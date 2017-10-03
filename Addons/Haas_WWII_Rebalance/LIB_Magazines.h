@@ -1,4 +1,4 @@
-    class LIB_1Rnd_60mm_M6 : CA_LauncherMagazine {
+﻿    class LIB_1Rnd_60mm_M6 : CA_LauncherMagazine {
         descriptionShort = "2.36-Inch Anti-Tank Rocket M6, for use in the Bazooka";
         displayName = "Bazooka, 2.36-Inch Anti-Tank Rocket M6";
     };
@@ -364,6 +364,22 @@
         displayName = "PPSh-41, 71 Round Magazine, Last Round Tracer";
     };
 
+    class LIB_6Rnd_763x25 : CA_Magazine {
+        descriptionShort = "9x19mm, 10 Rounds, for use in the M1916 C-96 Mauser";
+        displayName = "M1916 C-96 Mauser, 10 Round Magazine";
+        count = 10;
+    };
+    class LIB_10Rnd_763x25_2PzD : LIB_6Rnd_763x25 {
+        descriptionShort = "7.63x25mm, 10 Rounds, for use in the M1916 C-96 Mauser";
+        displayName = "M712 Schnellfeuer , 10 Round Magazine";
+        count = 10;
+    };
+    class LIB_20Rnd_763x25_2PzD : LIB_10Rnd_763x25_2PzD {
+        descriptionShort = "7.63x25mm, 20 Rounds, for use in the M1916 C-96 Mauser";
+        displayName = "M712 Schnellfeuer , 20 Round Magazine";
+        count = 20;
+    };
+
     class LIB_7Rnd_45ACP : CA_Magazine {
         descriptionShort = ".45 ACP, 7 Rounds, for use in the M1911A1";
         displayName = "M1911A1, 7 Round Magazine";
@@ -377,6 +393,13 @@
         count = 11;
         descriptionShort = ".45 ACP, 11 Rounds, for use in the De Lisle Carbine";
         displayName = "De Lisle Carbine, 11 Round Magazine";
+    };
+
+    class LIB_7Rnd_9x19 : CA_Magazine {
+        descriptionShort = "7.65x17mm, 7 Rounds, for use in the Walther PPK";
+        displayName = "Walther PPK, 7 Round Magazine";
+        mass = 1.31;
+        scope = 2;
     };
 
     class LIB_7Rnd_762x38 : CA_Magazine {

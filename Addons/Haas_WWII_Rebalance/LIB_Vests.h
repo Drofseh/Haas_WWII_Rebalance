@@ -1,4 +1,4 @@
-    class V_LIB_GER_FieldOfficer : V_LIB_Vest_Camo_Base {
+﻿    class V_LIB_GER_FieldOfficer : V_LIB_Vest_Camo_Base {
         class ItemInfo : VestItem {
             containerClass = "Supply70";
         };
@@ -65,6 +65,7 @@
     };
 
     class V_LIB_GER_VestSTG : V_LIB_Vest_Camo_Base {
+        displayName = "GER Feldausrustung (StG44)";
         class ItemInfo : VestItem {
             containerClass = "Supply90";
         };
@@ -137,6 +138,7 @@
     };
 
     class V_LIB_DAK_VestSTG : V_LIB_GER_VestSTG {
+        displayName = "GER DAK Feldausrustung (StG44)";
         class ItemInfo : ItemInfo {
             containerClass = "Supply90";
         };
@@ -151,12 +153,26 @@
     class V_LIB_SOV_IShBrVestMG : V_LIB_Vest_Camo_Base {
         class ItemInfo : VestItem {
             containerClass = "Supply60";
-            mass = 100;
+            mass = 90;
             class HitpointsProtectionInfo {
-               class Body {
-                    armor = 6;
+                class Body {
                     hitpointName = "HitBody";
-                    passThrough = 0.5;
+                    passThrough = 0;
+                };
+                class Abdomen {
+                    armor = 15;
+                    hitpointName = "HitAbdomen";
+                    passThrough = 0;
+                };
+                class Chest {
+                    armor = 15;
+                    hitpointName = "HitChest";
+                    passThrough = 0;
+                };
+                class Diaphragm {
+                    armor = 15;
+                    hitpointName = "HitDiaphragm";
+                    passThrough = 0;
                 };
             };
         };
@@ -168,9 +184,23 @@
             mass = 100;
             class HitpointsProtectionInfo {
                 class Body {
-                    armor = 6;
                     hitpointName = "HitBody";
-                    passThrough = 0.5;
+                    passThrough = 0;
+                };
+                class Abdomen {
+                    armor = 15;
+                    hitpointName = "HitAbdomen";
+                    passThrough = 0;
+                };
+                class Chest {
+                    armor = 15;
+                    hitpointName = "HitChest";
+                    passThrough = 0;
+                };
+                class Diaphragm {
+                    armor = 15;
+                    hitpointName = "HitDiaphragm";
+                    passThrough = 0;
                 };
             };
         };
@@ -182,9 +212,23 @@
             mass = 100;
             class HitpointsProtectionInfo {
                 class Body {
-                    armor = 6;
                     hitpointName = "HitBody";
-                    passThrough = 0.5;
+                    passThrough = 0;
+                };
+                class Abdomen {
+                    armor = 15;
+                    hitpointName = "HitAbdomen";
+                    passThrough = 0;
+                };
+                class Chest {
+                    armor = 15;
+                    hitpointName = "HitChest";
+                    passThrough = 0;
+                };
+                class Diaphragm {
+                    armor = 15;
+                    hitpointName = "HitDiaphragm";
+                    passThrough = 0;
                 };
             };
         };

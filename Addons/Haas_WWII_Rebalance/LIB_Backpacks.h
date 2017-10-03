@@ -1,4 +1,4 @@
-    class B_LIB_GER_A_frame : B_LIB_AssaultPack_Base {
+﻿    class B_LIB_GER_A_frame : B_LIB_AssaultPack_Base {
         maximumLoad = 100;
     };
   

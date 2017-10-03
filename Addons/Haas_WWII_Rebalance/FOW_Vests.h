@@ -1,4 +1,4 @@
-    class fow_v_fall_bandoleer : fow_v_base {
+﻿    class fow_v_fall_bandoleer : fow_v_base {
         class ItemInfo : VestItem {
             containerClass = "Supply120";
         };
@@ -53,6 +53,7 @@
     };
 
     class fow_v_heer_mp44 : fow_v_base {
+        displayName = "[GER] Kit StG44";
         class ItemInfo : VestItem {
             containerClass = "Supply90";
         };

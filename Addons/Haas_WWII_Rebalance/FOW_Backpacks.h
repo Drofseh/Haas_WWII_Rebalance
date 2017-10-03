@@ -1,4 +1,4 @@
-    class fow_b_heer_aframe : Bag_Base {
+﻿    class fow_b_heer_aframe : Bag_Base {
         maximumLoad = 100;
     };
 

@@ -1,4 +1,4 @@
-    class fow_10Rnd_303 : CA_Magazine {
+﻿    class fow_10Rnd_303 : CA_Magazine {
         descriptionShort = ".303 British, 10 Rounds, for use in the Lee Enfield";
         displayName = "Lee Enfield, 10 Round Clip (FOW)";
     };
@@ -6,6 +6,7 @@
     class fow_1Rnd_m6a1 : CA_LauncherMagazine {
         descriptionShort = "2.36-Inch Anti-Tank Rocket M6, for use in the Bazooka";
         displayName = "Bazooka, 2.36-Inch Anti-Tank Rocket M6 (FOW)";
+        mass = 62.17;
     };
 
     class fow_1Rnd_m9a1 : 1Rnd_HE_Grenade_shell {
