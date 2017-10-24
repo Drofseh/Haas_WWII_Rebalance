@@ -8,3 +8,9 @@
             mass = 1;
         };
     };
+
+    class ACE_Banana: ACE_ItemCore {
+        class ItemInfo: InventoryItem_Base_F { //change parent to CBA_MiscItem_ItemInfo when ACE updates
+            mass = 0;
+        };
+    };

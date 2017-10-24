@@ -72,7 +72,7 @@
     class fow_w_k98 : fow_rifleBolt_base {
         descriptionShort = "Karabiner 98 kurz";
         displayName = "Kar98k (2PzD)";
-        magazines[] = {"lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK","lib_10Rnd_792x57_T","lib_10Rnd_792x57_T2","lib_10Rnd_792x57_sS","lib_10Rnd_792x57_SMK","fow_5Rnd_792x57"};
+        magazines[] = {"lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK","fow_5Rnd_792x57"};
         recoil = "recoil_rifle_1";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 87.993;

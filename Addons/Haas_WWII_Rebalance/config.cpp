@@ -127,6 +127,8 @@ class cfgMagazines {
 //cfgWeapons
 class cfgWeapons {
 
+    class InventoryItem_Base_F;
+
     class HMG_M2;
 
     class RifleCore;
