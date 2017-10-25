@@ -58,7 +58,7 @@ class CfgPatches {
                             "ww2_assets_t_weapons_sniperrifles_t","ww2_assets_t_weapons_weaponsmagazines_t",
                             "fow_main","fow_weapons_c","fow_characters_c","fow_functions","fow_statics_c",
                             "len_ifa3_wp_data","len_ifa3_wp",
-                            "ace_frag","ace_trenches","ace_captives","ace_overpressure"
+                            "ace_common","ace_frag","ace_trenches","ace_captives","ace_overpressure"
                             };
     };
  }; //End CfgPatches
