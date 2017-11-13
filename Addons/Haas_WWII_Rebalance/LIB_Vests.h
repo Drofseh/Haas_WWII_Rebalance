@@ -65,7 +65,7 @@
     };
 
     class V_LIB_GER_VestSTG : V_LIB_Vest_Camo_Base {
-        displayName = "GER Feldausrustung (StG44)";
+        displayName = "$STR_Haas_Ger_Feld_StG";
         class ItemInfo : VestItem {
             containerClass = "Supply90";
         };
@@ -138,7 +138,7 @@
     };
 
     class V_LIB_DAK_VestSTG : V_LIB_GER_VestSTG {
-        displayName = "GER DAK Feldausrustung (StG44)";
+        displayName = "$STR_Haas_DAK_Feld_StG";
         class ItemInfo : ItemInfo {
             containerClass = "Supply90";
         };

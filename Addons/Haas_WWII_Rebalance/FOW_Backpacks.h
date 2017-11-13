@@ -4,6 +4,16 @@
 
     class fow_b_heer_ammo_belt : Bag_Base {
         maximumLoad = 45;
+        delete TransportMagazines;
+    };
+
+    class fow_b_tornister : Bag_Base {
+        maximumLoad = 200;
+    };
+
+    class fow_b_tornister_medic : fow_b_tornister {
+        displayName = "[GER] Tornister Rucksack (Medic)";
+        maximumLoad = 200;
     };
 
     class fow_b_ija_ammobox : Bag_Base {
