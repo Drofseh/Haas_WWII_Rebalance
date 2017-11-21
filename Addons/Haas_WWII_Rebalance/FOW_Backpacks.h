@@ -14,6 +14,7 @@
     class fow_b_tornister_medic : fow_b_tornister {
         displayName = "[GER] Tornister Rucksack (Medic)";
         maximumLoad = 200;
+        delete TransportItems;
     };
 
     class fow_b_ija_ammobox : Bag_Base {
