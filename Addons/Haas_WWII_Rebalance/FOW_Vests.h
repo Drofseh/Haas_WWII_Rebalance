@@ -65,6 +65,12 @@
         };
     };
 
+    class fow_v_heer_tankcrew_p38 : fow_v_base {
+        class ItemInfo : VestItem {
+            containerClass = "Supply20";
+        };
+    };
+
     class fow_v_ija_bayonet : fow_v_base {
         class ItemInfo : VestItem {
             containerClass = "Supply10";
@@ -216,7 +222,7 @@
 
     class fow_v_us_carbine_nco : fow_v_base {
         class ItemInfo : VestItem {
-            containerClass = "Supply90";
+            containerClass = "Supply100";
         };
     };
 
@@ -228,7 +234,7 @@
 
     class fow_v_us_grenade : fow_v_base {
         class ItemInfo : VestItem {
-            containerClass = "Supply100";
+            containerClass = "Supply200";
         };
     };
 
@@ -247,6 +253,66 @@
     class fow_v_us_thompson_nco : fow_v_base {
         class ItemInfo : VestItem {
             containerClass = "Supply100";
+        };
+    };
+
+    class fow_v_us_ab_45 : fow_v_base {
+        class ItemInfo : VestItem {
+            containerClass = "Supply30";
+        };
+    };
+
+    class fow_v_us_ab_asst_mg : fow_v_us_asst_mg {
+        class ItemInfo : VestItem {
+            containerClass = "Supply130";
+        };
+    };
+
+    class fow_v_us_ab_bar : fow_v_us_bar {
+        class ItemInfo : VestItem {
+            containerClass = "Supply130";
+        };
+    };
+
+    class fow_v_us_ab_carbine : fow_v_us_carbine {
+        class ItemInfo : VestItem {
+            containerClass = "Supply100";
+        };
+    };
+
+    class fow_v_us_ab_carbine_eng : fow_v_us_carbine_eng {
+        class ItemInfo : VestItem {
+            containerClass = "Supply100";
+        };
+    };
+
+    class fow_v_us_ab_carbine_nco : fow_v_us_carbine_nco {
+        class ItemInfo : VestItem {
+            containerClass = "Supply100";
+        };
+    };
+
+    class fow_v_us_ab_garand : fow_v_us_garand {
+        class ItemInfo : VestItem {
+            containerClass = "Supply100";
+        };
+    };
+
+    class fow_v_us_ab_grenade : fow_v_us_grenade {
+        class ItemInfo : VestItem {
+            containerClass = "Supply200";
+        };
+    };
+
+    class fow_v_us_ab_thompson : fow_v_us_thompson {
+        class ItemInfo : VestItem {
+            containerClass = "Supply90";
+        };
+    };
+
+    class fow_v_us_ab_thompson_nco : fow_v_us_thompson_nco {
+        class ItemInfo : VestItem {
+            containerClass = "Supply110";
         };
     };
 

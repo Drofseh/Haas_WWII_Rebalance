@@ -114,6 +114,10 @@ class cfgMagazines {
 
     class VehicleMagazine;
 
+    class LIB_Shell_20L55_PzGr;
+    class LIB_Shell_20L55_PzGr40;
+    class LIB_Shell_20L55_SprGr;
+
     class LIB_50Rnd_792x57_Veh;
 
     #include "FOW_Magazines.h"
@@ -173,7 +177,7 @@ class cfgWeapons {
     class LIB_Slung_Static_Weapon_Base;
 
     class LIB_MLMG_base;
-    
+
     class LIB_TankMGun_base;
 
     class LIB_MG34_coax : LIB_TankMGun_base {
@@ -216,11 +220,11 @@ class cfgWeapons {
         class WeaponSlotsInfo;
     };
 
-    class fow_rifleBolt_base : fow_rifle_base {
+    class fow_shotgun_base : fow_rifle_base {
         class WeaponSlotsInfo;
     };
 
-    class fow_w_m1919 : fow_rifle_base{
+    class fow_rifleBolt_base : fow_rifle_base {
         class WeaponSlotsInfo;
     };
 

@@ -62,8 +62,8 @@
         maximumLoad = 375;
     };
 
-    class B_LIB_GER_Tonister34_cowhide : B_LIB_GER_MedicBackpack_Empty {
-        maximumLoad = 200;
+    class B_LIB_GER_Radio : B_LIB_AssaultPack_Base {
+        maximumLoad = 120;
     };
 
     class B_LIB_GER_SapperBackpack_empty : B_LIB_GER_Backpack {
@@ -75,6 +75,10 @@
     };
 
     class B_LIB_GER_SapperBackpack2 : B_LIB_GER_SapperBackpack_empty {
+        maximumLoad = 200;
+    };
+
+    class B_LIB_GER_Tonister34_cowhide : B_LIB_GER_MedicBackpack_Empty {
         maximumLoad = 200;
     };
 
@@ -104,6 +108,10 @@
 
     class B_LIB_SOV_RA_MGAmmoBag_Big_Empty : B_LIB_SOV_RA_MGAmmoBag_Empty {
         maximumLoad = 150;
+    };
+
+    class B_LIB_SOV_RA_Radio : B_LIB_AssaultPack_Base {
+        maximumLoad = 120;
     };
 
     class B_LIB_SOV_RA_Rucksack : B_LIB_AssaultPack_Base {
@@ -164,6 +172,10 @@
 
     class B_LIB_US_MGbag_Big_Empty : B_LIB_US_MGbag_Empty {
         maximumLoad = 150;
+    };
+
+    class B_LIB_US_Radio : B_LIB_AssaultPack_Base {
+        maximumLoad = 120;
     };
 
     class B_LIB_US_RocketBag : B_LIB_AssaultPack_Base {

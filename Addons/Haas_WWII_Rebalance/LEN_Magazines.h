@@ -40,16 +40,18 @@
     };
 
     class LEN_6Rnd_12G_Slug : CA_Magazine {
-        descriptionShort = "12 Gauge Slugs, 6 Rounds, for use in the Winchester M12";
-        displayName = "Winchester M12, 6 Slugs";
-        mass = 3;
+        descriptionShort = "12 Gauge Slugs, 5 Rounds, for use in the Winchester M12";
+        displayName = "Shotgun Slugs, 12 Gauge, 5";
+        count = 5;
+        mass = 2.5;
         scope = 2;
     };
 
     class LEN_6Rnd_12G_Pellets : LEN_6Rnd_12G_Slug {
-        descriptionShort = "12 Gauge Buckshot, 6 Rounds, for use in the Winchester M12";
-        displayName = "Winchester M12, 6 Buckshot";
-        mass = 3;
+        descriptionShort = "12 Gauge Buckshot, 5 Rounds, for use in the Winchester M12";
+        displayName = "Shotgun Buckshot, 12 Gauge, 5";
+        count = 5;
+        mass = 2.5;
         scope = 2;
     };
 

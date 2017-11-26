@@ -1,8 +1,9 @@
-﻿    class LIB_1Rnd_60mm_M6 : CA_LauncherMagazine {
+﻿//Small arms magazines
+    class LIB_1Rnd_60mm_M6 : CA_LauncherMagazine {
         descriptionShort = "2.36-Inch Anti-Tank Rocket M6, for use in the Bazooka";
         displayName = "Bazooka, 2.36-Inch Anti-Tank Rocket M6";
     };
-    
+
     class LIB_1Rnd_G_Mk2 : CA_Magazine {
         descriptionShort = "Mk2 Fragmentation Grenade, for use in the M7 Grenade Launcher";
         displayName = "Grenade, Rifle, Fragmentation, Mk 2";
@@ -68,7 +69,7 @@
      class LIB_10Rnd_762x54_t302 : LIB_10Rnd_762x54_t30 {
         descriptionShort = "7.62x54mm, 10 Rounds, Last Round T30 Tracer, for use in the SVT-40";
         displayName = "SVT-40, 10 Round Magazine, Last Rnd T30 Tracer";
-     };
+    };
     class LIB_10Rnd_762x54_t46 : LIB_10Rnd_762x54 {
         descriptionShort = "7.62x54mm, 10 Rounds, T46 Tracer, for use in the SVT-40";
         displayName = "SVT-40, 10 Round Magazine, T46 Tracer";
@@ -124,6 +125,10 @@
     class LIB_15Rnd_762x33 : LIB_8Rnd_762x63 {
         descriptionShort = ".30 Carbine, 15 Rounds, for use in the M1 Carbine";
         displayName = "M1 Carbine, 15 Round Magazine";
+    };
+    class LIB_15Rnd_762x33_t : LIB_15Rnd_762x33 {
+        descriptionShort = ".30 Carbine, 15 Rounds, Tracer, for use in the M1 Carbine";
+        displayName = "M1 Carbine, 15 Round Magazine, Tracer";
     };
     class LIB_30Rnd_762x33_2PzD : LIB_15Rnd_762x33 {
         count = 30;
@@ -429,4 +434,17 @@
     class LIB_M2_Flamethrower_Mag_Empty : LIB_M2_Flamethrower_Mag {
         descriptionShort = "Empty fuel tank for the M2-2 Flame Thrower.";
         displayName = "M2-2 Flame Thrower Fuel (Empty)";
+    };
+
+//Vehicle magazines
+    class LIB_10x_20L55_PzGr40 : LIB_Shell_20L55_PzGr {
+        count = 20;
+    };
+
+    class LIB_10x_20L55_PzGr : LIB_Shell_20L55_PzGr40 {
+        count = 20;
+    };
+
+    class LIB_10x_20L55_SprGr : LIB_Shell_20L55_SprGr {
+        count = 20;
     };
