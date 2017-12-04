@@ -278,22 +278,6 @@ class cfgVehicles {
         ace_trenches_removalDuration = 30;
     };
 
-    class LIB_Plane_base;
-
-    class LIB_US_Plane_base;
-
-    class LIB_C47_Skytrain : LIB_US_Plane_base {
-        maximumLoad = 4000;
-    };
-
-    class LIB_CG4_WACO : LIB_US_Plane_base {
-        maximumLoad = 1000;
-    };
-
-    class LIB_HORSA : LIB_US_Plane_base {
-        maximumLoad = 2000;
-    };
-
     class ThingX;
 
     class ReammoBox_F : ThingX {
@@ -309,9 +293,23 @@ class cfgVehicles {
     };
     */
 
+    class Boat_F;
+
+    class Car_F;
+
+    class Tank_F;
+
+    class Truck_F;
+
+    class Wheeled_APC_F;
+
     #include "FOW_Backpacks.h"
 
     #include "LIB_Backpacks.h"
+
+    #include "FOW_Vehicles.h"
+
+    #include "LIB_Vehicles.h"
 
 }; //End cfgVehicles
 

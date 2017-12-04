@@ -64,6 +64,7 @@
 
     class B_LIB_GER_Radio : B_LIB_AssaultPack_Base {
         maximumLoad = 120;
+        delete TransportItems;
     };
 
     class B_LIB_GER_SapperBackpack_empty : B_LIB_GER_Backpack {
@@ -112,6 +113,7 @@
 
     class B_LIB_SOV_RA_Radio : B_LIB_AssaultPack_Base {
         maximumLoad = 120;
+        delete TransportItems;
     };
 
     class B_LIB_SOV_RA_Rucksack : B_LIB_AssaultPack_Base {
@@ -176,6 +178,7 @@
 
     class B_LIB_US_Radio : B_LIB_AssaultPack_Base {
         maximumLoad = 120;
+        delete TransportItems;
     };
 
     class B_LIB_US_RocketBag : B_LIB_AssaultPack_Base {
