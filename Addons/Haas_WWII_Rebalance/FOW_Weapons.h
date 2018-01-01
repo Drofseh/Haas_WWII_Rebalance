@@ -2110,7 +2110,7 @@
         };
     };
 
-    class fow_w_piat : Launcher_Base_F {
+    class fow_w_piat : fow_rifle_base {
         descriptionShort = "Projector, Infantry, Anti Tank Mk I";
         displayName = "PIAT (2PzD)";
         ace_overpressure_angle = 0;

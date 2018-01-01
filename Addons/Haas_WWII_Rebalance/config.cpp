@@ -72,7 +72,6 @@ class Mode_FullAuto;
 class BaseSoundModeType;
 
 //cfgAmmo
-
 class cfgAmmo {
 
     class BulletBase;
