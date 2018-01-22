@@ -244,7 +244,7 @@
         mass = 29.1;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
         picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
-        type = "3* 256";
+        type = "2* 256";
     };
     class LIB_100Rnd_792x57_sS_2PzD : LIB_50Rnd_792x57_sS {
         descriptionShort = "7.92x57mm, 100 Rounds, S.m.E. Semi-AP, for use in the MG34 or MG42";
@@ -253,7 +253,7 @@
         mass = 29.1;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
         picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
-        type = "3* 256";
+        type = "2* 256";
     };
     class LIB_150Rnd_792x57_2PzD : LIB_50Rnd_792x57 {
         descriptionShort = "7.92x57mm, 150 Rounds, for use in the MG34 or MG42";
@@ -262,7 +262,7 @@
         mass = 43.65;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
         picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
-        type = "3* 256";
+        type = "2* 256";
     };
     class LIB_150Rnd_792x57_SMK_2PzD : LIB_50Rnd_792x57_SMK {
         descriptionShort = "7.92x57mm, 150 Rounds, S.m.K. AP, for use in the MG34 or MG42";
@@ -271,7 +271,7 @@
         mass = 43.65;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
         picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
-        type = "3* 256";
+        type = "2* 256";
     };
     class LIB_150Rnd_792x57_sS_2PzD : LIB_50Rnd_792x57_sS {
         descriptionShort = "7.92x57mm, 150 Rounds, S.m.E. Semi-AP, for use in the MG34 or MG42";
@@ -280,7 +280,7 @@
         mass = 43.65;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
         picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
-        type = "3* 256";
+        type = "2* 256";
     };
     class LIB_200Rnd_792x57_2PzD : LIB_50Rnd_792x57 {
         descriptionShort = "7.92x57mm, 200 Rounds, for use in the MG34 or MG42";
@@ -289,7 +289,7 @@
         mass = 58.2;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
         picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
-        type = "3* 256";
+        type = "2* 256";
     };
     class LIB_200Rnd_792x57_SMK_2PzD : LIB_50Rnd_792x57_SMK {
         descriptionShort = "7.92x57mm, 200 Rounds, S.m.K. AP, for use in the MG34 or MG42";
@@ -298,7 +298,7 @@
         mass = 58.2;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
         picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
-        type = "3* 256";
+        type = "2* 256";
     };
     class LIB_200Rnd_792x57_sS_2PzD : LIB_50Rnd_792x57_sS {
         descriptionShort = "7.92x57mm, 200 Rounds, S.m.E. Semi-AP, for use in the MG34 or MG42";
@@ -307,7 +307,7 @@
         mass = 58.2;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
         picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
-        type = "3* 256";
+        type = "2* 256";
     };
     class LIB_250Rnd_792x57_2PzD : LIB_50Rnd_792x57 {
         descriptionShort = "7.92x57mm, 250 Rounds, for use in the MG34 or MG42";
@@ -316,7 +316,7 @@
         mass = 72.75;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
         picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
-        type = "3* 256";
+        type = "2* 256";
     };
     class LIB_250Rnd_792x57_SMK_2PzD : LIB_50Rnd_792x57_SMK {
         descriptionShort = "7.92x57mm, 250 Rounds, S.m.K. AP, for use in the MG34 or MG42";
@@ -325,7 +325,7 @@
         mass = 72.75;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
         picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
-        type = "3* 256";
+        type = "2* 256";
     };
     class LIB_250Rnd_792x57_sS_2PzD : LIB_50Rnd_792x57_sS {
         descriptionShort = "7.92x57mm, 250 Rounds, S.m.E. Semi-AP, for use in the MG34 or MG42";
@@ -334,7 +334,7 @@
         mass = 72.75;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
         picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
-        type = "3* 256";
+        type = "2* 256";
     };
 
     class LIB_75Rnd_792x57 : LIB_50Rnd_792x57 {

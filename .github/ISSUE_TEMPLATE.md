@@ -8,8 +8,11 @@
 
 **Mods:**
 ```
+- CBA
+- ACE3
 - IFA
 - FOW
+- LEN
 - Haas WWII Rebalance
 ```
 
