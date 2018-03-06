@@ -127,7 +127,7 @@
         displayName = "M3A1 GreaseGun (2PzD)";
         fow_burstLength = 2;
         modes[] = {"Full","Far","Medium","Short"};
-        magazines[] = {"fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp_T_M3_2PzD","LEN_30Rnd_45ACP_M3","fow_30Rnd_45acp"};
+        magazines[] = {"fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp_T_M3_2PzD","LEN_30Rnd_45ACP_M3"};
         recoil = "recoil_smg_02";
         scope = 2;
         class Eventhandlers : Eventhandlers {

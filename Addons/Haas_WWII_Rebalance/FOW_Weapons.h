@@ -205,7 +205,9 @@
     class fow_w_g43 : fow_rifle_base {
         descriptionShort = "Gewehr 43";
         displayName = "G43 (2PzD)";
+        discreteDistanceInitIndex = 2;
         magazines[] = {"lib_10Rnd_792x57","lib_10Rnd_792x57_T","lib_10Rnd_792x57_T2","lib_10Rnd_792x57_sS","lib_10Rnd_792x57_SMK","fow_10nd_792x57","fow_5Rnd_792x57","lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK"};
+        picture = "\WW2\Assets_t\Weapons\Equipment_t\Weapons\Rifles\Gear_G43_X_ca.paa";
         recoil = "recoil_rifle_1";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 90.441;
@@ -259,6 +261,7 @@
     class fow_w_k98 : fow_rifleBolt_base {
         descriptionShort = "Karabiner 98 kurz";
         displayName = "Kar98k (2PzD)";
+        discreteDistanceInitIndex = 2;
         magazines[] = {"lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK","fow_5Rnd_792x57"};
         recoil = "recoil_rifle_1";
         class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -899,7 +902,7 @@
         displayName = "M3 GreaseGun (2PzD)";
         fow_burstLength = 2;
         modes[] = {"Full","Single","Far","Medium","Short"};
-        magazines[] = {"fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp_T_M3_2PzD","LEN_30Rnd_45ACP_M3","fow_30Rnd_45acp"};
+        magazines[] = {"fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp_T_M3_2PzD","LEN_30Rnd_45ACP_M3","fow_30Rnd_45acp","fow_30Rnd_45acp_T"};
         recoil = "recoil_smg_02";
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -1325,6 +1328,7 @@
         displayName = "Bren Gun (2PzD)";
         fow_burstLength = 4;
         recoil = "recoil_mk200";
+        ace_overheating_allowSwapBarrel = 1;
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -1413,6 +1417,7 @@
         fow_burstLength = 4;
         magazines[] = {"LIB_20Rnd_762x63","fow_20Rnd_762x63"};
         recoil = "recoil_mk200";
+        ace_overheating_allowSwapBarrel = 0;
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -1514,6 +1519,7 @@
    };
 
     class fow_w_m1919 : fow_rifle_base {
+        ace_overheating_allowSwapBarrel = 0;
         class WeaponSlotsInfo;
         class FullAuto : Mode_FullAuto {
             reloadTime = 0.14; //430 rpm
@@ -1603,6 +1609,7 @@
         fow_burstLength = 7;
         magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD","LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_762x63"};
         recoil = "recoil_mk200";
+        ace_overheating_allowSwapBarrel = 0;
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -1620,6 +1627,7 @@
         fow_burstLength = 7;
         magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD","LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_762x63"};
         recoil = "recoil_mk200";
+        ace_overheating_allowSwapBarrel = 0;
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -1636,6 +1644,7 @@
         fow_burstLength = 8;
         magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SMK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SMK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SMK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SMK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};
         recoil = "recoil_mk200";
+        ace_overheating_allowSwapBarrel = 1;
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -1736,6 +1745,7 @@
         fow_burstLength = 10;
         magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SMK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SMK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SMK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SMK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};
         recoil = "recoil_mk200";
+        ace_overheating_allowSwapBarrel = 1;
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -1823,6 +1833,7 @@
         displayName = "Type 99 LMG (2PzD)";
         fow_burstLength = 6;
         recoil = "recoil_mk200";
+        ace_overheating_allowSwapBarrel = 1;
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -2123,7 +2134,7 @@
     };
 
     class fow_w_pzfaust_base : Launcher_Base_F {
-        picture = "\WW2\Assets_t\Weapons\Equipment_t\Weapons\Launchers\Gear_PzFaust30_X_ca.paa";
+        picture = "\WW2\Assets_t\Weapons\Equipment_t\Weapons\Launchers\Gear_PzFaust_30m_X_ca.paa";
         class WeaponSlotsInfo;
         class Single : Mode_SemiAuto {
             class BaseSoundModeType;
@@ -2142,7 +2153,7 @@
     class fow_w_pzfaust_30_klein : fow_w_pzfaust_base {
         descriptionShort = "Panzerfaust 30 klein";
         displayName = "Panzerfaust 30 klein (2PzD)";
-        picture = "\WW2\Assets_t\Weapons\Equipment_t\Weapons\Launchers\Gear_PzFaust30_X_ca.paa";
+        picture = "\WW2\Assets_t\Weapons\Equipment_t\Weapons\Launchers\Gear_PzFaust_30m_X_ca.paa";
         ace_overpressure_angle = 45;
         ace_overpressure_range = 4;
         ace_overpressure_damage = 0.3;
@@ -2163,7 +2174,7 @@
     class fow_w_pzfaust_30 : fow_w_pzfaust_base {
         descriptionShort = "Panzerfaust 30";
         displayName = "Panzerfaust 30 (2PzD)";
-        picture = "\WW2\Assets_t\Weapons\Equipment_t\Weapons\Launchers\Gear_PzFaust30_X_ca.paa";
+        picture = "\WW2\Assets_t\Weapons\Equipment_t\Weapons\Launchers\Gear_PzFaust_30m_X_ca.paa";
         ace_overpressure_angle = 45;
         ace_overpressure_range = 5;
         ace_overpressure_damage = 0.3;

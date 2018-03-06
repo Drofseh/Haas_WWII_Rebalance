@@ -12,7 +12,9 @@ class CfgPatches {
                             "ace_common","ace_frag","ace_trenches","ace_captives","ace_overpressure"
                             };
     };
- }; //End CfgPatches
+}; //End CfgPatches
+
+#include "RscDisplayMain.h"
 
 class Mode_SemiAuto;
 
@@ -230,6 +232,17 @@ class cfgVehicles {
         ace_trenches_removalDuration = 30;
     };
 
+    class FloatingStructure_F;
+    
+    class Land_Camping_Light_F: FloatingStructure_F {
+        class MarkerLights {
+            class Light_1 {
+                color[] = {1,0.6,0.4};
+                intensity = 500;
+            };
+        };
+    };
+
     class ThingX;
 
     class ReammoBox_F : ThingX {
@@ -244,6 +257,14 @@ class cfgVehicles {
         maximumLoad = 4000;
     };
     */
+    // ["LIB_Target_base","TargetBase","Static","All"]
+    class TargetBase;
+    class LIB_Target_base : TargetBase {
+        class EventHandlers {
+            hit = "['hit', _this] call BIS_fnc_target;";
+            hitPart = "['hitPart', _this] call BIS_fnc_target;";
+        };
+    };
 
     class Boat_F;
 

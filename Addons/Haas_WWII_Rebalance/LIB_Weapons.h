@@ -436,6 +436,35 @@
         };
     };
 
+    class LIB_M3_GreaseGun : LIB_SMG {
+        descriptionShort = "Submachine Gun, Caliber .45, M3";
+        displayName = "M3 GreaseGun (2PzD)";
+        fow_burstLength = 2;
+        modes[] = {"Full","Far","Medium","Short"};
+        magazines[] = {"fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp_T_M3_2PzD","LEN_30Rnd_45ACP_M3","fow_30Rnd_45acp","LIB_30Rnd_45ACP","LIB_30Rnd_45ACP_t"};
+        recoil = "recoil_smg_02";
+        class Eventhandlers : Eventhandlers {
+            class fow_mgRoF {
+                fired = "_this spawn fow_main_fnc_mgRoF;";
+            };
+        };
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 79.412;
+        };
+        class Full : Mode_FullAuto {
+            reloadTime = 0.133; //451 rpm
+        };
+        class Far : Full {
+            reloadTime = 0.133; //451 rpm
+        };
+        class Medium : Full {
+            reloadTime = 0.133; //451 rpm
+        };
+        class Short : Medium {
+            reloadTime = 0.133; //451 rpm
+        };
+    };
+
     class LIB_MP38 : LIB_SMG {
         descriptionShort = "Maschinenpistole 38";
         displayName = "MP38 (2PzD)";

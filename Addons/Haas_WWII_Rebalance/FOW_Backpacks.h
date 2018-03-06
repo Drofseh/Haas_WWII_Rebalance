@@ -24,7 +24,6 @@
 
     class fow_b_torn_radio : Bag_Base {
         maximumLoad = 120;
-        delete TransportMagazines;
     };
 
     class fow_b_tornister : Bag_Base {
