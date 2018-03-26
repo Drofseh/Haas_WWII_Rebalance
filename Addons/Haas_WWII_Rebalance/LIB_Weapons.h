@@ -712,6 +712,9 @@
     class LIB_MG34 : LIB_LMG {
         descriptionShort = "Maschinengewehr 34";
         displayName = "MG34 (2PzD)";
+        discreteDistance[] = {100,300,500,800,1100,1200,1300,1400,1500,1600};
+        // discreteDistanceCameraPoint[] = {"eye","eye_200","eye_300","eye_400","eye_500","eye_600","eye_700","eye_800","eye_900","eye_1000"};
+        discreteDistanceInitIndex = 1;
         fow_burstLength = 8;
         modes[] = {"Full","Single","Far","Medium","Short"};
         magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SMK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SMK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SMK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SMK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};

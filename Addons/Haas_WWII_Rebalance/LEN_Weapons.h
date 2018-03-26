@@ -159,6 +159,7 @@
         magazines[] = {"LEN_35Rnd_762x25_2PzD"};
         recoil = "recoil_smg_02";
         scope = 2;
+        LIB_ReplaceMagazine = 0;
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
