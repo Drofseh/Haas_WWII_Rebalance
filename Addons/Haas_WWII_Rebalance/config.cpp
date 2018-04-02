@@ -233,7 +233,7 @@ class cfgVehicles {
     };
 
     class FloatingStructure_F;
-    
+
     class Land_Camping_Light_F: FloatingStructure_F {
         class MarkerLights {
             class Light_1 {
@@ -283,6 +283,8 @@ class cfgVehicles {
     #include "FOW_Vehicles.h"
 
     #include "LIB_Vehicles.h"
+
+    #include "FOW_Structures.h"
 
 }; //End cfgVehicles
 
