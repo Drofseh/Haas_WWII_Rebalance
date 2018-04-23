@@ -166,9 +166,9 @@
 //Rifles
     class fow_w_fg42 : fow_rifle_base {
         descriptionShort = "Fallschirmjagergewehr 42 Ausfuhrung G";
-        displayName = "FG42 (2PzD)";
+        displayName = "FG42 Ausf.G (2PzD)";
         //fow_burstLength = 3;
-        magazines[] = {"len_20Rnd_792x57","fow_20Rnd_792x57"};
+        magazines[] = {"LIB_20Rnd_792x57","len_20Rnd_792x57","fow_20Rnd_792x57"};
         recoil = "recoil_rifle_1";
         /*class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -179,6 +179,9 @@
             mass = 109.191;
         };
         class Single : Mode_SemiAuto {
+            recoil = "recoil_single_primary_3outof10";
+            recoilProne = "recoil_single_primary_prone_3outof10";
+            reloadTime = 0.08; //750 rpm
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -190,6 +193,9 @@
             };
         };
         class Full : Mode_FullAuto {
+            recoil = "recoil_single_primary_3outof10";
+            recoilProne = "recoil_single_primary_prone_3outof10";
+            reloadTime = 0.08; //750 rpm
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -206,7 +212,7 @@
         descriptionShort = "Gewehr 43";
         displayName = "G43 (2PzD)";
         discreteDistanceInitIndex = 2;
-        magazines[] = {"lib_10Rnd_792x57","lib_10Rnd_792x57_T","lib_10Rnd_792x57_T2","lib_10Rnd_792x57_sS","lib_10Rnd_792x57_SMK","fow_10nd_792x57","fow_5Rnd_792x57","lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK"};
+        magazines[] = {"lib_10Rnd_792x57","LIB_10Rnd_792x57_clip","lib_10Rnd_792x57_T","lib_10Rnd_792x57_T2","lib_10Rnd_792x57_sS","lib_10Rnd_792x57_SMK","fow_10nd_792x57","fow_5Rnd_792x57","lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK"};
         picture = "\WW2\Assets_t\Weapons\Equipment_t\Weapons\Rifles\Gear_G43_X_ca.paa";
         recoil = "recoil_rifle_1";
         class WeaponSlotsInfo : WeaponSlotsInfo {

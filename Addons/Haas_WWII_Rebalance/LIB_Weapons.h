@@ -66,6 +66,8 @@
     };
     class LIB_M1908 : LIB_P08 {
         scope = 1;
+        scopeCurator = 0;
+        scopeArsenal = 0;
     };
 
     class LIB_WaltherPPK : LIB_PISTOL {
@@ -99,10 +101,60 @@
         };
     };
 
+    class LIB_FG42G : LIB_RIFLE {
+        descriptionShort = "Fallschirmjagergewehr 42 Ausfuhrung G";
+        displayName = "FG42 Ausf.G (2PzD)";
+        //fow_burstLength = 3;
+        magazines[] = {"LIB_20Rnd_792x57","len_20Rnd_792x57","fow_20Rnd_792x57"};
+        modes[] = {"Single","Full","Far","Medium","Short"};
+        recoil = "recoil_rifle_1";
+        scope = 2;
+        /*class Eventhandlers : Eventhandlers {
+            class fow_mgRoF {
+                fired = "_this spawn fow_main_fnc_mgRoF;";
+            };
+        };*/
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 109.191;
+        };
+        class Single : Mode_SemiAuto {
+            recoil = "recoil_single_primary_3outof10";
+            recoilProne = "recoil_single_primary_prone_3outof10";
+            reloadTime = 0.08; //750 rpm
+            maxRange = 600;
+            maxRangeProbab = 0.05;
+            midRange = 275;
+            midRangeProbab = 0.7;
+            minRange = 2;
+            minRangeProbab = 0.3;
+        };
+        class Full : Mode_FullAuto {
+            recoil = "recoil_single_primary_3outof10";
+            recoilProne = "recoil_single_primary_prone_3outof10";
+            reloadTime = 0.08; //750 rpm
+            maxRange = 50;
+            maxRangeProbab = 0.05;
+            midRange = 25;
+            midRangeProbab = 0.7;
+            minRange = 1;
+            minRangeProbab = 0.3;
+        };
+    };
+
+    class LIB_G41 : LIB_RIFLE {
+        descriptionShort = "Gewehr 41 (W)";
+        displayName = "G41(W) (2PzD)";
+        magazines[] = {"LIB_10Rnd_792x57_clip","lib_10Rnd_792x57","lib_10Rnd_792x57_T","lib_10Rnd_792x57_T2","lib_10Rnd_792x57_sS","lib_10Rnd_792x57_SMK","fow_10nd_792x57","fow_5Rnd_792x57","lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK"};
+        recoil = "recoil_rifle_1";
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 108.7;
+        };
+    };
+
     class LIB_G43 : LIB_RIFLE {
         descriptionShort = "Gewehr 43";
         displayName = "G43 (2PzD)";
-        magazines[] = {"lib_10Rnd_792x57","lib_10Rnd_792x57_T","lib_10Rnd_792x57_T2","lib_10Rnd_792x57_sS","lib_10Rnd_792x57_SMK","fow_10nd_792x57","fow_5Rnd_792x57","lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK"};
+        magazines[] = {"lib_10Rnd_792x57","LIB_10Rnd_792x57_clip","lib_10Rnd_792x57_T","lib_10Rnd_792x57_T2","lib_10Rnd_792x57_sS","lib_10Rnd_792x57_SMK","fow_10nd_792x57","fow_5Rnd_792x57","lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK"};
         recoil = "recoil_rifle_1";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 90.441;
@@ -838,12 +890,42 @@
             mass = 115.147;
         };
     };
-
     class LIB_PzFaust_30m_used : LIB_PzFaust_30m {
         descriptionShort = "Used Panzerfaust 30";
         displayName = "Used Panzerfaust (2PzD)";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 10;
+        };
+    };
+
+    class LIB_PzFaust_60m : LIB_PzFaust_30m {
+        descriptionShort = "Panzerfaust 60";
+        displayName = "Panzerfaust 60 (2PzD)";
+        ace_overpressure_angle = 45;
+        ace_overpressure_range = 6;
+        ace_overpressure_damage = 0.3;
+        ace_reloadlaunchers_enabled = 0;
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 138;
+        };
+    };
+    class LIB_PzFaust_60m_used : LIB_PzFaust_30m_used {
+        descriptionShort = "Used Panzerfaust 60";
+        displayName = "Used Panzerfaust (2PzD)";
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 10;
+        };
+    };
+
+    class LIB_Faustpatrone : LIB_PzFaust_30m {
+        descriptionShort = "Panzerfaust 30 klein";
+        displayName = "Panzerfaust 30 klein (2PzD)";
+        ace_overpressure_angle = 45;
+        ace_overpressure_range = 4;
+        ace_overpressure_damage = 0.3;
+        ace_reloadlaunchers_enabled = 0;
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 70.5;
         };
     };
 

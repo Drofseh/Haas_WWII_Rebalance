@@ -4,6 +4,7 @@
     class LIB_Bullet_Plane_base;
     class LIB_Bullet_Vehicle_base;
     class LIB_Shell_base;
+    class LIB_ShellHE_base;
     class LIB_ShellAPCR_base;
 
     class LIB_4x_SprGr_FlaK_38 : LIB_Bullet_AA_base {
@@ -11,7 +12,11 @@
     };
 
     class LIB_76mm_Shell_Base : LIB_Shell_base {
-        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class LIB_76mm_Shell_Base_HE : LIB_ShellHE_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
     };
 
     class LIB_B_127x108_Ball : LIB_Bullet_Vehicle_base {
@@ -43,7 +48,7 @@
     };
 
     class LIB_B_37mm_AA : LIB_Bullet_AA_base {
-        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
     };
 
     class LIB_B_37mm_AP : LIB_Bullet_Plane_base {
@@ -79,7 +84,7 @@
     };
 
     class LIB_B_762x63_Ball_t : LIB_B_762x63_Ball {
-        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
+        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
     };
 
     class LIB_B_762x33_Ball : LIB_B_762x63_Ball {
@@ -119,15 +124,15 @@
     };
 
     class LIB_B_762x54_Ball_t30 : LIB_B_762x54_Ball {
-        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
+        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d"; //Should be white
     };
 
     class LIB_B_762x54_Ball_t30_NoCartridge : LIB_B_762x54_Ball_NoCartridge {
-        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
+        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d"; //Should be white
     };
 
     class LIB_B_762x54_Ball_t30c : LIB_B_762x54_Ball {
-        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
+        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d"; //Should be white
     };
 
     class LIB_B_762x54_Ball_t46 : LIB_B_762x54_Ball {
@@ -137,6 +142,8 @@
     class LIB_B_762x54_Ball_t46c : LIB_B_762x54_Ball {
         model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
     };
+
+    class LIB_B_763x25_Ball;
 
     class LIB_B_792x33_Ball : LIB_Bullet_base {
         model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
@@ -206,6 +213,10 @@
         model = "\z\ace\addons\tracers\ace_shell_tracer_green.p3d";
     };
 
+    class LIB_BR365P_APCR : LIB_ShellAPCR_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_green.p3d";
+    };
+
     class LIB_BR471_AP : LIB_Shell_base {
         model = "\z\ace\addons\tracers\ace_shell_tracer_green.p3d";
     };
@@ -214,9 +225,27 @@
         model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
     };
 
-    class LIB_M42A1_M1_HE;
+    class LIB_M42A1_M1_HE : LIB_ShellHE_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
 
     class LIB_M61_M1_AP : LIB_Shell_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class LIB_O365_HE : LIB_ShellHE_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class LIB_OF350_HE : LIB_76mm_Shell_Base_HE {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class LIB_OF471_HE : LIB_ShellHE_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class LIB_OF471_HE_Arty : Sh_155mm_AMOS {
         model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
     };
 
@@ -232,20 +261,52 @@
         model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
     };
 
-    class LIB_PzGr40_APCR;
+    class LIB_PzGr40_APCR : LIB_ShellAPCR_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
 
-    class LIB_PzGr40_KwK36_APCR;
+    class LIB_PzGr40_KwK36_APCR : LIB_ShellAPCR_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
 
-    class LIB_PzGr40_KWK40_APCR;
+    class LIB_PzGr40_KWK40_APCR : LIB_ShellAPCR_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
 
-    class LIB_PzGr4042_KwK42_APCR;
+    class LIB_PzGr4042_KwK42_APCR : LIB_ShellAPCR_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
 
     class LIB_PzGr43_AP : LIB_Shell_base {
         model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
     };
 
+    class LIB_S_105L28_Gr38 : LIB_ShellHE_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class LIB_S_105L28_Gr39HlC : LIB_ShellHE_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
     class LIB_S_20L55_PzGr : LIB_Shell_base {
         model = "\z\ace\addons\tracers\ace_shell_tracer_yellow.p3d";
+    };
+
+    class LIB_S_20L55_PzGr40 : LIB_ShellAPCR_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_yellow.p3d";
+    };
+
+    class LIB_S_20L55_SprGr : LIB_ShellHE_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_yellow.p3d";
+    };
+
+    class LIB_S_37L57_M51 : LIB_ShellAPCR_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class LIB_S_37L57_M63 : LIB_ShellHE_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
     };
 
     class LIB_S_37L57_M74 : LIB_Shell_base {
@@ -256,7 +317,31 @@
         model = "\z\ace\addons\tracers\ace_shell_tracer_green.p3d";
     };
 
+    class LIB_S_50L60_PzGr40 : LIB_ShellAPCR_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_green.p3d";
+    };
+
+    class LIB_S_50L60_SprGr38 : LIB_ShellHE_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_green.p3d";
+    };
+
     class LIB_S_76L55_APMk3 : LIB_Shell_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class LIB_S_76L55_APDSMk1 : LIB_ShellAPCR_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class LIB_S_76L55_APMk3 : LIB_Shell_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class LIB_S_76L55_HEMk1 : LIB_ShellHE_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class LIB_S_76L55_M42 : LIB_ShellHE_base {
         model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
     };
 
@@ -264,10 +349,50 @@
         model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
     };
 
+    class LIB_S_76L55_M93 : LIB_ShellAPCR_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
     class LIB_SprGr_FlaK_38 : LIB_4x_SprGr_FlaK_38 {
+        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
+    };
+
+    class LIB_SprGr_FlaK_38_APHE_T : LIB_SprGr_FlaK_38 {
         model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
     };
 
     class LIB_SprGr_FlaK_30 : LIB_SprGr_FlaK_38 {
         model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
+    };
+
+    class LIB_SprGr_FlaK_30_APHE_T : LIB_SprGr_FlaK_38_APHE_T {
+        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
+    };
+
+    class LIB_SprGr_KwK36_HE : LIB_ShellHE_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class LIB_SprGr_KwK36_HE_AA : LIB_SprGr_KwK36_HE {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class LIB_SprGr34_K51_HE : LIB_ShellHE_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class LIB_SprGr34_KWK40_HE : LIB_ShellHE_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class LIB_SprGr39_HE : LIB_ShellHE_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class LIB_SprGr42_KwK42_HE : LIB_ShellHE_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class LIB_T45_M1_APCR : LIB_ShellAPCR_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
     };

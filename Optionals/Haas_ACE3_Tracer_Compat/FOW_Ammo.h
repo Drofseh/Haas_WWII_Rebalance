@@ -1,13 +1,33 @@
-﻿    class fow_B_20mm_AP : BulletBase {
-        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
+﻿    class fow_B_127x99_Ball : BulletBase {
+        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d"; // should be white
+    };
+
+    class fow_B_127x99_Ball_Tracer_Red : fow_B_127x99_Ball {
+        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
+    };
+
+    class fow_B_20mm : BulletBase {
+        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d"; // should be white
+    };
+
+    class fow_B_20mm_AP : BulletBase {
+        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d"; // should be white
     };
 
     class fow_B_20mm_HE : BulletBase {
-        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
+        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d"; // should be white
+    };
+
+    class fow_B_20mm_Tracer_Red : fow_B_20mm {
+        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d"; // should be white
+    };
+
+    class fow_B_20mm_Tracer_Yellow : fow_B_20mm {
+        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d"; // should be white
     };
 
     class fow_B_303_Ball : BulletBase {
-        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
+        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
     };
 
     class fow_B_45_acp : BulletBase {
@@ -20,13 +40,23 @@
 
     class fow_B_65x52_Ball;
 
-    class fow_B_762x33_Ball;
+    class fow_B_762x33_Ball : BulletBase {
+        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
+    };
 
     class fow_B_762x63_Ball : BulletBase {
         model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
     };
 
     class fow_B_765x17_Ball;
+
+    class fow_B_77x56_Ball : BulletBase {
+        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d"; // should be white
+    };
+
+    class fow_B_77x56_Ball_Tracer_Yellow : fow_B_77x56_Ball {
+        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
+    };
 
     class fow_B_77x58_Ball : BulletBase {
         model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
@@ -113,5 +143,13 @@
     };
 
     class fow_Sh_57mm_APDS : fow_Sh_57mm_HE {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class fow_Sh_88mm_HE : ShellBase {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
+    };
+
+    class fow_Sh_88mm_AP : fow_Sh_88mm_HE {
         model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
     };

@@ -43,12 +43,14 @@
 //Rifles
     class LEN_FG42 : LIB_MP44 {
         descriptionShort = "Fallschirmjagergewehr 42 Ausfuhrung G";
-        displayName = "FG42 (2PzD)";
+        displayName = "FG42 Ausf.G (2PzD)";
         //fow_burstLength = 3;
-        magazines[] = {"len_20Rnd_792x57","fow_20Rnd_792x57"};
+        magazines[] = {"LIB_20Rnd_792x57","len_20Rnd_792x57","fow_20Rnd_792x57"};
         modes[] = {"Single","FullAuto"};
         recoil = "recoil_rifle_1";
         scope = 1;
+        scopeCurator = 0;
+        scopeArsenal = 0;
         /*class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -60,7 +62,7 @@
         class Single : Mode_SemiAuto {
             recoil = "recoil_single_primary_3outof10";
             recoilProne = "recoil_single_primary_prone_3outof10";
-            reloadTime = 0.08; //700 rpm
+            reloadTime = 0.08; //750 rpm
             maxRange = 600;
             maxRangeProbab = 0.05;
             midRange = 275;
@@ -71,7 +73,7 @@
         class FullAuto : Mode_FullAuto {
             recoil = "recoil_single_primary_3outof10";
             recoilProne = "recoil_single_primary_prone_3outof10";
-            reloadTime = 0.08; //700 rpm
+            reloadTime = 0.08; //750 rpm
             maxRange = 50;
             maxRangeProbab = 0.05;
             midRange = 25;
@@ -88,6 +90,8 @@
         magazines[] = {"LIB_30Rnd_792x33","fow_30Rnd_792x33"};
         recoil = "recoil_mx";
         scope = 1;
+        scopeCurator = 0;
+        scopeArsenal = 0;
         /*class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -107,6 +111,8 @@
         magazines[] = {"LEN_10Rnd_303","fow_10Rnd_303"};
         recoil = "recoil_rifle_1";
         scope = 1;
+        scopeCurator = 0;
+        scopeArsenal = 0;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 88.037;
         };
@@ -189,6 +195,8 @@
         magazines[] = {"LEN_32Rnd_9x19","fow_32Rnd_9x19_sten","LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40"};
         recoil = "recoil_smg_02";
         scope = 1;
+        scopeCurator = 0;
+        scopeArsenal = 0;
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -229,6 +237,8 @@
         displayName = "Sten Mk V (2PzD)";
         fow_burstLength = 3;
         scope = 1;
+        scopeCurator = 0;
+        scopeArsenal = 0;
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -256,6 +266,8 @@
         displayName = "Winchester Model 12 (2PzD)";
         magazines[] = {"fow_6Rnd_12G_Pellets","LEN_6Rnd_12G_Pellets","fow_6Rnd_12G_Slug","LEN_6Rnd_12G_Slug","fow_5Rnd_12G_Pellets","fow_5Rnd_12G_Slug"};
         scope = 1;
+        scopeCurator = 0;
+        scopeArsenal = 0;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 79.412;
         };

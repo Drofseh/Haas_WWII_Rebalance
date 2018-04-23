@@ -117,6 +117,11 @@
         displayName = "G43, 10 Round Magazine, Last Round Tracer";
     };
 
+    class LIB_10Rnd_792x57_clip : LIB_5Rnd_792x57 {
+        descriptionShort = "7.92x57mm, 10 Rounds, for use in the G41";
+        displayName = "G41, 10 Round Magazine";
+    };
+
     class LIB_8Rnd_762x63 : CA_Magazine {
         descriptionShort = ".30-06, 8 Rounds, for use in the M1 Garand";
         displayName = "M1 Garand, 8 Round Clip";
@@ -140,6 +145,11 @@
         descriptionShort = ".30-06, 20 Rounds, for use in the M1918A2 BAR";
         displayName = "M1918A2 BAR, 20 Round Magazine";
         ace_isbelt = 1;
+    };
+
+    class LIB_20Rnd_792x57 : LIB_5Rnd_792x57 {
+        descriptionShort = "7.92x57mm, 20 Rounds, for use in the FG42";
+        displayName = "FG42, 20 Round Magazine";
     };
 
     class LIB_30Rnd_45ACP : CA_Magazine {
