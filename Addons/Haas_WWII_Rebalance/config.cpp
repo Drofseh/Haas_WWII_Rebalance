@@ -182,12 +182,15 @@ class cfgWeapons {
         class WeaponSlotsInfo;
     };
 
+    class ItemCore;
     class VestItem;
 
-    class Vest_Camo_Base;
+    class Vest_Camo_Base : ItemCore {
+        class ItemInfo;
+    };
 
     class fow_v_base : Vest_Camo_Base {
-        class ItemInfo : VestItem {
+        class ItemInfo : ItemInfo {
             containerClass = "Supply90";
         };
     };

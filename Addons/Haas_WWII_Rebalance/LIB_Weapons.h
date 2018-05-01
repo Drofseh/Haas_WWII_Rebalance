@@ -154,6 +154,8 @@
     class LIB_G43 : LIB_RIFLE {
         descriptionShort = "Gewehr 43";
         displayName = "G43 (2PzD)";
+        discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200};
+        discreteDistanceInitIndex = 2;
         magazines[] = {"lib_10Rnd_792x57","LIB_10Rnd_792x57_clip","lib_10Rnd_792x57_T","lib_10Rnd_792x57_T2","lib_10Rnd_792x57_sS","lib_10Rnd_792x57_SMK","fow_10nd_792x57","fow_5Rnd_792x57","lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK"};
         recoil = "recoil_rifle_1";
         class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -164,6 +166,8 @@
     class LIB_K98 : LIB_RIFLE {
         descriptionShort = "Karabiner 98 kurz, pre-war model";
         displayName = "Kar98k (pre-war) (2PzD)";
+        discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
+        discreteDistanceInitIndex = 2;
         magazines[] = {"lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK","fow_5Rnd_792x57"};
         recoil = "recoil_rifle_1";
         class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -290,8 +294,30 @@
     class LIB_M9130 : LIB_RIFLE {
         descriptionShort = "Mosin M91/30";
         displayName = "Mosin M91/30 (2PzD)";
+        discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
+        discreteDistanceInitIndex = 2;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 87.353;
+        };
+    };
+
+    class LIB_M38 : LIB_M9130 {
+        descriptionShort = "Mosin M38";
+        displayName = "Mosin M38 (2PzD)";
+        discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000};
+        discreteDistanceInitIndex = 1;
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 75.044;
+        };
+    };
+
+    class LIB_M44 : LIB_M9130 {
+        descriptionShort = "Mosin M44";
+        displayName = "Mosin M44 (2PzD)";
+        discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000};
+        discreteDistanceInitIndex = 1;
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 90.000;
         };
     };
 
@@ -303,25 +329,11 @@
         };
     };
 
-    class LIB_M38 : LIB_M9130 {
-        descriptionShort = "Mosin M38";
-        displayName = "Mosin M38 (2PzD)";
-        class WeaponSlotsInfo : WeaponSlotsInfo {
-            mass = 75.044;
-        };
-    };
-
-    class LIB_M44 : LIB_M9130 {
-        descriptionShort = "Mosin M44";
-        displayName = "Mosin M44 (2PzD)";
-        class WeaponSlotsInfo : WeaponSlotsInfo {
-            mass = 90.000;
-        };
-    };
-
     class LIB_MP44 : LIB_RIFLE {
         descriptionShort = "Sturmgewehr 44";
         displayName = "StG44 (2PzD)";
+        discreteDistance[] = {100,200,300,400,500,600,700,800};
+        discreteDistanceInitIndex = 1;
         //fow_burstLength = 3;
         magazines[] = {"LIB_30Rnd_792x33","fow_30Rnd_792x33"};
         modes[] = {"Single","Full","Far","Medium","Short"};
@@ -354,6 +366,8 @@
     class LIB_SVT_40 : LIB_RIFLE {
         descriptionShort = "Samozaryadnaya Vintovka Tokareva, Obrazets 1940 goda";
         displayName = "SVT-40 (2PzD)";
+        discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
+        discreteDistanceInitIndex = 2;
         magazines[] = {"LIB_10Rnd_762x54","LIB_10Rnd_762x54_t30","LIB_10Rnd_762x54_t302","LIB_10Rnd_762x54_t46","LIB_10Rnd_762x54_t462","LIB_10Rnd_762x54_d","LIB_10Rnd_762x54_b30","lib_5Rnd_762x54","lib_5Rnd_762x54_t46","lib_5Rnd_762x54_t30","lib_5Rnd_762x54_D","lib_5Rnd_762x54_b30"};
         recoil = "recoil_rifle_1";
         class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -385,6 +399,8 @@
     class LIB_PTRD : LIB_RIFLE {
         descriptionShort = "ProtivoTankovoye Ruzhyo Degtyaryova 1941";
         displayName = "PTRD-41 (2PzD)";
+        discreteDistance[] = {400,600};
+        discreteDistanceInitIndex = 0;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 381.0;
         };
@@ -426,6 +442,8 @@
     class LIB_M1928_Thompson : LIB_M1A1_Thompson {
         descriptionShort = "Submachine Gun, Caliber .45, M1928";
         displayName = "M1928 Thompson (2PzD)";
+        discreteDistance[] = {100,200,300,400,500,600};
+        discreteDistanceInitIndex = 0;
         fow_burstLength = 3;
         magazines[] = {"LIB_50Rnd_45ACP","LIB_20Rnd_45ACP_M1_2PzD","LIB_30Rnd_45ACP","fow_20Rnd_45acp_M1_2PzD","fow_20Rnd_45acp_T_M1_2PzD","fow_30Rnd_45acp_M1_2PzD","fow_30Rnd_45acp_T_M1_2PzD","fow_30Rnd_45acp","fow_30Rnd_45acp_T"};
         recoil = "recoil_smg_01";
@@ -491,6 +509,7 @@
     class LIB_M3_GreaseGun : LIB_SMG {
         descriptionShort = "Submachine Gun, Caliber .45, M3";
         displayName = "M3 GreaseGun (2PzD)";
+        discreteDistanceInitIndex = 0;
         fow_burstLength = 2;
         modes[] = {"Full","Far","Medium","Short"};
         magazines[] = {"fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp_T_M3_2PzD","LEN_30Rnd_45ACP_M3","fow_30Rnd_45acp","LIB_30Rnd_45ACP","LIB_30Rnd_45ACP_t"};
@@ -520,6 +539,8 @@
     class LIB_MP38 : LIB_SMG {
         descriptionShort = "Maschinenpistole 38";
         displayName = "MP38 (2PzD)";
+        discreteDistance[] = {100,200};
+        discreteDistanceInitIndex = 0;
         fow_burstLength = 3;
         magazines[] = {"LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40","LEN_32Rnd_9x19","fow_32Rnd_9x19_sten"};
         recoil = "recoil_smg_02";
@@ -539,6 +560,8 @@
     class LIB_MP40 : LIB_SMG {
         descriptionShort = "Maschinenpistole 40";
         displayName = "MP40 (2PzD)";
+        discreteDistance[] = {100,200};
+        discreteDistanceInitIndex = 0;
         fow_burstLength = 3;
         magazines[] = {"LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40","LEN_32Rnd_9x19","fow_32Rnd_9x19_sten"};
         recoil = "recoil_smg_02";
@@ -619,6 +642,8 @@
     class LIB_DP28 : LIB_LMG {
         descriptionShort = "Degtyaryov Machine Gun";
         displayName = "DP-28 (2PzD)";
+        discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
+        discreteDistanceInitIndex = 2;
         fow_burstLength = 4;
         recoil = "recoil_mk200";
         class Eventhandlers : Eventhandlers {
@@ -688,6 +713,8 @@
     class LIB_M1918A2_BAR : LIB_LMG {
         descriptionShort = "Rifle, Caliber .30, Automatic, Browning, M1918A2";
         displayName = "M1918A2 BAR (2PzD)";
+        discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
+        discreteDistanceInitIndex = 0;
         fow_burstLength = 4;
         magazines[] = {"LIB_20Rnd_762x63","fow_20Rnd_762x63"};
         recoil = "recoil_mk200";
@@ -764,9 +791,9 @@
     class LIB_MG34 : LIB_LMG {
         descriptionShort = "Maschinengewehr 34";
         displayName = "MG34 (2PzD)";
-        discreteDistance[] = {100,300,500,800,1100,1200,1300,1400,1500,1600};
+        discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
         // discreteDistanceCameraPoint[] = {"eye","eye_200","eye_300","eye_400","eye_500","eye_600","eye_700","eye_800","eye_900","eye_1000"};
-        discreteDistanceInitIndex = 1;
+        discreteDistanceInitIndex = 2;
         fow_burstLength = 8;
         modes[] = {"Full","Single","Far","Medium","Short"};
         magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SMK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SMK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SMK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SMK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};

@@ -211,6 +211,7 @@
     class fow_w_g43 : fow_rifle_base {
         descriptionShort = "Gewehr 43";
         displayName = "G43 (2PzD)";
+        discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200};
         discreteDistanceInitIndex = 2;
         magazines[] = {"lib_10Rnd_792x57","LIB_10Rnd_792x57_clip","lib_10Rnd_792x57_T","lib_10Rnd_792x57_T2","lib_10Rnd_792x57_sS","lib_10Rnd_792x57_SMK","fow_10nd_792x57","fow_5Rnd_792x57","lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK"};
         picture = "\WW2\Assets_t\Weapons\Equipment_t\Weapons\Rifles\Gear_G43_X_ca.paa";
@@ -267,6 +268,7 @@
     class fow_w_k98 : fow_rifleBolt_base {
         descriptionShort = "Karabiner 98 kurz";
         displayName = "Kar98k (2PzD)";
+        discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
         discreteDistanceInitIndex = 2;
         magazines[] = {"lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK","fow_5Rnd_792x57"};
         recoil = "recoil_rifle_1";
@@ -613,6 +615,8 @@
     class fow_w_stg44 : fow_rifle_base {
         descriptionShort = "Sturmgewehr 44";
         displayName = "StG44 (2PzD)";
+        discreteDistance[] = {100,200,300,400,500,600,700,800};
+        discreteDistanceInitIndex = 1;
         //fow_burstLength = 3;
         magazines[] = {"LIB_30Rnd_792x33","fow_30Rnd_792x33"};
         modes[] = {"Single","Full","Far","Medium","Short"};
@@ -690,6 +694,8 @@
     class fow_w_type99 : fow_rifleBolt_base {
         descriptionShort = "Type 99 Arisaka";
         displayName = "Type 99 Arisaka (2PzD)";
+        discreteDistance[] = {300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
+        discreteDistanceInitIndex = 0;
         recoil = "recoil_rifle_1";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 82.500;
@@ -984,6 +990,8 @@
     class fow_w_m55_reising : fow_rifle_base {
         descriptionShort = "Submachine Gun, Caliber .45, M55";
         displayName = "M55 Reising (2PzD)";
+        discreteDistance[] = {50,100,200,300};
+        discreteDistanceInitIndex = 1;
         fow_burstLength = 3;
         magazines[] = {"fow_20Rnd_45acp","fow_12Rnd_45acp_2PzD"};
         recoil = "recoil_smg_01";
@@ -1647,6 +1655,8 @@
     class fow_w_mg34 : fow_rifle_base {
         descriptionShort = "Maschinengewehr 34";
         displayName = "MG34 (2PzD)";
+        discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
+        discreteDistanceInitIndex = 2;
         fow_burstLength = 8;
         magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SMK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SMK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SMK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SMK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};
         recoil = "recoil_mk200";

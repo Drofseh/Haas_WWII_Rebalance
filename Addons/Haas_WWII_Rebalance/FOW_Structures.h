@@ -149,11 +149,17 @@
     class fow_p_sandbag02 : fow_p_sandbag00 {
         displayName = "Sandbag (Round, 180 Coverage, Small)";
     };
-    class fow_p_sandbag03 : fow_p_sandbag00 {
+    class fow_p_sandbag03_mid : fow_p_sandbag00 {
+        displayName = "Sandbag (Straight, Middle)";
+    };
+    class fow_p_sandbag03_end : fow_p_sandbag00 {
         displayName = "Sandbag (Straight, End)";
     };
     class fow_p_sandbag04 : fow_p_sandbag00 {
-        displayName = "Sandbag (Straight, Middle)";
+        displayName = "Sandbag (Straight, Corner)";
+    };
+    class fow_p_sandbag05 : fow_p_sandbag00 {
+        displayName = "Sandbag (Round, 90 Coverage, Medium)";
     };
     class fow_p_sandbag1 : fow_p_sandbag00 {
         displayName = "Sandbag (Round, 90 Coverage, Small)";

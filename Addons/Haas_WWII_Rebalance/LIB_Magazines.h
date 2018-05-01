@@ -448,6 +448,7 @@
     class LIB_M2_Flamethrower_Mag : CA_Magazine {
         descriptionShort = "Fuel for the M2-2 Flame Thrower, allows for ~8 seconds of firing.";
         displayName = "M2-2 Flame Thrower Fuel";
+        scope = 2;
     };
 
     class LIB_M2_Flamethrower_Mag_Empty : LIB_M2_Flamethrower_Mag {

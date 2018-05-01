@@ -86,6 +86,8 @@
     class LEN_MP44 : LIB_MP44 {
         descriptionShort = "Sturmgewehr 44";
         displayName = "StG44 (2PzD)";
+        discreteDistance[] = {100,200,300,400,500,600,700,800};
+        discreteDistanceInitIndex = 1;
         //fow_burstLength = 3;
         magazines[] = {"LIB_30Rnd_792x33","fow_30Rnd_792x33"};
         recoil = "recoil_mx";
@@ -108,6 +110,8 @@
     class LEN_SMLE_No4Mk1 : LIB_K98 {
         descriptionShort = "Rifle, No. 4 Mk I";
         displayName = "Lee Enfield No. 4 Mk I (2PzD)";
+        discreteDistance[] = {300,600};
+        discreteDistanceInitIndex = 0;
         magazines[] = {"LEN_10Rnd_303","fow_10Rnd_303"};
         recoil = "recoil_rifle_1";
         scope = 1;
