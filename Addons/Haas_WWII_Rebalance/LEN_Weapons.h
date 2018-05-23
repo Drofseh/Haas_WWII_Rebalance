@@ -221,6 +221,8 @@
         displayName = "Sten Mk IIS (2PzD)";
         fow_burstLength = 4;
         scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";

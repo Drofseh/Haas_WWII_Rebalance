@@ -77,6 +77,14 @@
         ace_isbelt = 1;
     };
 
+    class fow_20Rnd_20mm_AP : VehicleMagazine {
+        tracersEvery = 1;
+    };
+
+    class fow_20Rnd_20mm_HE : VehicleMagazine {
+        tracersEvery = 1;
+    };
+
     class fow_30Rnd_762x63 : CA_Magazine {
         descriptionShort = ".30-06, 30 Rounds, for use in the M1919 Machine Guns";
         displayName = "M1919, 30 Round Belt (FOW)";
