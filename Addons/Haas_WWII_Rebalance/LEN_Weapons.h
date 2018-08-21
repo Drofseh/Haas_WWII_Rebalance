@@ -2,20 +2,28 @@
     class LEN_P35 : hgun_Rook40_F {
         descriptionShort = "Pistolet wz. 35 Vis, known as the Pistole 35(p) in Wehrmacht service or the Radom in English";
         displayName = "Pistolet wz. 35 Vis";
+        dispersion = MOA_TO_RAD(15);
         magazines[] = {"LEN_8Rnd_9x19_2PzD","fow_8Rnd_9x19_Vis_2PzD"};
         scope = 2;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 20.956;
+        };
+        class Single : Single {
+            dispersion = MOA_TO_RAD(15);
         };
     };
 
     class LEN_P640b : hgun_P07_F {
         descriptionShort = "Browning Hi-Power, known as the Pistole 640(b) in Wehrmacht service";
         displayName = "Browning Hi-Power";
+        dispersion = MOA_TO_RAD(15);
         magazines[] = {"LEN_13Rnd_9x19","fow_13Rnd_9x19"};
         scope = 2;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 15.851;
+        };
+        class Single : Single {
+            dispersion = MOA_TO_RAD(15);
         };
     };
 
@@ -27,6 +35,9 @@
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 12.507;
         };
+        class Single : Single {
+            dispersion = MOA_TO_RAD(15);
+        };
     };
 
     class LEN_Welrod : hgun_Rook40_F {
@@ -36,6 +47,9 @@
         scope = 2;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 24.044;
+        };
+        class Single : Single {
+            dispersion = MOA_TO_RAD(15);
         };
     };
 //End Pistols
@@ -120,14 +134,41 @@
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 88.037;
         };
+        class Single;
+        class Short;
+        class Medium;
+        class Far;
     };
     class LEN_SMLE_No4Mk1T : LEN_SMLE_No4Mk1 {
         descriptionShort = "Rifle, No. 4 Mk I (T)";
         displayName = "Lee Enfield No. 4 Mk I (T) (2PzD)";
+        dispersion = MOA_TO_RAD(2.5);
         scope = 2;
+        // modes[] = {"Single","Far","Medium","Short"};
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 109.924;
         };
+        class Single : Single {
+            dispersion = MOA_TO_RAD(2.5);
+            class StandardSound : BaseSoundModeType {
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"IFA3_nagant_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
+            };
+        };/*
+        class Short : Short {
+            dispersion = MOA_TO_RAD(3);
+        };
+        class Medium : Medium {
+            dispersion = MOA_TO_RAD(3);
+        };
+        class Far : Far {
+            dispersion = MOA_TO_RAD(3);
+        };*/
     };
 //End Rifles
 
@@ -135,7 +176,8 @@
     class LEN_M3a1 : LIB_M1A1_Thompson {
         descriptionShort = "Submachine Gun, Caliber .45, M3A1";
         displayName = "M3A1 GreaseGun (2PzD)";
-        fow_burstLength = 2;
+        //dispersion = 8);
+        fow_burstLength = 3;
         modes[] = {"Full","Far","Medium","Short"};
         magazines[] = {"fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp_T_M3_2PzD","LEN_30Rnd_45ACP_M3"};
         recoil = "recoil_smg_02";
@@ -149,8 +191,9 @@
             mass = 77.426;
         };
         class Full : Mode_FullAuto {
+            //dispersion = 8);
             reloadTime = 0.133; //451 rpm
-        };
+        };/*
         class Far : Full {
             reloadTime = 0.133; //451 rpm
         };
@@ -159,7 +202,7 @@
         };
         class Short : Medium {
             reloadTime = 0.133; //451 rpm
-        };
+        };*/
     };
 
     class LEN_PPS43 : LIB_PPSh41_m {
@@ -178,23 +221,24 @@
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 65.074;
         };
-        class Far : Full {
-            reloadTime = 0.100; //600 rpm
-        };
-        class Medium : Full {
-            reloadTime = 0.100; //600 rpm
-        };
-        class Short : Medium {
-            reloadTime = 0.100; //600 rpm
-        };
         class Full : Full {
             reloadTime = 0.100; //600 rpm
+        };/*
+        class Far : Far {
+            reloadTime = 0.100; //600 rpm
         };
+        class Medium : Medium {
+            reloadTime = 0.100; //600 rpm
+        };
+        class Short : Short {
+            reloadTime = 0.100; //600 rpm
+        };*/
     };
 
     class LEN_StenMk2 : LIB_MP40 {
         descriptionShort = "Sten Mk II";
         displayName = "Sten Mk II (2PzD)";
+        dispersion = MOA_TO_RAD(8);
         fow_burstLength = 3;
         magazines[] = {"LEN_32Rnd_9x19","fow_32Rnd_9x19_sten","LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40"};
         recoil = "recoil_smg_02";
@@ -210,15 +254,18 @@
             mass = 65.074;
         };
         class FullAuto : Mode_FullAuto {
+            dispersion = MOA_TO_RAD(8);
             reloadTime = 0.109; //550 rpm
         };
         class Single : Mode_SemiAuto {
+            dispersion = MOA_TO_RAD(8);
             reloadTime = 0.109; //550 rpm
         };
     };
     class LEN_StenMk2S : LEN_StenMk2 {
         descriptionShort = "Sten Mk IIS";
         displayName = "Sten Mk IIS (2PzD)";
+        dispersion = MOA_TO_RAD(8);
         fow_burstLength = 4;
         scope = 2;
         scopeCurator = 2;
@@ -232,15 +279,18 @@
             mass = 77.644;
         };
         class FullAuto : FullAuto {
+            dispersion = MOA_TO_RAD(8);
             reloadTime = 0.133; //451 rpm
         };
         class Single : Single {
+            dispersion = MOA_TO_RAD(8);
             reloadTime = 0.133; //451 rpm
         };
     };
     class LEN_StenMk5 : LEN_StenMk2 {
         descriptionShort = "Sten Mk V";
         displayName = "Sten Mk V (2PzD)";
+        dispersion = MOA_TO_RAD(8);
         fow_burstLength = 3;
         scope = 1;
         scopeCurator = 0;

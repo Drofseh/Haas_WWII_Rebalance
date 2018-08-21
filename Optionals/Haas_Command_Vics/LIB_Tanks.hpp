@@ -20,8 +20,8 @@ class LIB_PzBefWgIV : LIB_PzKpfwIV_H {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Anton";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"crew"}; // This should be changes to  = {{"turret", {1}}}; once primaryGunner is fixed
             disabledPositions[] = {};
@@ -31,8 +31,8 @@ class LIB_PzBefWgIV : LIB_PzKpfwIV_H {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Bruno";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -49,8 +49,8 @@ class LIB_PzBefWgV : LIB_PzKpfwV {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Anton";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -60,8 +60,8 @@ class LIB_PzBefWgV : LIB_PzKpfwV {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Bruno";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -78,8 +78,8 @@ class LIB_PzBefWgVI_E : LIB_PzKpfwVI_B {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Anton";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -89,8 +89,8 @@ class LIB_PzBefWgVI_E : LIB_PzKpfwVI_B {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Bruno";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -107,8 +107,8 @@ class LIB_PzBefWgVI_B : LIB_PzKpfwVI_E {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Anton";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -118,8 +118,8 @@ class LIB_PzBefWgVI_B : LIB_PzKpfwVI_E {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Bruno";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -136,8 +136,8 @@ class LIB_JS2_43_Com : LIB_JS2_43 {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Anna";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -147,8 +147,8 @@ class LIB_JS2_43_Com : LIB_JS2_43 {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Borís";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -165,8 +165,8 @@ class LIB_T34_76_Com : LIB_T34_76 {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Anna";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -176,8 +176,8 @@ class LIB_T34_76_Com : LIB_T34_76 {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Borís";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -201,8 +201,8 @@ class LIB_T34_85_Com : LIB_T34_85 {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Anna";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -212,8 +212,8 @@ class LIB_T34_85_Com : LIB_T34_85 {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Borís";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -230,8 +230,8 @@ class LIB_M3A3_Stuart_Com : LIB_M3A3_Stuart {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -241,8 +241,8 @@ class LIB_M3A3_Stuart_Com : LIB_M3A3_Stuart {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -259,8 +259,8 @@ class LIB_M4A2_SOV_Com : LIB_M4A2_SOV {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -270,8 +270,8 @@ class LIB_M4A2_SOV_Com : LIB_M4A2_SOV {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -288,8 +288,8 @@ class LIB_M4A3_75_Com : LIB_M4A3_75 {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -299,8 +299,8 @@ class LIB_M4A3_75_Com : LIB_M4A3_75 {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -317,8 +317,8 @@ class LIB_M4A3_75_Tubes_Com : LIB_M4A3_75_Tubes {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -328,8 +328,8 @@ class LIB_M4A3_75_Tubes_Com : LIB_M4A3_75_Tubes {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -346,8 +346,8 @@ class LIB_M4A4_FIREFLY_Com : LIB_M4A4_FIREFLY {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -357,8 +357,8 @@ class LIB_M4A4_FIREFLY_Com : LIB_M4A4_FIREFLY {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -375,8 +375,8 @@ class LIB_M4A3_76_Com : LIB_M4A3_76 {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -386,8 +386,8 @@ class LIB_M4A3_76_Com : LIB_M4A3_76 {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -404,8 +404,8 @@ class LIB_M4A3_76_HVSS_Com : LIB_M4A3_76_HVSS {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -415,8 +415,8 @@ class LIB_M4A3_76_HVSS_Com : LIB_M4A3_76_HVSS {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -433,8 +433,8 @@ class LIB_M5A1_Stuart_Com : LIB_M5A1_Stuart {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
@@ -444,8 +444,8 @@ class LIB_M5A1_Stuart_Com : LIB_M5A1_Stuart {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};

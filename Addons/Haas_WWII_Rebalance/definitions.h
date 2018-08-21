@@ -1,4 +1,10 @@
 ﻿
+#define MOA_TO_RAD(d) ((d) * 0.00029088)
+//dispersion = MOA_TO_RAD(4);
+
+#define RPM_TO_TIME(rpm) (60 / (rpm))
+//reloadTime = RPM_TO_TIME(650);
+
 #define WEAPONSARRAY \
 "fow_w_bren", \
 "fow_w_k98", \

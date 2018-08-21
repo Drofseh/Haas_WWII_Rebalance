@@ -30,6 +30,7 @@ class cfgAmmo {
     class BulletBase;
 
     class Grenade;
+
     class GrenadeHand : Grenade {
         ace_frag_classes[] = {"ace_frag_tiny_HD","ACE_frag_small_HD","ACE_frag_small_HD"};
         ace_frag_enabled = 1;
@@ -37,6 +38,37 @@ class cfgAmmo {
         ace_frag_gurney_k = "3/5";
         ace_frag_skip = 0;
         ace_grenades_pullPinSound[] = {"A3\sounds_f\weapons\grenades\Grenade_PullPin.wss",1.5,1,10};
+    };
+
+    class R_60mm_HE;
+
+    class ShotDeployBase;
+
+    class Smoke_82mm_AMOS_White : ShotDeployBase {
+        soundFakeFall[] = {"soundFakeFall0",0.25,"soundFakeFall1",0.25,"soundFakeFall2",0.25,"soundFakeFall3",0.25};
+        soundFakeFall0[] = {"a3\Sounds_F\weapons\falling_bomb\fall_01",3.16228,1,1000};
+        soundFakeFall1[] = {"a3\Sounds_F\weapons\falling_bomb\fall_02",3.16228,1,1000};
+        soundFakeFall2[] = {"a3\Sounds_F\weapons\falling_bomb\fall_03",3.16228,1,1000};
+        soundFakeFall3[] = {"a3\Sounds_F\weapons\falling_bomb\fall_04",3.16228,1,1000};
+    };
+
+    class SmokeShell;
+
+    class SmokeShellArty : SmokeShell {
+        effectsSmoke = "FOW_no79_Grenade_Effects";
+        indirectHit = 25;
+        indirectHitRange = 5;
+        timeToLive = 180;
+    };
+
+    class SubmunitionBase;
+
+    class Smoke_120mm_AMOS_White : SubmunitionBase {
+        soundFakeFall[] = {"soundFakeFall0",0.25,"soundFakeFall1",0.25,"soundFakeFall2",0.25,"soundFakeFall3",0.25};
+        soundFakeFall0[] = {"a3\Sounds_F\weapons\falling_bomb\fall_01",3.16228,1,1000};
+        soundFakeFall1[] = {"a3\Sounds_F\weapons\falling_bomb\fall_02",3.16228,1,1000};
+        soundFakeFall2[] = {"a3\Sounds_F\weapons\falling_bomb\fall_03",3.16228,1,1000};
+        soundFakeFall3[] = {"a3\Sounds_F\weapons\falling_bomb\fall_04",3.16228,1,1000};
     };
 
     #include "FOW_Ammo.h"
@@ -54,25 +86,23 @@ class cfgMagazines {
 
     class CA_LauncherMagazine;
 
+    class 1Rnd_HE_Grenade_shell;
+
+    class 16Rnd_9x21_Mag;
+
     class 20Rnd_762x51_Mag;
 
     class 30Rnd_9x21_Mag;
-
-    class 16Rnd_9x21_Mag;
 
     class HandGrenade : CA_Magazine {
         mass = 8.87;
     };
 
-    class 1Rnd_HE_Grenade_shell;
+    class HandGrenade_West;
+
+    class SmokeShell;
 
     class VehicleMagazine;
-
-    class LIB_Shell_20L55_PzGr;
-    class LIB_Shell_20L55_PzGr40;
-    class LIB_Shell_20L55_SprGr;
-
-    class LIB_50Rnd_792x57_Veh;
 
     #include "FOW_Magazines.h"
 
@@ -84,6 +114,8 @@ class cfgMagazines {
 
 //cfgWeapons
 class cfgWeapons {
+
+    class CannonCore;
 
     class InventoryItem_Base_F;
 
@@ -108,14 +140,17 @@ class cfgWeapons {
 
     class Pistol_Base_F : Pistol {
         class WeaponSlotsInfo;
+        class Single;
     };
 
     class hgun_Rook40_F : Pistol_Base_F {
         class WeaponSlotsInfo;
+        class Single;
     };
 
     class hgun_P07_F : Pistol_Base_F {
         class WeaponSlotsInfo;
+        class Single;
     };
 
     class Launcher;
@@ -124,65 +159,15 @@ class cfgWeapons {
         class WeaponSlotsInfo;
     };
 
-    class MGun;
-
     class MGunCore;
 
-    class LIB_Slung_Static_Weapon_Base;
+    class MGun;
 
-    class LIB_MLMG_base;
-
-    class LIB_TankMGun_base;
-
-    class LIB_MG34_coax : LIB_TankMGun_base {
-        class manual;
-    };
-
-    class LIB_MLMG42 : LIB_MLMG_base {
-        class manual;
-    };
-
-    class LIB_M1919A4_coax : LIB_TankMGun_base {
-        class manual;
-    };
-
-    class LIB_LMG : Rifle_Long_Base_F {
-        class WeaponSlotsInfo;
-    };
-
-    class LIB_LAUNCHER : Launcher_Base_F {
-        class WeaponSlotsInfo;
-    };
-
-    class LIB_PISTOL : Pistol_Base_F {
-        class WeaponSlotsInfo;
-    };
-
-    class LIB_RIFLE : Rifle_Base_F {
-        class WeaponSlotsInfo;
-    };
-
-    class LIB_SMG : Rifle_Short_Base_F {
-        class WeaponSlotsInfo;
-    };
-
-    class LIB_SRIFLE : Rifle_Long_Base_F {
-        class WeaponSlotsInfo;
-    };
-
-    class fow_rifle_base : Rifle_Base_F {
-        class WeaponSlotsInfo;
-    };
-
-    class fow_shotgun_base : fow_rifle_base {
-        class WeaponSlotsInfo;
-    };
-
-    class fow_rifleBolt_base : fow_rifle_base {
-        class WeaponSlotsInfo;
-    };
+    class RocketPods;
 
     class ItemCore;
+
+
     class VestItem;
 
     class Vest_Camo_Base : ItemCore {
@@ -346,3 +331,37 @@ class CfgEditorSubcategories {
     };
 
 }; //End CfgEditorSubcategories
+
+class FOW_no79_Grenade_Effects {
+    class FOW_no79_Stage1 {
+        simulation = "particles";
+        type = "FOW_Grenade_FuseDetonation";
+        position[] = {0, 0, 0};
+        intensity = 1;
+        interval = 1;
+        lifeTime = 0.07;
+    };
+    class FOW_no79_Stage2 {
+        simulation = "particles";
+        type = "FOW_Grenade_Detonation_Phosphorus";
+        position[] = {0, 0, 0};
+        intensity = 0.5;
+        interval = 1;
+        lifeTime = 0.5;
+    };
+    class FOW_no79_Stage3 {
+        simulation = "particles";
+        type = "FOW_Grenade_Detonation_Heat";
+        position[] = {0, 0, 0};
+        intensity = 1;
+        interval = 1;
+        lifeTime = 0.1;
+    };
+    class FOW_no79_Stage4 {
+        simulation = "particles";
+        type = "FOW_Grenade_Detonation_Smoke";
+        position[] = {0, 0, 0};
+        intensity = 0.5;
+        interval = 1;
+    };
+};

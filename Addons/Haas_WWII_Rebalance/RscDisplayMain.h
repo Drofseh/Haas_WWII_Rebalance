@@ -1,11 +1,11 @@
-﻿class RscDisplayMain
-{
+﻿class RscActivePictureKeepAspect;
+class RscMainMenuSpotlight;
+class RscStandardDisplay;
+class RscText;
+
+class RscDisplayMain : RscStandardDisplay {
     class controls {
-        class Button3DEditor;
-        class BackgroundSpotlight;
-        class BackgroundSpotlightLeft;
-        class BackgroundSpotlightRight;
-        class Spotlight1 {
+        class Spotlight1 { // : RscMainMenuSpotlight {
             idc = 1021;
             x = "0.5 - (1.5 *   10) *   (pixelW * pixelGridNoUIScale * 2) -     (2 * pixelW)";
             class Controls {
@@ -397,7 +397,7 @@
             shadow = 0;
             style = 16;
         };
-        class Spotlight2 {
+        class Spotlight2 { // : RscText {
             idc = 1020;
             x = "0.5 - (0.5 *   10) *   (pixelW * pixelGridNoUIScale * 2)";
             y = "0.5 - (    10 / 2) *   (pixelH * pixelGridNoUIScale * 2)";
@@ -422,7 +422,7 @@
             tooltipColorBox[] = {1, 1, 1, 1};
             tooltipColorShade[] = {0, 0, 0, 0.65};
         };
-        class Spotlight3 {
+        class Spotlight3 { // : RscMainMenuSpotlight {
             idc = 1022;
             x = "0.5 + (0.5 *   10) *   (pixelW * pixelGridNoUIScale * 2) +     (2 * pixelW)";
             class Controls {

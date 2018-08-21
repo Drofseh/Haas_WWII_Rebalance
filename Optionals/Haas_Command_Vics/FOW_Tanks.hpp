@@ -11,8 +11,8 @@ class fow_v_cromwell_uk_com : fow_v_cromwell_uk {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {0,2}}};
             disabledPositions[] = {};
@@ -22,8 +22,8 @@ class fow_v_cromwell_uk_com : fow_v_cromwell_uk {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -40,8 +40,8 @@ class fow_v_m4a2_usa_com : fow_v_m4a2_usa {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {0,1}}};
             disabledPositions[] = {};
@@ -51,8 +51,8 @@ class fow_v_m4a2_usa_com : fow_v_m4a2_usa {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -69,8 +69,8 @@ class fow_v_m4a2_usmc_com : fow_v_m4a2_usmc {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {0,1}}};
             disabledPositions[] = {};
@@ -80,8 +80,8 @@ class fow_v_m4a2_usmc_com : fow_v_m4a2_usmc {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -98,8 +98,8 @@ class fow_v_m5a1_usa_com : fow_v_m5a1_usa {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {0,1}}};
             disabledPositions[] = {};
@@ -109,8 +109,8 @@ class fow_v_m5a1_usa_com : fow_v_m5a1_usa {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -127,8 +127,8 @@ class fow_v_m5a1_usmc_com : fow_v_m5a1_usmc {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Able";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {0,1}}};
             disabledPositions[] = {};
@@ -138,8 +138,8 @@ class fow_v_m5a1_usmc_com : fow_v_m5a1_usmc {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Baker";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};
@@ -156,8 +156,8 @@ class fow_v_panther_ger_heer_com : fow_v_panther_ger_heer {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Anton";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"turret", {0,1}}};
             disabledPositions[] = {};
@@ -167,8 +167,8 @@ class fow_v_panther_ger_heer_com : fow_v_panther_ger_heer {
             intercom[] = {"intercom_1"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Bruno";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};

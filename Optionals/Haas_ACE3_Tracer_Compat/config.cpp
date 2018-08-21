@@ -3,7 +3,7 @@
         author = "Wilhelm Haas";
         units[] = {};
         weapons[] = {};
-        requiredAddons[] = {"ace_tracers","fow_weapons_c","WW2_Assets_c_Vehicles_Weapons_c","WW2_Assets_c_Weapons_InfantryWeapons_c","LEN_IFA3_WP"};
+        requiredAddons[] = {"ace_tracers","Haas_WWII_Rebalance"};
     };
  };
 

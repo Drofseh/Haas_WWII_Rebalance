@@ -19,11 +19,11 @@
     };
 
     class fow_B_20mm_Tracer_Red : fow_B_20mm {
-        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d"; // should be white
+        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
     };
 
     class fow_B_20mm_Tracer_Yellow : fow_B_20mm {
-        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d"; // should be white
+        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
     };
 
     class fow_B_303_Ball : BulletBase {

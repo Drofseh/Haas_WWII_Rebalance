@@ -3,7 +3,7 @@ class CfgPatches {
         author = "Wilhelm Haas (Drofseh)";
         authors[] = {"Wilhelm Haas (Drofseh)"};
         requiredVersion = 0.1;
-        requiredAddons[] = {"FOW_ACRE2_Compat","Haas_WWII_Rebalance","IFA3_ACRE2_Compat"};
+        requiredAddons[] = {"FOW_ACRE2_Compat","IFA3_ACRE2_Compat"};
         units[] = {};
         weapons[] = {};
         magazines[] = {};

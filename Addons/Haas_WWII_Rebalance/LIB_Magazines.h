@@ -1,4 +1,5 @@
-﻿//Small arms magazines
+﻿
+//Small arms magazines
     class LIB_1Rnd_60mm_M6 : CA_LauncherMagazine {
         descriptionShort = "2.36-Inch Anti-Tank Rocket M6, for use in the Bazooka";
         displayName = "Bazooka, 2.36-Inch Anti-Tank Rocket M6";
@@ -457,6 +458,16 @@
     };
 
 //Vehicle magazines
+    class LIB_APCR_VehicleMagazine_base : VehicleMagazine {
+        tracersEvery = 1;
+    };
+
+    class LIB_Bomb_VehicleMagazine_base;
+
+    class LIB_Shell_20L55_PzGr;
+    class LIB_Shell_20L55_PzGr40;
+    class LIB_Shell_20L55_SprGr;
+
     class LIB_10x_20L55_PzGr40 : LIB_Shell_20L55_PzGr {
         count = 20;
     };
@@ -467,4 +478,137 @@
 
     class LIB_10x_20L55_SprGr : LIB_Shell_20L55_SprGr {
         count = 20;
+    };
+
+    class LIB_2000Rnd_MG131_FW190 : VehicleMagazine {
+        displayName = "13mm HE-T";
+        descriptionShort = "13mm HE-T";
+    };
+
+    class LIB_500Rnd_MG151_FW190 : VehicleMagazine {
+        displayName = "20mm HEI-T";
+        descriptionShort = "20mm HEI-T";
+    };
+
+    class LIB_30Rnd_M4_P39 : VehicleMagazine {
+        displayName = "37mm HE-T";
+        descriptionShort = "37mm HE-T";
+    };
+
+    class LIB_1Rnd_FAB250 : LIB_Bomb_VehicleMagazine_base {
+        displayName = "FAB-250 Bomb";
+        descriptionShort = "FAB-250 Bomb";
+    };
+
+//Grenades
+    class LIB_F1 : HandGrenade_West {
+        descriptionShort = "F-1 Grenade, Russian copy of a French hand grenade.";
+        displayName = "F-1";
+        displayNameShort = "F-1 (Frag)";
+        initSpeed = 20;
+        mass = 13.228;
+    };
+
+    class LIB_M39 : HandGrenade_West {
+        descriptionShort = "Model 39 Eihandgranate, German fragmentation grenade.";
+        displayName = "M39";
+        displayNameShort = "M39 (Frag)";
+        initSpeed = 27;
+        mass = 7.496;
+    };
+
+    class LIB_NB39 : SmokeShell {
+        descriptionShort = "Nebelhandgranate 39, German smoke grenade, 120 second burn time.";
+        displayName = "Nb39B";
+        displayNameShort = "Nb39B (Smoke)";
+        initSpeed = 20;
+        mass = 18.739;
+    };
+
+    class LIB_Pwm : HandGrenade_West {
+        descriptionShort = "Panzerwurfmine, German AT grenade, explodes on impact.";
+        displayName = "PWM";
+        displayNameShort = "PWM (AT)";
+        initSpeed = 15;
+        mass = 29.762;
+    };
+
+    class LIB_RDG : SmokeShell {
+        descriptionShort = "RDG-1, Russian smoke grenade, 120 second burn time.";
+        displayName = "RDG-1";
+        displayNameShort = "RDG-1 (Smoke)";
+        initSpeed = 26;
+        mass = 7.716;
+    };
+
+    class LIB_Rg42 : HandGrenade_West {
+        descriptionShort = "RG-42, Russian fragmentation grenade.";
+        displayName = "RG-42";
+        displayNameShort = "RG-42 (Frag)";
+        initSpeed = 24;
+        mass = 9.700;
+    };
+
+    class LIB_Rpg6 : HandGrenade_West {
+        descriptionShort = "RPG-6, Russian AT grenade, explodes on impact.";
+        displayName = "RPG-6";
+        displayNameShort = "RPG-6 (AT)";
+        initSpeed = 16;
+        mass = 24.251;
+    };
+
+    class LIB_Shg24 : HandGrenade_West {
+        descriptionShort = "Model 1924 Stielhandgranate, standard German stick grenade.";
+        displayName = "M24 Stielhandgranate";
+        displayNameShort = "M24 (HE)";
+        initSpeed = 24;
+        mass = 13.117;
+    };
+
+    class LIB_Shg24x7 : LIB_Shg24 {
+        descriptionShort = "Model 1924 Stielhandgranate (Geballte Ladung), bundled charge for demolitions or anti-vehicle.";
+        displayName = "M24 (Geballte Ladung)";
+        displayNameShort = "M24 (AT)";
+        initSpeed = 10;
+        mass = 91.822;
+    };
+
+    class LIB_US_M18 : SmokeShell {
+        descriptionShort = "AN-M8 Smoke HC, a US smoke grenade, 130 second burn time.";
+        displayName = "AN-M8 Smoke HC";
+        displayNameShort = "AN-M8 (Smoke)";
+        initSpeed = 19;
+        mass = 14.991;
+    };
+
+    class LIB_US_M18_Green : SmokeShell {
+        descriptionShort = "M18 Smoke Green, a US smoke grenade, 70 second burn time.";
+        displayName = "M18 Smoke Green";
+        displayNameShort = "M18 (Green)";
+        initSpeed = 23;
+        mass = 11.861;
+    };
+
+    class LIB_US_M18_Red : SmokeShell {
+        descriptionShort = "M18 Smoke Red, a US smoke grenade, 70 second burn time.";
+        displayName = "M18 Smoke Red";
+        displayNameShort = "M18 (Red)";
+        initSpeed = 23;
+        mass = 11.861;
+    };
+
+    class LIB_US_M18_Yellow : SmokeShell {
+        descriptionShort = "M18 Smoke Yellow, a US smoke grenade, 70 second burn time.";
+        displayName = "M18 Smoke Yellow";
+        displayNameShort = "M18 (Yellow)";
+        initSpeed = 23;
+        mass = 11.861;
+    };
+
+    class LIB_US_Mk_2 : HandGrenade_West {
+        descriptionShort = "Mk 2 Grenade, the standard US fragmentation grenade.";
+        displayName = "Mk 2 Grenade";
+        displayNameShort = "Mk 2 (Frag)";
+        initSpeed = 20;
+        mass = 13.117;
     };

@@ -5,8 +5,8 @@ class fow_v_sdkfz_234_1_Com : fow_v_sdkfz_234_1 {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Anton";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver"};
             disabledPositions[] = {};
@@ -16,8 +16,8 @@ class fow_v_sdkfz_234_1_Com : fow_v_sdkfz_234_1 {
             intercom[] = {"none"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Bruno";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"commander"};
             disabledPositions[] = {};

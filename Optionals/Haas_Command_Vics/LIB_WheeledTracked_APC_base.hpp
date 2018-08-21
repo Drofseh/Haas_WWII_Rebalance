@@ -5,8 +5,8 @@ class LIB_SdKfz251_Com : LIB_SdKfz251 {
 
     class AcreRacks {
         class Rack_1 {
-            displayName = "Vehicle Radio";
-            shortName = "Rack";
+            displayName = "Radio Set - Anton";
+            shortName = "A-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {"driver", {"cargo", 4}};
             disabledPositions[] = {};
@@ -16,8 +16,8 @@ class LIB_SdKfz251_Com : LIB_SdKfz251 {
             intercom[] = {"none"};
         };
         class Rack_2 {
-            displayName = "Command Radio";
-            shortName = "Cmnd";
+            displayName = "Radio Set - Bruno";
+            shortName = "B-Set";
             componentname = "ACRE_VRC64";
             allowedPositions[] = {{"cargo", 4}};
             disabledPositions[] = {};
