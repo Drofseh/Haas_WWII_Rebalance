@@ -176,6 +176,11 @@
         displayName = "StG44, 30 Round Magazine";
     };
 
+    class LIB_30Rnd_M3_GreaseGun_45ACP : CA_Magazine {
+        descriptionShort = ".45 ACP, 30 Rounds, for use in the M3 Grease Gun";
+        displayName = "M3 Grease Gun, 30 Round Magazine";
+    };
+
     class LIB_32Rnd_9x19 : CA_Magazine {
         descriptionShort = "9x19mm, 32 Rounds, for use in the MP40";
         displayName = "MP40, 32 Round Magazine";

@@ -1090,7 +1090,7 @@
         dispersion = MOA_TO_RAD(8);
         fow_burstLength = 3;
         modes[] = {"Full","Single","Far","Medium","Short"};
-        magazines[] = {"fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp_T_M3_2PzD","LEN_30Rnd_45ACP_M3","fow_30Rnd_45acp","fow_30Rnd_45acp_T"};
+        magazines[] = {"LIB_30Rnd_M3_GreaseGun_45ACP","fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp_T_M3_2PzD","LEN_30Rnd_45ACP_M3","fow_30Rnd_45acp","fow_30Rnd_45acp_T"};
         recoil = "recoil_smg_02";
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {

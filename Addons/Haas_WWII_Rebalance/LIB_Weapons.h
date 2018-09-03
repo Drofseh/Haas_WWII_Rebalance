@@ -203,6 +203,7 @@
     class LIB_G41 : LIB_RIFLE {
         descriptionShort = "Gewehr 41 (W)";
         displayName = "G41(W) (2PzD)";
+        discreteDistanceInitIndex = 2;
         dispersion = MOA_TO_RAD(6);
         magazines[] = {"LIB_10Rnd_792x57_clip","lib_10Rnd_792x57","lib_10Rnd_792x57_T","lib_10Rnd_792x57_T2","lib_10Rnd_792x57_sS","lib_10Rnd_792x57_SMK","fow_10nd_792x57","fow_5Rnd_792x57","lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK"};
         recoil = "recoil_rifle_1";
@@ -217,7 +218,6 @@
     class LIB_G43 : LIB_RIFLE {
         descriptionShort = "Gewehr 43";
         displayName = "G43 (2PzD)";
-        discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200};
         discreteDistanceInitIndex = 2;
         dispersion = MOA_TO_RAD(6);
         magazines[] = {"lib_10Rnd_792x57","LIB_10Rnd_792x57_clip","lib_10Rnd_792x57_T","lib_10Rnd_792x57_T2","lib_10Rnd_792x57_sS","lib_10Rnd_792x57_SMK","fow_10nd_792x57","fow_5Rnd_792x57","lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK"};
@@ -233,7 +233,6 @@
     class LIB_K98 : LIB_RIFLE {
         descriptionShort = "Karabiner 98 kurz, pre-war model";
         displayName = "Kar98k (pre-war) (2PzD)";
-        discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
         discreteDistanceInitIndex = 2;
         dispersion = MOA_TO_RAD(5);
         magazines[] = {"lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK","fow_5Rnd_792x57"};
@@ -642,7 +641,7 @@
         dispersion = MOA_TO_RAD(8);
         fow_burstLength = 3;
         modes[] = {"Full","Far","Medium","Short"};
-        magazines[] = {"fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp_T_M3_2PzD","LEN_30Rnd_45ACP_M3","fow_30Rnd_45acp","LIB_30Rnd_45ACP","LIB_30Rnd_45ACP_t"};
+        magazines[] = {"LIB_30Rnd_M3_GreaseGun_45ACP","fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp_T_M3_2PzD","LEN_30Rnd_45ACP_M3","fow_30Rnd_45acp","fow_30Rnd_45acp_T"};
         recoil = "recoil_smg_02";
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
