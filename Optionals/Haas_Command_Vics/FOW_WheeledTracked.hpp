@@ -1,6 +1,6 @@
 ﻿class fow_v_sdkfz_251_camo_ger_heer;
 
-class fow_v_sdkfz_251_camo_ger_heer_Com : fow_v_sdkfz_251_camo_ger_heer {
+class fow_v_sdkfz_251_camo_ger_heer_com : fow_v_sdkfz_251_camo_ger_heer {
     displayName = "Sd.Kfz. 251/3 Funkpanzerwagen";
 
     class AcreRacks {

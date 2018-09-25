@@ -6,8 +6,8 @@ class LIB_PzKpfwVI_E;
 class LIB_JS2_43;
 class LIB_T34_76;
 class LIB_T34_85;
-class LIB_M4A2_SOV;
 class LIB_M3A3_Stuart;
+class LIB_M4A2_SOV;
 class LIB_M4A3_75;
 class LIB_M4A3_75_Tubes;
 class LIB_M4A4_FIREFLY;
@@ -23,7 +23,7 @@ class LIB_PzBefWgIV : LIB_PzKpfwIV_H {
             displayName = "Radio Set - Anton";
             shortName = "A-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"crew"}; // This should be changes to  = {{"turret", {1}}}; once primaryGunner is fixed
+            allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -262,7 +262,7 @@ class LIB_M4A2_SOV_Com : LIB_M4A2_SOV {
             displayName = "Radio Set - Able";
             shortName = "A-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {{"turret", {1}}};
+            allowedPositions[] = {"commander"};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -273,7 +273,7 @@ class LIB_M4A2_SOV_Com : LIB_M4A2_SOV {
             displayName = "Radio Set - Baker";
             shortName = "B-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"commander"};
+            allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -291,7 +291,7 @@ class LIB_M4A3_75_Com : LIB_M4A3_75 {
             displayName = "Radio Set - Able";
             shortName = "A-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {{"turret", {1}}};
+            allowedPositions[] = {"commander"};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -302,7 +302,7 @@ class LIB_M4A3_75_Com : LIB_M4A3_75 {
             displayName = "Radio Set - Baker";
             shortName = "B-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"commander"};
+            allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -320,7 +320,7 @@ class LIB_M4A3_75_Tubes_Com : LIB_M4A3_75_Tubes {
             displayName = "Radio Set - Able";
             shortName = "A-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {{"turret", {1}}};
+            allowedPositions[] = {"commander"};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -331,7 +331,7 @@ class LIB_M4A3_75_Tubes_Com : LIB_M4A3_75_Tubes {
             displayName = "Radio Set - Baker";
             shortName = "B-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"commander"};
+            allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -349,7 +349,7 @@ class LIB_M4A4_FIREFLY_Com : LIB_M4A4_FIREFLY {
             displayName = "Radio Set - Able";
             shortName = "A-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {{"turret", {1}}};
+            allowedPositions[] = {"commander"};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -360,7 +360,7 @@ class LIB_M4A4_FIREFLY_Com : LIB_M4A4_FIREFLY {
             displayName = "Radio Set - Baker";
             shortName = "B-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"commander"};
+            allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -378,7 +378,7 @@ class LIB_M4A3_76_Com : LIB_M4A3_76 {
             displayName = "Radio Set - Able";
             shortName = "A-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {{"turret", {1}}};
+            allowedPositions[] = {"commander"};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -389,7 +389,7 @@ class LIB_M4A3_76_Com : LIB_M4A3_76 {
             displayName = "Radio Set - Baker";
             shortName = "B-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"commander"};
+            allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -407,7 +407,7 @@ class LIB_M4A3_76_HVSS_Com : LIB_M4A3_76_HVSS {
             displayName = "Radio Set - Able";
             shortName = "A-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {{"turret", {1}}};
+            allowedPositions[] = {"commander"};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -418,7 +418,7 @@ class LIB_M4A3_76_HVSS_Com : LIB_M4A3_76_HVSS {
             displayName = "Radio Set - Baker";
             shortName = "B-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"commander"};
+            allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -436,7 +436,7 @@ class LIB_M5A1_Stuart_Com : LIB_M5A1_Stuart {
             displayName = "Radio Set - Able";
             shortName = "A-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {{"turret", {1}}};
+            allowedPositions[] = {"commander"};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -447,7 +447,7 @@ class LIB_M5A1_Stuart_Com : LIB_M5A1_Stuart {
             displayName = "Radio Set - Baker";
             shortName = "B-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"commander"};
+            allowedPositions[] = {{"turret", {1}}};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";

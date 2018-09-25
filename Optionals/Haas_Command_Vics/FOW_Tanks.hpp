@@ -43,7 +43,7 @@ class fow_v_m4a2_usa_com : fow_v_m4a2_usa {
             displayName = "Radio Set - Able";
             shortName = "A-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {{"turret", {0,1}}};
+            allowedPositions[] = {"commander"};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -54,7 +54,7 @@ class fow_v_m4a2_usa_com : fow_v_m4a2_usa {
             displayName = "Radio Set - Baker";
             shortName = "B-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"commander"};
+            allowedPositions[] = {{"turret", {0,1}}};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -72,7 +72,7 @@ class fow_v_m4a2_usmc_com : fow_v_m4a2_usmc {
             displayName = "Radio Set - Able";
             shortName = "A-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {{"turret", {0,1}}};
+            allowedPositions[] = {"commander"};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";
@@ -83,7 +83,7 @@ class fow_v_m4a2_usmc_com : fow_v_m4a2_usmc {
             displayName = "Radio Set - Baker";
             shortName = "B-Set";
             componentname = "ACRE_VRC64";
-            allowedPositions[] = {"commander"};
+            allowedPositions[] = {{"turret", {0,1}}};
             disabledPositions[] = {};
             defaultComponents[] = {};
             mountedRadio = "ACRE_PRC77";

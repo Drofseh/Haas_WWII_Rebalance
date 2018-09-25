@@ -1,6 +1,6 @@
 ﻿class fow_v_sdkfz_234_1;
 
-class fow_v_sdkfz_234_1_Com : fow_v_sdkfz_234_1 {
+class fow_v_sdkfz_234_1_com : fow_v_sdkfz_234_1 {
     displayName = "Sd.Kfz. 234/1 (Extra Radio)";
 
     class AcreRacks {
