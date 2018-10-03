@@ -38,6 +38,10 @@
         };
     };
 
+    class LIB_FLARE_PISTOL : LIB_PISTOL {
+        magazines[] = {"LIB_1Rnd_flare_white","LIB_1Rnd_flare_red","LIB_1Rnd_flare_green","LIB_1Rnd_flare_yellow","LIB_1Rnd_flare_blue","LIB_1Rnd_flare_orange","LIB_1Rnd_flare_purple"};
+    };
+
     class LIB_M1895 : LIB_PISTOL {
         descriptionShort = "Nagant M1895 Revolver";
         displayName = "Nagant M1895 (2PzD)";

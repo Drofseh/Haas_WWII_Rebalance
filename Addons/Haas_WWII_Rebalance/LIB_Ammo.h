@@ -3,6 +3,17 @@
         timetolive = "3";
     };
 
+    class LIB_40mm_White;
+    class LIB_40mm_Blue : LIB_40mm_White {
+        lightColor[] = {0,0.25,0.5,0.5};
+    };
+    class LIB_40mm_Orange : LIB_40mm_White {
+        lightColor[] = {0.5,0.25,0.1,0.5};
+    };
+    class LIB_40mm_Purple : LIB_40mm_White {
+        lightColor[] = {0.3,0.1,0.5,0.5};
+    };
+
 //Grenades
     class LIB_GrenadeHand_base;
     class LIB_SmokeShell_base;

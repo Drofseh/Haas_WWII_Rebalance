@@ -5,6 +5,31 @@
         displayName = "Bazooka, 2.36-Inch Anti-Tank Rocket M6";
     };
 
+    class LIB_1Rnd_flare_white : CA_Magazine {
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Flare_White_ca.paa";
+    };
+    class LIB_1Rnd_flare_yellow : LIB_1Rnd_flare_white {
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Flare_Yellow_ca.paa";
+    };
+    class LIB_1Rnd_flare_blue : LIB_1Rnd_flare_white {
+        descriptionShort = "Flare Ammo (Blue)";
+        displayName = "Flare Ammo (Blue)";
+        ammo = "LIB_40mm_Blue";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Flare_Blue_ca.paa";
+    };
+    class LIB_1Rnd_flare_orange : LIB_1Rnd_flare_white {
+        descriptionShort = "Flare Ammo (Orange)";
+        displayName = "Flare Ammo (Orange)";
+        ammo = "LIB_40mm_Orange";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Flare_Orange_ca.paa";
+    };
+    class LIB_1Rnd_flare_purple : LIB_1Rnd_flare_white {
+        descriptionShort = "Flare Ammo (Purple)";
+        displayName = "Flare Ammo (Purple)";
+        ammo = "LIB_40mm_Purple";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Flare_Purple_ca.paa";
+    };
+
     class LIB_1Rnd_G_Mk2 : CA_Magazine {
         descriptionShort = "Mk2 Fragmentation Grenade, for use in the M7 Grenade Launcher";
         displayName = "Grenade, Rifle, Fragmentation, Mk 2";

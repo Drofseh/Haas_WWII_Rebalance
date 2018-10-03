@@ -5,6 +5,7 @@ class CfgPatches {
     class Haas_WWII_Rebalance {
         author = "Wilhelm Haas";
         units[] = {};
+        magazines[] = {"LIB_1Rnd_flare_blue","LIB_1Rnd_flare_orange","LIB_1Rnd_flare_purple"};
         weapons[] = {WEAPONSARRAY};
         requiredAddons[] = {"ww2_core_c_if_zzz_lastloaded_c",
                             "fow_main","fow_weapons_c","fow_characters_c","fow_functions","fow_statics_c",
