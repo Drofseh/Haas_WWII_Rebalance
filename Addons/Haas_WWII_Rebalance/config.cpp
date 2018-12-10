@@ -101,9 +101,17 @@ class cfgMagazines {
 
     class HandGrenade_West;
 
+    class SatchelCharge_Remote_Mag;
+
     class SmokeShell;
 
+    class 8Rnd_82mm_Mo_Smoke_white;
+
     class VehicleMagazine;
+
+    class 1000Rnd_20mm_shells;
+
+    class 500Rnd_127x99_mag_Tracer_Red;
 
     #include "FOW_Magazines.h"
 

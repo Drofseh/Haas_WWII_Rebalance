@@ -14,7 +14,7 @@
         lightColor[] = {0.3,0.1,0.5,0.5};
     };
 
-//Grenades
+//Grenades, Explosives, Rockets
     class LIB_GrenadeHand_base;
     class LIB_SmokeShell_base;
 

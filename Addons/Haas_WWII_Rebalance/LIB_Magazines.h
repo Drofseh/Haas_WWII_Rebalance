@@ -30,6 +30,11 @@
         picture = "\Haas_WWII_Rebalance\UI\Gear_Flare_Purple_ca.paa";
     };
 
+    class LIB_1Rnd_G_DYAKONOV : CA_Magazine {
+        descriptionShort = "Dyakonov rifle grenade, for use in the Dyakonov grenade launcher.";
+        displayName = "Dyakonov Rifle Grenade";
+    };
+
     class LIB_1Rnd_G_Mk2 : CA_Magazine {
         descriptionShort = "Mk2 Fragmentation Grenade, for use in the M7 Grenade Launcher";
         displayName = "Grenade, Rifle, Fragmentation, Mk 2";
@@ -38,6 +43,22 @@
     class LIB_1Rnd_G_M9A1 : LIB_1Rnd_G_Mk2 {
         descriptionShort = "M9A1 HEAT Rifle Grenade, for use in the M7 Grenade Launcher";
         displayName = "Grenade, Rifle, Antitank, M9A1";
+    };
+
+    class LIB_1Rnd_PzFaust_30m : CA_LauncherMagazine {
+        displayName = "Panzerfaust 30 Warhead";
+        displayNameShort = "Warhead from Panzerfaust 30";
+        mass = 0.1;
+    };
+    class LIB_1Rnd_PzFaust_60m : LIB_1Rnd_PzFaust_30m {
+        displayName = "Panzerfaust 60 Warhead";
+        displayNameShort = "Warhead from Panzerfaust 60";
+        mass = 0.1;
+    };
+    class LIB_1Rnd_Faustpatrone : LIB_1Rnd_PzFaust_30m {
+        displayName = "Panzerfaust 30 Klein Warhead";
+        displayNameShort = "Warhead from Panzerfaust 30 Klein";
+        mass = 0.1;
     };
 
     class LIB_1Rnd_RPzB : CA_LauncherMagazine {
@@ -162,9 +183,10 @@
         displayName = "M1 Carbine, 15 Round Magazine, Tracer";
     };
     class LIB_30Rnd_762x33_2PzD : LIB_15Rnd_762x33 {
-        count = 30;
         descriptionShort = ".30 Carbine, 30 Rounds, for use in the M2 Carbine";
         displayName = "M2 Carbine, 30 Round Magazine";
+        count = 30;
+        mass = 5.5;
     };
 
     class LIB_20Rnd_762x63 : CA_Magazine {
@@ -191,9 +213,10 @@
         displayName = "M1928 Thompson 50 Round Magazine";
     };
     class LIB_20Rnd_45ACP_M1_2PzD : LIB_30Rnd_45ACP {
-        count = 20;
         descriptionShort = ".45 ACP, 20 Rounds, for use in the M1928, M1, or M1A1 Thompson";
         displayName = "Thompson, 20 Round Magazine";
+        count = 20;
+        mass = 7;
     };
 
     class LIB_30Rnd_792x33 : CA_Magazine {
@@ -239,9 +262,9 @@
     };
 
     class LIB_63Rnd_762x54 : LIB_47Rnd_762x54 {
-        count = 60;
         descriptionShort = "7.62x54mm, 60 Rounds, for use in the DT";
         displayName = "DT, 60 Round Magazine";
+        count = 60;
     };
     class LIB_63Rnd_762x54d : LIB_63Rnd_762x54 {
         descriptionShort = "7.62x54mm, 60 Rounds, Type D Heavy, for use in the DT";
@@ -440,9 +463,9 @@
         displayName = "M1911A1, 7 Round Magazine";
     };
     class LIB_7Rnd_45ACP_2PzD : LIB_7Rnd_45ACP {
-        count = 7;
         descriptionShort = ".45 ACP, 7 Rounds, for use in the De Lisle Carbine";
         displayName = "De Lisle Carbine, 7 Round Magazine";
+        count = 7;
     };
     class LIB_11Rnd_45ACP_2PzD : LIB_7Rnd_45ACP_2PzD {
         count = 11;
@@ -641,4 +664,144 @@
         displayNameShort = "Mk 2 (Frag)";
         initSpeed = 20;
         mass = 13.117;
+    };
+
+//Vehicle Magazines
+
+    class LIB_100Rnd_127x99_M2 : VehicleMagazine {
+        displayName = "M2, 100 Round Belt";
+    };
+    class LIB_50Rnd_127x108 : LIB_100Rnd_127x99_M2 {
+        displayName = "M2, 50 Round Belt";
+    };
+
+    class LIB_250rnd_7_62x54R_maxim : VehicleMagazine {
+        displayName = "Maxim Gun, 50 Round Belt";
+    };
+    class LIB_250rnd_7_62x54R_maxim_D : LIB_250rnd_7_62x54R_maxim {
+        displayName = "Maxim Gun, 250 Round Belt, Type D Heavy";
+    };
+
+    class LIB_50Rnd_792x57_Veh : VehicleMagazine {
+        displayName = "MG34/MG42, 50 Round Drum";
+    };
+    class LIB_250Rnd_792x57 : LIB_50Rnd_792x57_Veh {
+        displayName = "MG34/MG42, 250 Round Belt";
+    };
+    class LIB_250Rnd_792x57_sS : LIB_250Rnd_792x57 {
+        displayName = "MG34/MG42, 250 Round Belt, s.S. - Heavy";
+    };
+    class LIB_250Rnd_792x57_SMK : LIB_250Rnd_792x57 {
+        displayName = "MG34/MG42, 250 Round Belt, S.m.K. AP";
+    };
+
+    class LIB_63rnd_DT : VehicleMagazine {
+        displayName = "DT, 60 Round Magazine";
+        count = 60;
+    };
+
+    class LIB_150rnd_MG34 : VehicleMagazine {
+        displayName = "MG34/MG42, 150 Round Belt";
+    };
+
+    class LIB_250Rnd_M1919A4 : VehicleMagazine {
+        displayName = "M1919, 250 Round Belt";
+    };
+
+    class LIB_2000Rnd_MG131_FW190 : VehicleMagazine {
+        displayName = "MG131, 13mm";
+    };
+
+    class LIB_500Rnd_MG151_FW190 : VehicleMagazine {
+        displayName = "MG151, 20mm";
+    };
+
+    class LIB_2000Rnd_MG81_JU87 : VehicleMagazine {
+        displayName = "MG81, 7.92x57mm";
+    };
+
+    class LIB_1000Rnd_M2_P39 : VehicleMagazine {
+        displayName = "AN/M2, .50 Cal";
+    };
+
+    class LIB_30Rnd_M4_P39 : VehicleMagazine {
+        displayName = "M4, 37mm";
+    };
+
+    class LIB_450Rnd_ShKAS_PE2 : VehicleMagazine {
+        displayName = "ShKAS, 7.62x54R";
+    };
+
+    class LIB_150Rnd_UBK_PE2 : VehicleMagazine {
+        displayName = "UBK, .50 Cal";
+    };
+
+    class LIB_1500Rnd_UBT_PE2 : LIB_150Rnd_UBK_PE2 {
+        displayName = "UBT, .50 Cal";
+    };
+
+    class LIB_4000Rnd_M2_P47 : VehicleMagazine {
+        displayName = "AN/M2, .50 Cal";
+        count = 3400;
+    };
+
+    class LIB_1Rnd_SC50 : LIB_Bomb_VehicleMagazine_base {
+        displayName = "SC-50 Bomb";
+    };
+
+    class LIB_1Rnd_SC250 : LIB_Bomb_VehicleMagazine_base {
+        displayName = "SC-250 Bomb";
+    };
+
+    class LIB_1Rnd_SC500 : LIB_Bomb_VehicleMagazine_base {
+        displayName = "SC-500 Bomb";
+    };
+
+    class LIB_6Rnd_M8_P47 : VehicleMagazine {
+        displayName = "5 inch Rockets";
+    };
+
+    class LIB_8Rnd_82mmHE_BM37 : VehicleMagazine {
+        displayName = "BM-37 82mm HE Mortar Bomb";
+    };
+    class LIB_8Rnd_81mmHE_GRWR34 : LIB_8Rnd_82mmHE_BM37 {
+        displayName = "GrWr34 81mm HE Mortar Bomb";
+    };
+    class LIB_8Rnd_60mmHE_M2 : LIB_8Rnd_82mmHE_BM37 {
+        displayName = "M2 60mm HE Mortar Bomb";
+    };
+    class LIB_82mm_BM37_SmokeShell : 8Rnd_82mm_Mo_Smoke_white {
+        displayName = "BM-37 82mm Smoke Mortar Bomb";
+    };
+    class LIB_81mm_GRWR34_SmokeShell : 8Rnd_82mm_Mo_Smoke_white {
+        displayName = "GrWr34 81mm Smoke Mortar Bomb";
+    };
+    class LIB_60mm_M2_SmokeShell : 8Rnd_82mm_Mo_Smoke_white {
+        displayName = "M2 60mm Smoke Mortar Bomb";
+    };
+
+    class LIB_16Rnd_BM13 : VehicleMagazine {
+        displayName = "BM-13 132mm Rocket";
+    };
+
+    class LIB_6Rnd_NbW41 : VehicleMagazine {
+        displayName = "Nebelwerfer 41 15cm Rocket";
+    };
+
+    class LIB_5Rnd_NbW42 : VehicleMagazine {
+        displayName = "Nebelwerfer 42 21cm Rocket";
+    };
+
+    class LIB_5x_61k : VehicleMagazine {
+        displayName = "61-K OR-167 (HE)";
+    };
+    class LIB_5x_61kAP : LIB_5x_61k {
+        displayName = "61-K BR-167 (AP)";
+    };
+
+    class LIB_80x_SprGr_FlaK_38 : VehicleMagazine {
+        displayName = "FlaK-38";
+    };
+    class LIB_80x_SprGr_FlaK_38_APHE_T : LIB_80x_SprGr_FlaK_38 {
+        displayName = "FlaK-38 (APHE-T)";
     };

@@ -1,4 +1,6 @@
-﻿    class fow_B_303_Ball : BulletBase {
+﻿//Bullets
+
+    class fow_B_303_Ball : BulletBase {
         model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
         tracerColor[] = {0.7,0.7,0.5,0.04};
         tracerColorR[] = {0.7,0.7,0.5,0.04};
@@ -16,7 +18,7 @@
         tracerStartTime = 0.073;
     };
 
-//Grenades
+//Grenades/Explosives
     class fow_e_m24 : GrenadeHand {
         explosionTime = 4.5;
         ace_frag_charge = 170;
@@ -142,10 +144,7 @@
         explosionTime = 0;
         simulation = "shotShell";
     };
-/*
-    class fow_e_tnt_halfpound : GrenadeHand {
-    };
-*/
+
     class fow_e_type97 : GrenadeHand {
         explosionTime = 4.5;
         ace_frag_charge = 65;

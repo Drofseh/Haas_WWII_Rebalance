@@ -1,7 +1,7 @@
 name = "Haas WWII Rebalance";
 author = "Wilhelm Haas (2PzD)";
-description = "Haas WWII Rebalance - Version 1.21.3";
-overview = "Haas WWII Rebalance changes the recoil of semi and full auto weapons from the IFA3 and FOW mods, as well as correcting weight, some firemodes, and adding couple of weapons and magazines.";
+description = "Haas WWII Rebalance - Version 1.22.0";
+overview = "Haas WWII Rebalance correct, enhances, or adds compatibility for IFA3, FOW, and LEN.";
 logo = "Images\logo.paa";
 logoOver = "Images\logo.paa";
 logoSmall = "Images\logo.paa";

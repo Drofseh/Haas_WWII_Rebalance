@@ -15,7 +15,7 @@
     class LEN_20Rnd_792x57 : lib_10Rnd_792x57 {
         descriptionShort = "7.92x57mm, 20 Rounds, for use in the FG42";
         displayName = "FG42, 20 Round Magazine";
-        mass = 6.1;
+        mass = 6.52;
         scope = 2;
     };
 
@@ -62,9 +62,9 @@
         scope = 2;
     };
     class LEN_8Rnd_765x17_2PzD : LEN_7Rnd_765x17 {
-        count = 8;
         descriptionShort = ".32 ACP, 8 Rounds, for use in the Welrod";
         displayName = "Welrod, 8 Round Magazine";
+        count = 8;
         mass = 1.5;
         scope = 2;
     };
