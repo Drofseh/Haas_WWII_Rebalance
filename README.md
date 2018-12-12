@@ -49,6 +49,7 @@ This adds extra command tanks and vehicles that have an extra radio for the comm
 * Changes dispersion of weapons to realistic levels
 * Changes damage for aircraft bombs
 * Changes FOW weapons to use IFA sounds
+* Changes FOW small arms magazines to use IFA ammo, to give consistant damage and bullet sounds.
 * Changes full auto rates of fire to real life values
 * Changes the colour of the camping lantern to be less blue
 * Changes the descriptions and display names of weapons and magazines
