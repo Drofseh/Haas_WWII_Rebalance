@@ -1,4 +1,5 @@
-﻿    class V_LIB_GER_FieldOfficer : V_LIB_Vest_Camo_Base {
+﻿
+    class V_LIB_GER_FieldOfficer : V_LIB_Vest_Camo_Base {
         class ItemInfo : VestItem {
             containerClass = "Supply70";
         };

@@ -1,4 +1,5 @@
-﻿    class fow_v_fall_bandoleer : fow_v_base {
+﻿
+    class fow_v_fall_bandoleer : fow_v_base {
         class ItemInfo : ItemInfo {
             containerClass = "Supply120";
         };
@@ -17,6 +18,7 @@
     };
 
     class fow_v_heer_k98_ass : fow_v_base {
+        displayName = "[GER] Kit K98 (MG Assistant)";
         class ItemInfo : ItemInfo {
             containerClass = "Supply120";
         };

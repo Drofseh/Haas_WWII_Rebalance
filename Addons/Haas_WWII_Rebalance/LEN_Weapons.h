@@ -1,9 +1,10 @@
 ﻿//Pistols
     class LEN_P35 : hgun_Rook40_F {
-        descriptionShort = "Pistolet wz. 35 Vis, known as the Pistole 35(p) in Wehrmacht service or the Radom in English";
         displayName = "Pistolet wz. 35 Vis";
+        descriptionShort = "Pistolet wz. 35 Vis, known as the Pistole 35(p) in Wehrmacht service and also called the Radom in English";
         dispersion = MOA_TO_RAD(15);
         magazines[] = {"LEN_8Rnd_9x19_2PzD","fow_8Rnd_9x19_Vis_2PzD"};
+        recoil = "recoil_2PzD_pistol_medium";
         scope = 2;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 20.956;
@@ -14,10 +15,11 @@
     };
 
     class LEN_P640b : hgun_P07_F {
-        descriptionShort = "Browning Hi-Power, known as the Pistole 640(b) in Wehrmacht service";
         displayName = "Browning Hi-Power";
+        descriptionShort = "Browning Hi-Power, known as the Pistole 640(b) in Wehrmacht service";
         dispersion = MOA_TO_RAD(15);
         magazines[] = {"LEN_13Rnd_9x19","fow_13Rnd_9x19"};
+        recoil = "recoil_2PzD_pistol_medium";
         scope = 2;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 15.851;
@@ -28,9 +30,10 @@
     };
 
     class LEN_PPK : hgun_Rook40_F {
-        descriptionShort = "Walther Polizeipistole Kriminalmodell in 7.65x17mm";
         displayName = "Walther PPK";
+        descriptionShort = "Walther Polizeipistole Kriminalmodell in 7.65x17mm";
         magazines[] = {"LIB_7Rnd_9x19","LEN_7Rnd_765x17","fow_7Rnd_765x17"};
+        recoil = "recoil_2PzD_pistol_light";
         scope = 2;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 12.507;
@@ -41,9 +44,10 @@
     };
 
     class LEN_Welrod : hgun_Rook40_F {
-        descriptionShort = "Welrod Pistol";
         displayName = "Welrod";
+        descriptionShort = "Welrod Pistol";
         magazines[] = {"LEN_8Rnd_765x17_2PzD","fow_8Rnd_765x17"};
+        recoil = "recoil_2PzD_pistol_light";
         scope = 2;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 24.044;
@@ -56,12 +60,12 @@
 
 //Rifles
     class LEN_FG42 : LIB_MP44 {
-        descriptionShort = "Fallschirmjagergewehr 42 Ausfuhrung G";
         displayName = "FG42 Ausf.G";
+        descriptionShort = "Fallschirmjagergewehr 42 Ausfuhrung G";
         //fow_burstLength = 3;
         magazines[] = {"LIB_20Rnd_792x57","len_20Rnd_792x57","fow_20Rnd_792x57"};
         modes[] = {"Single","FullAuto"};
-        recoil = "recoil_rifle_1";
+        recoil = "recoil_2PzD_rifle_FG42";
         scope = 1;
         scopeCurator = 0;
         scopeArsenal = 0;
@@ -98,13 +102,13 @@
     };
 
     class LEN_MP44 : LIB_MP44 {
-        descriptionShort = "Sturmgewehr 44";
         displayName = "StG44";
+        descriptionShort = "Sturmgewehr 44";
         discreteDistance[] = {100,200,300,400,500,600,700,800};
         discreteDistanceInitIndex = 1;
         //fow_burstLength = 3;
         magazines[] = {"LIB_30Rnd_792x33","fow_30Rnd_792x33"};
-        recoil = "recoil_mx";
+        recoil = "recoil_2PzD_rifle_light";
         scope = 1;
         scopeCurator = 0;
         scopeArsenal = 0;
@@ -122,12 +126,12 @@
     };
 
     class LEN_SMLE_No4Mk1 : LIB_K98 {
-        descriptionShort = "Rifle, No. 4 Mk I";
         displayName = "Lee Enfield No. 4 Mk I";
+        descriptionShort = "Rifle, No. 4 Mk I";
         discreteDistance[] = {300,600};
         discreteDistanceInitIndex = 0;
         magazines[] = {"LEN_10Rnd_303","fow_10Rnd_303"};
-        recoil = "recoil_rifle_1";
+        recoil = "recoil_2PzD_rifle_bolt";
         scope = 1;
         scopeCurator = 0;
         scopeArsenal = 0;
@@ -140,9 +144,10 @@
         class Far;
     };
     class LEN_SMLE_No4Mk1T : LEN_SMLE_No4Mk1 {
-        descriptionShort = "Rifle, No. 4 Mk I (T)";
         displayName = "Lee Enfield No. 4 Mk I (T)";
+        descriptionShort = "Rifle, No. 4 Mk I (T)";
         dispersion = MOA_TO_RAD(2.5);
+        recoil = "recoil_2PzD_rifle_bolt";
         scope = 2;
         // modes[] = {"Single","Far","Medium","Short"};
         class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -174,13 +179,13 @@
 
 //Submachine Guns
     class LEN_M3a1 : LIB_M1A1_Thompson {
-        descriptionShort = "Submachine Gun, Caliber .45, M3A1";
         displayName = "M3A1 GreaseGun";
+        descriptionShort = "Submachine Gun, Caliber .45, M3A1";
         //dispersion = 8);
         fow_burstLength = 3;
         modes[] = {"Full","Far","Medium","Short"};
         magazines[] = {"LIB_30Rnd_M3_GreaseGun_45ACP","fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp_T_M3_2PzD","LEN_30Rnd_45ACP_M3","fow_30Rnd_45acp","fow_30Rnd_45acp_T"};
-        recoil = "recoil_smg_02";
+        recoil = "recoil_2PzD_smg_medium";
         scope = 2;
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -206,11 +211,11 @@
     };
 
     class LEN_PPS43 : LIB_PPSh41_m {
-        descriptionShort = "Pistolet-Pulemyot Sudayeva 43";
         displayName = "PPS-43";
+        descriptionShort = "Pistolet-Pulemyot Sudayeva 43";
         fow_burstLength = 3;
         magazines[] = {"LEN_35Rnd_762x25_2PzD"};
-        recoil = "recoil_smg_02";
+        recoil = "recoil_2PzD_smg_medium";
         scope = 2;
         LIB_ReplaceMagazine = 0;
         class Eventhandlers : Eventhandlers {
@@ -236,12 +241,12 @@
     };
 
     class LEN_StenMk2 : LIB_MP40 {
-        descriptionShort = "Sten Mk II";
         displayName = "Sten Mk II";
+        descriptionShort = "Sten Mk II";
         dispersion = MOA_TO_RAD(8);
         fow_burstLength = 3;
         magazines[] = {"LEN_32Rnd_9x19","fow_32Rnd_9x19_sten","LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40"};
-        recoil = "recoil_smg_02";
+        recoil = "recoil_2PzD_smg_medium";
         scope = 1;
         scopeCurator = 0;
         scopeArsenal = 0;
@@ -263,10 +268,11 @@
         };
     };
     class LEN_StenMk2S : LEN_StenMk2 {
-        descriptionShort = "Sten Mk IIS";
         displayName = "Sten Mk IIS";
+        descriptionShort = "Sten Mk IIS";
         dispersion = MOA_TO_RAD(8);
         fow_burstLength = 4;
+        recoil = "recoil_2PzD_smg_light";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -288,8 +294,8 @@
         };
     };
     class LEN_StenMk5 : LEN_StenMk2 {
-        descriptionShort = "Sten Mk V";
         displayName = "Sten Mk V";
+        descriptionShort = "Sten Mk V";
         dispersion = MOA_TO_RAD(8);
         fow_burstLength = 3;
         scope = 1;
@@ -318,9 +324,10 @@
 
 //Other Weapons
     class LEN_M12 : LIB_K98 {
-        descriptionShort = "Winchester Model 12 Trench Shotgun, 12 Gauge";
         displayName = "Winchester Model 12";
+        descriptionShort = "Winchester Model 12 Trench Shotgun, 12 Gauge";
         magazines[] = {"fow_6Rnd_12G_Pellets","LEN_6Rnd_12G_Pellets","fow_6Rnd_12G_Slug","LEN_6Rnd_12G_Slug","fow_5Rnd_12G_Pellets","fow_5Rnd_12G_Slug"};
+        recoil = "recoil_2PzD_rifle_short";
         scope = 1;
         scopeCurator = 0;
         scopeArsenal = 0;

@@ -1,4 +1,5 @@
-﻿    class fow_b_heer_aframe : Bag_Base {
+﻿
+    class fow_b_heer_aframe : Bag_Base {
         maximumLoad = 100;
     };
 
@@ -104,7 +105,7 @@
         maximumLoad = 160;
     };
 
-    class fow_b_uk_p37_blanco_shovel : fow_b_uk_p37_shovel {
+    class fow_b_uk_p37_blanco_shovel : fow_b_uk_p37_blanco {
         maximumLoad = 160;
     };
 

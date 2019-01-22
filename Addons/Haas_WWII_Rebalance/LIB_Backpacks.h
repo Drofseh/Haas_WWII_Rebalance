@@ -1,4 +1,5 @@
-﻿    class B_LIB_GER_A_frame : B_LIB_AssaultPack_Base {
+﻿
+    class B_LIB_GER_A_frame : B_LIB_AssaultPack_Base {
         maximumLoad = 100;
     };
   
@@ -50,7 +51,7 @@
         maximumLoad = 200;
     };
 
-    class B_LIB_GER_Panzer : B_LIB_GER_MedicBackpack_Empty {
+    class B_LIB_GER_Panzer : B_LIB_AssaultPack_Base {
         maximumLoad = 375;
     };
 
@@ -148,12 +149,21 @@
         maximumLoad = 150;
     };
 
+    class B_LIB_US_Backpack_Mk2 : B_LIB_US_Backpack {
+        maximumLoad = 150;
+    };
+
     class B_LIB_US_Bandoleer : B_LIB_AssaultPack_Base {
         maximumLoad = 50;
     };
 
     class B_LIB_US_M2Flamethrower : B_LIB_AssaultPack_Base {
-        maximumLoad = 440.94;
+        maximumLoad = 255;
+        mass = 400;
+    };
+    class B_LIB_US_M2Flamethrower_noLoad : B_LIB_US_M2Flamethrower {
+        maximumLoad = 0;
+        scope = 1;
     };
 
     class B_LIB_US_M36 : B_LIB_AssaultPack_Base {

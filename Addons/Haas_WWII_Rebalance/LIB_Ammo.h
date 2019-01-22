@@ -1,6 +1,23 @@
 ﻿
-    class LIB_M2_Flamethrower_Ammo : BulletBase {
-        timetolive = "3";
+    class LIB_Bullet_base;
+
+    class LIB_B_762x54_Ball_t46;
+    class LIB_B_762x54_Ball_t46_NoCartridge : LIB_B_762x54_Ball_t46 {};
+
+    class LIB_B_792x57_Ball_NoCartridge;
+    class LIB_B_792x57_Ball_t_NoCartridge : LIB_B_792x57_Ball_NoCartridge {};
+
+    class LIB_B_792x57_Ball;
+    class LIB_B_792x57_Ball_t : LIB_B_792x57_Ball {};
+
+    class LIB_B_770x56_Ball_NoCartridge;
+    class LIB_B_77x58_Ball_NoCartridge : LIB_B_770x56_Ball_NoCartridge {};
+
+    class LIB_B_770x56_Ball;
+    class LIB_B_77x58_Ball : LIB_B_770x56_Ball {};
+
+    class LIB_M2_Flamethrower_Ammo : BulletBase_NonAceAB {
+        timetolive = "1";
     };
 
     class LIB_40mm_White;
@@ -136,7 +153,7 @@
     class LIB_SC50_Bomb : LIB_Bomb_base {
         hit = 500;
         indirectHit = 200;
-        indirectHitRange = 12;
+        indirectHitRange = 5;
     };
 
     class LIB_US_500lb_Bomb : LIB_Bomb_base {

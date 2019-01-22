@@ -123,7 +123,7 @@
 
     class LIB_US6_Open_Cargo;
 
-    class LIB_US6_Ammo : LIB_US6_Unarmed_base {
+    class LIB_US6_Ammo : LIB_US6_Open_Cargo {
         maximumLoad = 30000;
     };
 

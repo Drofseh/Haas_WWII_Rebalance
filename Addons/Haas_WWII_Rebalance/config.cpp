@@ -3,15 +3,12 @@
 
 class CfgPatches {
     class Haas_WWII_Rebalance {
-        author = "Wilhelm Haas";
+        author = "Wilhelm Haas (Drofseh)";
+        authors[] = {"Wilhelm Haas (Drofseh)"};
         units[] = {};
-        magazines[] = {"LIB_1Rnd_flare_blue","LIB_1Rnd_flare_orange","LIB_1Rnd_flare_purple"};
-        weapons[] = {WEAPONSARRAY};
-        requiredAddons[] = {"ww2_core_c_if_zzz_lastloaded_c",
-                            "fow_main","fow_weapons_c","fow_characters_c","fow_functions","fow_statics_c",
-                            "len_ifa3_wp_data","len_ifa3_wp",
-                            "ace_common","ace_frag","ace_trenches","ace_captives","ace_overpressure"
-                            };
+        magazines[] = {MagazinesArray};
+        weapons[] = {WeaponsArray};
+        requiredAddons[] = {RequiredAddonsArray};
     };
 }; //End CfgPatches
 
@@ -29,6 +26,7 @@ class BaseSoundModeType;
 class cfgAmmo {
 
     class BulletBase;
+    class BulletBase_NonAceAB;
 
     class Grenade;
 
@@ -210,6 +208,20 @@ class cfgWeapons {
     #include "LIB_Vests.h"
 
 }; //End cfgWeapons
+
+//cfgRecoils
+class cfgRecoils {
+
+    #include "CfgRecoils.h"
+
+}; //End cfgRecoils
+
+//CfgWeaponHandling
+class CfgWeaponHandling {
+
+    #include "CfgWeaponHandling.h"
+
+}; //End CfgWeaponHandling
 
 class cfgVehicles {
 

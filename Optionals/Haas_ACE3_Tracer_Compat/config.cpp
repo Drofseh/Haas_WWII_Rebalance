@@ -1,6 +1,7 @@
 ﻿class CfgPatches {
     class Hass_Tracer_Compat {
-        author = "Wilhelm Haas";
+        author = "Wilhelm Haas (Drofseh)";
+        authors[] = {"Wilhelm Haas (Drofseh)"};
         units[] = {};
         weapons[] = {};
         requiredAddons[] = {"ace_tracers","Haas_WWII_Rebalance"};

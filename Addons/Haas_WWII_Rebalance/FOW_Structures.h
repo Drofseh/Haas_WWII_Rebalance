@@ -1,4 +1,5 @@
-﻿class House;
+﻿
+class House;
 /*
     class xx : House {
         displayName = "xxx";
