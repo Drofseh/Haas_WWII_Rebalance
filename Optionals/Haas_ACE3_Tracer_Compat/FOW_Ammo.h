@@ -30,11 +30,11 @@
         model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
     };
 
-    class fow_B_45_acp : BulletBase {
+    class fow_B_45_acp : B_45ACP_Ball {
         model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
     };
 
-    class fow_B_455 : BulletBase {
+    class fow_B_455 : B_45ACP_Ball {
         model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
     };
 

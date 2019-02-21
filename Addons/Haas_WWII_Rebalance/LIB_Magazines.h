@@ -339,13 +339,13 @@
         descriptionShort = "7.92x57mm, 50 Rounds, for use in the MG34 or MG42";
         ace_isbelt = 1;
     };
-    class LIB_50Rnd_792x57_SMK : LIB_50Rnd_792x57 {
-        displayName = "MG34/MG42, 50 Round Drum, S.m.K. AP";
-        descriptionShort = "7.92x57mm, 50 Rounds, S.m.K. AP, for use in the MG34 or MG42";
-    };
     class LIB_50Rnd_792x57_sS : LIB_50Rnd_792x57 {
         displayName = "MG34/MG42, 50 Round Drum, S.m.E. Semi-AP";
         descriptionShort = "7.92x57mm, 50 Rounds, S.m.E. Semi-AP, for use in the MG34 or MG42";
+    };
+    class LIB_50Rnd_792x57_SMK : LIB_50Rnd_792x57_sS {
+        displayName = "MG34/MG42, 50 Round Drum, S.m.K. AP";
+        descriptionShort = "7.92x57mm, 50 Rounds, S.m.K. AP, for use in the MG34 or MG42";
     };
     class LIB_100Rnd_792x57 : LIB_50Rnd_792x57 {
         displayName = "MG34/MG42, 100 Round Belt";

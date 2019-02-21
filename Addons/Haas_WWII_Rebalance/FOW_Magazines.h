@@ -155,13 +155,6 @@
         scope = 1;
         ace_isbelt = 1;
     };
-    class fow_250Rnd_M1919 : fow_50Rnd_762x63 {
-        displayName = "M1919, 250 Round Belt";
-        descriptionShort = ".30-06, 250 Rounds, for use in the M1919 Machine Guns";
-        count = 250;
-        mass = 72.75;
-        scope = 1;
-    };
     class fow_200Rnd_M1919_2PzD : fow_250Rnd_M1919 {
         displayName = "M1919, 200 Round Belt";
         descriptionShort = ".30-06, 200 Rounds, for use in the M1919 Machine Guns";
@@ -594,6 +587,13 @@
     class fow_50Rnd_M1919 : VehicleMagazine {
         displayName = "M1919, 50 Round Belt";
         ammo = "LIB_B_762x63_Ball";
+    };
+    class fow_250Rnd_M1919 : fow_50Rnd_M1919 {
+        displayName = "M1919, 250 Round Belt";
+        descriptionShort = ".30-06, 250 Rounds, for use in the M1919 Machine Guns";
+        count = 250;
+        mass = 72.75;
+        scope = 1;
     };
 
     class fow_8Rnd_60mm_m2_HE : VehicleMagazine {

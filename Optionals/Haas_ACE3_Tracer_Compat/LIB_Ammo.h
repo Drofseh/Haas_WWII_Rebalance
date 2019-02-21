@@ -75,7 +75,7 @@
         model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
     };
 
-    class LIB_B_762x63_Ball_NoCartridge : LIB_Bullet_base {
+    class LIB_B_762x63_Ball_NoCartridge : LIB_B_762x63_Ball {
         model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
     };
 
