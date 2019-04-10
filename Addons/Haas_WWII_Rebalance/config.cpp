@@ -6,11 +6,12 @@ class CfgPatches {
         author = "Wilhelm Haas (Drofseh)";
         authors[] = {"Wilhelm Haas (Drofseh)"};
         units[] = {};
+        magazineWell[] = {};
         magazines[] = {MagazinesArray};
         weapons[] = {WeaponsArray};
         requiredAddons[] = {RequiredAddonsArray};
     };
-}; //End CfgPatches
+}; // End CfgPatches
 
 #include "RscDisplayMain.h"
 
@@ -22,7 +23,9 @@ class Mode_FullAuto;
 
 class BaseSoundModeType;
 
-//cfgAmmo
+class SlotInfo;
+
+// cfgAmmo
 class cfgAmmo {
 
     class BulletBase;
@@ -54,10 +57,10 @@ class cfgAmmo {
     class SmokeShell;
 
     class SmokeShellArty : SmokeShell {
-        effectsSmoke = "FOW_no79_Grenade_Effects";
-        indirectHit = 25;
-        indirectHitRange = 5;
-        timeToLive = 180;
+        explosionEffects = "LIB_WPExplosion";
+        //explosionEffects = "FOW_no79_Grenade_Effects";
+        timeToLive = 180; // TODO check before release
+        LIB_WP_BurnTime = 35;
     };
 
     class SubmunitionBase;
@@ -74,12 +77,20 @@ class cfgAmmo {
 
     #include "LIB_Ammo.h"
 
-};
+}; // End cfgAmmo
 
 class Eventhandlers;
 
-//cfgMagazines
+// CfgMagazineWells
+class CfgMagazineWells {
+
+    #include "CfgMagazineWells.h"
+
+}; // End CfgMagazineWells
+
 class cfgMagazines {
+
+    class Default;
 
     class CA_Magazine;
 
@@ -117,14 +128,20 @@ class cfgMagazines {
 
     #include "LEN_Magazines.h"
 
-}; //End cfgMagazines
+    #include "CSA38_Magazines.h"
 
-//cfgWeapons
+    #include "Sep39_Magazines.h"
+
+}; // End cfgMagazines
+
+// cfgWeapons
 class cfgWeapons {
 
     class CannonCore;
 
     class InventoryItem_Base_F;
+
+    class GrenadeLauncher;
 
     class HMG_M2;
 
@@ -134,11 +151,17 @@ class cfgWeapons {
         class WeaponSlotsInfo;
     };
 
-    class Rifle_Base_F;
+    class Rifle_Base_F : Rifle {
+        class WeaponSlotsInfo;
+    };
 
-    class Rifle_Long_Base_F;
+    class Rifle_Long_Base_F : Rifle_Base_F {
+        class WeaponSlotsInfo;
+    };
 
-    class Rifle_Short_Base_F;
+    class Rifle_Short_Base_F : Rifle_Base_F {
+        class WeaponSlotsInfo;
+    };
 
     class PistolCore;
     class Pistol : PistolCore {
@@ -168,12 +191,13 @@ class cfgWeapons {
 
     class MGunCore;
 
-    class MGun;
+    class MGun : MGunCore {
+        class WeaponSlotsInfo;
+    };
 
     class RocketPods;
 
     class ItemCore;
-
 
     class VestItem;
 
@@ -181,18 +205,8 @@ class cfgWeapons {
         class ItemInfo;
     };
 
-    class fow_v_base : Vest_Camo_Base {
-        class ItemInfo : ItemInfo {
-            containerClass = "Supply90";
-        };
-    };
-    class V_LIB_Vest_Camo_Base : Vest_Camo_Base {
-        class ItemInfo : VestItem {
-            containerClass = "Supply90";
-        };
-    };
-
     class ACE_ItemCore;
+
     class CBA_MiscItem_ItemInfo;
 
     #include "ACE_Weapons.h"
@@ -203,25 +217,33 @@ class cfgWeapons {
 
     #include "LEN_Weapons.h"
 
+    #include "CSA38_Weapons.h"
+
+    #include "Sep39_Weapons.h"
+
     #include "FOW_Vests.h"
 
     #include "LIB_Vests.h"
 
-}; //End cfgWeapons
+    #include "CSA38_Vests.h"
 
-//cfgRecoils
+    #include "Sep39_Vests.h"
+
+}; // End cfgWeapons
+
+// cfgRecoils
 class cfgRecoils {
 
     #include "CfgRecoils.h"
 
-}; //End cfgRecoils
+}; // End cfgRecoils
 
-//CfgWeaponHandling
+// CfgWeaponHandling
 class CfgWeaponHandling {
 
     #include "CfgWeaponHandling.h"
 
-}; //End CfgWeaponHandling
+}; // End CfgWeaponHandling
 
 class cfgVehicles {
 
@@ -289,13 +311,17 @@ class cfgVehicles {
 
     #include "LIB_Backpacks.h"
 
+    #include "CSA38_Backpacks.h"
+
+    #include "Sep39_Backpacks.h"
+
     #include "FOW_Vehicles.h"
 
     #include "LIB_Vehicles.h"
 
     #include "FOW_Structures.h"
 
-}; //End cfgVehicles
+}; // End cfgVehicles
 
 class CfgEditorSubcategories {
 
@@ -351,7 +377,7 @@ class CfgEditorSubcategories {
         displayName = "2PzD United States";
     };
 
-}; //End CfgEditorSubcategories
+}; // End CfgEditorSubcategories
 
 class FOW_no79_Grenade_Effects {
     class FOW_no79_Stage1 {

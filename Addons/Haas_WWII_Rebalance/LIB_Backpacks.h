@@ -137,6 +137,30 @@
         maximumLoad = 100;
     };
 
+    class B_LIB_UK_HSack : B_LIB_AssaultPack_Base {
+        maximumLoad = 150;
+    };
+
+    class B_LIB_UK_HSack_Blanco : B_LIB_UK_HSack {
+        maximumLoad = 150;
+    };
+
+    class B_LIB_UK_HSack_Cape : B_LIB_UK_HSack {
+        maximumLoad = 150;
+    };
+
+    class B_LIB_UK_HSack_Blanco_Cape : B_LIB_UK_HSack_Cape {
+        maximumLoad = 150;
+    };
+
+    class B_LIB_UK_HSack_Tea : B_LIB_UK_HSack {
+        maximumLoad = 150;
+    };
+
+    class B_LIB_UK_HSack_Blanco_Tea : B_LIB_UK_HSack_Tea {
+        maximumLoad = 150;
+    };
+
     class B_LIB_US_Backpack : B_LIB_AssaultPack_Base {
         maximumLoad = 150;
     };

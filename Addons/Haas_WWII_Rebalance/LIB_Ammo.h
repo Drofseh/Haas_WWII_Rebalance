@@ -2,19 +2,64 @@
     class LIB_Bullet_base;
 
     class LIB_B_762x54_Ball_t46;
-    class LIB_B_762x54_Ball_t46_NoCartridge : LIB_B_762x54_Ball_t46 {};
+
+    class LIB_B_762x54_Ball_t46_NoCartridge : LIB_B_762x54_Ball_t46 {
+        cartridge = "";
+    };
 
     class LIB_B_792x57_Ball_NoCartridge;
-    class LIB_B_792x57_Ball_t_NoCartridge : LIB_B_792x57_Ball_NoCartridge {};
+
+    class LIB_B_792x57_Ball_t_NoCartridge : LIB_B_792x57_Ball_NoCartridge {
+        cartridge = "";
+    };
 
     class LIB_B_792x57_Ball;
+
     class LIB_B_792x57_Ball_t : LIB_B_792x57_Ball {};
 
-    class LIB_B_770x56_Ball_NoCartridge;
-    class LIB_B_77x58_Ball_NoCartridge : LIB_B_770x56_Ball_NoCartridge {};
+    class LIB_B_770x56_Ball_NoCartridge; // .303
 
-    class LIB_B_770x56_Ball;
+    class LIB_B_770x56_Ball_NoCartridge_AP : LIB_B_770x56_Ball_NoCartridge {
+        caliber = 1.16;
+    };
+
+    class LIB_B_77x58_Ball_NoCartridge : LIB_B_770x56_Ball_NoCartridge {
+        cartridge = "";
+};
+
+    class LIB_B_770x56_Ball; // .303
+
+    class LIB_B_770x56_Ball_AP : LIB_B_770x56_Ball {
+        caliber = 1.16;
+    };
+
     class LIB_B_77x58_Ball : LIB_B_770x56_Ball {};
+
+    class LIB_B_765x17_Ball : LIB_Bullet_base { // .32 ACP
+        hit = 2.8;
+    };
+
+    class LIB_B_9x17_Ball : LIB_B_765x17_Ball { // .380 ACP
+        hit = 3.2;
+    };
+
+    class LIB_B_765x20_Ball : LIB_B_765x17_Ball { // 7.65x20mm Longue
+        hit = 3;
+    };
+
+    class LIB_B_635x16_Ball : LIB_B_765x17_Ball { // .25 ACP
+        hit = 2.4;
+    };
+
+    class LIB_B_38_200_Ball : LIB_B_765x17_Ball { // .38/200
+        hit = 3;
+    };
+
+    class LIB_B_9x18_Ball;
+
+    class LIB_B_9x19_Ball; /* : LIB_B_9x18_Ball {
+        
+    };*/
 
     class LIB_M2_Flamethrower_Ammo : BulletBase_NonAceAB {
         timetolive = "1";
@@ -56,6 +101,22 @@
         explosionEffects = "NoExplosion";
         explosionTime = 4.5;
         timeToLive = 120;
+    };
+
+    class LIB_No77_Deploy : SmokeShell {
+        // add a damage effect for WP
+        explosionTime = 0;
+        simulation = "shotDeploy";
+        submunitionAmmo = "LIB_No77";
+        //submunitionAmmo = "SmokeShellArty";
+    };
+
+    class LIB_No77 : LIB_GrenadeHand_base {
+        explosionTime = 0.1;
+        explosionEffects = "LIB_WPExplosion";
+        //explosionEffects = "FOW_no79_Grenade_Effects";
+        timeToLive = 90; //TODO check before release
+        LIB_WP_BurnTime = 35;
     };
 
     class LIB_PWM : LIB_GrenadeHand_base {

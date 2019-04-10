@@ -1,9 +1,9 @@
 ﻿
 #define MOA_TO_RAD(d) ((d) * 0.00029088)
-//dispersion = MOA_TO_RAD(4);
+// dispersion = MOA_TO_RAD(4);
 
 #define RPM_TO_TIME(rpm) (60 / (rpm))
-//reloadTime = RPM_TO_TIME(650);
+// reloadTime = RPM_TO_TIME(650);
 
 #define RequiredAddonsArray \
     "ace_captives", \
@@ -11,6 +11,8 @@
     "ace_frag", \
     "ace_overpressure", \
     "ace_trenches", \
+    "CSA38II_weapons_c", \
+    "CSA38II_weapons2_c", \
     "fow_characters_c", \
     "fow_functions", \
     "fow_main", \
@@ -18,6 +20,7 @@
     "fow_weapons_c", \
     "len_ifa3_wp", \
     "len_ifa3_wp_data", \
+    "w39_bron_c", \
     "ww2_core_c_if_zzz_lastloaded_c"
 
 #define MagazinesArray \

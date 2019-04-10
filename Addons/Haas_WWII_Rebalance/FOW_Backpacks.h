@@ -161,7 +161,11 @@
         maximumLoad = 150;
     };
 
-    class fow_b_us_m1944_nco : fow_b_us_m1944 {
+    class fow_b_us_m1944_ropes : fow_b_us_m1944 {
+        maximumLoad = 150;
+    };
+
+    class fow_b_us_m1944_nco : fow_b_us_m1944_ropes {
         maximumLoad = 150;
     };
 

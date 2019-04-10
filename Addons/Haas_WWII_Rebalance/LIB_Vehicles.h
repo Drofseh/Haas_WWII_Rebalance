@@ -121,7 +121,13 @@
 
     class LIB_US6_Unarmed_base;
 
-    class LIB_US6_Open_Cargo;
+    class LIB_US6_Tent_Cargo : LIB_US6_Unarmed_base {
+        maximumLoad = 30000;
+    };
+
+    class LIB_US6_Open_Cargo : LIB_US6_Tent_Cargo {
+        maximumLoad = 30000;
+    };
 
     class LIB_US6_Ammo : LIB_US6_Open_Cargo {
         maximumLoad = 30000;
@@ -163,4 +169,15 @@
 
     class LIB_Willys_MB_base : LIB_Car_base {
         maximumLoad = 2000;
+    };
+
+    class LIB_AustinK5_base: LIB_Truck_base {
+        maximumLoad = 30000;
+    };
+    class LIB_AustinK5_Ammo: LIB_AustinK5_base {
+        maximumLoad = 30000;
+    };
+
+    class LIB_UniversalCarrier_base: LIB_Tank_base {
+        maximumLoad = 4000;
     };

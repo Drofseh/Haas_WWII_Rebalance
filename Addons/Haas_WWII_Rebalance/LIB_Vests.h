@@ -1,4 +1,10 @@
 ﻿
+    class V_LIB_Vest_Camo_Base : Vest_Camo_Base {
+        class ItemInfo : VestItem {
+            containerClass = "Supply90";
+        };
+    };
+
     class V_LIB_GER_FieldOfficer : V_LIB_Vest_Camo_Base {
         class ItemInfo : VestItem {
             containerClass = "Supply70";
@@ -307,6 +313,82 @@
         };
     };
 
+    class V_LIB_UK_P37_Rifleman : V_LIB_Vest_Camo_Base {
+        class ItemInfo : VestItem {
+            containerClass = "Supply90";
+        };
+    };
+/*
+    class V_LIB_UK_P37_Rifleman_Blanco : V_LIB_UK_P37_Rifleman {
+        class ItemInfo : VestItem {
+            containerClass = "Supply90";
+        };
+    };
+*/
+    class V_LIB_UK_P37_Crew : V_LIB_UK_P37_Rifleman {
+        class ItemInfo : ItemInfo {
+            containerClass = "Supply70";
+        };
+    };
+
+    class V_LIB_UK_P37_Gasmask : V_LIB_UK_P37_Rifleman {
+        class ItemInfo : ItemInfo {
+        };
+    };
+
+    class V_LIB_UK_P37_Gasmask_Blanco : V_LIB_UK_P37_Gasmask {
+        class ItemInfo : VestItem {
+        };
+    };
+
+    class V_LIB_UK_P37_Heavy : V_LIB_UK_P37_Rifleman {
+        class ItemInfo : ItemInfo {
+            containerClass = "Supply120";
+        };
+    };
+/*
+    class V_LIB_UK_P37_Heavy_Blanco : V_LIB_UK_P37_Heavy {
+        class ItemInfo : VestItem {
+            containerClass = "Supply120";
+        };
+    };
+*/
+    class V_LIB_UK_P37_Holster : V_LIB_UK_P37_Rifleman {
+        class ItemInfo : ItemInfo {
+            containerClass = "Supply100";
+        };
+    };
+/*
+    class V_LIB_UK_P37_Holster_Blanco : V_LIB_UK_P37_Holster {
+        class ItemInfo : VestItem {
+            
+        };
+    };
+*/
+    class V_LIB_UK_P37_Officer : V_LIB_UK_P37_Rifleman {
+        class ItemInfo : ItemInfo {
+            containerClass = "Supply70";
+        };
+    };
+/*
+    class V_LIB_UK_P37_Officer_Blanco : V_LIB_UK_P37_Officer {
+        class ItemInfo : VestItem {
+            containerClass = "Supply70";
+        };
+    };
+*/
+    class V_LIB_UK_P37_Sten : V_LIB_UK_P37_Rifleman {
+        class ItemInfo : VestItem {
+            containerClass = "Supply120";
+        };
+    };
+/*
+    class V_LIB_UK_P37_Sten_Blanco : V_LIB_UK_P37_Sten {
+        class ItemInfo : VestItem {
+            containerClass = "Supply90";
+        };
+    };
+*/
     class V_LIB_US_AB_Vest_Bar : V_LIB_Vest_Camo_Base {
         class ItemInfo : VestItem {
             containerClass = "Supply120";

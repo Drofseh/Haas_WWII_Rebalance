@@ -23,12 +23,15 @@
         class WeaponSlotsInfo;
     };
 
-//Pistols
+    class LIB_RifleGrenade_Muzzle;
+
+// Pistols
     class LIB_Colt_M1911 : LIB_PISTOL {
         displayName = "M1911A1";
         descriptionShort = "Automatic Pistol, Caliber .45, M1911A1";
         dispersion = MOA_TO_RAD(15);
-        magazines[] = {"LIB_7Rnd_45ACP","fow_7Rnd_45acp"};
+        magazines[] = {"LIB_7Rnd_45ACP"};
+        magazineWell[] = {"CBA_45ACP_1911"};
         recoil = "recoil_2PzD_pistol_heavy";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 24.375;
@@ -46,6 +49,7 @@
         displayName = "Nagant M1895";
         descriptionShort = "Nagant M1895 Revolver";
         dispersion = MOA_TO_RAD(15);
+        magazineWell[] = {"CBA_762x38R_Nagant"};
         recoil = "recoil_2PzD_pistol_light";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 17.647;
@@ -59,13 +63,14 @@
         displayName = "M1916 C-96 Mauser";
         descriptionShort = "C-96 Mauser pistol, Deutsches Heer contract version in 9x19mm";
         dispersion = MOA_TO_RAD(15);
-        recoil = "recoil_2PzD_pistol_light";
+        recoil = "recoil_2PzD_pistol_medium";
+        magazineWell[] = {"CBA_9x19_C96"};
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 24.91;
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(15);
-            reloadTime = 0.063; //952 rpm
+            reloadTime = RPM_TO_TIME(952); // 952 rpm
         };
     };
 
@@ -73,7 +78,8 @@
         displayName = "M712 Schnellfeuer";
         descriptionShort = "M712 Schnellfeuer a select fire C-96 Mauser pistol in 7.63x25mm Mauser";
         fow_burstLength = 3;
-        magazines[] = {"LIB_20Rnd_763x25_2PzD","LIB_10Rnd_763x25_2PzD"};
+        magazines[] = {"LIB_20Rnd_763x25_2PzD"};
+        magazineWell[] = {"CBA_763x25_M712"};
         modes[] = {"Single","Full"};
         recoil = "recoil_2PzD_pistol_light";
         class Eventhandlers : Eventhandlers {
@@ -86,20 +92,22 @@
         };
         class Single : Single {
             dispersion = MOA_TO_RAD(15);
-            reloadTime = 0.063; //952 rpm
+            reloadTime = RPM_TO_TIME(952); // 952 rpm
         };
         class Full : Single {
             autoFire = 1;
             displayName = "Full";
-            reloadTime = 0.063; //952 rpm
+            reloadTime = RPM_TO_TIME(952); // 952 rpm
             textureType = "fullAuto";
         };
     };
 
     class LIB_P38 : LIB_PISTOL {
         displayName = "P38";
-        descriptionShort = "P38";
+        descriptionShort = "Pistole 38";
         dispersion = MOA_TO_RAD(15);
+        magazines[] = {"LIB_8Rnd_9x19"};
+        magazineWell[] = {"CBA_9x19_P38"};
         recoil = "recoil_2PzD_pistol_medium";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 17.647;
@@ -110,8 +118,9 @@
     };
     class LIB_P08 : LIB_P38 {
         displayName = "P08";
-        descriptionShort = "P08";
-        magazines[] = {"LIB_8Rnd_9x19_P08","fow_8Rnd_9x19"};
+        descriptionShort = "Pistole 08";
+        magazines[] = {"LIB_8Rnd_9x19_P08"};
+        magazineWell[] = {"CBA_9x19_P08"};
         recoil = "recoil_2PzD_pistol_medium";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 18.419;
@@ -126,6 +135,8 @@
     class LIB_TT33 : LIB_PISTOL {
         displayName = "TT-33";
         descriptionShort = "Pistolet Tokareva Obraztsa 1933 goda";
+        magazines[] = {"LIB_8Rnd_762x25"};
+        magazineWell[] = {"CBA_762x25_TT"};
         recoil = "recoil_2PzD_pistol_medium";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 18.309;
@@ -137,9 +148,10 @@
 
     class LIB_WaltherPPK : LIB_PISTOL {
         displayName = "Walther PPK";
-        descriptionShort = "Walther Polizeipistole Kriminalmodell in 7.65x17mm";
+        descriptionShort = "Walther Polizeipistole Kriminalmodell in .32 ACP";
         dispersion = MOA_TO_RAD(15);
-        magazines[] = {"LIB_7Rnd_9x19","fow_7Rnd_765x17","LEN_7Rnd_765x17"};
+        magazines[] = {"LIB_7Rnd_9x19"};
+        magazineWell[] = {"CBA_32ACP_PPK"};
         recoil = "recoil_2PzD_pistol_medium";
         scope = 2;
         class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -149,14 +161,45 @@
             dispersion = MOA_TO_RAD(15);
         };
     };
-//End Pistols
 
-//Rifles
+    class LIB_Webley_mk6: LIB_PISTOL {
+        displayName = "Webley Mk VI";
+        descriptionShort = "Webley Mk VI in .455 Webley";
+        dispersion = MOA_TO_RAD(15);
+        magazines[] = {"LIB_6Rnd_455"};
+        magazineWell[] = {"CBA_455_Webley"};
+        recoil = "recoil_2PzD_pistol_light";
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 19.8;
+        };
+        class Single : Mode_SemiAuto {
+            dispersion = MOA_TO_RAD(15);
+        };
+    };
+
+    class LIB_Welrod_mk1: LIB_PISTOL { // TODO, check if it has subsonic ammo, if no, create subsonic magazine
+        displayName = "Welrod Mk I";
+        descriptionShort = "Welrod Mk I in 9x19mm";
+        dispersion = MOA_TO_RAD(20);
+        magazines[] = {"LIB_6Rnd_9x19_Welrod"};
+        magazineWell[] = {"CBA_9x19_Welrod"};
+        recoil = "recoil_2PzD_pistol_medium";
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 33;
+        };
+        class Single : Mode_SemiAuto {
+            dispersion = MOA_TO_RAD(20);
+        };
+    };
+// End Pistols
+
+// Rifles
     class LIB_DELISLE : LIB_RIFLE {
         displayName = "De Lisle Carbine";
         descriptionShort = "De Lisle Carbine";
         dispersion = MOA_TO_RAD(6);
         magazines[] = {"LIB_7Rnd_45ACP_2PzD","LIB_11Rnd_45ACP_2PzD"};
+        magazineWell[] = {"CBA_45ACP_Delisle"};
         recoil = "recoil_2PzD_rifle_light";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 90.441;
@@ -170,8 +213,9 @@
         displayName = "FG42 Ausf.G";
         descriptionShort = "Fallschirmjagergewehr 42 Ausfuhrung G";
         dispersion = MOA_TO_RAD(4);
-        //fow_burstLength = 3;
-        magazines[] = {"LIB_20Rnd_792x57","len_20Rnd_792x57","fow_20Rnd_792x57"};
+        // fow_burstLength = 3;
+        magazines[] = {"LIB_20Rnd_792x57"};
+        magazineWell[] = {"CBA_792x57_FG42"};
         modes[] = {"Single","Full","Far","Medium","Short"};
         recoil = "recoil_2PzD_rifle_FG42";
         scope = 2;
@@ -187,7 +231,7 @@
             dispersion = MOA_TO_RAD(4);
             recoil = "recoil_single_primary_3outof10";
             recoilProne = "recoil_single_primary_prone_3outof10";
-            reloadTime = 0.08; //750 rpm
+            reloadTime = RPM_TO_TIME(750); // 750 rpm
             maxRange = 600;
             maxRangeProbab = 0.05;
             midRange = 275;
@@ -199,7 +243,7 @@
             dispersion = MOA_TO_RAD(4);
             recoil = "recoil_single_primary_3outof10";
             recoilProne = "recoil_single_primary_prone_3outof10";
-            reloadTime = 0.08; //750 rpm
+            reloadTime = RPM_TO_TIME(750); // 750 rpm
             maxRange = 50;
             maxRangeProbab = 0.05;
             midRange = 25;
@@ -214,7 +258,8 @@
         descriptionShort = "Gewehr 41 (W)";
         discreteDistanceInitIndex = 2;
         dispersion = MOA_TO_RAD(6);
-        magazines[] = {"LIB_10Rnd_792x57_clip","lib_10Rnd_792x57","lib_10Rnd_792x57_T","lib_10Rnd_792x57_T2","lib_10Rnd_792x57_sS","lib_10Rnd_792x57_SMK","fow_10nd_792x57","fow_5Rnd_792x57","lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK"};
+        magazines[] = {"LIB_10Rnd_792x57_clip"};
+        magazineWell[] = {"CBA_792x57_G41","CBA_792x57_wz38M","CBA_792x57_K98"};
         recoil = "recoil_2PzD_rifle_semi";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 108.7;
@@ -229,7 +274,8 @@
         descriptionShort = "Gewehr 43";
         discreteDistanceInitIndex = 2;
         dispersion = MOA_TO_RAD(6);
-        magazines[] = {"lib_10Rnd_792x57","LIB_10Rnd_792x57_clip","lib_10Rnd_792x57_T","lib_10Rnd_792x57_T2","lib_10Rnd_792x57_sS","lib_10Rnd_792x57_SMK","fow_10nd_792x57","fow_5Rnd_792x57","lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK"};
+        magazines[] = {"lib_10Rnd_792x57"};
+        magazineWell[] = {"CBA_792x57_G43","CBA_792x57_G41","CBA_792x57_wz38M","CBA_792x57_K98"};
         recoil = "recoil_2PzD_rifle_semi";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 90.441;
@@ -244,7 +290,8 @@
         descriptionShort = "Karabiner 98 kurz, pre-war model";
         discreteDistanceInitIndex = 2;
         dispersion = MOA_TO_RAD(5);
-        magazines[] = {"lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK","fow_5Rnd_792x57"};
+        magazines[] = {"lib_5Rnd_792x57"};
+        magazineWell[] = {"CBA_792x57_K98"};
         recoil = "recoil_2PzD_rifle_bolt";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 87.7;
@@ -257,55 +304,68 @@
         class Far;
     };
 
-    class LIB_K98_Late : LIB_K98 {
-        displayName = "Kar98k";
-        descriptionShort = "Karabiner 98 kurz, 1939 upgrade";
-        magazines[] = {"lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK","fow_5Rnd_792x57"};
-        class WeaponSlotsInfo : WeaponSlotsInfo {
-            mass = 87.993;
-        };
-        class Single : Single {
-            dispersion = MOA_TO_RAD(4);
-        };
-        class Short : Short {
-            dispersion = MOA_TO_RAD(4);
-        };
-        class Medium : Medium {
-            dispersion = MOA_TO_RAD(4);
-        };
-        class Far : Far {
-            dispersion = MOA_TO_RAD(4);
+    class LIB_K98_GW : LIB_K98 {
+        class LIB_K98_RG : LIB_RifleGrenade_Muzzle {
+            dispersion = MOA_TO_RAD(10);
+            recoil = "recoil_single_m320";
+            recoilProne = "recoil_single_m320";
         };
     };
 
-    /*class LIB_K98_GL_2PzD : LIB_K98 {
-        displayName = "Kar98k Schiessbecher";
-        descriptionShort = "Karabiner 98 kurz with Schiessbecher grenade launcher";
-        class LinkedItems  {
-            class LinkedItemsMuzzle {
-                slot = "MuzzleSlot";
-                item = "LIB_ACC_GW_SB_Empty";
-            };
+    class LIB_K98_Late : LIB_K98 {
+        displayName = "Kar98k";
+        descriptionShort = "Karabiner 98 kurz, 1939 upgrade";
+        magazines[] = {"lib_5Rnd_792x57"};
+        magazineWell[] = {"CBA_792x57_K98"};
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 87.993;
         };
-    };*/
+    };
+
+    class LIB_K98_Late_GW : LIB_K98_Late {
+        class LIB_K98_RG : LIB_RifleGrenade_Muzzle {
+            dispersion = MOA_TO_RAD(10);
+            recoil = "recoil_single_m320";
+            recoilProne = "recoil_single_m320";
+        };
+    };
 
     class LIB_G3340 : LIB_K98 {
-        displayName = "G33/40";
-        descriptionShort = "Puška vz. 33, known as the Gewehr 33/40(t) in Wehrmacht service";
+        displayName = "G33/40(t)";
+        descriptionShort = "Puška vz. 16/33, known as the Gewehr 33/40(t) in Wehrmacht service";
         dispersion = MOA_TO_RAD(4);
+        magazines[] = {"lib_5Rnd_792x57"};
+        magazineWell[] = {"CBA_792x57_K98"};
+        recoil = "recoil_2PzD_rifle_short";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 73.897;
         };
-        class Single : Single {
+        class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(4);
+            sounds[] = {"StandardSound"};
+            class BaseSoundModeType {
+                closure1[] = {"\CSA38II_sounds\w_m1895\reload2.ogg", 3, 1, 20};
+                soundClosure[] = {"closure1", 1};
+                weaponSoundEffect = "CSA38_Rifle";
+            };
+            class StandardSound: BaseSoundModeType {
+                soundSetShot[] = {"CSA38_M1895_Shot_SoundSet", "Mk200_Tail_SoundSet", "Mk200_InteriorTail_SoundSet"};
+                begin1[] = {"\CSA38II_sounds\w_m1895\fire01.ogg", 1.77828, 1, 1200};
+                begin2[] = {"\CSA38II_sounds\w_m1895\fire02.ogg", 1.77828, 1, 1200};
+                begin3[] = {"\CSA38II_sounds\w_m1895\fire03.ogg", 1.77828, 1, 1200};
+                begin4[] = {"\CSA38II_sounds\w_m1895\fire04.ogg", 1.77828, 1, 1200};
+                begin5[] = {"\CSA38II_sounds\w_m1895\fire05.ogg", 1.77828, 1, 1200};
+                soundBegin[] = {"begin1", 0.2, "begin2", 0.2, "begin3", 0.2, "begin4", 0.2, "begin5", 0.2};
+            };
         };
     };
 
     class LIB_K98ZF39 : LIB_SRIFLE {
-        displayName = "Kar98k, Zf39 Sight";
-        descriptionShort = "Karabiner 98 kurz with Zf39 sight";
+        displayName = "Kar98k (Zf39)";
+        descriptionShort = "Karabiner 98 kurz with Zf39 scope";
         dispersion = MOA_TO_RAD(3.5);
-        magazines[] = {"lib_5Rnd_792x57","lib_5Rnd_792x57_t","lib_5Rnd_792x57_sS","lib_5Rnd_792x57_SMK","fow_5Rnd_792x57"};
+        magazines[] = {"lib_5Rnd_792x57"};
+        magazineWell[] = {"CBA_792x57_K98"};
         recoil = "recoil_2PzD_rifle_bolt";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 93.066;
@@ -315,26 +375,90 @@
         };
     };
 
+    class LIB_LeeEnfield_No4 : LIB_RIFLE {
+        displayName = "Lee Enfield No. 4 Mk I";
+        descriptionShort = "Rifle, No. 4 Mk I";
+        dispersion = MOA_TO_RAD(4);
+        magazines[] = {"LIB_10Rnd_770x56"};
+        magazineWell[] = {"CBA_303B_LeeEn"};
+        recoil = "recoil_2PzD_rifle_bolt";
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 88.037;
+        };
+        class Single : Mode_SemiAuto {
+            dispersion = MOA_TO_RAD(4);
+        };
+    };
+
+    class LIB_LeeEnfield_No4_CUP : LIB_LeeEnfield_No4 {
+        class LIB_LeeEnfield_No4_RG : LIB_RifleGrenade_Muzzle {
+            dispersion = MOA_TO_RAD(10);
+            recoil = "recoil_single_m320";
+            recoilProne = "recoil_single_m320";
+        };
+    };
+
+    class LIB_LeeEnfield_No1 : LIB_LeeEnfield_No4 {
+        displayName = "Lee Enfield No. 1 Mk III";
+        descriptionShort = "Rifle, No. 1 Mk III";
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 86.2;
+        };
+    };
+
+    class LIB_LeeEnfield_No1_CUP : LIB_LeeEnfield_No1 {
+        class LIB_LeeEnfield_No4_RG : LIB_RifleGrenade_Muzzle {
+            dispersion = MOA_TO_RAD(10);
+            recoil = "recoil_single_m320";
+            recoilProne = "recoil_single_m320";
+        };
+    };
+
+    class LIB_LeeEnfield_No4_Scoped: LIB_SRIFLE {
+        displayName = "Lee Enfield No. 4 Mk I (T)";
+        descriptionShort = "Rifle, No. 4 Mk I (T) with No.32 Scope";
+        dispersion = MOA_TO_RAD(2.5);
+        magazines[] = {"LIB_10Rnd_770x56"};
+        magazineWell[] = {"CBA_303B_LeeEn"};
+        recoil = "recoil_2PzD_rifle_bolt";
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 109.924;
+        };
+        class Single : Mode_SemiAuto {
+            dispersion = MOA_TO_RAD(2.5);
+        };
+    };
+
+    class LIB_LeeEnfield_No4_Scoped_CUP : LIB_LeeEnfield_No4_Scoped {
+        class LIB_LeeEnfield_No4_RG : LIB_RifleGrenade_Muzzle {
+            dispersion = MOA_TO_RAD(10);
+            recoil = "recoil_single_m320";
+            recoilProne = "recoil_single_m320";
+        };
+    };
+
     class LIB_M1_Carbine : LIB_RIFLE {
         displayName = "M1 Carbine";
         descriptionShort = "Carbine, Caliber .30, M1";
         discreteDistance[] = {150,300};
         discreteDistanceInitIndex = 0;
         dispersion = MOA_TO_RAD(5);
-        magazines[] = {"LIB_15Rnd_762x33","LIB_15Rnd_762x33_t","LIB_30Rnd_762x33_2PzD","fow_15Rnd_762x33","fow_30Rnd_762x33_2PzD"};
+        magazines[] = {"LIB_15Rnd_762x33"};
+        magazineWell[] = {"CBA_30Carbine_M1Carbine"};
         recoil = "recoil_2PzD_rifle_light";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 50.735;
         };
         class Single : Mode_SemiAuto {
-            reloadTime = 0.08; //700 rpm
+            reloadTime = RPM_TO_TIME(750); // 700 rpm
             dispersion = MOA_TO_RAD(5);
         };
     };
     class LIB_M1A1_Carbine : LIB_M1_Carbine {
         displayName = "M1A1 Carbine";
         descriptionShort = "Carbine, Caliber .30, M1A1";
-        magazines[] = {"LIB_15Rnd_762x33","LIB_15Rnd_762x33_t","LIB_30Rnd_762x33_2PzD","fow_15Rnd_762x33","fow_30Rnd_762x33_2PzD"};
+        magazines[] = {"LIB_15Rnd_762x33"};
+        magazineWell[] = {"CBA_30Carbine_M1Carbine"};
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 59.520;
         };
@@ -343,7 +467,8 @@
         displayName = "M2 Carbine";
         descriptionShort = "Carbine, Cal .30, M2";
         fow_burstLength = 2;
-        magazines[] = {"LIB_30Rnd_762x33_2PzD","LIB_15Rnd_762x33","LIB_15Rnd_762x33_t","fow_30Rnd_762x33_2PzD","fow_15Rnd_762x33"};
+        magazines[] = {"LIB_15Rnd_762x33"};
+        magazineWell[] = {"CBA_30Carbine_M1Carbine"};
         modes[] = {"Single","Full","Far","Medium","Short"};
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -357,7 +482,7 @@
         class Full : Single {
             autoFire = 1;
             displayName = "Full";
-            reloadTime = 0.08; //700 rpm
+            reloadTime = RPM_TO_TIME(750); // 700 rpm
             textureType = "fullAuto";
         };
    };
@@ -368,13 +493,22 @@
         discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200};
         discreteDistanceInitIndex = 2;
         dispersion = MOA_TO_RAD(4);
-        magazines[] = {"LIB_8Rnd_762x63","fow_8Rnd_762x63"};
+        magazines[] = {"LIB_8Rnd_762x63"};
+        magazineWell[] = {"CBA_3006_Garand"};
         recoil = "recoil_2PzD_rifle_semi";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 95.074;
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(4);
+        };
+    };
+
+    class LIB_M1_Garand_M7 : LIB_M1_Garand {
+        class LIB_M1_Garand_RG : LIB_RifleGrenade_Muzzle {
+            dispersion = MOA_TO_RAD(10);
+            recoil = "recoil_single_m320";
+            recoilProne = "recoil_single_m320";
         };
     };
 
@@ -385,7 +519,8 @@
         discreteDistanceInitIndex = 2;
         dispersion = MOA_TO_RAD(3);
         recoil = "recoil_2PzD_rifle_bolt";
-        magazines[] = {"LIB_5Rnd_762x63","LIB_5Rnd_762x63_t","fow_5Rnd_762x63"};
+        magazines[] = {"LIB_5Rnd_762x63"};
+        magazineWell[] = {"CBA_3006_Spring"};
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 86.912;
         };
@@ -398,6 +533,8 @@
         displayName = "M1903A4 Springfield";
         descriptionShort = "Rifle, Caliber .30, M1903A4";
         dispersion = MOA_TO_RAD(2);
+        magazines[] = {"LIB_5Rnd_762x63"};
+        magazineWell[] = {"CBA_3006_Spring"};
         recoil = "recoil_2PzD_rifle_bolt";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 91.985;
@@ -413,6 +550,8 @@
         discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
         discreteDistanceInitIndex = 2;
         dispersion = MOA_TO_RAD(5);
+        magazines[] = {"LIB_5Rnd_762x54"};
+        magazineWell[] = {"CBA_762x54R_Mosin"};
         recoil = "recoil_2PzD_rifle_bolt";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 87.353;
@@ -422,11 +561,21 @@
         };
     };
 
+    class LIB_M9130_DYAKONOV : LIB_M9130 {
+        class LIB_M9130_RG : LIB_RifleGrenade_Muzzle {
+            dispersion = MOA_TO_RAD(10);
+            recoil = "recoil_single_m320";
+            recoilProne = "recoil_single_m320";
+        };
+    };
+
     class LIB_M38 : LIB_M9130 {
         displayName = "Mosin M38";
         descriptionShort = "Mosin M38";
         discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000};
         discreteDistanceInitIndex = 1;
+        magazines[] = {"LIB_5Rnd_762x54"};
+        magazineWell[] = {"CBA_762x54R_Mosin"};
         recoil = "recoil_2PzD_rifle_short";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 75.044;
@@ -438,6 +587,8 @@
         descriptionShort = "Mosin M44";
         discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000};
         discreteDistanceInitIndex = 1;
+        magazines[] = {"LIB_5Rnd_762x54"};
+        magazineWell[] = {"CBA_762x54R_Mosin"};
         recoil = "recoil_2PzD_rifle_short";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 90.000;
@@ -446,8 +597,10 @@
 
     class LIB_M9130PU : LIB_SRIFLE {
         displayName = "Mosin M91/30 PU";
-        descriptionShort = "Mosin M91/30 with PU sight";
+        descriptionShort = "Mosin M91/30 with PU scope";
         dispersion = MOA_TO_RAD(3);
+        magazines[] = {"LIB_5Rnd_762x54"};
+        magazineWell[] = {"CBA_762x54R_Mosin"};
         recoil = "recoil_2PzD_rifle_bolt";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 92.426;
@@ -463,8 +616,9 @@
         discreteDistance[] = {100,200,300,400,500,600,700,800};
         discreteDistanceInitIndex = 1;
         dispersion = MOA_TO_RAD(7);
-        //fow_burstLength = 3;
-        magazines[] = {"LIB_30Rnd_792x33","fow_30Rnd_792x33"};
+        // fow_burstLength = 3;
+        magazines[] = {"LIB_30Rnd_792x33"};
+        magazineWell[] = {"CBA_792x33_StG"};
         modes[] = {"Single","Full","Far","Medium","Short"};
         recoil = "recoil_2PzD_rifle_light";
         /*class Eventhandlers : Eventhandlers {
@@ -477,21 +631,29 @@
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(7);
-            reloadTime = 0.104; //575 rpm
+            reloadTime = RPM_TO_TIME(575); // 575 rpm
         };
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(7);
-            reloadTime = 0.104; //575 rpm
+            reloadTime = RPM_TO_TIME(575); // 575 rpm
         };/*
         class Far : Full {
-            reloadTime = 0.104; //575 rpm
+            reloadTime = RPM_TO_TIME(575); // 575 rpm
         };
         class Medium : Full {
-            reloadTime = 0.104; //575 rpm
+            reloadTime = RPM_TO_TIME(575); // 575 rpm
         };
         class Short : Medium {
-            reloadTime = 0.104; //575 rpm
+            reloadTime = RPM_TO_TIME(575); // 575 rpm
         };*/
+    };
+
+    class LIB_MP44_GW : LIB_MP44 {
+        class LIB_MP44_RG : LIB_RifleGrenade_Muzzle {
+            dispersion = MOA_TO_RAD(10);
+            recoil = "recoil_single_m320";
+            recoilProne = "recoil_single_m320";
+        };
     };
 
     class LIB_SVT_40 : LIB_RIFLE {
@@ -500,20 +662,21 @@
         discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
         discreteDistanceInitIndex = 2;
         dispersion = MOA_TO_RAD(6);
-        magazines[] = {"LIB_10Rnd_762x54","LIB_10Rnd_762x54_t30","LIB_10Rnd_762x54_t302","LIB_10Rnd_762x54_t46","LIB_10Rnd_762x54_t462","LIB_10Rnd_762x54_d","LIB_10Rnd_762x54_b30","lib_5Rnd_762x54","lib_5Rnd_762x54_t46","lib_5Rnd_762x54_t30","lib_5Rnd_762x54_D","lib_5Rnd_762x54_b30"};
+        magazines[] = {"LIB_10Rnd_762x54"};
+        magazineWell[] = {"CBA_762x54R_SVT","CBA_762x54R_Mosin"};
         recoil = "recoil_2PzD_rifle_semi";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 84.926;
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(6);
-            reloadTime = 0.080; //750 rpm
+            reloadTime = RPM_TO_TIME(750); // 750 rpm
         };
     };
     class LIB_AVT_40_2PzD : LIB_SVT_40 {
         displayName = "AVT-40";
         descriptionShort = "AVT-40";
-        //fow_burstLength = 3;
+        // fow_burstLength = 3;
         modes[] = {"Single","Full","Far","Medium","Short"};
         /*class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -527,8 +690,14 @@
         class Full : Single {
             autoFire = 1;
             displayName = "Full";
-            reloadTime = 0.080; //750 rpm
+            reloadTime = RPM_TO_TIME(750); // 750 rpm
             textureType = "fullAuto";
+            maxRange = 50;
+            maxRangeProbab = 0.05;
+            midRange = 25;
+            midRangeProbab = 0.7;
+            minRange = 1;
+            minRangeProbab = 0.3;
         };
     };
 
@@ -538,6 +707,8 @@
         discreteDistance[] = {400,600};
         discreteDistanceInitIndex = 0;
         dispersion = MOA_TO_RAD(6);
+        magazines[] = {"LIB_1Rnd_145x114"};
+        magazineWell[] = {"CBA_145x114_PTRD"};
         recoil = "recoil_2PzD_rifle_at";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 381.0;
@@ -546,16 +717,17 @@
             dispersion = MOA_TO_RAD(6);
         };
     };
-//End Rifles
+// End Rifles
 
-//Submachine Guns
+// Submachine Guns
     class LIB_M1A1_Thompson : LIB_SMG {
         displayName = "M1A1 Thompson";
         descriptionShort = "Submachine Gun, Caliber .45, M1A1";
         discreteDistanceInitIndex = 0;
         dispersion = MOA_TO_RAD(8);
         fow_burstLength = 4;
-        magazines[] = {"LIB_30Rnd_45ACP","LIB_20Rnd_45ACP_M1_2PzD","fow_20Rnd_45acp_M1_2PzD","fow_20Rnd_45acp_T_M1_2PzD","fow_30Rnd_45acp_M1_2PzD","fow_30Rnd_45acp_T_M1_2PzD","fow_30Rnd_45acp","fow_30Rnd_45acp_T"};
+        magazines[] = {"LIB_30Rnd_45ACP"};
+        magazineWell[] = {"CBA_45ACP_Thompson_Stick"};
         recoil = "recoil_2PzD_smg_heavy";
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -567,27 +739,28 @@
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(8);
-            reloadTime = 0.086; //700 rpm
+            reloadTime = RPM_TO_TIME(700); // 700 rpm
         };
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(8);
-            reloadTime = 0.086; //700 rpm
-        };
+            reloadTime = RPM_TO_TIME(700); // 700 rpm
+        };/*
         class Far : Full {
-            reloadTime = 0.086; //700 rpm
+            reloadTime = RPM_TO_TIME(700); // 700 rpm
         };
         class Medium : Full {
-            reloadTime = 0.086; //700 rpm
+            reloadTime = RPM_TO_TIME(700); // 700 rpm
         };
         class Short : Medium {
-            reloadTime = 0.086; //700 rpm
-        };
+            reloadTime = RPM_TO_TIME(700); // 700 rpm
+        };*/
     };
     class LIB_M1928_Thompson : LIB_M1A1_Thompson {
         displayName = "M1928 Thompson";
         descriptionShort = "Submachine Gun, Caliber .45, M1928";
         fow_burstLength = 4;
-        magazines[] = {"LIB_50Rnd_45ACP","LIB_20Rnd_45ACP_M1_2PzD","LIB_30Rnd_45ACP","fow_20Rnd_45acp_M1_2PzD","fow_20Rnd_45acp_T_M1_2PzD","fow_30Rnd_45acp_M1_2PzD","fow_30Rnd_45acp_T_M1_2PzD","fow_30Rnd_45acp","fow_30Rnd_45acp_T"};
+        magazines[] = {"LIB_20Rnd_45ACP_M1_2PzD"};
+        magazineWell[] = {"CBA_45ACP_Thompson_Stick","CBA_45ACP_Thompson_Drum"};
         recoil = "recoil_2PzD_smg_medium";
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -597,27 +770,38 @@
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 108.0;
         };
-        class Single : Single {
-            reloadTime = 0.089; //675 rpm
+        class Single : Mode_SemiAuto {
+            dispersion = MOA_TO_RAD(8);
+            reloadTime = RPM_TO_TIME(675); // 675 rpm
+            sounds[] = {"StandardSound"};
+            class StandardSound : BaseSoundModeType {
+                soundSetShot[] = {"WW2_thompson_Shot_SoundSet", "WW2_rifle_small_Tail_SoundSet", "WW2_thompson_stereoLayer_SoundSet"};
+            };
         };
         class Full : Full {
-            reloadTime = 0.089; //675 rpm
-        };
+            dispersion = MOA_TO_RAD(8);
+            reloadTime = RPM_TO_TIME(675); // 675 rpm
+            sounds[] = {"StandardSound"};
+            class StandardSound : BaseSoundModeType {
+                soundSetShot[] = {"WW2_thompson_Shot_SoundSet", "WW2_rifle_small_Tail_SoundSet", "WW2_thompson_stereoLayer_SoundSet"};
+            };
+        };/*
         class Far : Far {
-            reloadTime = 0.089; //675 rpm
+            reloadTime = RPM_TO_TIME(675); // 675 rpm
         };
         class Medium : Medium {
-            reloadTime = 0.089; //675 rpm
+            reloadTime = RPM_TO_TIME(675); // 675 rpm
         };
         class Short : Short {
-            reloadTime = 0.089; //675 rpm
-        };
+            reloadTime = RPM_TO_TIME(675); // 675 rpm
+        };*/
     };
     class LIB_M1928_Thompson_d : LIB_M1928_Thompson {
         displayName = "M1928 Thompson (Drum)";
         descriptionShort = "Submachine Gun, Caliber .45, M1928 with drum magazine";
         fow_burstLength = 4;
-        magazines[] = {"LIB_50Rnd_45ACP","LIB_20Rnd_45ACP_M1_2PzD","LIB_30Rnd_45ACP","fow_20Rnd_45acp_M1_2PzD","fow_20Rnd_45acp_T_M1_2PzD","fow_30Rnd_45acp_M1_2PzD","fow_30Rnd_45acp_T_M1_2PzD","fow_30Rnd_45acp","fow_30Rnd_45acp_T"};
+        magazines[] = {"LIB_50Rnd_45ACP"};
+        magazineWell[] = {"CBA_45ACP_Thompson_Drum","CBA_45ACP_Thompson_Stick"};
         recoil = "recoil_2PzD_smg_medium";
         scope = 2;
         class Eventhandlers : Eventhandlers {
@@ -633,7 +817,8 @@
         displayName = "M1928A1 Thompson";
         descriptionShort = "Submachine Gun, Caliber .45, M1928A1";
         fow_burstLength = 4;
-        magazines[] = {"LIB_50Rnd_45ACP","LIB_20Rnd_45ACP_M1_2PzD","LIB_30Rnd_45ACP","fow_20Rnd_45acp_M1_2PzD","fow_20Rnd_45acp_T_M1_2PzD","fow_30Rnd_45acp_M1_2PzD","fow_30Rnd_45acp_T_M1_2PzD","fow_30Rnd_45acp","fow_30Rnd_45acp_T"};
+        magazines[] = {"LIB_20Rnd_45ACP_M1_2PzD"};
+        magazineWell[] = {"CBA_45ACP_Thompson_Stick","CBA_45ACP_Thompson_Drum"};
         recoil = "recoil_2PzD_smg_medium";
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -644,7 +829,7 @@
             mass = 106.0;
         };
         class Full : Full {
-            reloadTime = 0.092; //650 rpm
+            reloadTime = RPM_TO_TIME(650); // 650 rpm
         };
     };
 
@@ -654,8 +839,9 @@
         discreteDistanceInitIndex = 0;
         dispersion = MOA_TO_RAD(8);
         fow_burstLength = 3;
+        magazines[] = {"LIB_30Rnd_M3_GreaseGun_45ACP"};
+        magazineWell[] = {"CBA_45ACP_Grease"};
         modes[] = {"Full","Far","Medium","Short"};
-        magazines[] = {"LIB_30Rnd_M3_GreaseGun_45ACP","fow_30Rnd_45acp_M3_2PzD","fow_30Rnd_45acp_T_M3_2PzD","LEN_30Rnd_45ACP_M3","fow_30Rnd_45acp","fow_30Rnd_45acp_T"};
         recoil = "recoil_2PzD_smg_medium";
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -667,16 +853,16 @@
         };
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(8);
-            reloadTime = 0.133; //451 rpm
+            reloadTime = RPM_TO_TIME(451); // 451 rpm
         };/*
         class Far : Full {
-            reloadTime = 0.133; //451 rpm
+            reloadTime = RPM_TO_TIME(451); // 451 rpm
         };
         class Medium : Full {
-            reloadTime = 0.133; //451 rpm
+            reloadTime = RPM_TO_TIME(451); // 451 rpm
         };
         class Short : Medium {
-            reloadTime = 0.133; //451 rpm
+            reloadTime = RPM_TO_TIME(451); // 451 rpm
         };*/
     };
 
@@ -687,7 +873,8 @@
         discreteDistanceInitIndex = 0;
         dispersion = MOA_TO_RAD(8);
         fow_burstLength = 3;
-        magazines[] = {"LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40","LEN_32Rnd_9x19","fow_32Rnd_9x19_sten"};
+        magazines[] = {"LIB_32Rnd_9x19"};
+        magazineWell[] = {"CBA_9x19_MP40"};
         recoil = "recoil_2PzD_smg_medium";
         class Eventhandlers: Eventhandlers {
             class fow_mgRoF {
@@ -699,7 +886,7 @@
         };
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(8);
-            reloadTime = 0.12; //500 rpm
+            reloadTime = RPM_TO_TIME(500); // 500 rpm
         };
     };
 
@@ -710,7 +897,8 @@
         discreteDistanceInitIndex = 0;
         dispersion = MOA_TO_RAD(8);
         fow_burstLength = 3;
-        magazines[] = {"LIB_32Rnd_9x19","fow_32Rnd_9x19_mp40","LEN_32Rnd_9x19","fow_32Rnd_9x19_sten"};
+        magazines[] = {"LIB_32Rnd_9x19"};
+        magazineWell[] = {"CBA_9x19_MP40"};
         recoil = "recoil_2PzD_smg_medium";
         class Eventhandlers: Eventhandlers {
             class fow_mgRoF {
@@ -722,25 +910,26 @@
         };
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(8);
-            reloadTime = 0.114; //525 rpm
+            reloadTime = RPM_TO_TIME(525); // 525 rpm
         };/*
         class Far : Full {
-            reloadTime = 0.114; //525 rpm
+            reloadTime = RPM_TO_TIME(525); // 525 rpm
         };
         class Medium : Full {
-            reloadTime = 0.114; //525 rpm
+            reloadTime = RPM_TO_TIME(525); // 525 rpm
         };
         class Short : Medium {
-            reloadTime = 0.114; //525 rpm
+            reloadTime = RPM_TO_TIME(525); // 525 rpm
         };*/
     };
 
     class LIB_PPSh41_m : LIB_SMG {
-        displayName = "PPSh-41 (Stick)";
-        descriptionShort = "Pistolet-Pulemyot Shpagina 41 (Stick)";
+        displayName = "PPSh-41";
+        descriptionShort = "Pistolet-Pulemyot Shpagina 41 with stick magazine";
         dispersion = MOA_TO_RAD(8);
         fow_burstLength = 5;
-        magazines[] = {"lib_35Rnd_762x25","lib_35Rnd_762x25_t","lib_35Rnd_762x25_t2","lib_35Rnd_762x25_ap","lib_71Rnd_762x25","lib_71Rnd_762x25_t","lib_71Rnd_762x25_t2","lib_71Rnd_762x25_ap"};
+        magazines[] = {"lib_35Rnd_762x25"};
+        magazineWell[] = {"CBA_762x25_PPSh_Stick","CBA_762x25_PPSh_Drum"};
         modes[] = {"Full","Single","Far","Medium","Short"};
         recoil = "recoil_2PzD_smg_medium";
         scope = 2;
@@ -754,27 +943,28 @@
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(8);
-            reloadTime = 0.063; //952 rpm
+            reloadTime = RPM_TO_TIME(952); // 952 rpm
         };
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(8);
-            reloadTime = 0.063; //952 rpm
+            reloadTime = RPM_TO_TIME(952); // 952 rpm
         };/*
         class Far : Full {
-            reloadTime = 0.063; //952 rpm
+            reloadTime = RPM_TO_TIME(952); // 952 rpm
         };
         class Medium : Full {
-            reloadTime = 0.063; //952 rpm
+            reloadTime = RPM_TO_TIME(952); // 952 rpm
         };
         class Short : Medium {
-            reloadTime = 0.063; //952 rpm
+            reloadTime = RPM_TO_TIME(952); // 952 rpm
         };*/
     };
     class LIB_PPSh41_d : LIB_PPSh41_m {
         displayName = "PPSh-41 (Drum)";
-        descriptionShort = "Pistolet-Pulemyot Shpagina 41 (Drum)";
+        descriptionShort = "Pistolet-Pulemyot Shpagina 41 with drum magazine";
         fow_burstLength = 5;
-        magazines[] = {"lib_71Rnd_762x25","lib_71Rnd_762x25_t","lib_71Rnd_762x25_t2","lib_71Rnd_762x25_ap","lib_35Rnd_762x25","lib_35Rnd_762x25_t","lib_35Rnd_762x25_t2","lib_35Rnd_762x25_ap"};
+        magazines[] = {"lib_71Rnd_762x25"};
+        magazineWell[] = {"CBA_762x25_PPSh_Drum","CBA_762x25_PPSh_Stick"};
         modes[] = {"Full","Single","Far","Medium","Short"};
         recoil = "recoil_2PzD_smg_medium";
         scope = 2;
@@ -787,9 +977,67 @@
             mass = 80.074;
         };
     };
-//End Submachine Guns
 
-//Machineguns
+    class LIB_Sten_Mk2: LIB_SMG {
+        displayName = "Sten Mk II";
+        descriptionShort = "Sten Mk II";
+        dispersion = MOA_TO_RAD(8);
+        fow_burstLength = 3;
+        magazines[] = {"LIB_32Rnd_9x19_Sten"};
+        magazineWell[] = {"CBA_9x19_STEN"};
+        modes[] = {"Full","Single","Far","Medium","Short"};
+        recoil = "recoil_2PzD_smg_medium";
+        class Eventhandlers {
+            class fow_mgRoF {
+                fired = "_this spawn fow_main_fnc_mgRoF;";
+            };
+        };
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 65.074;
+        };
+        class Full : Mode_FullAuto {
+            dispersion = MOA_TO_RAD(8);
+            reloadTime = RPM_TO_TIME(550); // 550 rpm
+        };
+        class Single : Mode_SemiAuto {
+            dispersion = MOA_TO_RAD(8);
+            reloadTime = RPM_TO_TIME(550); // 550 rpm
+        };
+    };
+    class LIB_Sten_Mk5: LIB_Sten_Mk2 {
+        displayName = "Sten Mk V";
+        descriptionShort = "Sten Mk V";
+    };
+// End Submachine Guns
+
+// Machineguns
+    class LIB_Bren_Mk2: LIB_LMG {
+        displayName = "Bren Gun Mk II";
+        descriptionShort = "BREN L.M.G. Mk II";
+        dispersion = MOA_TO_RAD(3);
+        fow_burstLength = 4;
+        magazines[] = {"LIB_30Rnd_770x56"};
+        magazineWell[] = {"CBA_303B_BREN"};
+        recoil = "recoil_2PzD_mmg_1";
+        ace_overheating_allowSwapBarrel = 1;
+        class Eventhandlers : Eventhandlers {
+            class fow_mgRoF {
+                fired = "_this spawn fow_main_fnc_mgRoF;";
+            };
+        };
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 228.309;
+        };
+        class Full : Mode_FullAuto {
+            dispersion = MOA_TO_RAD(3);
+            reloadTime = RPM_TO_TIME(510); // 510 rpm
+        };
+        class Single : Mode_SemiAuto {
+            dispersion = MOA_TO_RAD(3);
+            reloadTime = RPM_TO_TIME(510); // 510 rpm
+        };
+    };
+
     class LIB_DP28 : LIB_LMG {
         displayName = "DP-28";
         descriptionShort = "Degtyaryov Machine Gun";
@@ -797,6 +1045,8 @@
         discreteDistanceInitIndex = 2;
         dispersion = MOA_TO_RAD(4);
         fow_burstLength = 4;
+        magazines[] = {"LIB_47Rnd_762x54"};
+        magazineWell[] = {"CBA_762x54R_DPM"};
         recoil = "recoil_2PzD_mmg_1";
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -808,16 +1058,16 @@
         };
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.109; //550 rpm
+            reloadTime = RPM_TO_TIME(550); // 550 rpm
         };/*
         class Far : Full {
-            reloadTime = 0.109; //550 rpm
+            reloadTime = RPM_TO_TIME(550); // 550 rpm
         };
         class Medium : Full {
-            reloadTime = 0.109; //550 rpm
+            reloadTime = RPM_TO_TIME(550); // 550 rpm
         };
         class Short : Full {
-            reloadTime = 0.109; //550 rpm
+            reloadTime = RPM_TO_TIME(550); // 550 rpm
         };*/
     };
 
@@ -826,6 +1076,8 @@
         descriptionShort = "Degtyaryova Tankovy Machine Gun";
         dispersion = MOA_TO_RAD(4);
         fow_burstLength = 4;
+        magazines[] = {"LIB_63Rnd_762x54"};
+        magazineWell[] = {"CBA_762x54R_DT"};
         recoil = "recoil_2PzD_mmg_1";
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -837,16 +1089,16 @@
         };
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.109; //550 rpm
+            reloadTime = RPM_TO_TIME(550); // 550 rpm
         };/*
         class Far : Full {
-            reloadTime = 0.109; //550 rpm
+            reloadTime = RPM_TO_TIME(550); // 550 rpm
         };
         class Medium : Full {
-            reloadTime = 0.109; //550 rpm
+            reloadTime = RPM_TO_TIME(550); // 550 rpm
         };
         class Short : Full {
-            reloadTime = 0.109; //550 rpm
+            reloadTime = RPM_TO_TIME(550); // 550 rpm
         };*/
     };
 
@@ -854,6 +1106,8 @@
         displayName = "DT (Optic)";
         descriptionShort = "Degtyaryova Tankovy Machine Gun with optic";
         fow_burstLength = 4;
+        magazines[] = {"LIB_63Rnd_762x54"};
+        magazineWell[] = {"CBA_762x54R_DT"};
         recoil = "recoil_2PzD_mmg_1";
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -872,7 +1126,8 @@
         discreteDistanceInitIndex = 0;
         dispersion = MOA_TO_RAD(3);
         fow_burstLength = 4;
-        magazines[] = {"LIB_20Rnd_762x63","fow_20Rnd_762x63"};
+        magazines[] = {"LIB_20Rnd_762x63"};
+        magazineWell[] = {"CBA_3006_BAR"};
         recoil = "recoil_2PzD_rifle_auto_1";
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -884,21 +1139,21 @@
         };
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(3);
-            reloadTime = 0.200; //300 rpm
+            reloadTime = RPM_TO_TIME(300); // 300 rpm
             textureType = "fullAuto";
         };
         class Full_Rapid : Full {
-            reloadTime = 0.092; //650 rpm
+            reloadTime = RPM_TO_TIME(650); // 650 rpm
             textureType = "fastAuto";
         };/*
         class Far : Full {
-            reloadTime = 0.200; //300 rpm
+            reloadTime = RPM_TO_TIME(300); // 300 rpm
         };
         class Medium : Full {
-            reloadTime = 0.200; //300 rpm
+            reloadTime = RPM_TO_TIME(300); // 300 rpm
         };
         class Short : Medium {
-            reloadTime = 0.092; //650 rpm
+            reloadTime = RPM_TO_TIME(650); // 650 rpm
         };*/
     };
 
@@ -907,7 +1162,8 @@
         descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A4";
         dispersion = MOA_TO_RAD(4);
         fow_burstLength = 8;
-        magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD","LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_762x63"};
+        magazines[] = {"LIB_250Rnd_762x63_2PzD"};
+        magazineWell[] = {"CBA_3006_Belt"};
         recoil = "recoil_2PzD_mmg_1";
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -919,23 +1175,24 @@
         };
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.14; //430 rpm
+            reloadTime = RPM_TO_TIME(430); // 430 rpm
         };/*
         class Far : Full {
-            reloadTime = 0.14; //430 rpm
+            reloadTime = RPM_TO_TIME(430); // 430 rpm
         };
         class Medium : Full {
-            reloadTime = 0.14; //430 rpm
+            reloadTime = RPM_TO_TIME(430); // 430 rpm
         };
         class Short : Full {
-            reloadTime = 0.14; //430 rpm
+            reloadTime = RPM_TO_TIME(430); // 430 rpm
         };*/
     };
     class LIB_M1919A6 : LIB_M1919A4 {
         displayName = "M1919A6";
         descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A6";
         fow_burstLength = 8;
-        magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD","LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_762x63"};
+        magazines[] = {"LIB_250Rnd_762x63_2PzD"};
+        magazineWell[] = {"CBA_3006_Belt"};
         recoil = "recoil_2PzD_mmg_1";
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -955,9 +1212,11 @@
         discreteDistanceInitIndex = 2;
         dispersion = MOA_TO_RAD(4);
         fow_burstLength = 6;
+        magazines[] = {"lib_50Rnd_792x57"};
+        magazineWell[] = {"CBA_792x57_LINKS"};
         modes[] = {"Full","Single","Far","Medium","Short"};
-        magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SMK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SMK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SMK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SMK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};
         recoil = "recoil_2PzD_mmg_1";
+        ace_overheating_allowSwapBarrel = 1;
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -968,26 +1227,29 @@
         };
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.07; //850 rpm
+            reloadTime = RPM_TO_TIME(850); // 850 rpm
         };
-        class Single : Full {
+        class Single : Mode_SemiAuto {
+            /*
             autoFire = 0;
             burst = 1;
             displayName = "Semi";
             maxRangeProbab = 0.001;
             midRangeProbab = 0.001;
             minRangeProbab = 0.001;
-            reloadTime = 0.07; //850 rpm
-            textureType = "semi";
+            */
+            dispersion = MOA_TO_RAD(4);
+            reloadTime = RPM_TO_TIME(850); // 850 rpm
+            //textureType = "semi";
         };/*
         class Far : Full {
-            reloadTime = 0.07; //850 rpm
+            reloadTime = RPM_TO_TIME(850); // 850 rpm
         };
         class Medium : Full {
-            reloadTime = 0.07; //850 rpm
+            reloadTime = RPM_TO_TIME(850); // 850 rpm
         };
         class Short : Full {
-            reloadTime = 0.07; //850 rpm
+            reloadTime = RPM_TO_TIME(850); // 850 rpm
         };*/
     };
 
@@ -996,6 +1258,7 @@
         descriptionShort = "Maschinengewehr 34";
         fow_burstLength = 6;
         magazines[] = {"LIB_75Rnd_792x57"};
+        magazineWell[] = {"CBA_792x57_TROMMEL"};
         modes[] = {"Full","Single","Far","Medium","Short"};
         recoil = "recoil_2PzD_mmg_1";
         class Eventhandlers : Eventhandlers {
@@ -1007,23 +1270,23 @@
             mass = 271.82;
         };/*
         class Full : Full {
-            reloadTime = 0.07; //850 rpm
+            reloadTime = RPM_TO_TIME(850); // 850 rpm
         };
         class Single : Single {
             autoFire = 0;
             burst = 1;
             displayName = "Semi";
-            reloadTime = 0.07; //850 rpm
+            reloadTime = RPM_TO_TIME(850); // 850 rpm
             textureType = "semi";
         };
         class Far : Far {
-            reloadTime = 0.07; //850 rpm
+            reloadTime = RPM_TO_TIME(850); // 850 rpm
         };
         class Medium : Medium {
-            reloadTime = 0.07; //850 rpm
+            reloadTime = RPM_TO_TIME(850); // 850 rpm
         };
         class Short : Short {
-            reloadTime = 0.07; //850 rpm
+            reloadTime = RPM_TO_TIME(850); // 850 rpm
         };*/
     };
 
@@ -1032,7 +1295,8 @@
         descriptionShort = "Maschinengewehr 42";
         dispersion = MOA_TO_RAD(5);
         fow_burstLength = 8;
-        magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SMK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SMK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SMK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SMK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};
+        magazines[] = {"lib_50Rnd_792x57"};
+        magazineWell[] = {"CBA_792x57_LINKS"};
         recoil = "recoil_2PzD_mmg_1";
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -1044,27 +1308,50 @@
         };
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(5);
-            reloadTime = 0.05; //1200 rpm
+            reloadTime = RPM_TO_TIME(1200); // 1200 rpm
         };/*
         class Far : Full {
-            reloadTime = 0.05; //1200 rpm
+            reloadTime = RPM_TO_TIME(1200); // 1200 rpm
         };
         class Medium : Full {
-            reloadTime = 0.05; //1200 rpm
+            reloadTime = RPM_TO_TIME(1200); // 1200 rpm
         };
         class Short : Full {
-            reloadTime = 0.05; //1200 rpm
+            reloadTime = RPM_TO_TIME(1200); // 1200 rpm
         };*/
     };
-//End Machineguns
+// End Machineguns
 
-//Other Weapons, Tripod, Launchers
-    class LIB_Slung_Static_Weapon_Base;
+// Other Weapons, Tripods, Launchers
+    class LIB_Slung_Static_Weapon_Base : Launcher_Base_F {
+        class WeaponSlotsInfo;
+    };
+/*
+    class LIB_Bagpipes: LIB_LAUNCHER {
+        displayName = "Bagpipes";
+        descriptionShort = "Make plenty of new friends by playing a nice song for them in the middle of a night infiltration!";
+    };
+*/
+    class LIB_PIAT_Rifle : LIB_RIFLE {
+        displayName = "PIAT";
+        descriptionShort = "Projector, Infantry, Anti Tank Mk I";
+        magazines[] = {"LIB_1Rnd_89m_G_PIAT"};
+        magazineWell[] = {"CBA_PIAT"};
+    };
+
+    class LIB_PIAT: LIB_LAUNCHER {
+        displayName = "PIAT";
+        descriptionShort = "Projector, Infantry, Anti Tank Mk I";
+        magazines[] = {"LIB_1Rnd_89m_PIAT"};
+        magazineWell[] = {"CBA_PIAT"};
+        scope = 1;
+    };
 
     class LIB_M1A1_Bazooka : LIB_LAUNCHER {
         displayName = "M1A1 Bazooka";
         descriptionShort = "Rocket Launcher, M1A1";
-        magazines[] = {"LIB_1Rnd_60mm_M6","fow_1Rnd_m6a1"};
+        magazines[] = {"LIB_1Rnd_60mm_M6"};
+        magazineWell[] = {"CBA_Bazooka"};
         ace_overpressure_angle = 45;
         ace_overpressure_range = 10;
         ace_overpressure_damage = 0.4;
@@ -1127,6 +1414,8 @@
     class LIB_RPzB : LIB_LAUNCHER {
         displayName = "Panzerschreck RPzB 54";
         descriptionShort = "Panzerschreck RPzB 54";
+        magazines[] = {"LIB_1Rnd_RPzB"};
+        magazineWell[] = {"CBA_Panzerschreck"};
         ace_overpressure_angle = 45;
         ace_overpressure_range = 10;
         ace_overpressure_damage = 0.4;
@@ -1138,6 +1427,8 @@
     class LIB_RPzB_w : LIB_RPzB {
         displayName = "Panzerschreck RPzB 54 (Winter)";
         descriptionShort = "Panzerschreck RPzB 54 (Winter)";
+        magazines[] = {"LIB_1Rnd_RPzB"};
+        magazineWell[] = {"CBA_Panzerschreck"};
         ace_overpressure_angle = 45;
         ace_overpressure_range = 10;
         ace_overpressure_damage = 0.4;
@@ -1154,7 +1445,7 @@
             };
         };
         class FullAuto : Mode_FullAuto {
-            reloadTime = 0.04; //1500 rpm, this gives about 8 seconds of firing time for the flamethrower
+            reloadTime = RPM_TO_TIME(1500); // 1500 rpm, this gives about 8 seconds of firing time for the flamethrower
         };
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 30;
@@ -1164,61 +1455,56 @@
     class LIB_BM37_Barrel : LIB_Slung_Static_Weapon_Base {
         displayName = "BM-37 82mm Mortar Tube";
         descriptionShort = "Gun tube for the Soviet BM-37 82mm mortar";
-        //magazines[] = {"LIB_1Rnd_82mm_Mo_HE","LIB_1Rnd_82mm_Mo_Smoke","LIB_1Rnd_82mm_Mo_Illum"};
-        magazines[] = {};
+        // magazines[] = {"LIB_1Rnd_82mm_Mo_HE","LIB_1Rnd_82mm_Mo_Smoke","LIB_1Rnd_82mm_Mo_Illum"};
     };
 
     class LIB_BM37_Tripod : LIB_Slung_Static_Weapon_Base {
         displayName = "BM-37 82mm Mortar Tripod";
         descriptionShort = "Tripod for the Soviet BM-37 82mm mortar";
-        //magazines[] = {"LIB_1Rnd_82mm_Mo_HE","LIB_1Rnd_82mm_Mo_Smoke","LIB_1Rnd_82mm_Mo_Illum"};
-        magazines[] = {};
+        // magazines[] = {"LIB_1Rnd_82mm_Mo_HE","LIB_1Rnd_82mm_Mo_Smoke","LIB_1Rnd_82mm_Mo_Illum"};
     };
 
     class LIB_GrWr34_Barrel : LIB_Slung_Static_Weapon_Base {
         displayName = "GrW34 81mm Mortar Tube";
         descriptionShort = "Gun tube for the German Granatwerfer 34 81mm mortar";
-        //magazines[] = {"LIB_1Rnd_81mm_Mo_HE","LIB_1Rnd_81mm_Mo_Smoke","LIB_1Rnd_81mm_Mo_Illum"};
-        magazines[] = {};
+        // magazines[] = {"LIB_1Rnd_81mm_Mo_HE","LIB_1Rnd_81mm_Mo_Smoke","LIB_1Rnd_81mm_Mo_Illum"};
     };
 
     class LIB_GrWr34_Tripod : LIB_Slung_Static_Weapon_Base {
         displayName = "GrW34 81mm Mortar Tripod";
         descriptionShort = "Tripod for the German Granatwerfer 34 81mm mortar";
-        //magazines[] = {"LIB_1Rnd_81mm_Mo_HE","LIB_1Rnd_81mm_Mo_Smoke","LIB_1Rnd_81mm_Mo_Illum"};
-        magazines[] = {};
+        // magazines[] = {"LIB_1Rnd_81mm_Mo_HE","LIB_1Rnd_81mm_Mo_Smoke","LIB_1Rnd_81mm_Mo_Illum"};
     };
 
     class LIB_M2_60_Barrel : LIB_Slung_Static_Weapon_Base {
         displayName = "M2 60mm Mortar Tube";
         descriptionShort = "Gun tube for the American M2 60mm mortar";
-        //magazines[] = {"LIB_1Rnd_81mm_Mo_HE","LIB_1Rnd_81mm_Mo_Smoke","LIB_1Rnd_81mm_Mo_Illum"};
-        magazines[] = {};
+        // magazines[] = {"LIB_1Rnd_81mm_Mo_HE","LIB_1Rnd_81mm_Mo_Smoke","LIB_1Rnd_81mm_Mo_Illum"};
     };
 
     class LIB_M2_60_Tripod : LIB_Slung_Static_Weapon_Base {
         displayName = "M2 60mm Mortar Tripod";
         descriptionShort = "Tripod for the American M2 60mm mortar";
-        //magazines[] = {"LIB_1Rnd_81mm_Mo_HE","LIB_1Rnd_81mm_Mo_Smoke","LIB_1Rnd_81mm_Mo_Illum"};
-        magazines[] = {};
+        // magazines[] = {"LIB_1Rnd_81mm_Mo_HE","LIB_1Rnd_81mm_Mo_Smoke","LIB_1Rnd_81mm_Mo_Illum"};
     };
 
     class LIB_M2_Tripod : LIB_Slung_Static_Weapon_Base {
         displayName = "M1919A4 M2 Tripod";
-        descriptionShort = "M2 Tripod for M1919A4";
-        //magazines[] = {"LIB_50Rnd_762x63","LIB_200Rnd_762x63_2PzD","LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
-        magazines[] = {};
+        descriptionShort = "M2 Tripod for the M1919A4";
+        // magazines[] = {"LIB_50Rnd_762x63","LIB_200Rnd_762x63_2PzD","LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919_2PzD","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
     };
 
     class LIB_Laffete_Tripod : LIB_Slung_Static_Weapon_Base {
-        displayName = "Laffete Tripod";
-        descriptionShort = "Laffete Tripod for MG34 and MG42";
-        //magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SMK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SMK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SMK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SMK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};
-        magazines[] = {};
+        displayName = "Lafette Tripod";
+        descriptionShort = "Lafette Tripod for the MG34 and MG42";
+        // magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SMK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SMK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SMK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SMK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 440.92;
+        };
     };
-//End Other Weapons, Tripod, Launchers
+// End Other Weapons, Tripods, Launchers
 
-//Vehicle Weapons
+// Vehicle Weapons
     class LIB_MLMG_base : MGun {
         class manual;
         class close;
@@ -1230,7 +1516,7 @@
     class LIB_Maxim_M30 : LIB_MLMG_base {
         displayName = "Maxim Model 1910/30";
         dispersion = MOA_TO_RAD(4);
-        //fow_burstLength = 7;
+        // fow_burstLength = 7;
         recoil = "recoil_rifle_1";
         /*class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -1239,23 +1525,23 @@
         };*/
         class manual : manual {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.14; //430 rpm
+            reloadTime = RPM_TO_TIME(430); // 430 rpm
         };
         class close : close {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.14; //430 rpm
+            reloadTime = RPM_TO_TIME(430); // 430 rpm
         };
         class short : short {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.14; //430 rpm
+            reloadTime = RPM_TO_TIME(430); // 430 rpm
         };
         class medium : medium {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.14; //430 rpm
+            reloadTime = RPM_TO_TIME(430); // 430 rpm
         };
         class far : far {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.14; //430 rpm
+            reloadTime = RPM_TO_TIME(430); // 430 rpm
         };
     };
 
@@ -1263,28 +1549,28 @@
         dispersion = MOA_TO_RAD(5);
         class manual : manual {
             dispersion = MOA_TO_RAD(5);
-            reloadTime = 0.05; //1200 rpm
+            reloadTime = RPM_TO_TIME(1200); // 1200 rpm
         };
         class close : close {
             dispersion = MOA_TO_RAD(5);
-            reloadTime = 0.05; //1200 rpm
+            reloadTime = RPM_TO_TIME(1200); // 1200 rpm
         };
         class short : short {
             dispersion = MOA_TO_RAD(5);
-            reloadTime = 0.05; //1200 rpm
+            reloadTime = RPM_TO_TIME(1200); // 1200 rpm
         };
         class medium : medium {
             dispersion = MOA_TO_RAD(5);
-            reloadTime = 0.05; //1200 rpm
+            reloadTime = RPM_TO_TIME(1200); // 1200 rpm
         };
         class far : far {
             dispersion = MOA_TO_RAD(5);
-            reloadTime = 0.05; //1200 rpm
+            reloadTime = RPM_TO_TIME(1200); // 1200 rpm
         };
     };
 
     class LIB_MG42_Tripod : LIB_MLMG42 {
-        displayName = "MG42 Laffete";
+        displayName = "MG42 Lafette";
         descriptionShort = "Maschinengewehr 42 on Laffete Tripod";
         fow_burstLength = 20;
         magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SMK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SMK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SMK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SMK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};
@@ -1574,71 +1860,96 @@
         class far;
     };
 
+    class LIB_Bren_Mk2_coax: LIB_TankMGun_base {
+        displayName = "Bren Gun Mk II";
+        descriptionShort = "Bren L.M.G. Mk II";
+        dispersion = MOA_TO_RAD(3);
+        modes[] = {"manual","Single","close","short","medium","far"};
+        class manual : manual {
+            dispersion = MOA_TO_RAD(3);
+            reloadTime = RPM_TO_TIME(510); // 510 rpm
+            textureType = "fullAuto";
+        };
+        class Single : manual {
+            autoFire = 0;
+            dispersion = MOA_TO_RAD(3);
+            maxRange = 10;
+            maxRangeProbab = 0.01;
+            midRange = 5;
+            midRangeProbab = 0.01;
+            minRange = 0;
+            minRangeProbab = 0.01;
+            reloadTime = RPM_TO_TIME(510); // 510 rpm
+            textureType = "semi";
+        };
+    };
+
+    class LIB_Besa_coax: LIB_TankMGun_base {
+        dispersion = MOA_TO_RAD(3);
+    };
+
     class LIB_MG34_coax : LIB_TankMGun_base {
         dispersion = MOA_TO_RAD(4);
         class manual : manual {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.07; //850 rpm
+            reloadTime = RPM_TO_TIME(850); // 850 rpm
         };
         class close : close {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.07; //850 rpm
+            reloadTime = RPM_TO_TIME(850); // 850 rpm
         };
         class short : short {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.07; //850 rpm
+            reloadTime = RPM_TO_TIME(850); // 850 rpm
         };
         class medium : medium {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.07; //850 rpm
+            reloadTime = RPM_TO_TIME(850); // 850 rpm
         };
         class far : far {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.07; //850 rpm
+            reloadTime = RPM_TO_TIME(850); // 850 rpm
         };
     };
 
     class LIB_MG34_Tripod : LIB_MG34_coax {
-        displayName = "MG34 Laffete";
+        displayName = "MG34 Lafette";
         descriptionShort = "Maschinengewehr 34 on Laffete Tripod";
-        //fow_burstLength = 7;
+        discreteDistance[] = {200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
+        discreteDistanceInitIndex = 2;
         magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SMK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SMK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SMK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SMK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};
-        /*class Eventhandlers : Eventhandlers {
-            class fow_mgRoF {
-                fired = "_this spawn fow_main_fnc_mgRoF;";
-            };
-        };*/
+
     };
 
     class LIB_M1919A4_coax : LIB_TankMGun_base {
         dispersion = MOA_TO_RAD(4);
         class manual : manual {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.14; //430 rpm
+            reloadTime = RPM_TO_TIME(430); // 430 rpm
         };
         class close : close {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.14; //430 rpm
+            reloadTime = RPM_TO_TIME(430); // 430 rpm
         };
         class short : short {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.14; //430 rpm
+            reloadTime = RPM_TO_TIME(430); // 430 rpm
         };
         class medium : medium {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.14; //430 rpm
+            reloadTime = RPM_TO_TIME(430); // 430 rpm
         };
         class far : far {
             dispersion = MOA_TO_RAD(4);
-            reloadTime = 0.14; //430 rpm
+            reloadTime = RPM_TO_TIME(430); // 430 rpm
         };
     };
 
     class LIB_M1919A4_tripod : LIB_M1919A4_coax {
         displayName = "M1919A4 on M2 Tripod";
         descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A4 on M2 Tripod";
-        //fow_burstLength = 7;
-        magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD","LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
+        // fow_burstLength = 7;
+        magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD","LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919_2PzD","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
         recoil = "recoil_rifle_1";
         /*class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -1646,5 +1957,93 @@
             };
         };*/
     };
+// End Vehicle Weapons
 
-//End Vehicle Weapons
+// Accessories
+    class LIB_ACC_base;
+
+    class LIB_ACC_GL_DYAKONOV_Empty : LIB_ACC_base {
+        displayName = "Dyakonov grenade launcher";
+        descriptionShort = "Dyakonov grenade launcher for Mosin M91/30";
+    };
+
+    class LIB_ACC_GL_DYAKONOV : LIB_ACC_GL_DYAKONOV_Empty {
+        displayName = "Dyakonov grenade launcher (Loaded)";
+        descriptionShort = "Dyakonov grenade launcher for Mosin M91/30";
+    };
+
+    class LIB_ACC_GL_Enfield_CUP_Empty : LIB_ACC_base {
+        displayName = "Enfield No1 Grenade Cup Launcher";
+        descriptionShort = "Enfield No1 Grenade Cup Launcher for Lee Enfield";
+    };
+
+    class LIB_ACC_GL_Enfield_CUP : LIB_ACC_GL_Enfield_CUP_Empty {
+        displayName = "Enfield No1 Grenade Cup Launcher (Loaded)";
+        descriptionShort = "Enfield No1 Grenade Cup Launcher for Lee Enfield";
+    };
+
+    class LIB_ACC_GL_M7 : LIB_ACC_base {
+        displayName = "M7 Grenade Launcher";
+        descriptionShort = "M7 Grenade Launcher for M1 Garand";
+    };
+
+    class LIB_ACC_GL_M9A1 : LIB_ACC_GL_M7 {
+        displayName = "M9A1 Grenade on M7 Grenade Launcher";
+        descriptionShort = "M7 Grenade Launcher for M1 Garand";
+    };
+
+    class LIB_ACC_GL_MK2 : LIB_ACC_GL_M7 {
+        displayName = "Mk 2 Grenade on M7 Grenade Launcher";
+        descriptionShort = "M7 Grenade Launcher for M1 Garand";
+    };
+
+    class LIB_ACC_GW_SB_Empty : LIB_ACC_base {
+        displayName = "Schiessbecher Grenade Launcher";
+        descriptionShort = "Schiessbecher Gewehrgranatengerat for Kar98k";
+    };
+
+    class LIB_ACC_GW_SB_PZGR_30 : LIB_ACC_GW_SB_Empty {
+        displayName = "Schiessbecher (Loaded with Pz.Gr. 30)";
+        descriptionShort = "Schiessbecher Gewehrgranatengerat for Kar98k";
+    };
+
+    class LIB_ACC_GW_SB_PZGR_40 : LIB_ACC_GW_SB_Empty {
+        displayName = "Schiessbecher (Loaded with Pz.Gr. 40)";
+        descriptionShort = "Schiessbecher Gewehrgranatengerat for Kar98k";
+    };
+
+    class LIB_ACC_GW_SB_SPRGR_30 : LIB_ACC_GW_SB_Empty {
+        displayName = "Schiessbecher (Loaded with S.Pz.Gr. 30)";
+        descriptionShort = "Schiessbecher Gewehrgranatengerat for Kar98k";
+    };
+
+    class LIB_ACC_M44_Bayo : LIB_ACC_base {
+        displayName = "Mosin-Nagant M44 Bayonet";
+        descriptionShort = "Mosin-Nagant M44 Bayonet";
+    };
+
+    class LIB_ACC_K98_Bayo : LIB_ACC_M44_Bayo {
+        displayName = "S84/98 III Bayonet";
+        descriptionShort = "S84/98 III Bayonet for Kar98k";
+    };
+
+    class LIB_ACC_M1_Bayo : LIB_ACC_M44_Bayo {
+        displayName = "M1 Bayonet";
+        descriptionShort = "M1 Bayonet for M1903 and M1 Garand";
+    };
+
+    class LIB_ACC_M1891_Bayo : LIB_ACC_M44_Bayo {
+        displayName = "M1891 Bayonet";
+        descriptionShort = "M1891 Bayonet for Mosin M91/30";
+    };
+
+    class LIB_ACC_No4_Mk2_Bayo : LIB_ACC_M44_Bayo {
+        displayName = "No.4 Mk II Bayonet";
+        descriptionShort = "No.4 Mk II Bayonet for Lee Enfield No. 4 Mk I";
+    };
+
+    class LIB_ACC_P1903_Bayo : LIB_ACC_M44_Bayo {
+        displayName = "P1903 Bayonet";
+        descriptionShort = "P1903 Bayonet for Lee Enfield No. 1 Mk III";
+    };
+// End Accessories

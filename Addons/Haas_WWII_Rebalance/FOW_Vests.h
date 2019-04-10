@@ -1,4 +1,10 @@
 ﻿
+    class fow_v_base : Vest_Camo_Base {
+        class ItemInfo : ItemInfo {
+            containerClass = "Supply90";
+        };
+    };
+
     class fow_v_fall_bandoleer : fow_v_base {
         class ItemInfo : ItemInfo {
             containerClass = "Supply120";

@@ -11,6 +11,18 @@
         model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
     };
 
+    class LIB_6pdr_mk7_AP : LIB_Shell_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_green.p3d";
+    };
+
+    class LIB_6pdr_Mk1T_APCR : LIB_ShellAPCR_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_green.p3d";
+    };
+
+    class LIB_6pdr_mk10T_HE : LIB_ShellHE_base {
+        model = "\z\ace\addons\tracers\ace_shell_tracer_green.p3d";
+    };
+
     class LIB_76mm_Shell_Base : LIB_Shell_base {
         model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
     };
@@ -58,6 +70,10 @@
     class LIB_B_45ACP_Ball;
 
     class LIB_B_45ACP_Ball_t : LIB_B_45ACP_Ball {
+        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
+    };
+
+    class LIB_B_455_Ball : LIB_Bullet_base {
         model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
     };
 
@@ -145,6 +161,10 @@
 
     class LIB_B_763x25_Ball;
 
+    class LIB_B_770x56_Ball : LIB_Bullet_base {
+        model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
+    };
+
     class LIB_B_792x33_Ball : LIB_Bullet_base {
         model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
     };
@@ -192,6 +212,10 @@
     class LIB_B_9x18_Ball;
 
     class LIB_B_9x19_Ball;
+
+    class LIB_B_Bayonet : LIB_Bullet_base {
+        hit = 10;
+    };
 
     class LIB_B_9x19_Ball_t : LIB_B_9x19_Ball {
         model = "\z\ace\addons\tracers\ace_TracerGreen2.p3d";

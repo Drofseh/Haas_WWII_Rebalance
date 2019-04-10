@@ -103,14 +103,14 @@
     };
 
     class fow_e_no77 : SmokeShell {
-        // add a damage effect for WP
         explosionTime = 0;
         simulation = "shotDeploy";
         submunitionAmmo = "fow_e_no77_Smoke";
         //submunitionAmmo = "SmokeShellArty";
     };
     class fow_e_no77_Smoke : SmokeShell {
-        effectsSmoke = "FOW_no79_Grenade_Effects";
+        explosionEffects = "LIB_WPExplosion";
+        //explosionEffects = "FOW_no79_Grenade_Effects";
         explosionTime = 0.1;
         explosive = 1;
         hit = 0;
@@ -120,7 +120,16 @@
         scope = 1;
         simulation = "shotSmoke";
         submunitionAmmo = "";
-        timeToLive = 90;
+        timeToLive = 45;
+        LIB_WP_Delay = 0.8;
+        LIB_WP_Intensity = 0.08;
+        LIB_WP_BurnTime = 35;
+        LIB_WP_Range = 12;
+        class EventHandlers {
+            class WW2_GAS {
+                fired = "_this spawn WW2_fnc_fired_Gas";
+            };
+        };
     };
 
     class fow_e_no79 : SmokeShell {
@@ -138,12 +147,12 @@
         submunitionAmmo = "";
         timeToLive = 130;
     };
-
+/*
     class fow_e_no82 : GrenadeHand {
         explosionTime = 0;
         simulation = "shotShell";
     };
-
+*/
     class fow_e_type97 : GrenadeHand {
         explosionTime = 4.5;
         ace_frag_charge = 65;
