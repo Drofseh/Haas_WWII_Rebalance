@@ -657,9 +657,9 @@
         descriptionShort = "9x19mm, 10 Rounds, for use in the M1916 C-96 Mauser";
     };
     class LIB_10Rnd_763x25_2PzD : LIB_10Rnd_9x19_M1896 {
-        displayName = "M712 Schnellfeuer, 10 Round Magazine";
+        displayName = "M1930 C-96 Mauser, 10 Round Clip";
         descriptionShort = "7.63x25mm";
-        descriptionShort = "7.63x25mm, 10 Rounds, for use in the M1916 C-96 Mauser";
+        descriptionShort = "7.63x25mm, 10 Rounds, for use in the M1930 C-96 Mauser";
         ammo = "LIB_B_762x25_Ball";
         count = 10;
     };

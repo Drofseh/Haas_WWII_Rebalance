@@ -24,6 +24,9 @@
     "ww2_core_c_if_zzz_lastloaded_c"
 
 #define MagazinesArray \
+    "csa38_9_MM_20xMP28", \
+    "csa38_9_MM_24xMP35", \
+    "csa38_9_MM_20xMP35", \
     "LEN_35Rnd_762x25_2PzD", \
     "LEN_8Rnd_765x17_2PzD", \
     "LEN_8Rnd_9x19_2PzD", \
@@ -50,6 +53,7 @@
     "LIB_250Rnd_792x57_SMK_2PzD", \
     "LIB_250Rnd_792x57_sS_2PzD", \
     "LIB_30Rnd_762x33_2PzD", \
+    "LIB_40Rnd_763x25_2PzD", \
     "LIB_7Rnd_45ACP_2PzD", \
     "fow_100Rnd_M1919_2PzD", \
     "fow_12Rnd_45acp_2PzD", \

@@ -365,7 +365,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };/*
@@ -377,7 +377,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -389,7 +389,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -401,7 +401,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };*/
@@ -426,7 +426,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };/*
@@ -438,7 +438,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -450,7 +450,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -462,7 +462,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };*/
@@ -902,7 +902,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -917,7 +917,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -929,7 +929,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -941,7 +941,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };*/
@@ -2164,7 +2164,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };/*
@@ -2176,7 +2176,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -2188,7 +2188,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -2200,7 +2200,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -2212,7 +2212,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -2224,7 +2224,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };*/
@@ -2342,7 +2342,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };/*
@@ -2354,7 +2354,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -2366,7 +2366,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -2378,7 +2378,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -2390,7 +2390,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };*/

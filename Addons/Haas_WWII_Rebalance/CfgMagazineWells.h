@@ -46,6 +46,9 @@
         CSA38_mags[] = {
             "csa38_7_63mm_10xMauser"
         };
+        IFA3_mags[] = {
+            "LIB_10Rnd_763x25_2PzD"
+        };
     };
 
     class CBA_763x25_C96_Compact {              // Compact Mauser C-96 in 7.63x25mm (6 rounds)
@@ -57,7 +60,6 @@
     class CBA_763x25_M712 {                     // Mauser M712 Schnellfeuer in 7.63x25mm
         IFA3_mags[] = {
             "LIB_20Rnd_763x25_2PzD",
-            "LIB_10Rnd_763x25_2PzD",
             "LIB_40Rnd_763x25_2PzD"
         };
     };

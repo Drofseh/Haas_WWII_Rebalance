@@ -5,9 +5,9 @@
 
 // Pistol magazines
     class csa38_7_63mm_10xMauser : CSA38_PistolMagazine {
-        displayName = "M1916 C-96 Mauser, 10 Round Magazine";
+        displayName = "M1930 C-96 Mauser, 10 Round Magazine";
         displayNameShort = "7.63x25mm";
-        descriptionShort = "7.63x25mm, 10 Rounds, for use in the C-96 Mauser";
+        descriptionShort = "7.63x25mm, 10 Rounds, for use in the M1930 C-96 Mauser";
         ammo = "LIB_B_762x25_Ball";
         mass = 1.8;
     };
@@ -223,11 +223,44 @@
         lastRoundsTracer = 0;
     };
 
+    class csa38_9_MM_20xMP28 : csa38_9_MM_32xMP28 {
+        displayName = "MP28, 20 Round Magazine";
+        displayNameShort = "9x19mm";
+        descriptionShort = "9x19mm, 20 Rounds, for use in the MP28";
+        ammo = "LIB_B_9x19_Ball";
+        count = 20;
+        mass = 4;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
+
     class csa38_9_MM_32xMP35 : CSA38_Magazine {
         displayName = "MP35, 32 Round Magazine";
         displayNameShort = "9x19mm";
         descriptionShort = "9x19mm, 32 Rounds, for use in the MP35";
         ammo = "LIB_B_9x19_Ball";
+        mass = 6.11;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
+
+    class csa38_9_MM_24xMP35 : csa38_9_MM_32xMP35 {
+        displayName = "MP35, 24 Round Magazine";
+        displayNameShort = "9x19mm";
+        descriptionShort = "9x19mm, 24 Rounds, for use in the MP35";
+        ammo = "LIB_B_9x19_Ball";
+        mass = 4.6;
+        count = 24;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
+
+    class csa38_9_MM_20xMP35 : csa38_9_MM_32xMP35 {
+        displayName = "MP35, 20 Round Magazine";
+        displayNameShort = "9x19mm";
+        descriptionShort = "9x19mm, 20 Rounds, for use in the MP35";
+        ammo = "LIB_B_9x19_Ball";
+        mass = 4;
         mass = 6.11;
         tracersEvery = 0;
         lastRoundsTracer = 0;
@@ -408,14 +441,14 @@
     class CSA38_Grg21: CSA38_HandGrenade {
         displayName = "vz. 21 Rifle Grenade";
         displayNameShort = "vz. 21 (HE)";
-        descriptionShort = "vz. 21, Czech rifle grenade";
+        descriptionShort = "vz. 21, rifle grenade";
         mass = 9.92;
     };
 
     class CSA38_rg21: CSA38_HandGrenade {
         displayName = "vz. 21 Hand Grenade";
         displayNameShort = "vz. 21 (HE)";
-        descriptionShort = "vz. 21, Czech hand grenade";
+        descriptionShort = "vz. 21, hand grenade";
         initSpeed = 24;
         mass = 9.92;
     };

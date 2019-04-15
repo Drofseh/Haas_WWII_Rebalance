@@ -61,7 +61,7 @@
 
     class LIB_M1896 : LIB_PISTOL {
         displayName = "M1916 C-96 Mauser";
-        descriptionShort = "C-96 Mauser pistol, Deutsches Heer contract version in 9x19mm";
+        descriptionShort = "C-96 Mauser pistol, Deutsches Heer M1916 contract version in 9x19mm";
         dispersion = MOA_TO_RAD(15);
         recoil = "recoil_2PzD_pistol_medium";
         magazineWell[] = {"CBA_9x19_C96"};
@@ -76,10 +76,10 @@
 
     class LIB_M712_2PzD : LIB_M1896 {
         displayName = "M712 Schnellfeuer";
-        descriptionShort = "M712 Schnellfeuer a select fire C-96 Mauser pistol in 7.63x25mm Mauser";
+        descriptionShort = "M712 Schnellfeuer a select fire version of the M1930 C-96 Mauser pistol in 7.63x25mm Mauser";
         fow_burstLength = 3;
         magazines[] = {"LIB_20Rnd_763x25_2PzD"};
-        magazineWell[] = {"CBA_763x25_M712"};
+        magazineWell[] = {"CBA_763x25_C96","CBA_763x25_M712"};
         modes[] = {"Single","Full"};
         recoil = "recoil_2PzD_pistol_light";
         class Eventhandlers : Eventhandlers {
@@ -177,7 +177,7 @@
         };
     };
 
-    class LIB_Welrod_mk1: LIB_PISTOL { // TODO, check if it has subsonic ammo, if no, create subsonic magazine
+    class LIB_Welrod_mk1: LIB_PISTOL {
         displayName = "Welrod Mk I";
         descriptionShort = "Welrod Mk I in 9x19mm";
         dispersion = MOA_TO_RAD(20);
@@ -1999,22 +1999,22 @@
 
     class LIB_ACC_GW_SB_Empty : LIB_ACC_base {
         displayName = "Schiessbecher Grenade Launcher";
-        descriptionShort = "Schiessbecher Gewehrgranatengerat for Kar98k";
+        descriptionShort = "Schiessbecher Gewehrgranatengerat for Kar98k and StG44";
     };
 
     class LIB_ACC_GW_SB_PZGR_30 : LIB_ACC_GW_SB_Empty {
         displayName = "Schiessbecher (Loaded with Pz.Gr. 30)";
-        descriptionShort = "Schiessbecher Gewehrgranatengerat for Kar98k";
+        descriptionShort = "Schiessbecher Gewehrgranatengerat for Kar98k and StG44";
     };
 
     class LIB_ACC_GW_SB_PZGR_40 : LIB_ACC_GW_SB_Empty {
         displayName = "Schiessbecher (Loaded with Pz.Gr. 40)";
-        descriptionShort = "Schiessbecher Gewehrgranatengerat for Kar98k";
+        descriptionShort = "Schiessbecher Gewehrgranatengerat for Kar98k and StG44";
     };
 
     class LIB_ACC_GW_SB_SPRGR_30 : LIB_ACC_GW_SB_Empty {
         displayName = "Schiessbecher (Loaded with S.Pz.Gr. 30)";
-        descriptionShort = "Schiessbecher Gewehrgranatengerat for Kar98k";
+        descriptionShort = "Schiessbecher Gewehrgranatengerat for Kar98k and StG44";
     };
 
     class LIB_ACC_M44_Bayo : LIB_ACC_base {

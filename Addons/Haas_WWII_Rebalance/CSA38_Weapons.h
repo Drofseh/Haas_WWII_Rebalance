@@ -301,7 +301,7 @@
     };
 
     class csa38_m1896 : csa38_p38 {
-        displayName = "C-96 Mauser";
+        displayName = "M1930 C-96 Mauser";
         descriptionShort = "C-96 Mauser pistol, in 7.63x25mm";
         dispersion = MOA_TO_RAD(15);
         recoil = "recoil_2PzD_pistol_light";
@@ -415,7 +415,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -445,7 +445,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -494,7 +494,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -524,7 +524,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -557,7 +557,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -571,7 +571,7 @@
     class CSA38_vz33_40ii : CSA38_vz33_40 {
         displayName = "G33/40(t) (Trench Mag)";
         descriptionShort = "Puška vz. 16/33 with trench magazine, known as the Gewehr 33/40(t) in Wehrmacht service";
-        magazines[] = {"CSA38_7_92_20xMauserCZ"};
+        magazines[] = {"csa38_7_92_20xMauserKAR"};
         magazineWell[] = {"CBA_792x57_K98","CBA_792x57_K98_Trench"};
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 74.897;
@@ -594,7 +594,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -629,6 +629,7 @@
         displayName = "Kar98k (pre-war)";
         descriptionShort = "Karabiner 98 kurz, pre-war model";
         discreteDistanceInitIndex = 2;
+        magazines[] = {"csa38_7_92_5xMauserKAR"};
         recoil = "recoil_2PzD_rifle_bolt";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 87.7;
@@ -651,7 +652,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -686,7 +687,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -695,7 +696,7 @@
     class CSA38_kar98k3 : CSA38_kar98k {
         displayName = "Kar98k (pre-war) (Trench Mag)";
         descriptionShort = "Karabiner 98 kurz, pre-war model with trench magazine";
-        magazines[] = {"CSA38_7_92_20xMauserCZ"};
+        magazines[] = {"csa38_7_92_20xMauserKAR"};
         magazineWell[] = {"CBA_792x57_K98","CBA_792x57_K98_Trench"};
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 88.7;
@@ -742,7 +743,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -768,7 +769,7 @@
     class CSA38_kar98k6 : CSA38_kar98k {
         displayName = "Kar98k (Trench Mag)";
         descriptionShort = "Karabiner 98 kurz, 1939 upgrade with trench magazine";
-        magazines[] = {"CSA38_7_92_20xMauserCZ"};
+        magazines[] = {"csa38_7_92_20xMauserKAR"};
         magazineWell[] = {"CBA_792x57_K98","CBA_792x57_K98_Trench"};
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 88.993;
@@ -787,7 +788,7 @@
     class CSA38_g98 : CSA38_kar98k {
         displayName = "Kar98b";
         descriptionShort = "Karabiner 98b";
-        magazines[] = {"CSA38_7_92_20xMauserCZ"};
+        magazines[] = {"csa38_7_92_5xMauserKAR"};
         magazineWell[] = {"CBA_792x57_K98"};
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 88.24;
@@ -840,7 +841,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -849,7 +850,7 @@
     class CSA38_g98iii : CSA38_g98 {
         displayName = "Gewehr 98 (Trench Mag)";
         descriptionShort = "Gewehr 98 with trench magazine";
-        magazines[] = {"CSA38_7_92_20xMauserCZ"};
+        magazines[] = {"csa38_7_92_20xMauserKAR"};
         magazineWell[] = {"CBA_792x57_K98","CBA_792x57_K98_Trench"};
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 91.22;
@@ -896,7 +897,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -1000,7 +1001,7 @@
                 closure2[] = {"",1,1,10};
                 soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_K98_Shot_SoundSet", "WW2_rifle2_Tail_SoundSet", "WW2_K98_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
         };
@@ -1651,7 +1652,7 @@
         descriptionShort = "Schwarzlose-Janeček vz. 7/24";
         dispersion = MOA_TO_RAD(4);
         fow_burstLength = 4;
-        magazines[] = {"CSA38_TKVZ24mag2","CSA38_TKVZ24mag"};
+        magazines[] = {"CSA38_TKVZ24mag","CSA38_TKVZ24mag2"};
         magazineWell[] = {"CBA_792x57_vz7_24"};
         recoil = "recoil_2PzD_mmg_1";
         class Eventhandlers : Eventhandlers {
