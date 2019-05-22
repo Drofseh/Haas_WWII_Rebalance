@@ -561,6 +561,10 @@
         };
     };
 
+    class LIB_M9130_Bayonet : LIB_M9130 {
+        class WeaponSlotsInfo;
+    };
+
     class LIB_M9130_DYAKONOV : LIB_M9130 {
         class LIB_M9130_RG : LIB_RifleGrenade_Muzzle {
             dispersion = MOA_TO_RAD(10);

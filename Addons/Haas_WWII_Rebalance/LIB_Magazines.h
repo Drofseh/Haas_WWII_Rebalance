@@ -658,21 +658,19 @@
     };
     class LIB_10Rnd_763x25_2PzD : LIB_10Rnd_9x19_M1896 {
         displayName = "M1930 C-96 Mauser, 10 Round Clip";
-        descriptionShort = "7.63x25mm";
+        displayNameShort = "7.63x25mm";
         descriptionShort = "7.63x25mm, 10 Rounds, for use in the M1930 C-96 Mauser";
         ammo = "LIB_B_762x25_Ball";
         count = 10;
     };
     class LIB_20Rnd_763x25_2PzD : LIB_10Rnd_763x25_2PzD {
         displayName = "M712 Schnellfeuer , 20 Round Magazine";
-        descriptionShort = "7.63x25mm";
         descriptionShort = "7.63x25mm, 20 Rounds, for use in the M1916 C-96 Mauser";
         ammo = "LIB_B_762x25_Ball";
         count = 20;
     };
     class LIB_40Rnd_763x25_2PzD : LIB_10Rnd_763x25_2PzD {
         displayName = "M712 Schnellfeuer , 20 Round Magazine";
-        descriptionShort = "7.63x25mm";
         descriptionShort = "7.63x25mm, 20 Rounds, for use in the M1916 C-96 Mauser";
         ammo = "LIB_B_762x25_Ball";
         count = 40;
@@ -919,7 +917,7 @@
     };
 
     class LIB_250rnd_7_62x54R_maxim : VehicleMagazine {
-        displayName = "Maxim Gun, 50 Round Belt";
+        displayName = "Maxim Gun, 250 Round Belt";
     };
     class LIB_250rnd_7_62x54R_maxim_D : LIB_250rnd_7_62x54R_maxim {
         displayName = "Maxim Gun, 250 Round Belt, Type D Heavy";

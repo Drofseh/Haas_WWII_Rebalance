@@ -1,5 +1,5 @@
 ﻿class CfgPatches {
-    class Hass_Tracer_Compat {
+    class Haas_Tracer_Compat {
         author = "Wilhelm Haas (Drofseh)";
         authors[] = {"Wilhelm Haas (Drofseh)"};
         units[] = {};

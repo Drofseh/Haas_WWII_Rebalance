@@ -89,38 +89,39 @@ class CfgMagazineWells {
 }; // End CfgMagazineWells
 
 class cfgMagazines {
-
     class Default;
 
     class CA_Magazine;
 
+    class VehicleMagazine;
+
     class CA_LauncherMagazine;
-
-    class 1Rnd_HE_Grenade_shell;
-
-    class 16Rnd_9x21_Mag;
 
     class 20Rnd_762x51_Mag;
 
     class 30Rnd_9x21_Mag;
 
+    class 16Rnd_9x21_Mag;
+
+    class 1Rnd_HE_Grenade_shell;
+
     class HandGrenade : CA_Magazine {
         mass = 8.87;
     };
 
-    class HandGrenade_West;
+    class SmokeShell : HandGrenade {
+        mass = 12;
+    };
 
-    class SatchelCharge_Remote_Mag;
-
-    class SmokeShell;
+    class 500Rnd_127x99_mag_Tracer_Red;
 
     class 8Rnd_82mm_Mo_Smoke_white;
 
-    class VehicleMagazine;
-
     class 1000Rnd_20mm_shells;
 
-    class 500Rnd_127x99_mag_Tracer_Red;
+    class SatchelCharge_Remote_Mag;
+
+    class HandGrenade_West;
 
     #include "FOW_Magazines.h"
 
@@ -137,15 +138,24 @@ class cfgMagazines {
 // cfgWeapons
 class cfgWeapons {
 
+
+    class PistolCore;
+    class RifleCore;
+    class MGunCore;
     class CannonCore;
+    class RocketPods;
 
-    class InventoryItem_Base_F;
-
-    class GrenadeLauncher;
+    class MGun : MGunCore {
+        class WeaponSlotsInfo;
+    };
 
     class HMG_M2;
+    class GrenadeLauncher;
+    class Launcher;
 
-    class RifleCore;
+    class Launcher_Base_F : Launcher {
+        class WeaponSlotsInfo;
+    };
 
     class Rifle : RifleCore {
         class WeaponSlotsInfo;
@@ -155,15 +165,14 @@ class cfgWeapons {
         class WeaponSlotsInfo;
     };
 
-    class Rifle_Long_Base_F : Rifle_Base_F {
-        class WeaponSlotsInfo;
-    };
-
     class Rifle_Short_Base_F : Rifle_Base_F {
         class WeaponSlotsInfo;
     };
 
-    class PistolCore;
+    class Rifle_Long_Base_F : Rifle_Base_F {
+        class WeaponSlotsInfo;
+    };
+
     class Pistol : PistolCore {
         class WeaponSlotsInfo;
     };
@@ -173,41 +182,35 @@ class cfgWeapons {
         class Single;
     };
 
-    class hgun_Rook40_F : Pistol_Base_F {
-        class WeaponSlotsInfo;
-        class Single;
-    };
+    class ItemCore;
+    class InventoryItem_Base_F;
+    class UniformItem;
+    class VestItem;
 
     class hgun_P07_F : Pistol_Base_F {
         class WeaponSlotsInfo;
         class Single;
     };
 
-    class Launcher;
-
-    class Launcher_Base_F : Launcher {
+    class hgun_Rook40_F : Pistol_Base_F {
         class WeaponSlotsInfo;
+        class Single;
     };
 
-    class MGunCore;
-
-    class MGun : MGunCore {
-        class WeaponSlotsInfo;
+    class Uniform_Base : ItemCore {
+        class ItemInfo;
     };
 
-    class RocketPods;
-
-    class ItemCore;
-
-    class VestItem;
+    class U_BasicBody : Uniform_Base {
+        class ItemInfo;
+    };
 
     class Vest_Camo_Base : ItemCore {
         class ItemInfo;
     };
 
-    class ACE_ItemCore;
-
     class CBA_MiscItem_ItemInfo;
+    class ACE_ItemCore;
 
     #include "ACE_Weapons.h"
 
@@ -220,6 +223,10 @@ class cfgWeapons {
     #include "CSA38_Weapons.h"
 
     #include "Sep39_Weapons.h"
+
+    #include "CSA38_Uniforms.h"
+
+    #include "FOW_Uniforms.h"
 
     #include "FOW_Vests.h"
 
@@ -247,23 +254,19 @@ class CfgWeaponHandling {
 
 class cfgVehicles {
 
-    class Bag_Base;
+    class Man;
 
-    class B_LIB_AssaultPack_Base;
+    class Tank_F;
+
+    class FloatingStructure_F;
+
+    class ThingX;
+
+    class ReammoBox;
 
     class BagFence_base_F;
 
-    class ACE_envelope_small: BagFence_base_F {
-        ace_trenches_diggingDuration = 90;
-        ace_trenches_removalDuration = 30;
-    };
-
-    class ACE_envelope_big: BagFence_base_F {
-        ace_trenches_diggingDuration = 90;
-        ace_trenches_removalDuration = 30;
-    };
-
-    class FloatingStructure_F;
+    class TargetBase;
 
     class Land_Camping_Light_F: FloatingStructure_F {
         class MarkerLights {
@@ -274,10 +277,138 @@ class cfgVehicles {
         };
     };
 
-    class ThingX;
-
     class ReammoBox_F : ThingX {
         maximumLoad = 4000;
+    };
+
+    class Bag_Base;
+
+    class Car_F;
+
+    class Truck_F;
+
+    class Wheeled_APC_F;
+
+    class CAManBase : Man {
+        class UserActions {
+            delete CSA38_lp08son;
+            delete CSA38_lp08off;
+            delete CSA38_p08son;
+            delete CSA38_p08off;
+            delete csa38_kpvz38;
+            delete csa38_kpvz38P;
+            delete CSA38_czvz27son;
+            delete CSA38_czvz27soff;
+            delete csa38_brenkonverson;
+            delete csa38_brenkonversoff;
+            delete CSA38_zada;
+            /*
+            class csa38_brenbednaon {
+                displayName = "Place Ammobox";
+            };
+            class csa38_brenbednaoff {
+                displayName = "Pick Up Ammobox";
+            };
+            class csa38_brenbednaon2 {
+                displayName = "Place Ammobox";
+            };
+            class csa38_brenbednaoff2 {
+                displayName = "Pick Up Ammobox";
+            };
+            class csa38_lk26bednaon2 {
+                displayName = "Place Ammobox";
+            };
+            class csa38_lk26bednaoff2 {
+                displayName = "Pick Up Ammobox";
+            };
+            class csa38_tkvz24faze1on {
+                displayName = "Place Tripod";
+            };
+            class csa38_tkvz24faze1off {
+                displayName = "Pick Up Tripod";
+            };
+            class csa38_tkvz24faze2on {
+                displayName = "Mount Gun On Tripod";
+            };
+            class CSA38_Grenadelauncher1 {
+                displayName = "Attach Grenade Launcher";
+            };
+            class CSA38_Grenadelauncher2 {
+                displayName = "Detach Grenade Launcher";
+            };
+            class CSA38_MP38operkaon {
+                displayName = "Unfold Stock";
+            };
+            class CSA38_MP38operkaoff {
+                displayName = "Fold Stock";
+            };
+            class CSA38_MP40operkaon {
+                displayName = "Unfold Stock";
+            };
+            class CSA38_MP40operkaoff {
+                displayName = "Fold Stock";
+            };
+            class csa38_m36faze1on {
+                displayName = "Place The Mortar Tube";
+            };
+            class csa38_m36faze1off {
+                displayName = "Pick Up The Mortar Tube";
+            };
+            class csa38_m36faze2on {
+                displayName = "Attach The Mortar Base To The Mortar";
+            };
+            class csa38_m36faze2off {
+                displayName = "Pick Up The Mortar Base";
+            };
+            class csa38_m36faze3on {
+                displayName = "Complete Mortar";
+            };
+            class csa38_brenfaze1on {
+                displayName = "Place Tripod";
+            };
+            class csa38_brenfaze1off {
+                displayName = "Pick Up Tripod";
+            };
+            class csa38_brenfaze2on {
+                displayName = "Mount Gun On Tripod";
+            };
+            class csa38_brenfaze2bon {
+                displayName = "Mount Gun On Tripod";
+            };
+            class csa38_mg34faze1on {
+                displayName = "Place tripod";
+            };
+            class csa38_mg34faze1off {
+                displayName = "Pick Up tripod";
+            };
+            class csa38_MG34faze1c {
+                displayName = "Create static pos 3";
+            };
+            class csa38_MG34faze2on {
+                displayName = "Mount Gun On Tripod";
+            };
+            class csa38_MG34faze1a {
+                displayName = "Create static pos";
+            };
+            class csa38_MG34faze1b {
+                displayName = "Create static pos 2";
+            };
+            */
+        };
+    };
+
+    class Boat_F;
+
+    class B_LIB_AssaultPack_Base;
+
+    class ACE_envelope_small: BagFence_base_F {
+        ace_trenches_diggingDuration = 90;
+        ace_trenches_removalDuration = 30;
+    };
+
+    class ACE_envelope_big: BagFence_base_F {
+        ace_trenches_diggingDuration = 90;
+        ace_trenches_removalDuration = 30;
     };
     /*
     class LIB_ReammoBox_base : ReammoBox_F {
@@ -288,24 +419,13 @@ class cfgVehicles {
         maximumLoad = 4000;
     };
     */
-    // ["LIB_Target_base","TargetBase","Static","All"]
-    class TargetBase;
-    class LIB_Target_base : TargetBase {
+
+    class LIB_Target_base : TargetBase { // ["LIB_Target_base","TargetBase","Static","All"]
         class EventHandlers {
             hit = "['hit', _this] call BIS_fnc_target;";
             hitPart = "['hitPart', _this] call BIS_fnc_target;";
         };
     };
-
-    class Boat_F;
-
-    class Car_F;
-
-    class Tank_F;
-
-    class Truck_F;
-
-    class Wheeled_APC_F;
 
     #include "FOW_Backpacks.h"
 

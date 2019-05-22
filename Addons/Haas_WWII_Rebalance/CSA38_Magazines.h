@@ -261,7 +261,6 @@
         descriptionShort = "9x19mm, 20 Rounds, for use in the MP35";
         ammo = "LIB_B_9x19_Ball";
         mass = 4;
-        mass = 6.11;
         tracersEvery = 0;
         lastRoundsTracer = 0;
     };
@@ -436,8 +435,6 @@
 // End Other magazines
 
 // Grenades
-    class CSA38_HandGrenade;
-
     class CSA38_Grg21: CSA38_HandGrenade {
         displayName = "vz. 21 Rifle Grenade";
         displayNameShort = "vz. 21 (HE)";

@@ -105,6 +105,16 @@
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(15);
+            class StandardSound : BaseSoundModeType {
+                begin1[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Rook40\Rook40_short_01",3.16228,1,1200};
+                begin2[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Rook40\Rook40_short_02",3.16228,1,1200};
+                begin3[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Rook40\Rook40_short_03",3.16228,1,1200};
+                closure1[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Rook40\Closure_Rook40_01",0.158489,1,10};
+                closure2[] = {"A3\Sounds_F\arsenal\weapons\Pistols\Rook40\Closure_Rook40_02",0.158489,1.1,10};
+                soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"Rook40_Shot_SoundSet","Rook40_Tail_SoundSet","Rook40_InteriorTail_SoundSet"};
+            };
         };
     };
 // End Pistols
@@ -130,7 +140,103 @@
             };
         };
         class Single : Mode_SemiAuto {
+            aiDispersionCoefX = 2;
+            aiDispersionCoefY = 3;
             dispersion = MOA_TO_RAD(3);
+            class BaseSoundModeType;
+            class StandardSound : BaseSoundModeType {
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
+            };
+        };
+    };
+
+    class w39_wz91_98_23 : LIB_M9130 {
+        displayName = "wz. 91/98/23";
+        descriptionShort = "Karabinek wz. 91/98/23";
+        discreteDistance[] = {300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200};
+        discreteDistanceInitIndex = 0;
+        dispersion = MOA_TO_RAD(2);
+        magazines[] = {"w39_7_92_5xMauserS","w39_7_92_5xMauserP"};
+        magazineWell[] = {"CBA_792x57_K98"};
+        recoil = "recoil_2PzD_rifle_bolt";
+        LIB_fixedBayonet = "w39_wz91_98_23_Bayonet";
+        delete LIB_DYAKONOV_1;
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 81.571;
+            class CowsSlot : SlotInfo {
+                compatibleItems[] = {};
+            };
+            class MuzzleSlot : SlotInfo {
+                compatibleItems[] = {"LIB_ACC_M1891_Bayo"};
+                iconPosition[] = {0.2,0.8};
+                iconScale = 0.3;
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+            };
+            class PointerSlot : SlotInfo {
+                compatibleItems[] = {};
+            };
+        };
+        /*
+        class Single : Mode_SemiAuto {
+            dispersion = MOA_TO_RAD(3);
+            class BaseSoundModeType;
+            class StandardSound : BaseSoundModeType {
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
+            };
+        };
+        */
+    };
+
+    class w39_wz91_98_23_Bayonet : LIB_M9130_Bayonet {
+        displayName = "wz. 91/98/23";
+        descriptionShort = "Karabinek wz. 91/98/23";
+        discreteDistance[] = {300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200};
+        discreteDistanceInitIndex = 0;
+        dispersion = MOA_TO_RAD(3);
+        magazines[] = {"w39_7_92_5xMauserS","w39_7_92_5xMauserP"};
+        magazineWell[] = {"CBA_792x57_K98"};
+        recoil = "recoil_2PzD_rifle_bolt";
+        LIB_fixedBayonet = "w39_wz91_98_23_Bayonet";
+        delete LIB_DYAKONOV_1;
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 81.571;
+            class CowsSlot : SlotInfo {
+                compatibleItems[] = {};
+            };
+            class MuzzleSlot : SlotInfo {
+                compatibleItems[] = {"LIB_ACC_M1891_Bayo"};
+                iconPosition[] = {0.2,0.8};
+                iconScale = 0.3;
+                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+            };
+            class PointerSlot : SlotInfo {
+                compatibleItems[] = {};
+            };
+        };
+        class Single : Mode_SemiAuto {
+            dispersion = MOA_TO_RAD(3);
+            class BaseSoundModeType;
+            class StandardSound : BaseSoundModeType {
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
+            };
         };
     };
 
@@ -156,7 +262,18 @@
             };
         };
         class Single : Mode_SemiAuto {
+            aiDispersionCoefX = 2;
+            aiDispersionCoefY = 3;
             dispersion = MOA_TO_RAD(2);
+            class StandardSound : BaseSoundModeType {
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"GM6Lynx_Shot_SoundSet","GM6Lynx_Tail_SoundSet","GM6Lynx_InteriorTail_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
+            };
         };
     };
 
@@ -180,7 +297,19 @@
             };
         };
         class Single : Mode_SemiAuto {
+            aiDispersionCoefX = 2;
+            aiDispersionCoefY = 3;
             dispersion = MOA_TO_RAD(4);
+            class BaseSoundModeType;
+            class StandardSound : BaseSoundModeType {
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"IFA3_G43_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
+            };
         };
     };
 // End Rifles
@@ -211,13 +340,37 @@
                 compatibleItems[] = {};
             };
         };
-        class Full : Mode_FullAuto {
+        class FullAuto : Mode_FullAuto {
+            aiDispersionCoefX = 2;
+            aiDispersionCoefY = 3;
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(525); // 525 rpm
+            class BaseSoundModeType;
+            class StandardSound : BaseSoundModeType {
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"WW2_Sten_Shot_SoundSet","WW2_rifle_small_Tail_SoundSet","WW2_Sten_stereoLayer_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
+            };
         };
         class AI_Burst1 : Mode_Burst {
+            aiDispersionCoefX = 2;
+            aiDispersionCoefY = 3;
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(525); // 525 rpm
+            class BaseSoundModeType;
+            class StandardSound : BaseSoundModeType {
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"WW2_Sten_Shot_SoundSet","WW2_rifle_small_Tail_SoundSet","WW2_Sten_stereoLayer_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
+            };
         };
     };
 // End SMGs
@@ -251,17 +404,60 @@
             };
         };
         class Full : Mode_FullAuto {
+            aiDispersionCoefX = 2;
+            aiDispersionCoefY = 3;
             dispersion = MOA_TO_RAD(3);
             reloadTime = RPM_TO_TIME(600); // 600 rpm
+            class BaseSoundModeType;
+            class StandardSound : BaseSoundModeType {
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"IFA3_BAR_Shot_SoundSet","IFA3_mmg1_Tail_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
+            };
         };
         class Single : Mode_SemiAuto {
+            aiDispersionCoefX = 2;
+            aiDispersionCoefY = 3;
             dispersion = MOA_TO_RAD(3);
             reloadTime = RPM_TO_TIME(600); // 600 rpm
+            class BaseSoundModeType;
+            class StandardSound : BaseSoundModeType {
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"IFA3_BAR_Shot_SoundSet","IFA3_mmg1_Tail_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
+            };
         };
     };
 // End Machine Guns
 
 // Other Weapons, Tripods, Launchers
+/*
+    class w39_CKMwz25mg : w39_LMGA3_base {
+        displayName = "CKM wz.25";
+        class manual : w39_LMGA3_base {
+    };
+    
+    class w39_ckmwz25veh : w39_CKMwz25mg {
+        scope = 1;
+        displayName = "CKM wz.25";
+        nameSound = "mgun";
+        aiDispersionCoefX = 21;
+        aiDispersionCoefY = 21;
+        magazines[] = {"w39_7_92_30xMauserS", "w39_7_92_30xMauserP"};
+        canLock = 1;
+        cursor = "EmptyCursor";
+        cursoraim = "mg";
+        showAimCursorInternal = 1;
+    };
+*/
 // End Other Weapons, Tripods, Launchers
 
 // Vehicle Weapons
