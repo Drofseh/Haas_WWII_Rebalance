@@ -155,7 +155,7 @@
             };
         };
     };
-
+/*
     class w39_wz91_98_23 : LIB_M9130 {
         displayName = "wz. 91/98/23";
         descriptionShort = "Karabinek wz. 91/98/23";
@@ -165,7 +165,8 @@
         magazines[] = {"w39_7_92_5xMauserS","w39_7_92_5xMauserP"};
         magazineWell[] = {"CBA_792x57_K98"};
         recoil = "recoil_2PzD_rifle_bolt";
-        LIB_fixedBayonet = "w39_wz91_98_23_Bayonet";
+        //LIB_fixedBayonet = "w39_wz91_98_23_Bayonet";
+        delete LIB_fixedBayonet;
         delete LIB_DYAKONOV_1;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 81.571;
@@ -173,30 +174,16 @@
                 compatibleItems[] = {};
             };
             class MuzzleSlot : SlotInfo {
-                compatibleItems[] = {"LIB_ACC_M1891_Bayo"};
-                iconPosition[] = {0.2,0.8};
-                iconScale = 0.3;
-                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+                compatibleItems[] = {};
+                //compatibleItems[] = {"LIB_ACC_M1891_Bayo"};
+                //iconPosition[] = {0.2,0.8};
+                //iconScale = 0.3;
+                //linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
             };
             class PointerSlot : SlotInfo {
                 compatibleItems[] = {};
             };
         };
-        /*
-        class Single : Mode_SemiAuto {
-            dispersion = MOA_TO_RAD(3);
-            class BaseSoundModeType;
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        */
     };
 
     class w39_wz91_98_23_Bayonet : LIB_M9130_Bayonet {
@@ -225,21 +212,8 @@
                 compatibleItems[] = {};
             };
         };
-        class Single : Mode_SemiAuto {
-            dispersion = MOA_TO_RAD(3);
-            class BaseSoundModeType;
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
     };
-
+*/
     class w39_urwz35 : w39_wz29 {
         displayName = "wz. 35";
         descriptionShort = "Karabin przeciwpancerny wz. 35, known as the PzB 35(p), PzB 770(p), or PzB 770(i) in Wehrmacht service";
@@ -403,7 +377,7 @@
                 compatibleItems[] = {};
             };
         };
-        class Full : Mode_FullAuto {
+        class FullAuto : Mode_FullAuto {
             aiDispersionCoefX = 2;
             aiDispersionCoefY = 3;
             dispersion = MOA_TO_RAD(3);
