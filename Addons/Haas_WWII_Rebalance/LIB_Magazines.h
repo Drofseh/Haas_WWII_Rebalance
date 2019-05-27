@@ -102,17 +102,17 @@
     class LIB_1Rnd_PzFaust_30m : CA_LauncherMagazine {
         displayName = "Panzerfaust 30 Warhead";
         displayNameShort = "30m HEAT Warhead";
-        mass = 0.1;
+        mass = 0;
     };
     class LIB_1Rnd_PzFaust_60m : LIB_1Rnd_PzFaust_30m {
         displayName = "Panzerfaust 60 Warhead";
         displayNameShort = "60m HEAT Warhead";
-        mass = 0.1;
+        mass = 0;
     };
     class LIB_1Rnd_Faustpatrone : LIB_1Rnd_PzFaust_30m {
         displayName = "Panzerfaust 30 Klein Warhead";
         displayNameShort = "30m HEAT Warhead";
-        mass = 0.1;
+        mass = 0;
     };
 
     class LIB_1Rnd_RPzB : CA_LauncherMagazine {

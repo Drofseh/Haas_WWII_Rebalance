@@ -84,25 +84,25 @@
         displayName = "Panzerfaust 30 Klein Warhead";
         displayNameShort = "30m HEAT Warhead";
         // ammo = "LIB_Faustpatrone"; // TODO
-        mass = 0.1;
+        mass = 0;
     };
     class fow_1Rnd_pzfaust_30 : fow_1Rnd_pzfaust_30_klein {
         displayName = "Panzerfaust 30 Warhead";
         displayNameShort = "30m HEAT Warhead";
         // ammo = "LIB_PzFaust_30m"; // TODO
-        mass = 0.1;
+        mass = 0;
     };
     class fow_1Rnd_pzfaust_60 : fow_1Rnd_pzfaust_30 {
         displayName = "Panzerfaust 60 Warhead";
         displayNameShort = "60m HEAT Warhead";
         // ammo = "LIB_PzFaust_60m"; // TODO
-        mass = 0.1;
+        mass = 0;
     };
     class fow_1Rnd_pzfaust_100 : fow_1Rnd_pzfaust_30 {
         displayName = "Panzerfaust 100 Warhead";
         displayNameShort = "100m HEAT Warhead";
         // ammo = "fow_R_pzfaust_100"; // TODO
-        mass = 0.1;
+        mass = 0;
     };
 
     class fow_1Rnd_type10 : CA_Magazine {

@@ -92,6 +92,7 @@
             mass = 109.191;
         };
         class Single : Mode_SemiAuto {
+            dispersion = MOA_TO_RAD(4);
             recoil = "recoil_single_primary_3outof10";
             recoilProne = "recoil_single_primary_prone_3outof10";
             reloadTime = RPM_TO_TIME(750); // 750 rpm
@@ -103,6 +104,7 @@
             minRangeProbab = 0.3;
         };
         class FullAuto : Mode_FullAuto {
+            dispersion = MOA_TO_RAD(5);
             recoil = "recoil_single_primary_3outof10";
             recoilProne = "recoil_single_primary_prone_3outof10";
             reloadTime = RPM_TO_TIME(750); // 750 rpm

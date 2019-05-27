@@ -260,7 +260,7 @@
             };
         };
         class Full : Mode_FullAuto {
-            dispersion = MOA_TO_RAD(4);
+            dispersion = MOA_TO_RAD(5);
             recoil = "recoil_single_primary_3outof10";
             recoilProne = "recoil_single_primary_prone_3outof10";
             reloadTime = RPM_TO_TIME(750); // 750 rpm
