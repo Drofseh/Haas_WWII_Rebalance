@@ -443,6 +443,34 @@ class cfgVehicles {
 
 }; // End cfgVehicles
 
+
+//requires "A3_3DEN" addon dependancy
+
+class ctrlCombo;
+
+class Cfg3DEN {
+    class Attributes {
+        class Default;
+        class Title : Default {
+            class Controls;
+        };
+        class Date : Title {
+            class Controls : Controls {
+                class ValueYear : ctrlCombo {
+                    onLoad = "\
+                        params ['_ctrlYear'];\
+                        for '_y' from 1900 to 2050 do {\
+                            _ctrlYear lbSetValue [_ctrlYear lbAdd str _y, _y];\
+                        };\
+                        _ctrlYear lbSetCurSel 53;\
+                    ";
+                };
+            };
+        };
+    };
+};
+
+
 class CfgEditorSubcategories {
 
     class EdSubcat_2PzD_1_Essentials {

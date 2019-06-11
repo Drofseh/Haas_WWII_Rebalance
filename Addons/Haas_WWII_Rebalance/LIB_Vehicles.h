@@ -1,4 +1,6 @@
 ﻿
+    class LIB_ArmouredCar_base;
+
     class LIB_Boat_base;
 
     class LIB_Car_base;
@@ -49,7 +51,7 @@
         maximumLoad = 9000;
     };
 
-    class LIB_M8_Greyhound_base : LIB_Truck_base {
+    class LIB_M8_Greyhound_base : LIB_ArmouredCar_base {
         maximumLoad = 3000;
     };
 
@@ -85,7 +87,11 @@
         maximumLoad = 1000;
     };
 
-    class LIB_SdKfz234_base : LIB_Truck_base {
+    class LIB_SdKfz222_base : LIB_ArmouredCar_base  {
+        maximumLoad = 3000;
+    };
+
+    class LIB_SdKfz234_base : LIB_ArmouredCar_base  {
         maximumLoad = 3000;
     };
 

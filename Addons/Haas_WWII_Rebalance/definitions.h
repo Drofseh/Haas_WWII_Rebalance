@@ -278,3 +278,10 @@
     "V_LIB_WP_OfficerVest", \
     "V_LIB_WP_SniperBela", \
     "V_LIB_WP_STGVest"
+
+#define QUOTE(var1) #var1
+
+#define YEAR(x) class Number##x {\
+    name = QUOTE(x);\
+    value = x;\
+}
