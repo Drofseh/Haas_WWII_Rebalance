@@ -779,7 +779,7 @@
             reloadTime = RPM_TO_TIME(675); // 675 rpm
             sounds[] = {"StandardSound"};
             class StandardSound : BaseSoundModeType {
-                soundSetShot[] = {"WW2_thompson_Shot_SoundSet", "WW2_rifle_small_Tail_SoundSet", "WW2_thompson_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_thompson_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
             };
         };
         class Full : Full {
@@ -787,7 +787,7 @@
             reloadTime = RPM_TO_TIME(675); // 675 rpm
             sounds[] = {"StandardSound"};
             class StandardSound : BaseSoundModeType {
-                soundSetShot[] = {"WW2_thompson_Shot_SoundSet", "WW2_rifle_small_Tail_SoundSet", "WW2_thompson_stereoLayer_SoundSet"};
+                soundSetShot[] = {"IFA3_thompson_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
             };
         };/*
         class Far : Far {

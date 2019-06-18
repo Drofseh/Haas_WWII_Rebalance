@@ -57,10 +57,17 @@ class cfgAmmo {
     class SmokeShell;
 
     class SmokeShellArty : SmokeShell {
+        hit = 0;
+        indirectHit = 2;
+        indirectHitRange = 1.5;
         explosionEffects = "LIB_WPExplosion";
         //explosionEffects = "FOW_no79_Grenade_Effects";
         timeToLive = 180; // TODO check before release
+        LIB_WP_Delay = 0.8;
+        LIB_WP_Intensity = 0.08;
         LIB_WP_BurnTime = 35;
+        LIB_WP_Range = 10;
+        SoundSetExplosion[] = {"WW2_explo_phosphorusGrenade_SoundSet", "WW2_explo_phosphorusGrenade_sizzling_SoundSet"};
     };
 
     class SubmunitionBase;

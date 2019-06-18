@@ -778,6 +778,7 @@
         displayName = "No. 77 Bursting Smoke Grenade";
         displayNameShort = "No. 77 (WP)";
         descriptionShort = "No. 77 Bursting Smoke Grenade, explodes into a cloud of white phosphorus, 90 second burn time.";
+        ammo = "LIB_No77";
         initSpeed = 25;
         mass = 8.444;
     };

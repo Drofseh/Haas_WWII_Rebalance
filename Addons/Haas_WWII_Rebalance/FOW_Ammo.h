@@ -94,46 +94,37 @@
 
     class fow_e_no69 : GrenadeHand {
         explosionTime = 0;
-        simulation = "shotShell";
+        fuseDistance = 0.5;
     };
 
     class fow_e_no73 : GrenadeHand {
         explosionTime = 0;
-        simulation = "shotShell";
+        fuseDistance = 0.5;
     };
 
     class fow_e_no77 : SmokeShell {
+        ace_frag_enabled = 0;
+        ace_frag_skip = 1;
+        hit = 0;
+        indirectHit = 2;
+        indirectHitRange = 1.5;
         explosionTime = 0;
-        simulation = "shotDeploy";
-        submunitionAmmo = "fow_e_no77_Smoke";
-        //submunitionAmmo = "SmokeShellArty";
-    };
-    class fow_e_no77_Smoke : SmokeShell {
+        fuseDistance = 2;
         explosionEffects = "LIB_WPExplosion";
         //explosionEffects = "FOW_no79_Grenade_Effects";
-        explosionTime = 0.1;
-        explosive = 1;
-        hit = 0;
-        indirectHit = 25;
-        indirectHitRange = 5;
-        model = "\fow\fow_weapons\explosives\HLS_UK_No77_Thrown.p3d";
-        scope = 1;
-        simulation = "shotSmoke";
-        submunitionAmmo = "";
-        timeToLive = 45;
+        timeToLive = 90;
         LIB_WP_Delay = 0.8;
         LIB_WP_Intensity = 0.08;
         LIB_WP_BurnTime = 35;
-        LIB_WP_Range = 12;
-        class EventHandlers {
-            class WW2_GAS {
-                fired = "_this spawn WW2_fnc_fired_Gas";
-            };
-        };
+        LIB_WP_Range = 2;
     };
 
     class fow_e_no79 : SmokeShell {
+        hit = 1;
+        indirectHit = 0;
+        indirectHitRange = 0;
         explosionTime = 0;
+        fuseDistance = 0.5;
         simulation = "shotDeploy";
         submunitionAmmo = "fow_e_no79_Smoke";
         //submunitionAmmo = "SmokeShellArty";
@@ -147,12 +138,14 @@
         submunitionAmmo = "";
         timeToLive = 130;
     };
-/*
+
     class fow_e_no82 : GrenadeHand {
+        ace_frag_enabled = 0;
+        ace_frag_skip = 1;
         explosionTime = 0;
-        simulation = "shotShell";
+        fuseDistance = 0.5;
     };
-*/
+
     class fow_e_type97 : GrenadeHand {
         explosionTime = 4.5;
         ace_frag_charge = 65;

@@ -103,20 +103,26 @@
         timeToLive = 120;
     };
 
-    class LIB_No77_Deploy : SmokeShell {
-        // add a damage effect for WP
-        explosionTime = 0;
-        simulation = "shotDeploy";
-        submunitionAmmo = "LIB_No77";
-        //submunitionAmmo = "SmokeShellArty";
-    };
-
     class LIB_No77 : LIB_GrenadeHand_base {
-        explosionTime = 0.1;
+        hit = 0;
+        indirectHit = 2;
+        indirectHitRange = 1.5;
+        explosionTime = 0;
+        fuseDistance = 2;
         explosionEffects = "LIB_WPExplosion";
         //explosionEffects = "FOW_no79_Grenade_Effects";
-        timeToLive = 90; //TODO check before release
+        timeToLive = 90;
+        LIB_WP_Delay = 0.8;
+        LIB_WP_Intensity = 0.08;
         LIB_WP_BurnTime = 35;
+        LIB_WP_Range = 2;
+    };
+
+    class LIB_No82 : LIB_GrenadeHand_base {
+        ace_frag_enabled = 0;
+        ace_frag_skip = 1;
+        explosionTime = 0;
+        fuseDistance = 0.5;
     };
 
     class LIB_PWM : LIB_GrenadeHand_base {

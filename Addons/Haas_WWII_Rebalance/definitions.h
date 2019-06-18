@@ -18,6 +18,7 @@
     "fow_main", \
     "fow_statics_c", \
     "fow_weapons_c", \
+    "IFA3_COMP_ACE_main", \
     "len_ifa3_wp", \
     "len_ifa3_wp_data", \
     "w39_bron_c", \
