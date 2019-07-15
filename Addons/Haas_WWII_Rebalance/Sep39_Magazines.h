@@ -25,6 +25,7 @@
         mass = 1.85;
         lastRoundsTracer = 0;
         tracersEvery = 0;
+        scope = 1;
     };
 
     class w39_7_92_5xMauserP: w39_7_92_5xMauserS {
@@ -35,6 +36,7 @@
         mass = 1.85;
         lastRoundsTracer = 0;
         tracersEvery = 0;
+        scope = 1;
     };
 
     class w39_7_92_10xMauserS: w39_Magazine {

@@ -229,6 +229,7 @@
         ammo = "LIB_B_770x56_Ball";
         mass = 8.91;
         lastRoundsTracer = 3;
+        scope = 1;
         tracersEvery = 3;
         ace_isbelt = 1;
     };
@@ -334,6 +335,7 @@
         descriptionShort = "9x19mm, 32 Rounds, for use in the Sten Gun";
         ammo = "LIB_B_9x19_Ball";
         mass = 6.11;
+        scope = 1;
     };
 
     class fow_50Rnd_792x57 : CA_Magazine {

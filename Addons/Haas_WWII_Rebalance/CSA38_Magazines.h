@@ -10,6 +10,7 @@
         descriptionShort = "7.63x25mm, 10 Rounds, for use in the M1930 C-96 Mauser";
         ammo = "LIB_B_762x25_Ball";
         mass = 1.8;
+        scope = 1;
     };
 
     class csa38_7_65mm_8xBrow : CSA38_PistolMagazine {
@@ -26,6 +27,7 @@
         descriptionShort = ".32 ACP, 8 Rounds, for use in the Walther PPK";
         ammo = "LIB_B_765x17_Ball";
         mass = 1.31;
+        scope = 1;
     };
 
     class CSA38_9mm_8xBrowning : CSA38_PistolMagazine {
@@ -71,7 +73,7 @@
     class CSA38_9mm_9xBrowning : CSA38_PistolMagazine {
         displayName = "vz. 38, 9 Round Magazine";
         displayNameShort = ".380 ACP";
-        descriptionShort = ".380 ACP, 9 Rounds, for use in the vz. 38";
+        descriptionShort = ".380 ACP, 9 Rounds, for use in the vz. 38 pistol";
         ammo = "LIB_B_9x17_Ball";
         mass = 2.09;
     };
@@ -112,6 +114,7 @@
         mass = 1.85;
         lastRoundsTracer = 0;
         tracersEvery = 0;
+        scope = 1;
     };
 
     class CSA38_7_92_5xMauser2 : CSA38_7_92_5xMauser {
@@ -130,6 +133,7 @@
         ammo = "LIB_B_792x57_Ball_SMK_NoCartridge";
         lastRoundsTracer = 0;
         tracersEvery = 0;
+        scope = 1;
     };
 
     class CSA38_7_92_5xMauser3 : CSA38_7_92_5xMauser {
@@ -139,16 +143,7 @@
         ammo = "LIB_B_792x57_Ball_NoCartridge";
         lastRoundsTracer = 0;
         tracersEvery = 0;
-    };
-
-    class CSA38_7_5_5xMAS : CSA38_7_92_5xMauser {
-        displayName = "MAS 36, 5 Round Clip";
-        displayNameShort = "7.5x54mm French";
-        descriptionShort = "7.5x54mm French, 5 Rounds, for use in the MAS 36";
-        ammo = "CSA38_7_5MAS";
-        mass = 1.85;
-        tracersEvery = 0;
-        lastRoundsTracer = 0;
+        scope = 1;
     };
 
     class CSA38_7_92_20xMauserCZ : CSA38_7_92_5xMauser {
@@ -157,6 +152,16 @@
         descriptionShort = "7.92x57mm, 20 Rounds, for use in Mauser type rifles";
         ammo = "LIB_B_792x57_Ball_NoCartridge";
         mass = 7.4;
+        tracersEvery = 0;
+        lastRoundsTracer = 0;
+    };
+
+    class CSA38_7_5_5xMAS : CSA38_7_92_5xMauser {
+        displayName = "MAS 36, 5 Round Clip";
+        displayNameShort = "7.5x54mm French";
+        descriptionShort = "7.5x54mm French, 5 Rounds, for use in the MAS 36";
+        ammo = "CSA38_7_5MAS";
+        mass = 1.85;
         tracersEvery = 0;
         lastRoundsTracer = 0;
     };
@@ -201,6 +206,7 @@
         mass = 6.11;
         tracersEvery = 0;
         lastRoundsTracer = 0;
+        scope = 1;
     };
 
     class csa38_9_MM_32xMP18 : CSA38_Magazine {
@@ -279,7 +285,7 @@
     class CSA38_9_mm_36xBrowning : CSA38_Magazine {
         displayName = "vz. 38, 36 Round Magazine";
         displayNameShort = ".380 ACP";
-        descriptionShort = ".380 ACP, 36 Rounds, for use in the vz. 38";
+        descriptionShort = ".380 ACP, 36 Rounds, for use in the vz. 38 SMG";
         ammo = "LIB_B_9x17_Ball";
         mass = 7;
         tracersEvery = 0;
@@ -289,7 +295,7 @@
     class CSA38_9_mm_96xBrowning : CSA38_Magazine {
         displayName = "vz. 38, 96 Round Magazine";
         displayNameShort = ".380 ACP";
-        descriptionShort = ".380 ACP, 96 Rounds, for use in the vz. 38";
+        descriptionShort = ".380 ACP, 96 Rounds, for use in the vz. 38 SMG";
         ammo = "LIB_B_9x17_Ball";
         mass = 20;
         tracersEvery = 0;
@@ -348,6 +354,7 @@
         descriptionShort = "7.92x57mm, 50 Rounds, for use in the MG34 or MG42";
         ammo = "LIB_B_792x57_Ball";
         mass = 14.55;
+        scope = 1;
     };
 
     class csa38_7_92_50xMauserMGAP : CSA38_7_92_50xMauserMG {
@@ -356,6 +363,7 @@
         descriptionShort = "7.92x57mm, 50 Rounds, S.m.K. AP, for use in the MG34 or MG42";
         ammo = "LIB_B_792x57_Ball_SMK";
         mass = 14.55;
+        scope = 1;
     };
 
     class csa38_7_92_250xMauserMG : CSA38_7_92_50xMauserMG {
@@ -364,6 +372,7 @@
         descriptionShort = "7.92x57mm, 250 Rounds, for use in the MG34 or MG42";
         ammo = "LIB_B_792x57_Ball";
         mass = 72.75;
+        scope = 1;
     };
 
     class csa38_7_92_250xMauserMGAP : CSA38_7_92_250xMauserMG {
@@ -372,6 +381,7 @@
         descriptionShort = "7.92x57mm, 250 Rounds, S.m.K. AP, for use in the MG34 or MG42";
         ammo = "LIB_B_792x57_Ball_SMK";
         mass = 72.75;
+        scope = 1;
     };
 
     class csa38_7_92_30xMauserMG : CSA38_Magazine {
@@ -461,7 +471,7 @@
     class CSA38_rg34: CSA38_HandGrenade {
         displayName = "vz. 34";
         descriptionShort = "vz. 34 (HE)";
-        displayNameShort = "vz. 34, Czech hand grenade";
+        displayNameShort = "vz. 34, hand grenade";
         initSpeed = 26;
         mass = 7.716;
     };
@@ -469,7 +479,7 @@
     class CSA38_rg38: CSA38_HandGrenade {
         displayName = "vz. 38";
         descriptionShort = "vz. 38 (HE)";
-        displayNameShort = "vz. 38, Czech hand grenade";
+        displayNameShort = "vz. 38, hand grenade";
         initSpeed = 25;
         mass = 7.848;
     };
@@ -537,6 +547,7 @@
         displayNameShort = "MG34/MG42, 250 Rounds";
         descriptionShort = "MG34/MG42, 250 Round Belt";
         ammo = "LIB_B_792x57_Ball";
+        mass = 72.75;
     };
 
     class csa38_MG34mgAP : CSA38_VehicleMagazine {
@@ -544,6 +555,7 @@
         displayNameShort = "MG34/MG42, 250 Rounds, S.m.K. AP";
         descriptionShort = "MG34/MG42, 250 Round Belt, S.m.K. AP";
         ammo = "LIB_B_792x57_Ball_SMK";
+        mass = 72.75;
     };
 
     class CSA38_MG34mg2 : CSA38_VehicleMagazine {
@@ -551,6 +563,7 @@
         displayNameShort = "MG34/MG42, 250 Rounds";
         descriptionShort = "MG34/MG42, 250 Round Belt";
         ammo = "LIB_B_792x57_Ball";
+        mass = 72.75;
     };
 
     class CSA38_MG34mg2AP : CSA38_VehicleMagazine {
@@ -558,6 +571,7 @@
         displayNameShort = "MG34/MG42, 250 Rounds, S.m.K. AP";
         descriptionShort = "MG34/MG42, 250 Round Belt, S.m.K. AP";
         ammo = "LIB_B_792x57_Ball_SMK";
+        mass = 72.75;
     };
 
     class CSA38_MG34mg3 : CSA38_VehicleMagazine {
@@ -565,6 +579,7 @@
         displayNameShort = "MG34/MG42, 250 Rounds";
         descriptionShort = "MG34/MG42, 250 Round Belt";
         ammo = "LIB_B_792x57_Ball";
+        mass = 72.75;
     };
 
     class CSA38_MG34mg3AP : CSA38_VehicleMagazine {
@@ -572,6 +587,7 @@
         displayNameShort = "MG34/MG42, 250 Rounds, S.m.K. AP";
         descriptionShort = "MG34/MG42, 250 Round Belt, S.m.K. AP";
         ammo = "LIB_B_792x57_Ball_SMK";
+        mass = 72.75;
     };
 
     class CSA38_MG34mg4 : CSA38_VehicleMagazine {
@@ -579,6 +595,7 @@
         displayNameShort = "MG34/MG42, 250 Rounds";
         descriptionShort = "MG34/MG42, 250 Round Belt";
         ammo = "LIB_B_792x57_Ball";
+        mass = 72.75;
     };
 
     class CSA38_MG34mg4AP : CSA38_VehicleMagazine {
@@ -586,6 +603,7 @@
         displayNameShort = "MG34/MG42, 250 Rounds, S.m.K. AP";
         descriptionShort = "MG34/MG42, 250 Round Belt, S.m.K. AP";
         ammo = "LIB_B_792x57_Ball_SMK";
+        mass = 72.75;
     };
 
     class CSA38_TKVZ24mag : CSA38_VehicleMagazine {
@@ -593,6 +611,7 @@
         displayNameShort = "vz. 7/24, 250 Rounds";
         descriptionShort = "vz. 7/24, 250 Round Belt";
         ammo = "LIB_B_792x57_Ball";
+        mass = 72.75;
     };
 
     class CSA38_TKVZ24mag2 : CSA38_TKVZ24mag {
@@ -600,6 +619,7 @@
         displayNameShort = "vz. 7/24, 250 Rounds, S.m.K. AP";
         descriptionShort = "vz. 7/24, 250 Round Belt, S.m.K. AP";
         ammo = "LIB_B_792x57_Ball_SMK";
+        mass = 72.75;
     };
 
     class CSA38_ZB53mg : CSA38_VehicleMagazine {
@@ -607,6 +627,7 @@
         displayNameShort = "ZB-53, 300 Rounds";
         descriptionShort = "7.92x57mm, 300 Rounds, for use in the ZB-53";
         ammo = "LIB_B_792x57_Ball";
+        mass = 87.3;
     };
 
     class CSA38_ZB53mgG : CSA38_ZB53mg {
@@ -614,6 +635,7 @@
         displayNameShort = "ZB-53, 300 Rounds";
         descriptionShort = "7.92x57mm, 300 Rounds, for use in the ZB-53";
         ammo = "LIB_B_792x57_Ball";
+        mass = 87.3;
     };
     
     class CSA38_ZB53mg2 : CSA38_VehicleMagazine {
@@ -621,6 +643,7 @@
         displayNameShort = "ZB-53, 300 Rounds, AP";
         descriptionShort = "7.92x57mm, 300 Rounds, AP, for use in the ZB-53";
         ammo = "LIB_B_792x57_Ball_SMK";
+        mass = 87.3;
     };
     
     class CSA38_ZB53mg2G : CSA38_ZB53mg2 {
@@ -628,6 +651,7 @@
         displayNameShort = "ZB-53, 300 Rounds, AP";
         descriptionShort = "7.92x57mm, 300 Rounds, AP, for use in the ZB-53";
         ammo = "LIB_B_792x57_Ball_SMK";
+        mass = 87.3;
     };
     
     class CSA38_ZB53mg3 : CSA38_VehicleMagazine {
@@ -635,6 +659,7 @@
         displayNameShort = "ZB-53, 100 Rounds";
         descriptionShort = "7.92x57mm, 100 Rounds, for use in the ZB-53";
         ammo = "LIB_B_792x57_Ball";
+        mass = 29.1;
     };
     
     class CSA38_ZB53mg3G : CSA38_ZB53mg3 {
@@ -642,6 +667,7 @@
         displayNameShort = "ZB-53, 100 Rounds";
         descriptionShort = "7.92x57mm, 100 Rounds, for use in the ZB-53";
         ammo = "LIB_B_792x57_Ball";
+        mass = 29.1;
     };
     
     class CSA38_ZB53mg4 : CSA38_VehicleMagazine {
@@ -649,6 +675,7 @@
         displayNameShort = "ZB-53, 100 Rounds, AP";
         descriptionShort = "7.92x57mm, 100 Rounds, AP, for use in the ZB-53";
         ammo = "LIB_B_792x57_Ball_SMK";
+        mass = 29.1;
     };
     
     class CSA38_ZB53mg4G : CSA38_ZB53mg4 {
@@ -656,6 +683,7 @@
         displayNameShort = "ZB-53, 100 Rounds, AP";
         descriptionShort = "7.92x57mm, 100 Rounds, AP, for use in the ZB-53";
         ammo = "LIB_B_792x57_Ball_SMK";
+        mass = 29.1;
     };
     
     class CSA38_ZB53mg5 : CSA38_VehicleMagazine {
@@ -663,6 +691,7 @@
         displayNameShort = "ZB-53, 200 Rounds";
         descriptionShort = "7.92x57mm, 200 Rounds, for use in the ZB-53";
         ammo = "LIB_B_792x57_Ball";
+        mass = 58.2;
     };
     
     class CSA38_ZB53mg5G : CSA38_ZB53mg5 {
@@ -670,6 +699,7 @@
         displayNameShort = "ZB-53, 200 Rounds";
         descriptionShort = "7.92x57mm, 200 Rounds, for use in the ZB-53";
         ammo = "LIB_B_792x57_Ball";
+        mass = 58.2;
     };
     
     class CSA38_ZB53mg6 : CSA38_ZB53mg5 {
@@ -677,6 +707,7 @@
         displayNameShort = "ZB-53, 200 Rounds, AP";
         descriptionShort = "7.92x57mm, 200 Rounds, AP, for use in the ZB-53";
         ammo = "LIB_B_792x57_Ball_SMK";
+        mass = 58.2;
     };
     
     class CSA38_ZB53mg6G : CSA38_ZB53mg6 {
@@ -684,6 +715,7 @@
         displayNameShort = "ZB-53, 200 Rounds, AP";
         descriptionShort = "7.92x57mm, 200 Rounds, AP, for use in the ZB-53";
         ammo = "LIB_B_792x57_Ball_SMK";
+        mass = 58.2;
     };
     class csa38_8_00_5xMannlicher : CSA38_Magazine {
         displayName = "Mannlicher M1895, 5 Round Clip";

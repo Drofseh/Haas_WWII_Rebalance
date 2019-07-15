@@ -18,7 +18,7 @@
 // End Vehicle magazines
 
     class LEN_10Rnd_303 : 20Rnd_762x51_Mag {
-        displayName = "Lee Enfield, 10 Round Clip (LEN)";
+        displayName = "Lee Enfield, 10 Round Clip";
         displayNameShort = ".303 British";
         descriptionShort = ".303 British, 10 Rounds, for use in the Lee Enfield";
         mass = 6;
@@ -42,7 +42,7 @@
     };
 
     class LEN_30Rnd_45ACP_M3 : LIB_30Rnd_45ACP {
-        displayName = "M3 Grease Gun, 30 Round Magazine (LEN)";
+        displayName = "M3 Grease Gun, 30 Round Magazine";
         displayNameShort = ".45 ACP";
         descriptionShort = ".45 ACP, 30 Rounds, for use in the M3 Grease Gun";
         mass = 10.36;
@@ -50,7 +50,7 @@
     };
 
     class LEN_32Rnd_9x19 : lib_32Rnd_9x19 {
-        displayName = "Sten Gun, 32 Round Magazine (LEN)";
+        displayName = "Sten Gun, 32 Round Magazine";
         displayNameShort = "9x19mm";
         descriptionShort = "9x19mm, 32 Rounds, for use in the Sten Gun";
         mass = 6.11;
