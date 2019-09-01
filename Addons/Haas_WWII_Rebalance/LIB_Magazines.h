@@ -297,9 +297,15 @@
     };
 
     class LIB_10Rnd_770x56 : CA_Magazine {
-        displayName = "Lee Enfield, 10 Round Clip";
-        displayNameShort = ".303 British";
-        descriptionShort = ".303 British, 10 Rounds, for use in the Lee Enfield";
+        displayName = "Lee Enfield, 2x 5 Round Clips, Mk VIIz";
+        displayNameShort = ".303 British Mk VIIz";
+        descriptionShort = ".303 British, 10 Rounds, Mk VIIz, for use in the Lee Enfield";
+    };
+
+    class LIB_10Rnd_770x56_MkVIII : LIB_10Rnd_770x56 {
+        displayName = "Lee Enfield, 2x 5 Round Clips, Mk IIIz LR";
+        displayNameShort = ".303 British Mk VIIIz LR";
+        descriptionShort = ".303 British, 10 Rounds, Mk VIIIz long range, for use in the Lee Enfield";
     };
 
     class LIB_15Rnd_762x33 : LIB_8Rnd_762x63 {
@@ -363,12 +369,18 @@
     };
 
     class LIB_30Rnd_770x56 : CA_Magazine {
-        displayName = "Bren Gun, 30 Round Magazine";
-        displayNameShort = ".303 British";
-        descriptionShort = ".303 British, 30 Rounds, for use in the Bren Gun";
+        displayName = "Bren Gun, 30 Round Magazine, Mk VIIz";
+        displayNameShort = ".303 British Mk VIIz";
+        descriptionShort = ".303 British, 30 Rounds Mk VIIz, for use in the Bren Gun";
         lastRoundsTracer = 3;
         tracersEvery = 3;
         ace_isbelt = 1;
+    };
+
+    class LIB_30Rnd_770x56_MKVIII : LIB_30Rnd_770x56 {
+        displayName = "Bren Gun, 30 Round Magazine, Mk IIIz LR";
+        displayNameShort = ".303 British Mk VIIIz LR";
+        descriptionShort = ".303 British, 30 Rounds, Mk VIIIz long range, for use in the Bren Gun";
     };
 
     class LIB_30Rnd_792x33 : CA_Magazine {

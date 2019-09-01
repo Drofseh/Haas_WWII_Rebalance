@@ -111,6 +111,7 @@
 
     class CBA_9x19_MP28 {                       // MP18 Straight Magazines, MP28, MP35
         CSA38_mags[] = {
+            "csa38_9_MM_20xMP28",
             "csa38_9_MM_32xMP28",
             "csa38_9_MM_32xMP35"
         };
@@ -737,9 +738,28 @@
     };
 
     class CBA_12g_2rnds {                       // 2 loose rounds
+        2PzD_mags[] = {
+            "ACE_2Rnd_12Gauge_Pellets_No0_Buck",
+            "ACE_2Rnd_12Gauge_Pellets_No1_Buck",
+            "ACE_2Rnd_12Gauge_Pellets_No2_Buck",
+            "ACE_2Rnd_12Gauge_Pellets_No3_Buck",
+            "ACE_2Rnd_12Gauge_Pellets_No4_Buck",
+            "ACE_2Rnd_12Gauge_Pellets_No4_Bird"
+        };
     };
 
     class CBA_12g_1rnd {                        // 1 loose round
+    };
+
+    class HunterShotgun_01_12GA { //Vanilla magwell
+        2PzD_mags[] = {
+            "ACE_2Rnd_12Gauge_Pellets_No0_Buck",
+            "ACE_2Rnd_12Gauge_Pellets_No1_Buck",
+            "ACE_2Rnd_12Gauge_Pellets_No2_Buck",
+            "ACE_2Rnd_12Gauge_Pellets_No3_Buck",
+            "ACE_2Rnd_12Gauge_Pellets_No4_Buck",
+            "ACE_2Rnd_12Gauge_Pellets_No4_Bird"
+        };
     };
     // End Shotgun calibre magwells
 

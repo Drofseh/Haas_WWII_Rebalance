@@ -6,6 +6,8 @@
 // reloadTime = RPM_TO_TIME(650);
 
 #define RequiredAddonsArray \
+    "A3_Data_F_Enoch_Loadorder", \
+    "A3_Data_F_Mod_Loadorder", \
     "ace_captives", \
     "ace_common", \
     "ace_frag", \

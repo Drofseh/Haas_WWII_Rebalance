@@ -389,40 +389,117 @@
     };
 
     class fow_6Rnd_12G_Slug : CA_Magazine {
-        displayName = "Shotgun Slugs, 12 Gauge, 5";
+        displayName = "Shotgun, 12 Gauge, Slugs, 5 rounds";
         displayNameShort = "Slugs";
         descriptionShort = "Slugs, 5 Rounds, for use in the Winchester M12";
-        ammo = "LEN_B_12Gauge_Slug";
+        ammo = "B_12Gauge_Slug";
+        //ammo = "LEN_B_12Gauge_Slug";
         count = 5;
         picture = "\fow\fow_weapons\m1912\data\UI\m_12g_s_ca.paa";
         mass = 2.5;
         scope = 2;
     };
     class fow_6Rnd_12G_Pellets : fow_6Rnd_12G_Slug {
-        displayName = "Shotgun Buckshot, 12 Gauge, 5";
-        displayNameShort = "Buckshot";
-        descriptionShort = "Buckshot, 5 Rounds, for use in the Winchester M12";
-        ammo = "LEN_B_12Gauge_Pellets";
+        displayName = "Shotgun, 12 Gauge, #00 Buckshot, 5 rounds";
+        displayNameShort = "#00 Buckshot";
+        descriptionShort = "#00 Buckshot, 5 Rounds, for use in the Winchester M12";
+        ammo = "B_12Gauge_Pellets_Submunition";
+        //ammo = "LEN_B_12Gauge_Pellets";
         count = 5;
         picture = "\fow\fow_weapons\m1912\data\UI\m_12g_p_ca.paa";
         scope = 2;
         mass = 2.5;
     };
+    class fow_6Rnd_12G_Pellets_No0_Buck : fow_6Rnd_12G_Pellets {
+        displayName = "Shotgun, 12 Gauge, #0 Buckshot, 5 rounds";
+        displayNameShort = "#0 Buckshot";
+        descriptionShort = "#0 Buckshot, 5 Rounds, for use in the Winchester M12";
+        ammo = "ACE_2Rnd_12Gauge_Pellets_No0_Buck";
+    };
+    class fow_6Rnd_12G_Pellets_No1_Buck : fow_6Rnd_12G_Pellets {
+        displayName = "Shotgun, 12 Gauge, #1 Buckshot, 5 rounds";
+        displayNameShort = "#1 Buckshot";
+        descriptionShort = "#1 Buckshot, 5 Rounds, for use in the Winchester M12";
+        ammo = "ACE_2Rnd_12Gauge_Pellets_No1_Buck";
+    };
+    class fow_6Rnd_12G_Pellets_No2_Buck : fow_6Rnd_12G_Pellets {
+        displayName = "Shotgun, 12 Gauge, #2 Buckshot, 5 rounds";
+        displayNameShort = "#2 Buckshot";
+        descriptionShort = "#2 Buckshot, 5 Rounds, for use in the Winchester M12";
+        ammo = "ACE_2Rnd_12Gauge_Pellets_No2_Buck";
+    };
+    class fow_6Rnd_12G_Pellets_No3_Buck : fow_6Rnd_12G_Pellets {
+        displayName = "Shotgun, 12 Gauge, #3 Buckshot, 5 rounds";
+        displayNameShort = "#3 Buckshot";
+        descriptionShort = "#3 Buckshot, 5 Rounds, for use in the Winchester M12";
+        ammo = "ACE_2Rnd_12Gauge_Pellets_No3_Buck";
+    };
+    class fow_6Rnd_12G_Pellets_No4_Buck : fow_6Rnd_12G_Pellets {
+        displayName = "Shotgun, 12 Gauge, #4 Buckshot, 5 rounds";
+        displayNameShort = "#4 Buckshot";
+        descriptionShort = "#4 Buckshot, 5 Rounds, for use in the Winchester M12";
+        ammo = "ACE_2Rnd_12Gauge_Pellets_No4_Buck";
+    };
+    class fow_6Rnd_12G_Pellets_No4_Bird : fow_6Rnd_12G_Pellets {
+        displayName = "Shotgun, 12 Gauge, #4 Birdshot, 5 rounds";
+        displayNameShort = "#4 Birdshot";
+        descriptionShort = "#4 Birdshot, 5 Rounds, for use in the Winchester M12";
+        ammo = "ACE_2Rnd_12Gauge_Pellets_No4_Bird";
+    };
+
     class fow_5Rnd_12G_Slug : fow_6Rnd_12G_Slug {
-        displayName = "Shotgun Slugs, 12 Gauge, 4";
+        displayName = "Shotgun, 12 Gauge, Slugs, 4 rounds";
         displayNameShort = "Slugs";
         descriptionShort = "Slugs, 4 Rounds, for use in the Ithaca 37 or Winchester M12";
+        ammo = "B_12Gauge_Slug";
         count = 4;
         scope = 2;
         mass = 2;
     };
     class fow_5Rnd_12G_Pellets : fow_6Rnd_12G_Pellets {
-        displayName = "Shotgun Buckshot, 12 Gauge, 4";
-        displayNameShort = "Buckshot";
-        descriptionShort = "Buckshot, 4 Rounds, for use in the Ithaca 37 or Winchester M12";
+        displayName = "Shotgun, 12 Gauge, #00 Buckshot, 4 rounds";
+        displayNameShort = "#00 Buckshot";
+        descriptionShort = "#00 Buckshot, 4 Rounds, for use in the Ithaca 37 or Winchester M12";
+        ammo = "B_12Gauge_Pellets_Submunition";
         count = 4;
         mass = 2;
         scope = 2;
+    };
+    class fow_5Rnd_12G_Pellets_No0_Buck : fow_5Rnd_12G_Pellets {
+        displayName = "Shotgun, 12 Gauge, #0 Buckshot, 5 rounds";
+        displayNameShort = "#0 Buckshot";
+        descriptionShort = "#0 Buckshot, 4 Rounds, for use in the Ithaca 37 or Winchester M12";
+        ammo = "ACE_2Rnd_12Gauge_Pellets_No0_Buck";
+    };
+    class fow_5Rnd_12G_Pellets_No1_Buck : fow_5Rnd_12G_Pellets {
+        displayName = "Shotgun, 12 Gauge, #1 Buckshot, 5 rounds";
+        displayNameShort = "#1 Buckshot";
+        descriptionShort = "#1 Buckshot, 4 Rounds, for use in the Ithaca 37 or Winchester M12";
+        ammo = "ACE_2Rnd_12Gauge_Pellets_No1_Buck";
+    };
+    class fow_5Rnd_12G_Pellets_No2_Buck : fow_5Rnd_12G_Pellets {
+        displayName = "Shotgun, 12 Gauge, #2 Buckshot, 5 rounds";
+        displayNameShort = "#2 Buckshot";
+        descriptionShort = "#2 Buckshot, 4 Rounds, for use in the Ithaca 37 or Winchester M12";
+        ammo = "ACE_2Rnd_12Gauge_Pellets_No2_Buck";
+    };
+    class fow_5Rnd_12G_Pellets_No3_Buck : fow_5Rnd_12G_Pellets {
+        displayName = "Shotgun, 12 Gauge, #3 Buckshot, 5 rounds";
+        displayNameShort = "#3 Buckshot";
+        descriptionShort = "#3 Buckshot, 4 Rounds, for use in the Ithaca 37 or Winchester M12";
+        ammo = "ACE_12Gauge_Pellets_Submunition_No3_Buck";
+    };
+    class fow_5Rnd_12G_Pellets_No4_Buck : fow_5Rnd_12G_Pellets {
+        displayName = "Shotgun, 12 Gauge, #4 Buckshot, 5 rounds";
+        displayNameShort = "#4 Buckshot";
+        descriptionShort = "#4 Buckshot, 4 Rounds, for use in the Ithaca 37 or Winchester M12";
+        ammo = "ACE_12Gauge_Pellets_Submunition_No4_Buck";
+    };
+    class fow_5Rnd_12G_Pellets_No4_Bird : fow_6Rnd_12G_Pellets {
+        displayName = "Shotgun, 12 Gauge, #4 Birdshot, 5 rounds";
+        displayNameShort = "#4 Birdshot";
+        descriptionShort = "#4 Birdshot, 4 Rounds, for use in the Ithaca 37 or Winchester M12";
+        ammo = "ACE_2Rnd_12Gauge_Pellets_No4_Bird";
     };
 
     class fow_7Rnd_45acp : CA_Magazine {

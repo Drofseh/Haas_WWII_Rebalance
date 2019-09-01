@@ -47,6 +47,10 @@
         maximumLoad = 1500;
     };
 
+    class LIB_LCI : LIB_Boat_base {
+        maximumLoad = 100000;
+    };
+
     class LIB_LCVP : LIB_Boat_base {
         maximumLoad = 9000;
     };

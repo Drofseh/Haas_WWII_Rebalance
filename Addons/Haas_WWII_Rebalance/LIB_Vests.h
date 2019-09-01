@@ -330,7 +330,7 @@
             containerClass = "Supply70";
         };
     };
-
+/*
     class V_LIB_UK_P37_Gasmask : V_LIB_UK_P37_Rifleman {
         class ItemInfo : ItemInfo {
         };
@@ -340,7 +340,7 @@
         class ItemInfo : VestItem {
         };
     };
-
+*/
     class V_LIB_UK_P37_Heavy : V_LIB_UK_P37_Rifleman {
         class ItemInfo : ItemInfo {
             containerClass = "Supply120";

@@ -2403,7 +2403,7 @@
         descriptionShort = "Ithaca 37 Trench Shotgun, 12 Gauge";
         dispersion = MOA_TO_RAD(8);
         magazines[] = {"fow_5Rnd_12G_Pellets"};
-        magazineWell[] = {"CBA_12g_4rnds","CBA_12g_3rnds","CBA_12g_2rnds","CBA_12g_1rnd"};
+        magazineWell[] += {"CBA_12g_4rnds","CBA_12g_3rnds","CBA_12g_2rnds","CBA_12g_1rnd"};
         recoil = "recoil_2PzD_rifle_short";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 67;
@@ -2427,7 +2427,7 @@
         descriptionShort = "Winchester Model 12 Trench Shotgun, 12 Gauge";
         dispersion = MOA_TO_RAD(8);
         magazines[] = {"fow_6Rnd_12G_Pellets"};
-        magazineWell[] = {"CBA_12g_5rnds","CBA_12g_4rnds","CBA_12g_3rnds","CBA_12g_2rnds","CBA_12g_1rnd"};
+        magazineWell[] += {"CBA_12g_5rnds","CBA_12g_4rnds","CBA_12g_3rnds","CBA_12g_2rnds","CBA_12g_1rnd"};
         recoil = "recoil_2PzD_rifle_short";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 79.412;
