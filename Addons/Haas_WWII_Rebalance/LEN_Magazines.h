@@ -65,7 +65,7 @@
     };
 
     class LEN_6Rnd_12G_Slug : CA_Magazine {
-        displayName = "Shotgun, 12 Gauge, Slugs, 5 rounds";
+        displayName = "12 Gauge, Slugs, 5 rounds";
         displayNameShort = "Slugs";
         descriptionShort = "Slugs, 5 Rounds, for use in the Winchester M12";
         ammo = "B_12Gauge_Slug";
@@ -75,7 +75,7 @@
     };
 
     class LEN_6Rnd_12G_Pellets : LEN_6Rnd_12G_Slug {
-        displayName = "Shotgun, 12 Gauge, #3 Buckshot, 5 rounds";
+        displayName = "12 Gauge, #3 Buckshot, 5 rounds";
         displayNameShort = "#00 Buckshot";
         descriptionShort = "#00 Buckshot, 5 Rounds, for use in the Winchester M12";
         ammo = "B_12Gauge_Pellets_Submunition";

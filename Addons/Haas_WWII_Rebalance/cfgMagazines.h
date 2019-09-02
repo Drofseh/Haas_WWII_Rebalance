@@ -8,43 +8,43 @@ class VehicleMagazine;
 class CA_LauncherMagazine;
 
 class 2Rnd_12Gauge_Pellets : CA_Magazine {
-    displayName = "Shotgun, 12 Gauge, #00 Buckshot, 2 rounds";
+    displayName = "12 Gauge, #00 Buckshot, 2 rounds";
     displayNameShort = "#00 Buckshot";
     descriptionShort = "#00 Buckshot, 2 Rounds, for use in the Ithaca 37, Winchester M12, or double barrel shotguns";
     ammo = "B_12Gauge_Pellets_Submunition";
 };
 class ACE_2Rnd_12Gauge_Pellets_No0_Buck : 2Rnd_12Gauge_Pellets {
-    displayName = "Shotgun, 12 Gauge, #0 Buckshot, 2 rounds";
+    displayName = "12 Gauge, #0 Buckshot, 2 rounds";
     displayNameShort = "#0 Buckshot";
     descriptionShort = "#0 Buckshot, 2 Rounds, for use in the Ithaca 37, Winchester M12, or double barrel shotguns";
     ammo = "ACE_12Gauge_Pellets_Submunition_No0_Buck";
 };
 class ACE_2Rnd_12Gauge_Pellets_No1_Buck : 2Rnd_12Gauge_Pellets {
-    displayName = "Shotgun, 12 Gauge, #1 Buckshot, 2 rounds";
+    displayName = "12 Gauge, #1 Buckshot, 2 rounds";
     displayNameShort = "#1 Buckshot";
     descriptionShort = "#1 Buckshot, 2 Rounds, for use in the Ithaca 37, Winchester M12, or double barrel shotguns";
     ammo = "ACE_12Gauge_Pellets_Submunition_No1_Buck";
 };
 class ACE_2Rnd_12Gauge_Pellets_No2_Buck : 2Rnd_12Gauge_Pellets {
-    displayName = "Shotgun, 12 Gauge, #2 Buckshot, 2 rounds";
+    displayName = "12 Gauge, #2 Buckshot, 2 rounds";
     displayNameShort = "#2 Buckshot";
     descriptionShort = "#2 Buckshot, 2 Rounds, for use in the Ithaca 37, Winchester M12, or double barrel shotguns";
     ammo = "ACE_12Gauge_Pellets_Submunition_No2_Buck";
 };
 class ACE_2Rnd_12Gauge_Pellets_No3_Buck : 2Rnd_12Gauge_Pellets {
-    displayName = "Shotgun, 12 Gauge, #3 Buckshot, 2 rounds";
+    displayName = "12 Gauge, #3 Buckshot, 2 rounds";
     displayNameShort = "#3 Buckshot";
     descriptionShort = "#3 Buckshot, 2 Rounds, for use in the Ithaca 37, Winchester M12, or double barrel shotguns";
     ammo = "ACE_12Gauge_Pellets_Submunition_No3_Buck";
 };
 class ACE_2Rnd_12Gauge_Pellets_No4_Buck : 2Rnd_12Gauge_Pellets {
-    displayName = "Shotgun, 12 Gauge, #4 Buckshot, 2 rounds";
+    displayName = "12 Gauge, #4 Buckshot, 2 rounds";
     displayNameShort = "#4 Buckshot";
     descriptionShort = "#4 Buckshot, 2 Rounds, for use in the Ithaca 37, Winchester M12, or double barrel shotguns";
     ammo = "ACE_12Gauge_Pellets_Submunition_No4_Buck";
 };
 class ACE_2Rnd_12Gauge_Pellets_No4_Bird : 2Rnd_12Gauge_Pellets {
-    displayName = "Shotgun, 12 Gauge, #4 Birdshot, 2 rounds";
+    displayName = "12 Gauge, #4 Birdshot, 2 rounds";
     displayNameShort = "#4 Birdshot";
     descriptionShort = "#4 Birdshot, 2 Rounds, for use in the Ithaca 37, Winchester M12, or double barrel shotguns";
     ammo = "ACE_12Gauge_Pellets_Submunition_No4_Bird";

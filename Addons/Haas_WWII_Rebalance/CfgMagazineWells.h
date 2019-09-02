@@ -719,6 +719,12 @@
     class CBA_12g_5rnds {                       // 5 loose rounds
         FOW_mags[] = {
             "fow_6Rnd_12G_Pellets",
+            "fow_6Rnd_12G_Pellets_No0_Buck",
+            "fow_6Rnd_12G_Pellets_No1_Buck",
+            "fow_6Rnd_12G_Pellets_No2_Buck",
+            "fow_6Rnd_12G_Pellets_No3_Buck",
+            "fow_6Rnd_12G_Pellets_No4_Buck",
+            "fow_6Rnd_12G_Pellets_No4_Bird",
             "fow_6Rnd_12G_Slug"
         };
         LEN_mags[] = {
@@ -730,6 +736,12 @@
     class CBA_12g_4rnds {                       // 4 loose rounds
         FOW_mags[] = {
             "fow_5Rnd_12G_Pellets",
+            "fow_5Rnd_12G_Pellets_No0_Buck",
+            "fow_5Rnd_12G_Pellets_No1_Buck",
+            "fow_5Rnd_12G_Pellets_No2_Buck",
+            "fow_5Rnd_12G_Pellets_No3_Buck",
+            "fow_5Rnd_12G_Pellets_No4_Buck",
+            "fow_5Rnd_12G_Pellets_No4_Bird",
             "fow_5Rnd_12G_Slug"
         };
     };
