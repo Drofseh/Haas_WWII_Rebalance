@@ -7,7 +7,7 @@
         magazineWell[] = {"CBA_9x19_Vis"};
         recoil = "recoil_2PzD_pistol_medium";
         scope = 2;
-        class WeaponSlotsInfo : WeaponSlotsInfo {
+        class WeaponSlotsInfo {
             mass = 20.94;
         };
         class Single : Single {
@@ -23,7 +23,7 @@
         magazineWell[] = {"CBA_9x19_HiPower"};
         recoil = "recoil_2PzD_pistol_medium";
         scope = 2;
-        class WeaponSlotsInfo : WeaponSlotsInfo {
+        class WeaponSlotsInfo {
             mass = 15.851;
         };
         class Single : Single {
@@ -38,7 +38,7 @@
         magazineWell[] = {"CBA_32ACP_PPK"};
         recoil = "recoil_2PzD_pistol_light";
         scope = 2;
-        class WeaponSlotsInfo : WeaponSlotsInfo {
+        class WeaponSlotsInfo {
             mass = 12.507;
         };
         class Single : Single {
@@ -53,10 +53,10 @@
         magazineWell[] = {"CBA_32ACP_Welrod"};
         recoil = "recoil_2PzD_pistol_light";
         scope = 2;
-        class WeaponSlotsInfo : WeaponSlotsInfo {
+        class WeaponSlotsInfo {
             mass = 24.044;
         };
-        class Single : Single {
+        class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(15);
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
@@ -88,7 +88,7 @@
                 fired = "_this spawn fow_main_fnc_mgRoF;";
             };
         };*/
-        class WeaponSlotsInfo : WeaponSlotsInfo {
+        class WeaponSlotsInfo {
             mass = 109.191;
         };
         class Single : Mode_SemiAuto {
@@ -153,7 +153,7 @@
         scope = 1;
         scopeCurator = 0;
         scopeArsenal = 0;
-        class WeaponSlotsInfo : WeaponSlotsInfo {
+        class WeaponSlotsInfo {
             mass = 88.037;
         };
         class Single;
@@ -170,7 +170,7 @@
         // modes[] = {"Single","Far","Medium","Short"};
         recoil = "recoil_2PzD_rifle_bolt";
         scope = 1;
-        class WeaponSlotsInfo : WeaponSlotsInfo {
+        class WeaponSlotsInfo {
             mass = 109.924;
         };
         class Single : Single {
@@ -309,11 +309,11 @@
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 77.644;
         };
-        class FullAuto : FullAuto {
+        class FullAuto : Mode_FullAuto {
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(451); // 451 rpm
         };
-        class Single : Single {
+        class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(451); // 451 rpm
         };
@@ -336,10 +336,10 @@
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 79.632;
         };
-        class FullAuto : FullAuto {
+        class FullAuto : Mode_FullAuto {
             reloadTime = RPM_TO_TIME(550); // 550 rpm
         };
-        class Single : Single {
+        class Single : Mode_SemiAuto {
             reloadTime = RPM_TO_TIME(550); // 550 rpm
         };
     };
@@ -359,7 +359,7 @@
         scope = 1;
         scopeCurator = 0;
         scopeArsenal = 0;
-        class WeaponSlotsInfo : WeaponSlotsInfo {
+        class WeaponSlotsInfo {
             mass = 79.412;
         };
     };

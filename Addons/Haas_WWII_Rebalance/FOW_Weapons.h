@@ -1,13 +1,16 @@
 ﻿
     class fow_rifle_base : Rifle_Base_F {
+        class EventHandlers;
         class WeaponSlotsInfo;
     };
 
     class fow_shotgun_base : fow_rifle_base {
+        class EventHandlers;
         class WeaponSlotsInfo;
     };
 
     class fow_rifleBolt_base : fow_rifle_base {
+        class EventHandlers;
         class WeaponSlotsInfo;
     };
 
@@ -235,7 +238,7 @@
                 fired = "_this spawn fow_main_fnc_mgRoF;";
             };
         };*/
-        class WeaponSlotsInfo : WeaponSlotsInfo {
+        class WeaponSlotsInfo {
             mass = 109.191;
         };
         class Single : Mode_SemiAuto {
@@ -954,13 +957,10 @@
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 105.500;
         };
-        class Single : Single {
+        class Far : Single {
             dispersion = MOA_TO_RAD(3);
         };
-        class Far : Far {
-            dispersion = MOA_TO_RAD(3);
-        };
-        class Medium : Medium {
+        class Medium : Single {
             dispersion = MOA_TO_RAD(3);
         };
         class Short : Short {
@@ -2429,7 +2429,7 @@
         magazines[] = {"fow_6Rnd_12G_Pellets"};
         magazineWell[] += {"CBA_12g_5rnds","CBA_12g_4rnds","CBA_12g_3rnds","CBA_12g_2rnds","CBA_12g_1rnd"};
         recoil = "recoil_2PzD_rifle_short";
-        class WeaponSlotsInfo : WeaponSlotsInfo {
+        class WeaponSlotsInfo {
             mass = 79.412;
         };
         class Single : Mode_SemiAuto {

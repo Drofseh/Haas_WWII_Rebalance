@@ -1,25 +1,31 @@
 ﻿
     class LIB_LMG : Rifle_Long_Base_F {
+        class EventHandlers;
         class WeaponSlotsInfo;
     };
 
     class LIB_LAUNCHER : Launcher_Base_F {
+        class EventHandlers;
         class WeaponSlotsInfo;
     };
 
     class LIB_PISTOL : Pistol_Base_F {
+        class EventHandlers;
         class WeaponSlotsInfo;
     };
 
     class LIB_RIFLE : Rifle_Base_F {
+        class EventHandlers;
         class WeaponSlotsInfo;
     };
 
     class LIB_SMG : Rifle_Short_Base_F {
+        class EventHandlers;
         class WeaponSlotsInfo;
     };
 
     class LIB_SRIFLE : Rifle_Long_Base_F {
+        class EventHandlers;
         class WeaponSlotsInfo;
     };
 
@@ -162,7 +168,7 @@
         };
     };
 
-    class LIB_Webley_mk6: LIB_PISTOL {
+    class LIB_Webley_mk6 : LIB_PISTOL {
         displayName = "Webley Mk VI";
         descriptionShort = "Webley Mk VI in .455 Webley";
         dispersion = MOA_TO_RAD(15);
@@ -177,7 +183,7 @@
         };
     };
 
-    class LIB_Welrod_mk1: LIB_PISTOL {
+    class LIB_Welrod_mk1 : LIB_PISTOL {
         displayName = "Welrod Mk I";
         descriptionShort = "Welrod Mk I in 9x19mm";
         dispersion = MOA_TO_RAD(20);
@@ -198,7 +204,7 @@
         displayName = "De Lisle Carbine";
         descriptionShort = "De Lisle Carbine";
         dispersion = MOA_TO_RAD(6);
-        magazines[] = {"LIB_7Rnd_45ACP_2PzD","LIB_11Rnd_45ACP_2PzD"};
+        magazines[] = {"LIB_7Rnd_45ACP_DeLisle","LIB_7Rnd_45ACP_2PzD","LIB_11Rnd_45ACP_2PzD"};
         magazineWell[] = {"CBA_45ACP_Delisle"};
         recoil = "recoil_2PzD_rifle_light";
         class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -414,7 +420,7 @@
         };
     };
 
-    class LIB_LeeEnfield_No4_Scoped: LIB_SRIFLE {
+    class LIB_LeeEnfield_No4_Scoped : LIB_SRIFLE {
         displayName = "Lee Enfield No. 4 Mk I (T)";
         descriptionShort = "Rifle, No. 4 Mk I (T) with No.32 Scope";
         dispersion = MOA_TO_RAD(2.5);
@@ -982,7 +988,7 @@
         };
     };
 
-    class LIB_Sten_Mk2: LIB_SMG {
+    class LIB_Sten_Mk2 : LIB_SMG {
         displayName = "Sten Mk II";
         descriptionShort = "Sten Mk II";
         dispersion = MOA_TO_RAD(8);
@@ -1008,14 +1014,14 @@
             reloadTime = RPM_TO_TIME(550); // 550 rpm
         };
     };
-    class LIB_Sten_Mk5: LIB_Sten_Mk2 {
+    class LIB_Sten_Mk5 : LIB_Sten_Mk2 {
         displayName = "Sten Mk V";
         descriptionShort = "Sten Mk V";
     };
 // End Submachine Guns
 
 // Machineguns
-    class LIB_Bren_Mk2: LIB_LMG {
+    class LIB_Bren_Mk2 : LIB_LMG {
         displayName = "Bren Gun Mk II";
         descriptionShort = "BREN L.M.G. Mk II";
         dispersion = MOA_TO_RAD(3);
@@ -1169,7 +1175,7 @@
         magazines[] = {"LIB_250Rnd_762x63_2PzD"};
         magazineWell[] = {"CBA_3006_Belt"};
         recoil = "recoil_2PzD_mmg_1";
-        class Eventhandlers : Eventhandlers {
+        class Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
             };
@@ -1343,7 +1349,7 @@
         magazineWell[] = {"CBA_PIAT"};
     };
 
-    class LIB_PIAT: LIB_LAUNCHER {
+    class LIB_PIAT : LIB_LAUNCHER {
         displayName = "PIAT";
         descriptionShort = "Projector, Infantry, Anti Tank Mk I";
         magazines[] = {"LIB_1Rnd_89m_PIAT"};
@@ -1395,7 +1401,7 @@
             mass = 138;
         };
     };
-    class LIB_PzFaust_60m_used : LIB_PzFaust_30m_used {
+    class LIB_PzFaust_60m_used : LIB_PzFaust_60m {
         displayName = "Used Panzerfaust";
         descriptionShort = "Used Panzerfaust 60";
         class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -1949,7 +1955,7 @@
         };
     };
 
-    class LIB_M1919A4_tripod : LIB_M1919A4_coax {
+    class LIB_M1919A4_tripod : LIB_MLMG_base {
         displayName = "M1919A4 on M2 Tripod";
         descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A4 on M2 Tripod";
         // fow_burstLength = 7;

@@ -1,5 +1,6 @@
 
     class csa38_Pistol : Pistol_Base_F {
+        class EventHandlers;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             class CowsSlot : SlotInfo {
                 compatibleItems[] = {};
@@ -17,6 +18,7 @@
     };
 
     class csa38_SMG : Rifle_Base_F {
+        class EventHandlers;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             class CowsSlot : SlotInfo {
                 compatibleItems[] = {};
@@ -31,6 +33,7 @@
     };
 
     class CSA38_MGBASE : Rifle_Long_Base_F {
+        class EventHandlers;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             class CowsSlot : SlotInfo {
                 compatibleItems[] = {};
@@ -45,6 +48,7 @@
     };
 
     class CSA38_HMGA3_base : MGun {
+        class EventHandlers;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             delete CowsSlot;
             delete MuzzleSlot;

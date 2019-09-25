@@ -1,5 +1,6 @@
 
     class w39_Pistol : Pistol_Base_F {
+        class EventHandlers;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             class CowsSlot : SlotInfo {
                 compatibleItems[] = {};
@@ -13,7 +14,8 @@
         };
     };
 
-    class W39_Rifle_Long_Base_F : Rifle_Base_F {
+    class W39_Rifle_Long_Base_F : Rifle_Long_Base_F {
+        class EventHandlers;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             class CowsSlot : SlotInfo {
                 compatibleItems[] = {};
@@ -28,6 +30,7 @@
     };
 
     class w39_SMG : Rifle_Base_F {
+        class EventHandlers;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             class CowsSlot : SlotInfo {
                 compatibleItems[] = {};
@@ -41,7 +44,8 @@
         };
     };
 
-    class W39_MGBASE : Rifle_Base_F {
+    class W39_MGBASE : Rifle_Long_Base_F {
+        class EventHandlers;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             class CowsSlot : SlotInfo {
                 compatibleItems[] = {};
@@ -56,6 +60,7 @@
     };
 
     class w39_LMGA3_base : MGun {
+        class EventHandlers;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             class CowsSlot : SlotInfo {
                 compatibleItems[] = {};
@@ -70,6 +75,7 @@
     };
 
     class w39_HMGA3_base : MGun {
+        class EventHandlers;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             class CowsSlot : SlotInfo {
                 compatibleItems[] = {};
@@ -415,7 +421,7 @@
         displayName = "CKM wz.25";
         class manual : w39_LMGA3_base {
     };
-    
+
     class w39_ckmwz25veh : w39_CKMwz25mg {
         scope = 1;
         displayName = "CKM wz.25";

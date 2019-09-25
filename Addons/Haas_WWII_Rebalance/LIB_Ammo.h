@@ -58,8 +58,15 @@
     class LIB_B_9x18_Ball;
 
     class LIB_B_9x19_Ball; /* : LIB_B_9x18_Ball {
-        
+
     };*/
+
+    class LIB_B_145x144_Ball : LIB_Bullet_base {
+        hit = 120;
+        indirectHit = 5;
+        indirectHitRange = 0.25;
+        explosive = 0.05
+    };
 
     class LIB_M2_Flamethrower_Ammo : BulletBase_NonAceAB {
         timetolive = "1";

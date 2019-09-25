@@ -205,6 +205,7 @@
             "fow_7Rnd_765x17"
         };
         IFA3_mags[] = {
+            "LIB_7Rnd_765x17_PPK",
             "LIB_7Rnd_9x19"
         };
         LEN_mags[] = {
@@ -276,6 +277,7 @@
 
     class CBA_45ACP_Delisle {                   // De Lisle Carbine
         IFA3_mags[] = {
+            "LIB_7Rnd_45ACP_DeLisle",
             "LIB_7Rnd_45ACP_2PzD",
             "LIB_11Rnd_45ACP_2PzD"
         };
@@ -344,7 +346,8 @@
             "fow_30Rnd_303_bren"
         };
         IFA3_mags[] = {
-            "LIB_30Rnd_770x56"
+            "LIB_30Rnd_770x56",
+            "LIB_30Rnd_770x56_MKVIII"
         };
         CSA38_mags[] = {
             "CSA38_7_7_30x56R",
@@ -359,7 +362,8 @@
             "fow_10Rnd_303"
         };
         IFA3_mags[] = {
-            "LIB_10Rnd_770x56"
+            "LIB_10Rnd_770x56",
+            "LIB_10Rnd_770x56_MkVIII"
         };
         LEN_mags[] = {
             "LEN_10Rnd_303"
@@ -381,7 +385,8 @@
             "fow_20Rnd_762x63"
         };
         IFA3_mags[] = {
-            "LIB_20Rnd_762x63"
+            "LIB_20Rnd_762x63",
+            "LIB_20Rnd_762x63_M1"
         };
     };
 
@@ -396,11 +401,16 @@
             "fow_30Rnd_762x63"
         };
         IFA3_mags[] = {
-            "LIB_250Rnd_762x63_2PzD",
-            "LIB_200Rnd_762x63_2PzD",
-            "LIB_150Rnd_762x63_2PzD",
             "LIB_100Rnd_762x63",
-            "LIB_50Rnd_762x63"
+            "LIB_100Rnd_762x63_M1",
+            "LIB_150Rnd_762x63_2PzD",
+            "LIB_150Rnd_762x63_M1_2PzD",
+            "LIB_200Rnd_762x63_2PzD",
+            "LIB_200Rnd_762x63_M1_2PzD",
+            "LIB_250Rnd_762x63_2PzD",
+            "LIB_250Rnd_762x63_M1_2PzD",
+            "LIB_50Rnd_762x63",
+            "LIB_50Rnd_762x63_M1"
         };
     };
 
@@ -411,6 +421,7 @@
         };
         IFA3_mags[] = {
             "LIB_8Rnd_762x63",
+            "LIB_8Rnd_762x63_M1",
             "LIB_8Rnd_762x63_t"
         };
     };
@@ -421,6 +432,7 @@
         };
         IFA3_mags[] = {
             "LIB_5Rnd_762x63",
+            "LIB_5Rnd_762x63_M1",
             "LIB_5Rnd_762x63_t"
         };
     };
@@ -436,7 +448,8 @@
         IFA3_mags[] = {
             "LIB_15Rnd_762x33",
             "LIB_15Rnd_762x33_t",
-            "LIB_30Rnd_762x33_2PzD"
+            "LIB_30Rnd_762x33_2PzD",
+            "LIB_30Rnd_762x33_t_2PzD"
         };
     };
 
@@ -585,11 +598,9 @@
             "fow_250Rnd_792x57"
         };
         IFA3_mags[] = {
-            "lib_50Rnd_792x57",
-            "lib_50Rnd_792x57_SMK",
-            "lib_50Rnd_792x57_sS",
             "LIB_100Rnd_792x57",
             "LIB_100Rnd_792x57_SMK_2PzD",
+            "LIB_100Rnd_792x57_sS",
             "LIB_100Rnd_792x57_sS_2PzD",
             "LIB_150Rnd_792x57_2PzD",
             "LIB_150Rnd_792x57_SMK_2PzD",
@@ -599,7 +610,10 @@
             "LIB_200Rnd_792x57_sS_2PzD",
             "LIB_250Rnd_792x57_2PzD",
             "LIB_250Rnd_792x57_SMK_2PzD",
-            "LIB_250Rnd_792x57_sS_2PzD"
+            "LIB_250Rnd_792x57_sS_2PzD",
+            "lib_50Rnd_792x57",
+            "lib_50Rnd_792x57_SMK",
+            "lib_50Rnd_792x57_sS"
         };
         CSA38_mags[] = {
             "CSA38_7_92_50xMauserMG",
@@ -629,7 +643,9 @@
 
     class CBA_792x57_TROMMEL {                  // MG34 Patronentrommel 34
         IFA3_mags[] = {
-            "LIB_75Rnd_792x57"
+            "LIB_75Rnd_792x57",
+            "LIB_75Rnd_792x57_SMK_2PzD",
+            "LIB_75Rnd_792x57_sS_2PzD"
         };
     };
 
