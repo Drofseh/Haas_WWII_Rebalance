@@ -115,7 +115,22 @@
         model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
     };
 
+    class LIB_B_762x54_Mixed_t30 : LIB_B_762x54_Ball {
+        model = "\z\ace\addons\tracers\ace_TracerWhite2.p3d";
+    };
+
+    class LIB_B_762x54_Mixed_t46 : LIB_B_762x54_Ball {
+        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
+    };
+
     class LIB_B_762x54_Ball_D : LIB_B_762x54_Ball {
+        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
+    };
+
+    class LIB_B_762x54_Mixed_D_t30 : LIB_B_762x54_Ball_D {
+        model = "\z\ace\addons\tracers\ace_TracerWhite2.p3d";
+    };
+    class LIB_B_762x54_Mixed_D_t46 : LIB_B_762x54_Ball_D {
         model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
     };
 
@@ -123,11 +138,35 @@
         model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
     };
 
+    class LIB_B_762x54_Mixed_D_t30_NoCartridge : LIB_B_762x54_Ball_D_NoCartridge {
+        model = "\z\ace\addons\tracers\ace_TracerWhite2.p3d";
+    };
+
+    class LIB_B_762x54_Mixed_D_t46_NoCartridge : LIB_B_762x54_Ball_D_NoCartridge {
+        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
+    };
+
     class LIB_B_762x54_Ball_b30 : LIB_B_762x54_Ball_D {
         model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
     };
 
+    class LIB_B_762x54_Mixed_b30_t30 : LIB_B_762x54_Ball_b30 {
+        model = "\z\ace\addons\tracers\ace_TracerWhite2.p3d";
+    };
+
+    class LIB_B_762x54_Mixed_b30_t46 : LIB_B_762x54_Ball_b30 {
+        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
+    };
+
     class LIB_B_762x54_Ball_b30_NoCartridge : LIB_B_762x54_Ball_b30 {
+        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
+    };
+
+    class LIB_B_762x54_Mixed_b30_t30_NoCartridge : LIB_B_762x54_Ball_b30_NoCartridge {
+        model = "\z\ace\addons\tracers\ace_TracerWhite2.p3d";
+    };
+
+    class LIB_B_762x54_Mixed_b30_t46_NoCartridge : LIB_B_762x54_Ball_b30_NoCartridge {
         model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
     };
 
@@ -136,6 +175,13 @@
     };
 
     class LIB_B_762x54_Ball_NoCartridge : LIB_B_762x54_Ball {
+        model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
+    };
+
+    class LIB_B_762x54_Mixed_t30_NoCartridge : LIB_B_762x54_Ball_NoCartridge {
+        model = "\z\ace\addons\tracers\ace_TracerWhite2.p3d";
+    };
+    class LIB_B_762x54_Mixed_t46_NoCartridge : LIB_B_762x54_Ball_NoCartridge {
         model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
     };
 

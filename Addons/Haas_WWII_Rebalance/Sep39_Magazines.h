@@ -21,7 +21,7 @@
         displayName = "Mauser, 5 Round Clip, Ball";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 5 Rounds, Ball<br/>For use in Mauser type rifles";
-        ammo = "LIB_B_792x57_Ball_NoCartridge";
+        ammo = "LIB_B_792x57_Ball_SmE_NoCartridge";
         mass = 1.85;
         lastRoundsTracer = 0;
         tracersEvery = 0;
@@ -43,7 +43,7 @@
         displayName = "Mauser, 2x 5 Round Clips, Ball";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 10 Rounds, Ball<br/>For use in the wz. 38M";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 3.7;
         tracersEvery = 0;
         lastRoundsTracer = 0;
@@ -87,7 +87,7 @@
         displayName = "wz. 28, 20 Round Magazine, Ball";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 20 Rounds, Ball<br/>For use in the wz. 28";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 5.6;
         lastRoundsTracer = 0;
         tracersEvery = 3;

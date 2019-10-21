@@ -190,18 +190,21 @@
         displayName = "K98k, 5 Round Clip, Ball (SmE)";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 5 Rounds, Ball (SmE)<br/>For use in the K98k";
+        ammo = "LIB_B_792x57_Ball_SmE_NoCartridge";
     };
 
     class LIB_5Rnd_792x57_SMK : LIB_5Rnd_792x57 {
         displayName = "K98k, 5 Round Clip, AP (SmK)";
         displayNameShort = "7.92x57mm AP";
         descriptionShort = "7.92x57mm, 5 Rounds, AP (SmK)<br/>For use in the K98k";
+        ammo = "LIB_B_792x57_Ball_SMK_NoCartridge";
     };
 
     class LIB_5Rnd_792x57_sS : LIB_5Rnd_792x57 {
         displayName = "K98k, 5 Round Clip, Ball (sS Patrone)";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 5 Rounds, Ball (sS Patrone)<br/>For use in the K98k";
+        ammo = "LIB_B_792x57_Ball_sS_NoCartridge";
     };
 
     class LIB_5Rnd_792x57_t : LIB_5Rnd_792x57 {
@@ -250,16 +253,19 @@
         displayName = "G43, 10 Round Magazine, Ball (SmE)";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 10 Rounds, Ball (SmE)<br/>For use in the G43";
+        ammo = "LIB_B_792x57_Ball_SmE";
     };
     class LIB_10Rnd_792x57_SMK : LIB_10Rnd_792x57 {
         displayName = "G43, 10 Round Magazine, AP (SmK)";
         displayNameShort = "7.92x57mm AP";
         descriptionShort = "7.92x57mm, 10 Rounds, AP (SmK)<br/>For use in the G43";
+        ammo = "LIB_B_792x57_Ball_SMK";
     };
     class LIB_10Rnd_792x57_sS : LIB_10Rnd_792x57 {
         displayName = "G43, 10 Round Magazine, Ball (sS Patrone)";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 10 Rounds, Ball (sS Patrone)<br/>For use in the G43";
+        ammo = "LIB_B_792x57_Ball_sS";
     };
     class LIB_10Rnd_792x57_T : LIB_10Rnd_792x57 {
         displayName = "G43, 10 Round Magazine, Tracer (LS L'spur)";
@@ -278,6 +284,7 @@
         displayName = "G41, 2x 5 Round Clips, Ball (SmE)";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 10 Rounds, Ball (SmE)<br/>For use in the G41";
+        ammo = "LIB_B_792x57_Ball_SmE";
     };
 
     class LIB_10Rnd_770x56 : CA_Magazine {
@@ -322,6 +329,7 @@
         displayName = "FG42, 20 Round Magazine, Ball (SmE)";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 20 Rounds, Ball (SmE)<br/>For use in the FG42";
+        ammo = "LIB_B_792x57_Ball_SmE";
     };
 
     class LIB_30Rnd_792x33 : CA_Magazine {
@@ -604,7 +612,7 @@
         displayName = "MG34/MG42, 150 Round Belt, Ball (SmE)";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 150 Rounds, Ball (SmE)<br/>For use in the MG34 or MG42";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         count = 150;
         mass = 43.65;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
@@ -671,6 +679,7 @@
         displayName = "MG34 (PT34), 75 Round Magazine, Ball (SmE)";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 75 Rounds, Ball (SmE)<br/>For use in the MG34 (PT34)";
+        ammo = "LIB_B_792x57_Ball_SmE";
         ace_isbelt = 1;
     };
     class LIB_75Rnd_792x57_sS_2PzD : LIB_75Rnd_792x57 {

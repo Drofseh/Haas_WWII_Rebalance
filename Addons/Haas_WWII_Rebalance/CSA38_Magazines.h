@@ -100,7 +100,7 @@
         displayName = "Mauser, 5 Round Clip, Ball";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 5 Rounds, Ball<br/>For use in Mauser type rifles";
-        ammo = "LIB_B_792x57_Ball_NoCartridge";
+        ammo = "LIB_B_792x57_Ball_SmE_NoCartridge";
         mass = 1.85;
         lastRoundsTracer = 0;
         tracersEvery = 0;
@@ -110,7 +110,7 @@
         displayName = "K98k, 5 Round Clip, Ball (SmE)";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 5 Rounds, Ball (SmE)<br/>For use in the K98k";
-        ammo = "LIB_B_792x57_Ball_NoCartridge";
+        ammo = "LIB_B_792x57_Ball_SmE_NoCartridge";
         mass = 1.85;
         lastRoundsTracer = 0;
         tracersEvery = 0;
@@ -140,7 +140,7 @@
         displayName = "Mauser, 5 Round Clip, Ball";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 5 Rounds, Ball<br/>For use in Mauser type rifles";
-        ammo = "LIB_B_792x57_Ball_NoCartridge";
+        ammo = "LIB_B_792x57_Ball_SmE_NoCartridge";
         lastRoundsTracer = 0;
         tracersEvery = 0;
         scope = 1;
@@ -150,7 +150,7 @@
         displayName = "Mauser, 4x 5 Round Clips, Ball";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 20 Rounds, Ball<br/>For use in Mauser type rifles";
-        ammo = "LIB_B_792x57_Ball_NoCartridge";
+        ammo = "LIB_B_792x57_Ball_SmE_NoCartridge";
         mass = 7.4;
         tracersEvery = 0;
         lastRoundsTracer = 0;
@@ -170,7 +170,7 @@
         displayName = "K98k, 4x 5 Round Clips, Ball (SmE)";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 20 Rounds, Ball (SmE)<br/>For use in the K98k";
-        ammo = "LIB_B_792x57_Ball_NoCartridge";
+        ammo = "LIB_B_792x57_Ball_SmE_NoCartridge";
         mass = 7.4;
         tracersEvery = 0;
         lastRoundsTracer = 0;
@@ -353,7 +353,7 @@
         displayName = "MG34/MG42, 50 Round Drum, Ball (SmE)";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 50 Rounds, Ball (SmE)<br/>For use in the MG34 or MG42";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 14.55;
         scope = 1;
     };
@@ -371,7 +371,7 @@
         displayName = "MG34/MG42, 250 Round Belt, Ball (SmE)";
         displayNameShort = "7.92x57mm Ball (SmE)";
         descriptionShort = "7.92x57mm, 250 Rounds, Ball (SmE)<br/>For use in the MG34 or MG42";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 72.75;
         scope = 1;
     };
@@ -389,7 +389,7 @@
         displayName = "MG30, 30 Round Magazine, Ball (sS Patrone)";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 30 Round Magazine, Ball (sS Patrone)<br/>For use in the MG30";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 14.55;
     };
 
@@ -405,7 +405,7 @@
         displayName = "vz. 26, 20 Round Magazine, Ball";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 20 Rounds, Ball<br/>For use in the vz. 26";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 5.94;
     };
 
@@ -413,7 +413,7 @@
         displayName = "vz. 26, 30 Round Magazine, Ball";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 30 Rounds, Ball<br/>For use in the vz. 26";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 8.91;
     };
 
@@ -437,7 +437,7 @@
         displayName = "Solothurn 31.M, 30 Round Magazine, Ball";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 30 Round Magazine, Ball<br/>For use in the Solothurn 31.M";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 14.55;
     };
 // End MG magazines
@@ -547,7 +547,7 @@
         displayName = "MG34/MG42, 250 Round Belt";
         displayNameShort = "MG34/MG42, 250 Rounds";
         descriptionShort = "MG34/MG42, 250 Round Belt";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 72.75;
         scope = 1;
     };
@@ -565,7 +565,7 @@
         displayName = "MG34/MG42, 250 Round Belt";
         displayNameShort = "MG34/MG42, 250 Rounds";
         descriptionShort = "MG34/MG42, 250 Round Belt";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 72.75;
     };
 
@@ -581,7 +581,7 @@
         displayName = "MG34/MG42, 250 Round Belt";
         displayNameShort = "MG34/MG42, 250 Rounds";
         descriptionShort = "MG34/MG42, 250 Round Belt";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 72.75;
     };
 
@@ -597,7 +597,7 @@
         displayName = "MG34/MG42, 250 Round Belt";
         displayNameShort = "MG34/MG42, 250 Rounds";
         descriptionShort = "MG34/MG42, 250 Round Belt";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 72.75;
     };
 
@@ -613,7 +613,7 @@
         displayName = "vz. 7/24, 250 Round Belt";
         displayNameShort = "vz. 7/24, 250 Rounds";
         descriptionShort = "vz. 7/24, 250 Round Belt";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 72.75;
     };
 
@@ -629,7 +629,7 @@
         displayName = "ZB-53, 300 Round Magazine";
         displayNameShort = "ZB-53, 300 Rounds";
         descriptionShort = "7.92x57mm, 300 Rounds<br/>For use in the ZB-53";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 87.3;
     };
 
@@ -637,7 +637,7 @@
         displayName = "ZB-53, 300 Round Magazine";
         displayNameShort = "ZB-53, 300 Rounds";
         descriptionShort = "7.92x57mm, 300 Rounds<br/>For use in the ZB-53";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 87.3;
     };
 
@@ -661,7 +661,7 @@
         displayName = "ZB-53, 100 Round Magazine";
         displayNameShort = "ZB-53, 100 Rounds";
         descriptionShort = "7.92x57mm, 100 Rounds<br/>For use in the ZB-53";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 29.1;
     };
 
@@ -669,7 +669,7 @@
         displayName = "ZB-53, 100 Round Magazine";
         displayNameShort = "ZB-53, 100 Rounds";
         descriptionShort = "7.92x57mm, 100 Rounds<br/>For use in the ZB-53";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 29.1;
     };
 
@@ -693,7 +693,7 @@
         displayName = "ZB-53, 200 Round Magazine";
         displayNameShort = "ZB-53, 200 Rounds";
         descriptionShort = "7.92x57mm, 200 Rounds<br/>For use in the ZB-53";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 58.2;
     };
 
@@ -701,7 +701,7 @@
         displayName = "ZB-53, 200 Round Magazine";
         displayNameShort = "ZB-53, 200 Rounds";
         descriptionShort = "7.92x57mm, 200 Rounds<br/>For use in the ZB-53";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 58.2;
     };
 

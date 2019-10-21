@@ -1,23 +1,172 @@
 ﻿
     class LIB_Bullet_base;
 
-    class LIB_B_762x54_Ball_t46;
+    //762x54
+    class LIB_B_762x54_Ball;
+    class LIB_B_762x54_Mixed_t30 : LIB_B_762x54_Ball {
+        tracerScale = 1;
+        tracerStartTime = 0.075;
+        tracerEndTime = 2;
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_white.p3d";
+    };
+    class LIB_B_762x54_Mixed_t46 : LIB_B_762x54_Ball {
+        tracerScale = 1;
+        tracerStartTime = 0.075;
+        tracerEndTime = 2;
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_red.p3d";
+    };
 
+    class LIB_B_762x54_Ball_NoCartridge;
+    class LIB_B_762x54_Mixed_t30_NoCartridge : LIB_B_762x54_Ball_NoCartridge {
+        tracerScale = 1;
+        tracerStartTime = 0.075;
+        tracerEndTime = 2;
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_white.p3d";
+    };
+    class LIB_B_762x54_Mixed_t46_NoCartridge : LIB_B_762x54_Ball_NoCartridge {
+        tracerScale = 1;
+        tracerStartTime = 0.075;
+        tracerEndTime = 2;
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_red.p3d";
+    };
+
+    class LIB_B_762x54_Ball_D;
+    class LIB_B_762x54_Mixed_D_t30 : LIB_B_762x54_Ball_D {
+        tracerScale = 1;
+        tracerStartTime = 0.075;
+        tracerEndTime = 2;
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_white.p3d";
+    };
+    class LIB_B_762x54_Mixed_D_t46 : LIB_B_762x54_Ball_D {
+        tracerScale = 1;
+        tracerStartTime = 0.075;
+        tracerEndTime = 2;
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_red.p3d";
+    };
+
+    class LIB_B_762x54_Ball_D_NoCartridge;
+    class LIB_B_762x54_Mixed_D_t30_NoCartridge : LIB_B_762x54_Ball_D_NoCartridge {
+        tracerScale = 1;
+        tracerStartTime = 0.075;
+        tracerEndTime = 2;
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_white.p3d";
+    };
+    class LIB_B_762x54_Mixed_D_t46_NoCartridge : LIB_B_762x54_Ball_D_NoCartridge {
+        tracerScale = 1;
+        tracerStartTime = 0.075;
+        tracerEndTime = 2;
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_red.p3d";
+    };
+
+    class LIB_B_762x54_Ball_b30;
+    class LIB_B_762x54_Mixed_b30_t30 : LIB_B_762x54_Ball_b30 {
+        tracerScale = 1;
+        tracerStartTime = 0.075;
+        tracerEndTime = 2;
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_white.p3d";
+    };
+    class LIB_B_762x54_Mixed_b30_t46 : LIB_B_762x54_Ball_b30 {
+        tracerScale = 1;
+        tracerStartTime = 0.075;
+        tracerEndTime = 2;
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_red.p3d";
+    };
+    class LIB_B_762x54_Ball_b30_NoCartridge;
+    class LIB_B_762x54_Mixed_b30_t30_NoCartridge : LIB_B_762x54_Ball_b30_NoCartridge {
+        tracerScale = 1;
+        tracerStartTime = 0.075;
+        tracerEndTime = 2;
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_white.p3d";
+    };
+    class LIB_B_762x54_Mixed_b30_t46_NoCartridge : LIB_B_762x54_Ball_b30_NoCartridge {
+        tracerScale = 1;
+        tracerStartTime = 0.075;
+        tracerEndTime = 2;
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_red.p3d";
+    };
+    class LIB_B_762x54_Ball_t30 : LIB_B_762x54_Ball {
+        cartridge = "LIB_762x54R_Cartridge";
+    };
+    class LIB_B_762x54_Ball_t30_NoCartridge;
+    class LIB_B_762x54_Ball_t30c;
+
+    class LIB_B_762x54_Ball_t46 : LIB_B_762x54_Ball {
+        cartridge = "LIB_762x54R_Cartridge";
+    };
     class LIB_B_762x54_Ball_t46_NoCartridge : LIB_B_762x54_Ball_t46 {
         cartridge = "";
     };
 
+    class LIB_B_762x54_Ball_t46c;
+
+    //.30-06
+    class LIB_B_762x63_Ball;
+    class LIB_B_762x63_Mixed_Ball_Tracer : LIB_B_762x63_Ball {};
+
+    class LIB_B_762x63_Ball_NoCartridge : LIB_B_762x63_Ball {};
+    class LIB_B_762x63_Mixed_Ball_Tracer_NoCartridge : LIB_B_762x63_Ball_NoCartridge {
+        cartridge = "";
+    };
+
+    class LIB_B_762x63_Ball_M1 : LIB_B_762x63_Ball {};
+    class LIB_B_762x63_Mixed_HeavyBall_Tracer : LIB_B_762x63_Ball_M1 {};
+
+    class LIB_B_762x63_Ball_M1_NoCartridge : LIB_B_762x63_Ball_M1 {};
+    class LIB_B_762x63_Mixed_HeavyBall_Tracer_NoCartridge : LIB_B_762x63_Ball_M1_NoCartridge {
+        cartridge = "";
+    };
+
+    class LIB_B_762x63_Ball_M2_AP : LIB_B_762x63_Ball {};
+    class LIB_B_762x63_Mixed_AP_Tracer : LIB_B_762x63_Ball_M2_AP {};
+
+    class LIB_B_762x63_Ball_M2_AP_NoCartridge : LIB_B_762x63_Ball_M2_AP {};
+    class LIB_B_762x63_Mixed_AP_Tracer_NoCartridge : LIB_B_762x63_Ball_M2_AP_NoCartridge {
+        cartridge = "";
+    };
+
+    class LIB_B_762x63_Ball_t;
+    class LIB_B_762x63_Ball_NoCartridge_t;
+
+    //792x57
+    class LIB_B_792x57_Ball;
     class LIB_B_792x57_Ball_NoCartridge;
 
+    class LIB_B_792x57_Ball_SmE;
+    class LIB_B_792x57_Mixed_SmE : LIB_B_792x57_Ball_SmE {};
+
+    class LIB_B_792x57_Ball_SmE_NoCartridge;
+    class LIB_B_792x57_Mixed_SmE_NoCartridge : LIB_B_792x57_Ball_SmE_NoCartridge {
+        cartridge = "";
+    };
+
+    class LIB_B_792x57_Ball_sS;
+    class LIB_B_792x57_Mixed_sS : LIB_B_792x57_Ball_sS {};
+
+    class LIB_B_792x57_Ball_sS_NoCartridge;
+    class LIB_B_792x57_Mixed_sS_NoCartridge : LIB_B_792x57_Ball_sS_NoCartridge {
+        cartridge = "";
+    };
+
+    class LIB_B_792x57_Ball_SMK;
+    class LIB_B_792x57_Mixed_SMK : LIB_B_792x57_Ball_SMK {};
+
+    class LIB_B_792x57_Ball_SMK_NoCartridge;
+    class LIB_B_792x57_Mixed_S_NoCartridge : LIB_B_792x57_Ball_SMK_NoCartridge {
+        cartridge = "";
+    };
+
+    class LIB_B_792x57_Ball_t : LIB_B_792x57_Ball {};
     class LIB_B_792x57_Ball_t_NoCartridge : LIB_B_792x57_Ball_NoCartridge {
         cartridge = "";
     };
 
-    class LIB_B_792x57_Ball;
+    // .303
+    class LIB_B_770x56_Ball;
+    class LIB_B_770x56_Ball_NoCartridge;
 
-    class LIB_B_792x57_Ball_t : LIB_B_792x57_Ball {};
-
-    class LIB_B_770x56_Ball_NoCartridge; // .303
+    class LIB_B_770x56_Ball_AP : LIB_B_770x56_Ball {
+        caliber = 1.16;
+    };
 
     class LIB_B_770x56_Ball_NoCartridge_AP : LIB_B_770x56_Ball_NoCartridge {
         caliber = 1.16;
@@ -25,33 +174,32 @@
 
     class LIB_B_77x58_Ball_NoCartridge : LIB_B_770x56_Ball_NoCartridge {
         cartridge = "";
-};
-
-    class LIB_B_770x56_Ball; // .303
-
-    class LIB_B_770x56_Ball_AP : LIB_B_770x56_Ball {
-        caliber = 1.16;
     };
 
     class LIB_B_77x58_Ball : LIB_B_770x56_Ball {};
 
-    class LIB_B_765x17_Ball : LIB_Bullet_base { // .32 ACP
+    // .32 ACP
+    class LIB_B_765x17_Ball : LIB_Bullet_base {
         hit = 2.8;
     };
 
-    class LIB_B_9x17_Ball : LIB_B_765x17_Ball { // .380 ACP
+    // .380 ACP
+    class LIB_B_9x17_Ball : LIB_B_765x17_Ball {
         hit = 3.2;
     };
 
-    class LIB_B_765x20_Ball : LIB_B_765x17_Ball { // 7.65x20mm Longue
+    // 7.65x20mm Longue
+    class LIB_B_765x20_Ball : LIB_B_765x17_Ball {
         hit = 3;
     };
 
-    class LIB_B_635x16_Ball : LIB_B_765x17_Ball { // .25 ACP
+    // .25 ACP
+    class LIB_B_635x16_Ball : LIB_B_765x17_Ball {
         hit = 2.4;
     };
 
-    class LIB_B_38_200_Ball : LIB_B_765x17_Ball { // .38/200
+    // .38/200
+    class LIB_B_38_200_Ball : LIB_B_765x17_Ball {
         hit = 3;
     };
 

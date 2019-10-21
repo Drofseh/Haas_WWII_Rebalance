@@ -84,7 +84,7 @@
         displayName = "G43, 10 Round Magazine, Ball (SmE)";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 10 Rounds, Ball (SmE)<br/>For use in the G43";
-        ammo = "LIB_B_792x57_Ball_NoCartridge";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 3.26;
         scope = 1;
     };
@@ -136,7 +136,7 @@
         displayName = "K98k, 5 Round Clip, Ball (SmE)";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 5 Rounds, Ball (SmE)<br/>For use in the K98k";
-        ammo = "LIB_B_792x57_Ball_NoCartridge";
+        ammo = "LIB_B_792x57_Ball_SmE_NoCartridge";
         mass = 1.85;
         scope = 1;
     };
@@ -145,7 +145,7 @@
         displayName = "FG42, 20 Round Magazine, Ball (SmE)";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 20 Rounds, Ball (SmE)<br/>For use in the FG42";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 6.52;
         scope = 1;
     };
@@ -366,7 +366,7 @@
         displayName = "MG34/MG42, 50 Round Drum, Ball (SmE)";
         displayNameShort = "7.92x57mm Ball";
         descriptionShort = "7.92x57mm, 50 Rounds, Ball (SmE)<br/>For use in the MG34 or MG42";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 14.55;
         scope = 1;
         ace_isbelt = 1;
@@ -622,7 +622,7 @@
     class fow_200Rnd_792x57 : VehicleMagazine {
         displayName = "MG34/MG42, 200 Round Belt, Ball (SmE)";
         displayNameShort = "7.92x57mm Ball";
-        ammo = "LIB_B_792x57_Ball";
+        ammo = "LIB_B_792x57_Ball_SmE";
     };
 /*
     class fow_20Rnd_20mm_AP : VehicleMagazine {
@@ -651,6 +651,7 @@
     class fow_250Rnd_792x57 : VehicleMagazine {
         displayName = "MG34/MG42, 250 Round Belt, Ball (SmE)";
         descriptionShort = "7.92x57mm, 250 Rounds, Ball (SmE)<br/>For use in the MG34 or MG42";
+        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 72.75;
         count = 250;
         scope = 1;
