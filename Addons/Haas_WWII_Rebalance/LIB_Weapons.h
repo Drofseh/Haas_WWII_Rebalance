@@ -83,9 +83,9 @@
     class LIB_M712_2PzD : LIB_M1896 {
         displayName = "M712 Schnellfeuer";
         descriptionShort = "M712 Schnellfeuer a select fire version of the M1930 C-96 Mauser pistol in 7.63x25mm Mauser";
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"LIB_20Rnd_763x25_2PzD"};
-        magazineWell[] = {"CBA_763x25_C96","CBA_763x25_M712"};
+        magazineWell[] = {"CBA_763x25_M712","CBA_763x25_C96"};
         modes[] = {"Single","Full"};
         recoil = "recoil_2PzD_pistol_light";
         class Eventhandlers : Eventhandlers {
@@ -157,7 +157,7 @@
         descriptionShort = "Walther Polizeipistole Kriminalmodell in .32 ACP";
         dispersion = MOA_TO_RAD(15);
         magazines[] = {"LIB_7Rnd_9x19"};
-        magazineWell[] = {"CBA_32ACP_PPK"};
+        magazineWell[] = {"CBA_32ACP_PPK","CBA_32ACP_PP"};
         recoil = "recoil_2PzD_pistol_medium";
         scope = 2;
         class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -204,7 +204,7 @@
         displayName = "De Lisle Carbine";
         descriptionShort = "De Lisle Carbine";
         dispersion = MOA_TO_RAD(6);
-        magazines[] = {"LIB_7Rnd_45ACP_DeLisle","LIB_7Rnd_45ACP_2PzD","LIB_11Rnd_45ACP_2PzD"};
+        magazines[] = {"LIB_7Rnd_45ACP_2PzD"};
         magazineWell[] = {"CBA_45ACP_Delisle"};
         recoil = "recoil_2PzD_rifle_light";
         class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -218,8 +218,10 @@
     class LIB_FG42G : LIB_RIFLE {
         displayName = "FG42 Ausf.G";
         descriptionShort = "Fallschirmjagergewehr 42 Ausfuhrung G";
+        discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200};
+        discreteDistanceInitIndex = 1;
         dispersion = MOA_TO_RAD(4);
-        // fow_burstLength = 3;
+        // fow_burstLength = 2;
         magazines[] = {"LIB_20Rnd_792x57"};
         magazineWell[] = {"CBA_792x57_FG42"};
         modes[] = {"Single","Full","Far","Medium","Short"};
@@ -472,7 +474,7 @@
     class LIB_M2_Carbine_2PzD : LIB_M1_Carbine {
         displayName = "M2 Carbine";
         descriptionShort = "Carbine, Cal .30, M2";
-        fow_burstLength = 2;
+        fow_burstLength = 1;
         magazines[] = {"LIB_15Rnd_762x33"};
         magazineWell[] = {"CBA_30Carbine_M1Carbine"};
         modes[] = {"Single","Full","Far","Medium","Short"};
@@ -626,7 +628,7 @@
         discreteDistance[] = {100,200,300,400,500,600,700,800};
         discreteDistanceInitIndex = 1;
         dispersion = MOA_TO_RAD(7);
-        // fow_burstLength = 3;
+        // fow_burstLength = 2;
         magazines[] = {"LIB_30Rnd_792x33"};
         magazineWell[] = {"CBA_792x33_StG"};
         modes[] = {"Single","Full","Far","Medium","Short"};
@@ -686,7 +688,7 @@
     class LIB_AVT_40_2PzD : LIB_SVT_40 {
         displayName = "AVT-40";
         descriptionShort = "AVT-40";
-        // fow_burstLength = 3;
+        // fow_burstLength = 2;
         modes[] = {"Single","Full","Far","Medium","Short"};
         /*class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -735,7 +737,7 @@
         descriptionShort = "Submachine Gun, Caliber .45, M1A1";
         discreteDistanceInitIndex = 0;
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"LIB_30Rnd_45ACP"};
         magazineWell[] = {"CBA_45ACP_Thompson_Stick"};
         recoil = "recoil_2PzD_smg_heavy";
@@ -768,7 +770,7 @@
     class LIB_M1928_Thompson : LIB_M1A1_Thompson {
         displayName = "M1928 Thompson";
         descriptionShort = "Submachine Gun, Caliber .45, M1928";
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"LIB_20Rnd_45ACP_M1_2PzD"};
         magazineWell[] = {"CBA_45ACP_Thompson_Stick","CBA_45ACP_Thompson_Drum"};
         recoil = "recoil_2PzD_smg_medium";
@@ -809,7 +811,7 @@
     class LIB_M1928_Thompson_d : LIB_M1928_Thompson {
         displayName = "M1928 Thompson (Drum)";
         descriptionShort = "Submachine Gun, Caliber .45, M1928 with drum magazine";
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"LIB_50Rnd_45ACP"};
         magazineWell[] = {"CBA_45ACP_Thompson_Drum","CBA_45ACP_Thompson_Stick"};
         recoil = "recoil_2PzD_smg_medium";
@@ -826,7 +828,7 @@
     class LIB_M1928A1_Thompson : LIB_M1928_Thompson {
         displayName = "M1928A1 Thompson";
         descriptionShort = "Submachine Gun, Caliber .45, M1928A1";
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"LIB_20Rnd_45ACP_M1_2PzD"};
         magazineWell[] = {"CBA_45ACP_Thompson_Stick","CBA_45ACP_Thompson_Drum"};
         recoil = "recoil_2PzD_smg_medium";
@@ -848,7 +850,7 @@
         descriptionShort = "Submachine Gun, Caliber .45, M3";
         discreteDistanceInitIndex = 0;
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"LIB_30Rnd_M3_GreaseGun_45ACP"};
         magazineWell[] = {"CBA_45ACP_Grease"};
         modes[] = {"Full","Far","Medium","Short"};
@@ -882,7 +884,7 @@
         discreteDistance[] = {100,200};
         discreteDistanceInitIndex = 0;
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"LIB_32Rnd_9x19"};
         magazineWell[] = {"CBA_9x19_MP40"};
         recoil = "recoil_2PzD_smg_medium";
@@ -906,7 +908,7 @@
         discreteDistance[] = {100,200};
         discreteDistanceInitIndex = 0;
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"LIB_32Rnd_9x19"};
         magazineWell[] = {"CBA_9x19_MP40"};
         recoil = "recoil_2PzD_smg_medium";
@@ -937,7 +939,7 @@
         displayName = "PPSh-41";
         descriptionShort = "Pistolet-Pulemyot Shpagina 41 with stick magazine";
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 5;
+        fow_burstLength = 4;
         magazines[] = {"lib_35Rnd_762x25"};
         magazineWell[] = {"CBA_762x25_PPSh_Stick","CBA_762x25_PPSh_Drum"};
         modes[] = {"Full","Single","Far","Medium","Short"};
@@ -972,7 +974,7 @@
     class LIB_PPSh41_d : LIB_PPSh41_m {
         displayName = "PPSh-41 (Drum)";
         descriptionShort = "Pistolet-Pulemyot Shpagina 41 with drum magazine";
-        fow_burstLength = 5;
+        fow_burstLength = 4;
         magazines[] = {"lib_71Rnd_762x25"};
         magazineWell[] = {"CBA_762x25_PPSh_Drum","CBA_762x25_PPSh_Stick"};
         modes[] = {"Full","Single","Far","Medium","Short"};
@@ -992,7 +994,7 @@
         displayName = "Sten Mk II";
         descriptionShort = "Sten Mk II";
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"LIB_32Rnd_9x19_Sten"};
         magazineWell[] = {"CBA_9x19_STEN"};
         modes[] = {"Full","Single","Far","Medium","Short"};
@@ -1025,7 +1027,7 @@
         displayName = "Bren Gun Mk II";
         descriptionShort = "BREN L.M.G. Mk II";
         dispersion = MOA_TO_RAD(3);
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"LIB_30Rnd_770x56"};
         magazineWell[] = {"CBA_303B_BREN"};
         recoil = "recoil_2PzD_mmg_1";
@@ -1054,7 +1056,7 @@
         discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
         discreteDistanceInitIndex = 2;
         dispersion = MOA_TO_RAD(4);
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"LIB_47Rnd_762x54"};
         magazineWell[] = {"CBA_762x54R_DPM"};
         recoil = "recoil_2PzD_mmg_1";
@@ -1085,7 +1087,7 @@
         displayName = "DT";
         descriptionShort = "Degtyaryova Tankovy Machine Gun";
         dispersion = MOA_TO_RAD(4);
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"LIB_63Rnd_762x54"};
         magazineWell[] = {"CBA_762x54R_DT"};
         recoil = "recoil_2PzD_mmg_1";
@@ -1115,7 +1117,7 @@
     class LIB_DT_OPTIC : LIB_DT {
         displayName = "DT (Optic)";
         descriptionShort = "Degtyaryova Tankovy Machine Gun with optic";
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"LIB_63Rnd_762x54"};
         magazineWell[] = {"CBA_762x54R_DT"};
         recoil = "recoil_2PzD_mmg_1";
@@ -1135,7 +1137,7 @@
         discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
         discreteDistanceInitIndex = 0;
         dispersion = MOA_TO_RAD(3);
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"LIB_20Rnd_762x63"};
         magazineWell[] = {"CBA_3006_BAR"};
         recoil = "recoil_2PzD_rifle_auto_1";
@@ -1171,7 +1173,7 @@
         displayName = "M1919A4";
         descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A4";
         dispersion = MOA_TO_RAD(4);
-        fow_burstLength = 8;
+        fow_burstLength = 4;
         magazines[] = {"LIB_250Rnd_762x63_2PzD"};
         magazineWell[] = {"CBA_3006_Belt"};
         recoil = "recoil_2PzD_mmg_1";
@@ -1200,7 +1202,7 @@
     class LIB_M1919A6 : LIB_M1919A4 {
         displayName = "M1919A6";
         descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A6";
-        fow_burstLength = 8;
+        fow_burstLength = 4;
         magazines[] = {"LIB_250Rnd_762x63_2PzD"};
         magazineWell[] = {"CBA_3006_Belt"};
         recoil = "recoil_2PzD_mmg_1";
@@ -1221,7 +1223,7 @@
         // discreteDistanceCameraPoint[] = {"eye","eye_200","eye_300","eye_400","eye_500","eye_600","eye_700","eye_800","eye_900","eye_1000"};
         discreteDistanceInitIndex = 2;
         dispersion = MOA_TO_RAD(4);
-        fow_burstLength = 6;
+        fow_burstLength = 5;
         magazines[] = {"lib_50Rnd_792x57"};
         magazineWell[] = {"CBA_792x57_LINKS"};
         modes[] = {"Full","Single","Far","Medium","Short"};
@@ -1266,7 +1268,7 @@
     class LIB_MG34_PT : LIB_MG34 {
         displayName = "MG34 (PT34)";
         descriptionShort = "Maschinengewehr 34";
-        fow_burstLength = 6;
+        fow_burstLength = 5;
         magazines[] = {"LIB_75Rnd_792x57"};
         magazineWell[] = {"CBA_792x57_TROMMEL"};
         modes[] = {"Full","Single","Far","Medium","Short"};
@@ -1304,7 +1306,7 @@
         displayName = "MG42";
         descriptionShort = "Maschinengewehr 42";
         dispersion = MOA_TO_RAD(5);
-        fow_burstLength = 8;
+        fow_burstLength = 7;
         magazines[] = {"lib_50Rnd_792x57"};
         magazineWell[] = {"CBA_792x57_LINKS"};
         recoil = "recoil_2PzD_mmg_1";
@@ -1507,7 +1509,7 @@
     class LIB_Laffete_Tripod : LIB_Slung_Static_Weapon_Base {
         displayName = "Lafette Tripod";
         descriptionShort = "Lafette Tripod for the MG34 and MG42";
-        // magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SMK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SMK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SMK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SMK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};
+        // magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SmK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SmK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SmK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SmK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SmK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 440.92;
         };
@@ -1526,7 +1528,7 @@
     class LIB_Maxim_M30 : LIB_MLMG_base {
         displayName = "Maxim Model 1910/30";
         dispersion = MOA_TO_RAD(4);
-        // fow_burstLength = 7;
+        // fow_burstLength = 6;
         recoil = "recoil_rifle_1";
         /*class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -1582,13 +1584,13 @@
     class LIB_MG42_Tripod : LIB_MLMG42 {
         displayName = "MG42 Lafette";
         descriptionShort = "Maschinengewehr 42 on Laffete Tripod";
-        fow_burstLength = 20;
-        magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SMK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SMK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SMK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SMK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};
-        class Eventhandlers : Eventhandlers {
+        //fow_burstLength = 20;
+        magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SmK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SmK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SmK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SmK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SmK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};
+        /*class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
             };
-        };
+        };*/
     };
 
     class LIB_PlaneCannon_base : CannonCore {
@@ -1927,7 +1929,7 @@
         descriptionShort = "Maschinengewehr 34 on Laffete Tripod";
         discreteDistance[] = {200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
         discreteDistanceInitIndex = 2;
-        magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SMK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SMK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SMK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SMK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};
+        magazines[] = {"lib_50Rnd_792x57","lib_50Rnd_792x57_SmK","lib_50Rnd_792x57_sS","LIB_100Rnd_792x57","LIB_100Rnd_792x57_SmK_2PzD","LIB_100Rnd_792x57_sS_2PzD","LIB_150Rnd_792x57_2PzD","LIB_150Rnd_792x57_SmK_2PzD","LIB_150Rnd_792x57_sS_2PzD","LIB_200Rnd_792x57_2PzD","LIB_200Rnd_792x57_SmK_2PzD","LIB_200Rnd_792x57_sS_2PzD","LIB_250Rnd_792x57_2PzD","LIB_250Rnd_792x57_SmK_2PzD","LIB_250Rnd_792x57_sS_2PzD","fow_50Rnd_792x57","fow_250Rnd_792x57"};
 
     };
 
@@ -1958,7 +1960,7 @@
     class LIB_M1919A4_tripod : LIB_MLMG_base {
         displayName = "M1919A4 on M2 Tripod";
         descriptionShort = "Gun, Machine, Caliber .30, Browning, M1919A4 on M2 Tripod";
-        // fow_burstLength = 7;
+        // fow_burstLength = 6;
         magazines[] = {"LIB_250Rnd_762x63_2PzD","LIB_200Rnd_762x63_2PzD","LIB_150Rnd_762x63_2PzD","LIB_100Rnd_762x63","LIB_50Rnd_762x63","fow_250Rnd_M1919_2PzD","fow_200Rnd_M1919_2PzD","fow_150Rnd_M1919_2PzD","fow_100Rnd_M1919_2PzD","fow_50Rnd_M1919"};
         recoil = "recoil_rifle_1";
         /*class Eventhandlers : Eventhandlers {

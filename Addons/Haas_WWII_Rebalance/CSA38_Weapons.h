@@ -1088,7 +1088,7 @@
     class csa38_kpvz38P : csa38_SMG {
         displayname = "vz. 38";
         descriptionShort = "Kulometná Pistole vz. 38 with stick magazine";
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"csa38_9_mm_36xBrowning"};
         magazineWell[] = {"CBA_380ACP_Vz38SMG"};
         recoil = "recoil_2PzD_smg_light";
@@ -1128,7 +1128,7 @@
     class csa38_mas38 : csa38_SMG {
         displayname = "MAS 38";
         descriptionShort = "MAS 38, known as the MP722(f) in Wehrmacht service";
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"CSA38_mas38mag"};
         magazineWell[] = {"CBA_765x20mmLongue_MAS38"};
         recoil = "recoil_2PzD_smg_light";
@@ -1162,7 +1162,7 @@
     class CSA38_Mp18 : csa38_SMG {
         displayname = "MP18";
         descriptionShort = "Maschinenpistole 18";
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"csa38_9_MM_32xMP18"};
         magazineWell[] = {"CBA_9x19_P08"};
         recoil = "recoil_2PzD_smg_medium";
@@ -1212,7 +1212,7 @@
     class CSA38_Mp28 : CSA38_Mp18 {
         displayname = "MP28";
         descriptionShort = "Maschinenpistole 28/II";
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"csa38_9_MM_32xMP28"};
         magazineWell[] = {"CBA_9x19_MP28"};
         class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -1256,7 +1256,7 @@
     class CSA38_Mp35 : CSA38_Mp28 {
         displayname = "MP35";
         descriptionShort = "Maschinenpistole 35";
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"csa38_9_MM_32xMP35"};
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 93.48;
@@ -1324,7 +1324,7 @@
         displayName = "MP38 (Folded)";
         descriptionShort = "Maschinenpistole 38 with stock folded";
         discreteDistance[] = {100,200};
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"csa38_9_MM_32xPARA"};
         magazineWell[] = {"CBA_9x19_MP40"};
         recoil = "recoil_2PzD_smg_heavy";
@@ -1471,7 +1471,7 @@
         displayName = "Sten Mk II";
         descriptionShort = "Sten Mk II";
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"csa38_32_9x19"};
         magazineWell[] = {"CBA_9x19_STEN"};
         recoil = "recoil_2PzD_smg_medium";
@@ -1556,7 +1556,7 @@
         displayName = "Bren Gun Mk II";
         descriptionShort = "BREN L.M.G. Mk II";
         dispersion = MOA_TO_RAD(3);
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"CSA38_7_7_30x56R"};
         magazineWell[] = {"CBA_303B_BREN"};
         recoil = "recoil_2PzD_mmg_1";
@@ -1655,7 +1655,7 @@
         displayName = "vz. 7/24";
         descriptionShort = "Schwarzlose-Janeček vz. 7/24";
         dispersion = MOA_TO_RAD(4);
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"CSA38_TKVZ24mag","CSA38_TKVZ24mag2"};
         magazineWell[] = {"CBA_792x57_vz7_24"};
         recoil = "recoil_2PzD_mmg_1";
@@ -1686,7 +1686,7 @@
         displayName = "vz. 37";
         descriptionShort = "vz. 37, known as the MG 37(t) in Wehrmacht service";
         dispersion = MOA_TO_RAD(4);
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"CSA38_ZB53mg5", "CSA38_ZB53mg6"};
         magazineWell[] = {"CBA_792x57_ZB53"};
         modes[] = {"FullAuto","FastAuto","close","short","medium","far"};
@@ -1734,7 +1734,7 @@
         displayName = "vz. 26";
         descriptionShort = "vz. 26, known as the MG 26(t) in Wehrmacht service";
         dispersion = MOA_TO_RAD(3);
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"CSA38_7_92_20xMauser","CSA38_7_92_20xMauser2"};
         magazineWell[] = {"CBA_792x57_ZB26"};
         recoil = "recoil_2PzD_mmg_1";
@@ -1790,7 +1790,7 @@
         displayName = "MG30";
         descriptionShort = "Maschinengewehr 30";
         dispersion = MOA_TO_RAD(3);
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"CSA38_7_92_30xMauserMG","CSA38_7_92_30xMauserMGAP"};
         magazineWell[] = {"CBA_792x57_MG30"};
         recoil = "recoil_2PzD_mmg_1";
@@ -1833,7 +1833,7 @@
         discreteDistance[] = {200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
         discreteDistanceInitIndex = 1;
         dispersion = MOA_TO_RAD(4);
-        fow_burstLength = 6;
+        fow_burstLength = 5;
         magazines[] = {"CSA38_7_92_30xMauserMG","CSA38_7_92_30xMauserMGAP"};
         magazineWell[] = {"CBA_792x57_LINKS"};
         recoil = "recoil_2PzD_mmg_1";
@@ -1933,7 +1933,7 @@
         discreteDistance[] = {200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
         discreteDistanceInitIndex = 1;
         dispersion = MOA_TO_RAD(4);
-        magazines[] = {"CSA38_MG34mg","CSA38_MG34mg2","CSA38_MG34mg3","CSA38_MG34mg4","CSA38_MG34mgAP","CSA38_MG34mg2AP","CSA38_MG34mg3AP","CSA38_MG34mg4AP","lib_250Rnd_792x57","lib_250Rnd_792x57_sS","lib_250Rnd_792x57_SMK","LIB_50Rnd_792x57_Veh","LIB_100Rnd_792x57","LIB_50Rnd_792x57","lib_50Rnd_792x57_SMK","lib_50Rnd_792x57_sS"};
+        magazines[] = {"CSA38_MG34mg","CSA38_MG34mg2","CSA38_MG34mg3","CSA38_MG34mg4","CSA38_MG34mgAP","CSA38_MG34mg2AP","CSA38_MG34mg3AP","CSA38_MG34mg4AP","lib_250Rnd_792x57","lib_250Rnd_792x57_sS","lib_250Rnd_792x57_SmK","LIB_50Rnd_792x57_Veh","LIB_100Rnd_792x57","LIB_50Rnd_792x57","lib_50Rnd_792x57_SmK","lib_50Rnd_792x57_sS"};
         magazineWell[] = {"CBA_792x57_LINKS"};
         recoil = "recoil_2PzD_mmg_1";
         class manual : CSA38_HMGA3_base {

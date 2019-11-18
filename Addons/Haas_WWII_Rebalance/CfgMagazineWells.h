@@ -8,31 +8,37 @@
 
     class CBA_762x25_PPS {                      // PPS-43
         LEN_mags[] = {
-            "LEN_35Rnd_762x25_2PzD"
+            "LEN_35Rnd_762x25_2PzD",
+            "LEN_35Rnd_762x25_APT_2PzD",
+            "LEN_35Rnd_762x25_Tracer_2PzD",
+            "LEN_35Rnd_762x25_Mixed_Ball_Tracer_2PzD"
         };
     };
 
     class CBA_762x25_PPSh_Drum {                // PPSh-41 drum magazines
         IFA3_mags[] = {
-            "lib_71Rnd_762x25",
-            "lib_71Rnd_762x25_t",
-            "lib_71Rnd_762x25_t2",
-            "lib_71Rnd_762x25_ap"
+            "LIB_71Rnd_762x25",
+            "LIB_71Rnd_762x25_ap",
+            "LIB_71Rnd_762x25_t",
+            "LIB_71Rnd_762x25_t2"
         };
     };
 
     class CBA_762x25_PPSh_Stick {               // PPSh-41 stick magazines
         IFA3_mags[] = {
-            "lib_35Rnd_762x25",
-            "lib_35Rnd_762x25_t",
-            "lib_35Rnd_762x25_t2",
-            "lib_35Rnd_762x25_ap"
+            "LIB_35Rnd_762x25",
+            "LIB_35Rnd_762x25_ap",
+            "LIB_35Rnd_762x25_t",
+            "LIB_35Rnd_762x25_t2"
         };
     };
 
     class CBA_762x25_TT {                       // TT-30, TT-33 Tokarev
         IFA3_mags[] = {
-            "LIB_8Rnd_762x25"
+            "LIB_8Rnd_762x25",
+            "LIB_8Rnd_762x25_APT_2PzD",
+            "LIB_8Rnd_762x25_Tracer_2PzD",
+            "LIB_8Rnd_762x25_Mixed_Ball_Tracer_2PzD"
         };
     };
 
@@ -47,7 +53,10 @@
             "csa38_7_63mm_10xMauser"
         };
         IFA3_mags[] = {
-            "LIB_10Rnd_763x25_2PzD"
+            "LIB_10Rnd_763x25_2PzD",
+            "LIB_10Rnd_763x25_AP_2PzD",
+            "LIB_10Rnd_763x25_Tracer_2PzD",
+            "LIB_10Rnd_763x25_Mixed_Ball_Tracer_2PzD"
         };
     };
 
@@ -60,7 +69,13 @@
     class CBA_763x25_M712 {                     // Mauser M712 Schnellfeuer in 7.63x25mm
         IFA3_mags[] = {
             "LIB_20Rnd_763x25_2PzD",
-            "LIB_40Rnd_763x25_2PzD"
+            "LIB_20Rnd_763x25_AP_2PzD",
+            "LIB_20Rnd_763x25_Tracer_2PzD",
+            "LIB_20Rnd_763x25_Mixed_Ball_Tracer_2PzD",
+            "LIB_40Rnd_763x25_2PzD",
+            "LIB_40Rnd_763x25_AP_2PzD",
+            "LIB_40Rnd_763x25_Tracer_2PzD",
+            "LIB_40Rnd_763x25_Mixed_Ball_Tracer_2PzD"
         };
     };
 
@@ -90,13 +105,15 @@
 
     class CBA_9x19_C96 {                        // Mauser C-96 in 9x19mm
         IFA3_mags[] = {
-            "LIB_10Rnd_9x19_M1896"
+            "LIB_10Rnd_9x19_M1896",
+            "LIB_10Rnd_9x19_M1896_Tracer_2PzD"
         };
     };
 
     class CBA_9x19_HiPower {                    // Browning HiPower
         FOW_mags[] = {
-            "fow_13Rnd_9x19"
+            "fow_13Rnd_9x19",
+            "fow_13Rnd_9x19_Tracer_2PzD"
         };
         LEN_mags[] = {
             "LEN_13Rnd_9x19"
@@ -105,15 +122,23 @@
 
     class CBA_9x19_MAB38 {                    // Beretta Model 38
         FOW_mags[] = {
-            "fow_30Rnd_9x19_mab"
+            "fow_30Rnd_9x19_mab",
+            "fow_30Rnd_9x19_mab_Tracer_2PzD"
         };
     };
 
     class CBA_9x19_MP28 {                       // MP18 Straight Magazines, MP28, MP35
         CSA38_mags[] = {
-            "csa38_9_MM_20xMP28",
             "csa38_9_MM_32xMP28",
-            "csa38_9_MM_32xMP35"
+            "csa38_9_MM_32xMP28_Tracer_2PzD",
+            "csa38_9_MM_20xMP28",
+            "csa38_9_MM_20xMP28_Tracer_2PzD",
+            "csa38_9_MM_32xMP35",
+            "csa38_9_MM_32xMP35_Tracer_2PzD",
+            "csa38_9_MM_24xMP35_2PzD",
+            "csa38_9_MM_24xMP35_Tracer_2PzD",
+            "csa38_9_MM_20xMP35_2PzD",
+            "csa38_9_MM_20xMP35_Tracer_2PzD"
         };
     };
 
@@ -135,17 +160,20 @@
             "fow_8Rnd_9x19"
         };
         IFA3_mags[] = {
-            "LIB_8Rnd_9x19_P08"
+            "LIB_8Rnd_9x19_P08",
+            "LIB_8Rnd_9x19_P08_Tracer_2PzD"
         };
         CSA38_mags[] = {
             "csa38_9mm_8xLuger",
-            "csa38_9_MM_32xMP18"
+            "csa38_9_MM_32xMP18",
+            "csa38_9_MM_32xMP18_Tracer_2PzD"
         };
     };
 
     class CBA_9x19_P38 {                        // Luger P38
         IFA3_mags[] = {
-            "LIB_8Rnd_9x19"
+            "LIB_8Rnd_9x19",
+            "LIB_8Rnd_9x19_Tracer_2PzD"
         };
     };
 
@@ -154,7 +182,8 @@
             "fow_32Rnd_9x19_sten"
         };
         IFA3_mags[] = {
-            "LIB_32Rnd_9x19_Sten"
+            "LIB_32Rnd_9x19_Sten",
+            "LIB_32rnd_9x19_Sten_Tracer_2PzD"
         };
         LEN_mags[] = {
             "LEN_32Rnd_9x19"
@@ -172,19 +201,23 @@
             "LEN_8Rnd_9x19_2PzD"
         };
         SEP39_mags[] = {
-            "w39_9mm_8xPARAVIS"
+            "w39_9mm_8xPARAVIS",
+            "w39_9mm_8xPARAVIS_Tracer_2PzD"
         };
     };
 
     class CBA_9x19_Welrod {                     // Welrod pistol in 9x19mm
         IFA3_mags[] = {
-            "LIB_6Rnd_9x19_Welrod"
+            "LIB_6Rnd_9x19_Welrod",
+            "LIB_6Rnd_9x19_Welrod_Tracer_2PzD",
+            "LIB_7Rnd_765x17"
         };
     };
 
     class CBA_9x19_wz39Mors {                   // wz. 39 Mors
         SEP39_mags[] = {
-            "w39_9_MM_24xPARA"
+            "w39_9_MM_24xPARA",
+            "w39_9_MM_24xPARA_Tracer_2PzD"
         };
     };
 
@@ -252,7 +285,7 @@
 
     class CBA_380ACP_Vz38Pistol {               // vz. 38 pistol
         CSA38_mags[] = {
-            "csa38_9mm_9xBrowning"
+            "CSA38_9mm_9xBrowning"
         };
     };
 
@@ -268,7 +301,8 @@
             "fow_7Rnd_45acp"
         };
         IFA3_mags[] = {
-            "LIB_7Rnd_45ACP"
+            "LIB_7Rnd_45ACP",
+            "LIB_7Rnd_45ACP_t"
         };
     };
 
@@ -279,7 +313,9 @@
         IFA3_mags[] = {
             "LIB_7Rnd_45ACP_DeLisle",
             "LIB_7Rnd_45ACP_2PzD",
-            "LIB_11Rnd_45ACP_2PzD"
+            "LIB_7Rnd_45ACP_Tracer_2PzD",
+            "LIB_11Rnd_45ACP_2PzD",
+            "LIB_11Rnd_45ACP_Tracer_2PzD"
         };
     };
 
@@ -291,7 +327,8 @@
             "fow_30Rnd_45acp_T"
         };
         IFA3_mags[] = {
-            "LIB_30Rnd_M3_GreaseGun_45ACP"
+            "LIB_30Rnd_M3_GreaseGun_45ACP",
+            "LIB_30Rnd_M3_GreaseGun_t_45ACP"
         };
         LEN_mags[] = {
             "LEN_30Rnd_45ACP_M3"
@@ -301,29 +338,33 @@
     class CBA_45ACP_Reising {                   // M50/M55 Reising
         FOW_mags[] = {
             "fow_20Rnd_45acp",
-            "fow_12Rnd_45acp_2PzD"
+            "fow_20Rnd_45acp_Tracer_2PzD",
+            "fow_12Rnd_45acp_2PzD",
+            "fow_12Rnd_45acp_Tracer_2PzD"
         };
     };
 
     class CBA_45ACP_Thompson_Stick {            // Thompson stick magazines
         FOW_mags[] = {
-            "fow_20Rnd_45acp_M1_2PzD",
-            "fow_20Rnd_45acp_T_M1_2PzD",
             "fow_30Rnd_45acp_M1_2PzD",
             "fow_30Rnd_45acp_T_M1_2PzD",
+            "fow_20Rnd_45acp_M1_2PzD",
+            "fow_20Rnd_45acp_T_M1_2PzD",
             "fow_30Rnd_45acp",
             "fow_30Rnd_45acp_T"
         };
         IFA3_mags[] = {
             "LIB_30Rnd_45ACP",
             "LIB_30Rnd_45ACP_t",
-            "LIB_20Rnd_45ACP_M1_2PzD"
+            "LIB_20Rnd_45ACP_M1_2PzD",
+            "LIB_20Rnd_45ACP_M1_Tracer_2PzD"
         };
     };
 
     class CBA_45ACP_Thompson_Drum {             // Thompson drum magazines
         IFA3_mags[] = {
-            "LIB_50Rnd_45ACP"
+            "LIB_50Rnd_45ACP",
+            "LIB_50Rnd_45ACP_Tracer_2PzD"
         };
     };
 
@@ -347,13 +388,23 @@
         };
         IFA3_mags[] = {
             "LIB_30Rnd_770x56",
-            "LIB_30Rnd_770x56_MKVIII"
+            "LIB_30Rnd_770x56_MKVIII",
+            "LIB_30Rnd_770x56_Mixed_AP_2PzD",
+            "LIB_30Rnd_770x56_Tracer_2PzD",
+            "LIB_30Rnd_770x56_NoTrace_2PzD",
+            "LIB_30Rnd_770x56_MKVIII_NoTrace_2PzD",
+            "LIB_30Rnd_770x56_AP_NoTrace_2PzD"
         };
         CSA38_mags[] = {
             "CSA38_7_7_30x56R",
             "CSA38_7_7_30x56RAP",
             "CSA38_7_7_100x56R",
-            "CSA38_7_7_100x56RAP"
+            "CSA38_7_7_100x56RAP",
+            "CSA38_7_7_100x56R_MKVIII_2PzD",
+            "CSA38_7_7_100x56R_Tracer_2PzD",
+            "CSA38_7_7_100x56R_NoTrace_2PzD",
+            "CSA38_7_7_100x56R_MKVIII_NoTrace_2PzD",
+            "CSA38_7_7_100x56R_AP_NoTrace_2PzD"
         };
     };
 
@@ -363,7 +414,12 @@
         };
         IFA3_mags[] = {
             "LIB_10Rnd_770x56",
-            "LIB_10Rnd_770x56_MkVIII"
+            "LIB_10Rnd_770x56_MkVIII",
+            "LIB_10Rnd_770x56_AP_2PzD",
+            "LIB_10Rnd_770x56_Tracer_2PzD",
+            "LIB_10Rnd_770x56_Mixed_2PzD",
+            "LIB_10Rnd_770x56_Mixed_MkVIII_2PzD",
+            "LIB_10Rnd_770x56_Mixed_AP_2PzD"
         };
         LEN_mags[] = {
             "LEN_10Rnd_303"
@@ -386,7 +442,12 @@
         };
         IFA3_mags[] = {
             "LIB_20Rnd_762x63",
-            "LIB_20Rnd_762x63_M1"
+            "LIB_20Rnd_762x63_M1",
+            "LIB_20Rnd_762x63_Mixed_AP_2PzD",
+            "LIB_20Rnd_762x63_Tracer_2PzD",
+            "LIB_20Rnd_762x63_Ball_M2_NoTrace_2PzD",
+            "LIB_20Rnd_762x63_HeavyBall_M1_NoTrace_2PzD",
+            "LIB_20Rnd_762x63_AP_NoTrace_2PzD"
         };
     };
 
@@ -401,16 +462,41 @@
             "fow_30Rnd_762x63"
         };
         IFA3_mags[] = {
-            "LIB_100Rnd_762x63",
-            "LIB_100Rnd_762x63_M1",
-            "LIB_150Rnd_762x63_2PzD",
-            "LIB_150Rnd_762x63_M1_2PzD",
-            "LIB_200Rnd_762x63_2PzD",
-            "LIB_200Rnd_762x63_M1_2PzD",
             "LIB_250Rnd_762x63_2PzD",
             "LIB_250Rnd_762x63_M1_2PzD",
+            "LIB_250Rnd_762x63_AP_2PzD",
+            "LIB_250Rnd_762x63_TraceOnly_2PzD",
+            "LIB_250Rnd_762x63_NoTrace_2PzD",
+            "LIB_250Rnd_762x63_M1_NoTrace_2PzD",
+            "LIB_250Rnd_762x63_AP_NoTrace_2PzD",
+            "LIB_200Rnd_762x63_2PzD",
+            "LIB_200Rnd_762x63_M1_2PzD",
+            "LIB_200Rnd_762x63_AP_2PzD",
+            "LIB_200Rnd_762x63_TraceOnly_2PzD",
+            "LIB_200Rnd_762x63_NoTrace_2PzD",
+            "LIB_200Rnd_762x63_M1_NoTrace_2PzD",
+            "LIB_200Rnd_762x63_AP_NoTrace_2PzD",
+            "LIB_150Rnd_762x63_2PzD",
+            "LIB_150Rnd_762x63_M1_2PzD",
+            "LIB_150Rnd_762x63_AP_2PzD",
+            "LIB_150Rnd_762x63_TraceOnly_2PzD",
+            "LIB_150Rnd_762x63_NoTrace_2PzD",
+            "LIB_150Rnd_762x63_M1_NoTrace_2PzD",
+            "LIB_150Rnd_762x63_AP_NoTrace_2PzD",
+            "LIB_100Rnd_762x63",
+            "LIB_100Rnd_762x63_M1",
+            "LIB_100Rnd_762x63_AP_2PzD",
+            "LIB_100Rnd_762x63_TraceOnly_2PzD",
+            "LIB_100Rnd_762x63_NoTrace_2PzD",
+            "LIB_100Rnd_762x63_M1_NoTrace_2PzD",
+            "LIB_100Rnd_762x63_AP_NoTrace_2PzD",
             "LIB_50Rnd_762x63",
-            "LIB_50Rnd_762x63_M1"
+            "LIB_50Rnd_762x63_M1",
+            "LIB_50Rnd_762x63_AP_2PzD",
+            "LIB_50Rnd_762x63_TraceOnly_2PzD",
+            "LIB_50Rnd_762x63_NoTrace_2PzD",
+            "LIB_50Rnd_762x63_M1_NoTrace_2PzD",
+            "LIB_50Rnd_762x63_AP_NoTrace_2PzD"
         };
     };
 
@@ -422,7 +508,11 @@
         IFA3_mags[] = {
             "LIB_8Rnd_762x63",
             "LIB_8Rnd_762x63_M1",
-            "LIB_8Rnd_762x63_t"
+            "LIB_8Rnd_762x63_AP_2PzD",
+            "LIB_8Rnd_762x63_t",
+            "LIB_8Rnd_762x63_Mixed_Ball_M2_2PzD",
+            "LIB_8Rnd_762x63_Mixed_HeavyBall_M1_2PzD",
+            "LIB_8Rnd_762x63_Mixed_AP_M2_2PzD"
         };
     };
 
@@ -433,7 +523,11 @@
         IFA3_mags[] = {
             "LIB_5Rnd_762x63",
             "LIB_5Rnd_762x63_M1",
-            "LIB_5Rnd_762x63_t"
+            "LIB_5Rnd_762x63_AP_2PzD",
+            "LIB_5Rnd_762x63_t",
+            "LIB_5Rnd_762x63_Mixed_Ball_M2_2PzD",
+            "LIB_5Rnd_762x63_Mixed_HeavyBall_M1_2PzD",
+            "LIB_5Rnd_762x63_Mixed_AP_M2_2PzD"
         };
     };
 
@@ -449,7 +543,7 @@
             "LIB_15Rnd_762x33",
             "LIB_15Rnd_762x33_t",
             "LIB_30Rnd_762x33_2PzD",
-            "LIB_30Rnd_762x33_t_2PzD"
+            "LIB_30Rnd_762x33_Tracer_2PzD"
         };
     };
 
@@ -461,7 +555,9 @@
 
     class CBA_77x58_Arisaka {                   // Japanese Type 99 Arisaka
         FOW_mags[] = {
-            "fow_5Rnd_77x58"
+            "fow_5Rnd_77x58",
+            "fow_5Rnd_77x58_Tracer_2PzD",
+            "fow_5Rnd_77x58_Mixed_2PzD"
         };
     };
 
@@ -470,21 +566,41 @@
 
     class CBA_77x58_Type99 {                    // Japanese Type 99 LMG
         FOW_mags[] = {
-            "fow_30Rnd_77x58"
+            "fow_30Rnd_77x58",
+            "fow_30Rnd_77x58_Tracer_2PzD",
+            "fow_30Rnd_77x58_noTrace_2PzD"
         };
     };
 
     class CBA_762x54R_DPM {                     // DP-27, DP-28, DPM LMG
         IFA3_mags[] = {
             "LIB_47Rnd_762x54",
-            "LIB_47Rnd_762x54d"
+            "LIB_47Rnd_762x54d",
+            "LIB_47Rnd_762x54_Mixed_AP_t46_2PzD",
+            "LIB_47Rnd_762x54_Mixed_Ball_t30_2PzD",
+            "LIB_47Rnd_762x54_Mixed_HeavyBall_t30_2PzD",
+            "LIB_47Rnd_762x54_Mixed_AP_t30_2PzD",
+            "LIB_47Rnd_762x54_noTrace_2PzD",
+            "LIB_47Rnd_762x54d_noTrace_2PzD",
+            "LIB_47Rnd_762x54_AP_noTrace_2PzD",
+            "LIB_47Rnd_762x54_t30_2PzD",
+            "LIB_47Rnd_762x54_t46_2PzD"
         };
     };
 
     class CBA_762x54R_DT {                      // DT LMG
         IFA3_mags[] = {
             "LIB_63Rnd_762x54",
-            "LIB_63Rnd_762x54d"
+            "LIB_63Rnd_762x54d",
+            "LIB_63Rnd_762x54_Mixed_AP_t46_2PzD",
+            "LIB_63Rnd_762x54_Mixed_Ball_t30_2PzD",
+            "LIB_63Rnd_762x54_Mixed_HeavyBall_t30_2PzD",
+            "LIB_63Rnd_762x54_Mixed_AP_t30_2PzD",
+            "LIB_63Rnd_762x54_noTrace_2PzD",
+            "LIB_63Rnd_762x54d_noTrace_2PzD",
+            "LIB_63Rnd_762x54_AP_noTrace_2PzD",
+            "LIB_63Rnd_762x54_t30_2PzD",
+            "LIB_63Rnd_762x54_t46_2PzD"
         };
     };
 
@@ -494,22 +610,32 @@
     class CBA_762x54R_Mosin {                   // M91/30, M38, M44 Mosin
         IFA3_mags[] = {
             "LIB_5Rnd_762x54",
-            "LIB_5Rnd_762x54_b30",
             "LIB_5Rnd_762x54_D",
+            "LIB_5Rnd_762x54_b30",
             "LIB_5Rnd_762x54_t30",
-            "LIB_5Rnd_762x54_t46"
+            "LIB_5Rnd_762x54_Mixed_Ball_t30_2PzD",
+            "LIB_5Rnd_762x54_Mixed_HeavyBall_t30_2PzD",
+            "LIB_5Rnd_762x54_Mixed_AP_t30_2PzD",
+            "LIB_5Rnd_762x54_t46",
+            "LIB_5Rnd_762x54_Mixed_Ball_t46_2PzD",
+            "LIB_5Rnd_762x54_Mixed_HeavyBall_t46_2PzD",
+            "LIB_5Rnd_762x54_Mixed_AP_t46_2PzD"
         };
     };
 
     class CBA_762x54R_SVT {                     // SVT
         IFA3_mags[] = {
             "LIB_10Rnd_762x54",
+            "LIB_10Rnd_762x54_d",
+            "LIB_10Rnd_762x54_b30",
             "LIB_10Rnd_762x54_t30",
             "LIB_10Rnd_762x54_t302",
+            "LIB_10Rnd_762x54_Mixed_HeavyBall_t30_2PzD",
+            "LIB_10Rnd_762x54_Mixed_AP_t30_2PzD",
             "LIB_10Rnd_762x54_t46",
             "LIB_10Rnd_762x54_t462",
-            "LIB_10Rnd_762x54_d",
-            "LIB_10Rnd_762x54_b30"
+            "LIB_10Rnd_762x54_Mixed_HeavyBall_t46_2PzD",
+            "LIB_10Rnd_762x54_Mixed_AP_t46_2PzD"
         };
     };
 
@@ -534,7 +660,13 @@
             "fow_20Rnd_792x57"
         };
         IFA3_mags[] = {
-            "LIB_20Rnd_792x57"
+            "LIB_20Rnd_792x57",
+            "LIB_20Rnd_792x57_Mixed_SmE_2PzD",
+            "LIB_20Rnd_792x57_sS_2PzD",
+            "LIB_20Rnd_792x57_Mixed_sS_2PzD",
+            "LIB_20Rnd_792x57_SmK_2PzD",
+            "LIB_20Rnd_792x57_Mixed_SmK_2PzD",
+            "LIB_20Rnd_792x57_TraceOnly_2PzD"
         };
         LEN_mags[] = {
             "len_20Rnd_792x57"
@@ -543,7 +675,13 @@
 
     class CBA_792x57_G41 {                      // G41
         IFA3_mags[] = {
-            "LIB_10Rnd_792x57_clip"
+            "LIB_10Rnd_792x57_clip",
+            "LIB_10Rnd_792x57_Mixed_sS_clip_2PzD",
+            "LIB_10Rnd_792x57_SmE_clip_2PzD",
+            "LIB_10Rnd_792x57_Mixed_SmE_clip_2PzD",
+            "LIB_10Rnd_792x57_SmK_clip_2PzD",
+            "LIB_10Rnd_792x57_Mixed_SmK_clip_2PzD",
+            "LIB_10Rnd_792x57_T_clip_2PzD",
         };
     };
 
@@ -552,11 +690,13 @@
             "fow_10nd_792x57"
         };
         IFA3_mags[] = {
-            "lib_10Rnd_792x57",
-            "lib_10Rnd_792x57_T",
-            "lib_10Rnd_792x57_T2",
-            "lib_10Rnd_792x57_sS",
-            "lib_10Rnd_792x57_SMK"
+            "LIB_10Rnd_792x57",
+            "LIB_10Rnd_792x57_T2",
+            "LIB_10Rnd_792x57_sS",
+            "LIB_10Rnd_792x57_Mixed_sS_2PzD",
+            "LIB_10Rnd_792x57_SmK",
+            "LIB_10Rnd_792x57_Mixed_SmK_2PzD",
+            "LIB_10Rnd_792x57_T"
         };
     };
 
@@ -565,17 +705,24 @@
             "fow_5Rnd_792x57"
         };
         IFA3_mags[] = {
-            "lib_5Rnd_792x57",
-            "lib_5Rnd_792x57_t",
-            "lib_5Rnd_792x57_sS",
-            "lib_5Rnd_792x57_SMK"
+            "LIB_5Rnd_792x57",
+            "LIB_5Rnd_792x57_Mixed_SmE_2PzD",
+            "LIB_5Rnd_792x57_sS",
+            "LIB_5Rnd_792x57_Mixed_sS_2PzD",
+            "LIB_5Rnd_792x57_SmK",
+            "LIB_5Rnd_792x57_Mixed_SmK_2PzD",
+            "LIB_5Rnd_792x57_t"
         };
         CSA38_mags[] = {
             "CSA38_7_92_5xMauser",
+            "CSA38_7_92_5xMauser_Mixed_Ball_2PzD",
+            "CSA38_7_92_5xMauser_Tracer_2PzD",
             "CSA38_7_92_5xMauser2",
-            "CSA38_7_92_5xMauserkAR",
-            "CSA38_7_92_5xMauserkAR2",
-            "CSA38_7_92_5xMauser3"
+            "CSA38_7_92_5xMauser2_Mixed_AP_2PzD",
+            "CSA38_7_92_5xMauser3",
+            "CSA38_7_92_5xMauser3_Mixed_Ball_2PzD",
+            "csa38_7_92_5xMauserKAR",
+            "csa38_7_92_5xMauserKAR2"
         };
         SEP39_mags[] = {
             "w39_7_92_5xMauserS",
@@ -585,41 +732,69 @@
 
     class CBA_792x57_K98_Trench {               // K98, G98 with trench magazine
         CSA38_mags[] = {
+            "csa38_7_92_20xMauserKAR",
+            "csa38_7_92_20xMauserKAR_Mixed_sS_2PzD",
+            "csa38_7_92_20xMauserKAR_SmE_2PzD",
+            "csa38_7_92_20xMauserKAR_Mixed_SmE_2PzD",
+            "CSA38_7_92_20xMauserkAR2",
+            "csa38_7_92_20xMauserKAR_Mixed_SmK_2PzD",
+            "csa38_7_92_20xMauserKAR_Tracer_2PzD",
             "CSA38_7_92_20xMauserCZ",
+            "CSA38_7_92_20xMauserCZ_Mixed_Ball_2PzD",
+            "CSA38_7_92_20xMauserCZ_SmE_2PzD",
+            "CSA38_7_92_20xMauserCZ_Mixed_SmE_2PzD",
             "CSA38_7_92_20xMauserCZ2",
-            "CSA38_7_92_20xMauserkAR",
-            "CSA38_7_92_20xMauserkAR2"
+            "CSA38_7_92_20xMauserCZ2_Mixed_AP_2PzD",
+            "CSA38_7_92_20xMauserCZ_Tracer_2PzD"
         };
     };
 
     class CBA_792x57_LINKS {                    // MG42, MG34
         FOW_mags[] = {
-            "fow_50Rnd_792x57",
-            "fow_250Rnd_792x57"
+            "fow_50Rnd_792x57"
         };
         IFA3_mags[] = {
+            "LIB_50Rnd_792x57",
+            "LIB_50Rnd_792x57_SmE_NoTrace_2PzD",
+            "LIB_50Rnd_792x57_sS",
+            "LIB_50Rnd_792x57_sS_NoTrace_2PzD",
+            "LIB_50Rnd_792x57_Mixed_SmK_2PzD",
+            "LIB_50Rnd_792x57_SmK_NoTrace_2PzD",
+            "LIB_50Rnd_792x57_TraceOnly_2PzD",
             "LIB_100Rnd_792x57",
-            "LIB_100Rnd_792x57_SMK_2PzD",
+            "LIB_100Rnd_792x57_SmE_NoTrace_2PzD",
             "LIB_100Rnd_792x57_sS",
-            "LIB_100Rnd_792x57_sS_2PzD",
-            "LIB_150Rnd_792x57_2PzD",
-            "LIB_150Rnd_792x57_SMK_2PzD",
-            "LIB_150Rnd_792x57_sS_2PzD",
-            "LIB_200Rnd_792x57_2PzD",
-            "LIB_200Rnd_792x57_SMK_2PzD",
-            "LIB_200Rnd_792x57_sS_2PzD",
-            "LIB_250Rnd_792x57_2PzD",
-            "LIB_250Rnd_792x57_SMK_2PzD",
-            "LIB_250Rnd_792x57_sS_2PzD",
-            "lib_50Rnd_792x57",
-            "lib_50Rnd_792x57_SMK",
-            "lib_50Rnd_792x57_sS"
+            "LIB_100Rnd_792x57_sS_NoTrace_2PzD",
+            "LIB_100Rnd_792x57_Mixed_SmK_2PzD",
+            "LIB_100Rnd_792x57_SmK_NoTrace_2PzD",
+            "LIB_100Rnd_792x57_TraceOnly_2PzD",
+            "LIB_150Rnd_792x57_Mixed_SmE_2PzD",
+            "LIB_150Rnd_792x57_SmE_NoTrace_2PzD",
+            "LIB_150Rnd_792x57_Mixed_sS_2PzD",
+            "LIB_150Rnd_792x57_sS_NoTrace_2PzD",
+            "LIB_150Rnd_792x57_Mixed_SmK_2PzD",
+            "LIB_150Rnd_792x57_SmK_NoTrace_2PzD",
+            "LIB_150Rnd_792x57_TraceOnly_2PzD",
+            "LIB_200Rnd_792x57_Mixed_SmE_2PzD",
+            "LIB_200Rnd_792x57_SmE_NoTrace_2PzD",
+            "LIB_200Rnd_792x57_Mixed_sS_2PzD",
+            "LIB_200Rnd_792x57_sS_NoTrace_2PzD",
+            "LIB_200Rnd_792x57_Mixed_SmK_2PzD",
+            "LIB_200Rnd_792x57_SmK_NoTrace_2PzD",
+            "LIB_200Rnd_792x57_TraceOnly_2PzD",
+            "LIB_250Rnd_792x57_Mixed_SmE_2PzD",
+            "LIB_250Rnd_792x57_SmE_NoTrace_2PzD",
+            "LIB_250Rnd_792x57_Mixed_sS_2PzD",
+            "LIB_250Rnd_792x57_sS_NoTrace_2PzD",
+            "LIB_250Rnd_792x57_Mixed_SmK_2PzD",
+            "LIB_250Rnd_792x57_SmK_NoTrace_2PzD",
+            "LIB_250Rnd_792x57_TraceOnly_2PzD"
         };
         CSA38_mags[] = {
-            "CSA38_7_92_50xMauserMG",
-            "CSA38_7_92_50xMauserMGAP",
-            "CSA38_7_92_250xMauserMG",
-            "CSA38_7_92_250xMauserMGAP",
+            "csa38_7_92_50xMauserMG",
+            "csa38_7_92_50xMauserMGAP",
+            "csa38_7_92_250xMauserMG",
+            "csa38_7_92_250xMauserMGAP",
             "CSA38_MG34mg",
             "CSA38_MG34mg2",
             "CSA38_MG34mg3",
@@ -636,16 +811,25 @@
 
     class CBA_792x57_MG30 {                     // MG30
         CSA38_mags[] = {
-            "CSA38_7_92_30xMauserMG",
-            "CSA38_7_92_30xMauserMGAP"
+            "csa38_7_92_30xMauserMG",
+            "csa38_7_92_30xMauserMG_sS_NoTrace_2PzD",
+            "csa38_7_92_30xMauserMG_SmE",
+            "csa38_7_92_30xMauserMG_SmE_NoTrace_2PzD",
+            "csa38_7_92_30xMauserMGAP",
+            "csa38_7_92_30xMauserMG_SmK_NoTrace_2PzD",
+            "csa38_7_92_30xMauserMG_TraceOnly_2PzD"
         };
     };
 
     class CBA_792x57_TROMMEL {                  // MG34 Patronentrommel 34
         IFA3_mags[] = {
             "LIB_75Rnd_792x57",
-            "LIB_75Rnd_792x57_SMK_2PzD",
-            "LIB_75Rnd_792x57_sS_2PzD"
+            "LIB_75Rnd_792x57_NoTrace_2PzD",
+            "LIB_75Rnd_792x57_sS_2PzD",
+            "LIB_75Rnd_792x57_sS_NoTrace_2PzD",
+            "LIB_75Rnd_792x57_SmK_2PzD",
+            "LIB_75Rnd_792x57_SmK_NoTrance_2PzD",
+            "LIB_75Rnd_792x57_TraceOnly_2PzD"
         };
     };
 
@@ -659,21 +843,43 @@
     class CBA_792x57_wz28 {                   // wz. 28
         SEP39_mags[] = {
             "w39_7_92_20xMauserS",
-            "w39_7_92_20xMauserP"
+            "w39_7_92_20xMauserS_Ball_NoTrace_2PzD",
+            "w39_7_92_20xMauserS_SmE",
+            "w39_7_92_20xMauserS_SmE_NoTrace_2PzD",
+            "w39_7_92_20xMauserP",
+            "w39_7_92_20xMauseeP_AP_NoTrace_2PzD",
+            "w39_7_92_20xMauserS_TraceOnly_2PzD"
         };
     };
 
     class CBA_792x57_wz38M {                   // wz. 38M
         SEP39_mags[] = {
+            "w39_7_92_10xMauserS",
+            "w39_7_92_10xMauserS_Mixed_Ball_2PzD",
+            "w39_7_92_10xMauserS_SmE_2PzD",
+            "w39_7_92_10xMauserS_Mixed_SmE_2PzD",
             "w39_7_92_10xMauserP",
-            "w39_7_92_10xMauserS"
+            "w39_7_92_10xMauserP_Mixed_AP_2PzD",
+            "w39_7_92_10xMauserS_Tracer_2PzD"
         };
     };
 
     class CBA_792x57_ZB26 {                     // ZB-26
         CSA38_mags[] = {
             "CSA38_7_92_20xMauser",
-            "CSA38_7_92_20xMauser2"
+            "CSA38_7_92_20xMauser_Ball_NoTrace_2PzD",
+            "CSA38_7_92_20xMauser_SmE_2PzD",
+            "CSA38_7_92_20xMauser_SmE_NoTrace_2PzD",
+            "CSA38_7_92_20xMauser2",
+            "CSA38_7_92_20xMauser_AP_NoTrace_2PzD",
+            "CSA38_7_92_20xMauser_TraceOnly_2PzD",
+            "CSA38_7_92_30xMauser_2PzD",
+            "CSA38_7_92_30xMauser_Ball_NoTrace_2PzD",
+            "CSA38_7_92_30xMauser_SmE_2PzD",
+            "CSA38_7_92_30xMauser_SmE_NoTrace_2PzD",
+            "CSA38_7_92_30xMauser_AP_2PzD",
+            "CSA38_7_92_30xMauser_AP_NoTrace_2PzD",
+            "CSA38_7_92_30xMauser_TraceOnly_2PzD"
         };
     };
 
@@ -702,7 +908,13 @@
 
     class CBA_8x56mmR_Solothurn_31M {           // Solothurn 31.M Golyoszoro
         CSA38_mags[] = {
-            "csa38_8x56_25xMannlicherMG"
+            "csa38_8x56_25xMannlicherMG",
+            "csa38_8x56_25xMannlicherMG_sS_NoTrace_2PzD",
+            "csa38_8x56_25xMannlicherMG_SmE",
+            "csa38_8x56_25xMannlicherMG_SmE_NoTrace_2PzD",
+            "csa38_8x56_25xMannlicherMG_SmK",
+            "csa38_8x56_25xMannlicherMG_SmK_NoTrace_2PzD",
+            "csa38_8x56_25xMannlicherMG_TraceOnly_2PzD"
         };
     };
 
@@ -735,12 +947,12 @@
     class CBA_12g_5rnds {                       // 5 loose rounds
         FOW_mags[] = {
             "fow_6Rnd_12G_Pellets",
-            "fow_6Rnd_12G_Pellets_No0_Buck",
-            "fow_6Rnd_12G_Pellets_No1_Buck",
-            "fow_6Rnd_12G_Pellets_No2_Buck",
-            "fow_6Rnd_12G_Pellets_No3_Buck",
-            "fow_6Rnd_12G_Pellets_No4_Buck",
-            "fow_6Rnd_12G_Pellets_No4_Bird",
+            "fow_6Rnd_12G_Pellets_No0_Buck_2PzD",
+            "fow_6Rnd_12G_Pellets_No1_Buck_2PzD",
+            "fow_6Rnd_12G_Pellets_No2_Buck_2PzD",
+            "fow_6Rnd_12G_Pellets_No3_Buck_2PzD",
+            "fow_6Rnd_12G_Pellets_No4_Buck_2PzD",
+            "fow_6Rnd_12G_Pellets_No4_Bird_2PzD",
             "fow_6Rnd_12G_Slug"
         };
         LEN_mags[] = {
@@ -752,12 +964,12 @@
     class CBA_12g_4rnds {                       // 4 loose rounds
         FOW_mags[] = {
             "fow_5Rnd_12G_Pellets",
-            "fow_5Rnd_12G_Pellets_No0_Buck",
-            "fow_5Rnd_12G_Pellets_No1_Buck",
-            "fow_5Rnd_12G_Pellets_No2_Buck",
-            "fow_5Rnd_12G_Pellets_No3_Buck",
-            "fow_5Rnd_12G_Pellets_No4_Buck",
-            "fow_5Rnd_12G_Pellets_No4_Bird",
+            "fow_5Rnd_12G_Pellets_No0_Buck_2PzD",
+            "fow_5Rnd_12G_Pellets_No1_Buck_2PzD",
+            "fow_5Rnd_12G_Pellets_No2_Buck_2PzD",
+            "fow_5Rnd_12G_Pellets_No3_Buck_2PzD",
+            "fow_5Rnd_12G_Pellets_No4_Buck_2PzD",
+            "fow_5Rnd_12G_Pellets_No4_Bird_2PzD",
             "fow_5Rnd_12G_Slug"
         };
     };
@@ -773,6 +985,10 @@
             "ACE_2Rnd_12Gauge_Pellets_No3_Buck",
             "ACE_2Rnd_12Gauge_Pellets_No4_Buck",
             "ACE_2Rnd_12Gauge_Pellets_No4_Bird"
+        };
+        BI_Magazines[] = {
+            "2Rnd_12Gauge_Slug",
+            "2Rnd_12Gauge_Pellets"
         };
     };
 

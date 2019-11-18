@@ -127,6 +127,47 @@
     class LIB_B_762x63_Ball_t;
     class LIB_B_762x63_Ball_NoCartridge_t;
 
+    // .303
+    class LIB_B_770x56_Ball;
+    class LIB_B_770x56_Ball_NoCartridge;
+    class LIB_B_770x56_Mixed_Ball_Tracer : LIB_B_770x56_Ball {};
+    class LIB_B_770x56_Mixed_Ball_Tracer_NoCartridge : LIB_B_770x56_Ball_NoCartridge {};
+
+    class LIB_B_770x56_MkVIII;
+    class LIB_B_770x56_MkVIII_NoCartridge : LIB_B_770x56_MkVIII {
+        cartridge = "";
+    };
+    class LIB_B_770x56_Mixed_MkVIII_Tracer : LIB_B_770x56_MkVIII {};
+    class LIB_B_770x56_Mixed_MkVIII_Tracer_NoCartridge : LIB_B_770x56_Mixed_MkVIII_Tracer {};
+
+    class LIB_B_770x56_AP : LIB_B_770x56_Ball {
+        caliber = 1.16;
+    };
+    class LIB_B_770x56_AP_NoCartridge : LIB_B_770x56_AP {
+        cartridge = "";
+    };
+    class LIB_B_770x56_Mixed_AP_Tracer : LIB_B_770x56_AP {};
+    class LIB_B_770x56_Mixed_AP_Tracer_NoCartridge : LIB_B_770x56_AP {};
+
+    class LIB_B_770x56_Tracer : LIB_B_770x56_Ball {};
+    class LIB_B_770x56_Tracer_NoCartridge : LIB_B_770x56_Tracer {
+        cartridge = "";
+    };
+
+    // 7.7x58
+    class LIB_B_77x58_Ball : LIB_B_770x56_Ball {};
+    class LIB_B_77x58_Ball_NoCartridge : LIB_B_77x58_Ball {
+        cartridge = "";
+    };
+
+    class LIB_B_77x58_Mixed_Ball_Tracer : LIB_B_77x58_Ball {};
+    class LIB_B_77x58_Mixed_Ball_Tracer_NoCartridge : LIB_B_77x58_Ball_NoCartridge {};
+
+    class LIB_B_77x58_Tracer : LIB_B_77x58_Ball {};
+    class LIB_B_77x58_Tracer_NoCartridge : LIB_B_77x58_Tracer {
+        cartridge = "";
+    };
+
     //792x57
     class LIB_B_792x57_Ball;
     class LIB_B_792x57_Ball_NoCartridge;
@@ -147,36 +188,18 @@
         cartridge = "";
     };
 
-    class LIB_B_792x57_Ball_SMK;
-    class LIB_B_792x57_Mixed_SMK : LIB_B_792x57_Ball_SMK {};
+    class LIB_B_792x57_Ball_SmK;
+    class LIB_B_792x57_Mixed_SmK : LIB_B_792x57_Ball_SmK {};
 
-    class LIB_B_792x57_Ball_SMK_NoCartridge;
-    class LIB_B_792x57_Mixed_S_NoCartridge : LIB_B_792x57_Ball_SMK_NoCartridge {
+    class LIB_B_792x57_Ball_SmK_NoCartridge;
+    class LIB_B_792x57_Mixed_SmK_NoCartridge : LIB_B_792x57_Ball_SmK_NoCartridge {
         cartridge = "";
     };
 
-    class LIB_B_792x57_Ball_t : LIB_B_792x57_Ball {};
-    class LIB_B_792x57_Ball_t_NoCartridge : LIB_B_792x57_Ball_NoCartridge {
+    class LIB_B_792x57_Tracer : LIB_B_792x57_Ball {};
+    class LIB_B_792x57_Tracer_NoCartridge : LIB_B_792x57_Ball_NoCartridge {
         cartridge = "";
     };
-
-    // .303
-    class LIB_B_770x56_Ball;
-    class LIB_B_770x56_Ball_NoCartridge;
-
-    class LIB_B_770x56_Ball_AP : LIB_B_770x56_Ball {
-        caliber = 1.16;
-    };
-
-    class LIB_B_770x56_Ball_NoCartridge_AP : LIB_B_770x56_Ball_NoCartridge {
-        caliber = 1.16;
-    };
-
-    class LIB_B_77x58_Ball_NoCartridge : LIB_B_770x56_Ball_NoCartridge {
-        cartridge = "";
-    };
-
-    class LIB_B_77x58_Ball : LIB_B_770x56_Ball {};
 
     // .32 ACP
     class LIB_B_765x17_Ball : LIB_Bullet_base {
@@ -203,11 +226,14 @@
         hit = 3;
     };
 
+    //762x25
+    class LIB_B_762x25_Ball;
+    class LIB_B_762x25_pt;
+    class LIB_B_762x25_Mixed_pt : LIB_B_762x25_pt {};
+
     class LIB_B_9x18_Ball;
 
-    class LIB_B_9x19_Ball; /* : LIB_B_9x18_Ball {
-
-    };*/
+    class LIB_B_9x19_Ball; /* : LIB_B_9x18_Ball {};*/
 
     class LIB_B_145x144_Ball : LIB_Bullet_base {
         hit = 120;

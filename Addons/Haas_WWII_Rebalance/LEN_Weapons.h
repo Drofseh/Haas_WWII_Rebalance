@@ -35,7 +35,7 @@
         displayName = "Walther PPK";
         descriptionShort = "Walther Polizeipistole Kriminalmodell in .32 ACP";
         magazines[] = {"LEN_7Rnd_765x17"};
-        magazineWell[] = {"CBA_32ACP_PPK"};
+        magazineWell[] = {"CBA_32ACP_PPK","CBA_32ACP_PP"};
         recoil = "recoil_2PzD_pistol_light";
         scope = 2;
         class WeaponSlotsInfo {
@@ -75,7 +75,7 @@
     class LEN_FG42 : LIB_MP44 {
         displayName = "FG42 Ausf.G";
         descriptionShort = "Fallschirmjagergewehr 42 Ausfuhrung G";
-        // fow_burstLength = 3;
+        // fow_burstLength = 2;
         magazines[] = {"len_20Rnd_792x57"};
         magazineWell[] = {"CBA_792x57_FG42"};
         modes[] = {"Single","FullAuto"};
@@ -90,6 +90,12 @@
         };*/
         class WeaponSlotsInfo {
             mass = 109.191;
+        };
+        class OpticsModes {
+            class Ironsights {
+                discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200};
+                discreteDistanceInitIndex = 1;
+            };
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(4);
@@ -122,7 +128,7 @@
         descriptionShort = "Sturmgewehr 44";
         discreteDistance[] = {100,200,300,400,500,600,700,800};
         discreteDistanceInitIndex = 1;
-        // fow_burstLength = 3;
+        // fow_burstLength = 2;
         magazines[] = {"LIB_30Rnd_792x33"};
         magazineWell[] = {"CBA_792x33_StG"};
         recoil = "recoil_2PzD_rifle_light";
@@ -145,8 +151,12 @@
     class LEN_SMLE_No4Mk1 : LIB_K98 {
         displayName = "Lee Enfield No. 4 Mk I";
         descriptionShort = "Rifle, No. 4 Mk I";
-        discreteDistance[] = {300,600};
-        discreteDistanceInitIndex = 0;
+        class OpticsModes {
+            class Ironsights {
+                discreteDistance[] = {300,600};
+                discreteDistanceInitIndex = 0;
+            };
+        };
         magazines[] = {"LEN_10Rnd_303"};
         magazineWell[] = {"CBA_303B_LeeEn"};
         recoil = "recoil_2PzD_rifle_bolt";
@@ -202,7 +212,7 @@
         displayName = "M3A1 Grease Gun";
         descriptionShort = "Submachine Gun, Caliber .45, M3A1";
         // dispersion = 8);
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         modes[] = {"Full","Far","Medium","Short"};
         magazines[] = {"LEN_30Rnd_45ACP_M3"};
         magazineWell[] = {"CBA_45ACP_Grease"};
@@ -215,6 +225,12 @@
         };
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 77.426;
+        };
+        class OpticsModes {
+            class Ironsights {
+                discreteDistance[] = {100};
+                discreteDistanceInitIndex = 0;
+            };
         };
         class Full : Mode_FullAuto {
             // dispersion = 8);
@@ -234,7 +250,7 @@
     class LEN_PPS43 : LIB_PPSh41_m {
         displayName = "PPS-43";
         descriptionShort = "Pistolet-Pulemyot Sudayeva 43";
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"LEN_35Rnd_762x25_2PzD"};
         magazineWell[] = {"CBA_762x25_PPS"};
         recoil = "recoil_2PzD_smg_medium";
@@ -266,7 +282,7 @@
         displayName = "Sten Mk II";
         descriptionShort = "Sten Mk II";
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"LEN_32Rnd_9x19"};
         magazineWell[] = {"CBA_9x19_STEN"};
         recoil = "recoil_2PzD_smg_medium";
@@ -294,7 +310,7 @@
         displayName = "Sten Mk IIS";
         descriptionShort = "Sten Mk IIS";
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"LEN_32Rnd_9x19"};
         magazineWell[] = {"CBA_9x19_STEN"};
         recoil = "recoil_2PzD_smg_light";
@@ -322,7 +338,7 @@
         displayName = "Sten Mk V";
         descriptionShort = "Sten Mk V";
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"LEN_32Rnd_9x19"};
         magazineWell[] = {"CBA_9x19_STEN"};
         scope = 1;
@@ -335,13 +351,13 @@
         };
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 79.632;
-        };
+        };/*
         class FullAuto : Mode_FullAuto {
             reloadTime = RPM_TO_TIME(550); // 550 rpm
         };
         class Single : Mode_SemiAuto {
             reloadTime = RPM_TO_TIME(550); // 550 rpm
-        };
+        };*/
     };
 // End Submachine Guns
 
@@ -361,6 +377,12 @@
         scopeArsenal = 0;
         class WeaponSlotsInfo {
             mass = 79.412;
+        };
+        class OpticsModes {
+            class Ironsights {
+                discreteDistance[] = {50};
+                discreteDistanceInitIndex = 0;
+            };
         };
     };
 // End Other Weapons

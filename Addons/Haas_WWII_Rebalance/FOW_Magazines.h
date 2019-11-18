@@ -6,15 +6,23 @@
 // Pistol magazines
     class fow_13Rnd_9x19 : CA_Magazine {
         displayName = "Browning Hi-Power, 13 Round Magazine, Ball (Mk Iz)";
-        displayNameShort = "9x19mm Ball";
+        displayNameShort = "Ball";
         descriptionShort = "9x19mm, 13 Rounds, Ball (Mk Iz)<br/>For use in the Browning Hi-Power";
         ammo = "LIB_B_9x19_Ball";
         mass = 1.86;
     };
+    class fow_13Rnd_9x19_Tracer_2PzD : fow_13Rnd_9x19 {
+        displayName = "Browning Hi-Power, 13 Round Magazine, Tracer";
+        displayNameShort = "Tracer";
+        descriptionShort = "9x19mm, 13 Rounds, Tracer<br/>For use in the Browning Hi-Power";
+        ammo = "LIB_B_9x19_Ball_t";
+        tracersEvery = 1;
+        lastRoundsTracer = 13;
+    };
 
     class fow_6Rnd_455 : CA_Magazine {
         displayName = "Enfield No 2 Mk I, 6 Rounds, Ball (Mk IIz)";
-        displayNameShort = ".38/200 Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".38/200, 6 Rounds, Ball (Mk IIz)<br/>For use in the Enfield No 2 Mk I";
         ammo = "LIB_B_38_200_Ball";
         mass = 1.12;
@@ -22,7 +30,7 @@
 
     class fow_7Rnd_45acp : CA_Magazine {
         displayName = "M1911A1, 7 Round Magazine, Ball (M1911)";
-        displayNameShort = ".45 ACP Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".45 ACP, 7 Rounds, Ball (M1911)<br/>For use in the M1911A1";
         ammo = "LIB_B_45ACP_Ball";
         mass = 2.76;
@@ -31,7 +39,7 @@
 
     class fow_7Rnd_765x17 : CA_Magazine {
         displayName = "Walther PPK, 7 Round Magazine, Ball";
-        displayNameShort = ".32 ACP Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".32 ACP, 7 Rounds, Ball<br/>For use in the Walther PPK";
         ammo = "LIB_B_765x17_Ball";
         mass = 1.31;
@@ -39,7 +47,7 @@
     };
     class fow_8Rnd_765x17 : fow_7Rnd_765x17 {
         displayName = "Welrod Mk II, 8 Round Magazine, Ball";
-        displayNameShort = ".32 ACP Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".32 ACP, 8 Rounds, Ball<br/>For use in the Welrod Mk II";
         ammo = "LIB_B_765x17_Ball";
         mass = 3.5;
@@ -47,7 +55,7 @@
 
     class fow_8Rnd_8x22 : CA_Magazine {
         displayName = "Type 14 Nambu, 8 Round Magazine, Ball";
-        displayNameShort = "8x22mm Nambu Ball";
+        displayNameShort = "Ball";
         descriptionShort = "8x22mm Nambu, 8 Rounds, Ball<br/>For use in the Type 14 Nambu";
         // ammo = "fow_B_8x22_Ball"; // TODO
         // mass = xxx; // TODO
@@ -55,7 +63,7 @@
 
     class fow_8Rnd_9x19 : CA_Magazine {
         displayName = "P08, 8 Round Magazine, Ball (PP08 mE)";
-        displayNameShort = "9x19mm Ball";
+        displayNameShort = "Ball";
         descriptionShort = "9x19mm, 8 Rounds, Ball (PP08 mE)<br/>For use in the P08";
         ammo = "LIB_B_9x19_Ball";
         mass = 1.86;
@@ -64,16 +72,17 @@
 
     class fow_8Rnd_9x19_Vis_2PzD : fow_8Rnd_9x19 {
         displayName = "wz. 35 Vis, 8 Round Magazine, Ball";
-        displayNameShort = "9x19mm, Ball";
+        displayNameShort = "Ball";
         descriptionShort = "9x19mm, 8 Rounds, Ball<br/>For use in the Pistolet wz. 35 Vis";
         mass = 1.86;
+        scope = 1;
     };
 // End Pistol magazines
 
 // Rifle magazines
     class fow_10Rnd_303 : CA_Magazine {
         displayName = "Lee Enfield, 2x 5 Round Clips, Ball (Mk VIIz)";
-        displayNameShort = ".303 British Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".303 British, 10 Rounds, Ball (Mk VIIz)<br/>For use in the Lee Enfield";
         ammo = "LIB_B_770x56_Ball_NoCartridge";
         mass = 3.26;
@@ -82,7 +91,7 @@
 
     class fow_10nd_792x57 : CA_Magazine {
         displayName = "G43, 10 Round Magazine, Ball (SmE)";
-        displayNameShort = "7.92x57mm Ball";
+        displayNameShort = "Ball";
         descriptionShort = "7.92x57mm, 10 Rounds, Ball (SmE)<br/>For use in the G43";
         ammo = "LIB_B_792x57_Ball_SmE";
         mass = 3.26;
@@ -91,7 +100,7 @@
 
     class fow_15Rnd_762x33 : CA_Magazine {
         displayName = "M1 Carbine, 15 Round Magazine, Ball (M1)";
-        displayNameShort = ".30 Carbine Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".30 Carbine, 15 Rounds, Ball (M1)<br/>For use in the M1 Carbine";
         ammo = "LIB_B_762x33_Ball";
         mass = 2.79;
@@ -99,7 +108,7 @@
     };
     class fow_30Rnd_762x33_2PzD : fow_15Rnd_762x33 {
         displayName = "M2 Carbine, 30 Round Magazine, Ball (M1)";
-        displayNameShort = ".30 Carbine Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".30 Carbine, 30 Rounds, Ball (M1)<br/>For use in the M2 Carbine";
         count = 30;
         mass = 5.5;
@@ -108,7 +117,7 @@
 
     class fow_30Rnd_792x33 : CA_Magazine {
         displayName = "StG44, 30 Round Magazine, Ball (M43)";
-        displayNameShort = "7.92x33mm Ball";
+        displayNameShort = "Ball";
         descriptionShort = "7.92x33mm, 30 Rounds,  Ball (M43)<br/>For use in the StG44";
         ammo = "LIB_B_792x33_Ball";
         mass = 8.91;
@@ -117,7 +126,7 @@
 
     class fow_5Rnd_762x63 : CA_Magazine {
         displayName = "M1903 Springfield, 5 Round Clip, Ball (M2)";
-        displayNameShort = ".30-06 Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".30-06, 5 Rounds, Ball (M2)<br/>For use in the M1903 Springfield";
         ammo = "LIB_B_762x63_Ball_NoCartridge";
         mass = 1.73;
@@ -126,33 +135,49 @@
 
     class fow_5Rnd_77x58 : CA_Magazine {
         displayName = "Type 99 Rifle, 5 Round Clip, Ball";
-        displayNameShort = "7.7x58mm Ball";
+        displayNameShort = "Ball";
         descriptionShort = "7.7x58mm, 5 Rounds, Ball<br/>For use in the Type 99 Rifle";
         ammo = "LIB_B_77x58_Ball_NoCartridge";
         mass = 1.74;
     };
+    class fow_5Rnd_77x58_Tracer_2PzD : fow_5Rnd_77x58 {
+        displayName = "Type 99 Rifle, 5 Round Clip, Tracer";
+        displayNameShort = "Tracer";
+        descriptionShort = "7.7x58mm, 10 Rounds, Tracer<br/>For use in the Type 99 Rifle";
+        ammo = "LIB_B_77x58_Tracer_NoCartridge";
+        tracersEvery = 5;
+        lastRoundsTracer = 0;
+    };
+    class fow_5Rnd_77x58_Mixed_2PzD : fow_5Rnd_77x58 {
+        displayName = "Type 99 Rifle, 5 Round Clip, Ball/Tracer";
+        displayNameShort = "Ball/Tracer";
+        descriptionShort = "7.7x58mm, 10 Rounds, Mixed Ball/Tracer<br/>For use in the Type 99 Rifle";
+        ammo = "LIB_B_77x58_Mixed_Ball_Tracer_NoCartridge";
+        tracersEvery = 3;
+        lastRoundsTracer = 1;
+    };
 
     class fow_5Rnd_792x57 : CA_Magazine {
         displayName = "K98k, 5 Round Clip, Ball (SmE)";
-        displayNameShort = "7.92x57mm Ball";
+        displayNameShort = "Ball";
         descriptionShort = "7.92x57mm, 5 Rounds, Ball (SmE)<br/>For use in the K98k";
-        ammo = "LIB_B_792x57_Ball_SmE_NoCartridge";
+        ammo = "LIB_B_792x57_Ball_NoCartridge";
         mass = 1.85;
         scope = 1;
     };
 
     class fow_20Rnd_792x57 : fow_5Rnd_792x57 {
         displayName = "FG42, 20 Round Magazine, Ball (SmE)";
-        displayNameShort = "7.92x57mm Ball";
+        displayNameShort = "Ball";
         descriptionShort = "7.92x57mm, 20 Rounds, Ball (SmE)<br/>For use in the FG42";
-        ammo = "LIB_B_792x57_Ball_SmE";
+        ammo = "LIB_B_792x57_Ball";
         mass = 6.52;
         scope = 1;
     };
 
     class fow_8Rnd_762x63 : CA_Magazine {
         displayName = "M1 Garand, 8 Round Clip, Ball (M2)";
-        displayNameShort = ".30-06 Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".30-06, 8 Rounds, Ball (M2)<br/>For use in the M1 Garand";
         ammo = "LIB_B_762x63_Ball";
         mass = 2.5;
@@ -160,7 +185,7 @@
     };
     class fow_8Rnd_762x63_T : fow_8Rnd_762x63 {
         displayName = "M1 Garand, 8 Round Clip, Tracer (M1)";
-        displayNameShort = ".30-06 Tracer";
+        displayNameShort = "Tracer";
         descriptionShort = ".30-06, 8 Rounds, Tracer (M1)<br/>For use in the M1 Garand";
         scope = 1;
     };
@@ -169,22 +194,38 @@
 // SMG magazines
     class fow_20Rnd_45acp : CA_Magazine {
         displayName = "M55 Reising, 20 Round Magazine, Ball (M1911)";
-        displayNameShort = ".45 ACP Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".45 ACP, 20 Rounds, Ball (M1911)<br/>For use in the M55 Reising";
         ammo = "LIB_B_45ACP_Ball";
         mass = 7;
     };
+    class fow_20Rnd_45acp_Tracer_2PzD : fow_20Rnd_45acp {
+        displayName = "M55 Reising, 20 Round Magazine, Tracer (M26)";
+        displayNameShort = "Tracer";
+        descriptionShort = ".45 ACP, 20 Rounds, Tracer (M26)<br/>For use in the M55 Reising";
+        ammo = "LIB_B_45ACP_Ball_t";
+        tracersEvery = 1;
+        lastRoundsTracer = 20;
+    };
     class fow_12Rnd_45acp_2PzD : fow_20Rnd_45acp {
         displayName = "M55 Reising, 12 Round Magazine, Ball (M1911)";
-        displayNameShort = ".45 ACP Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".45 ACP, 12 Rounds, Ball (M1911)<br/>For use in the M55 Reising";
         count = 12;
         mass = 4.3;
     };
+    class fow_12Rnd_45acp_Tracer_2PzD : fow_12Rnd_45acp_2PzD {
+        displayName = "M55 Reising, 12 Round Magazine, Tracer (M26)";
+        displayNameShort = "Tracer";
+        descriptionShort = ".45 ACP, 12 Rounds, Tracer (M26)<br/>For use in the M55 Reising";
+        ammo = "LIB_B_45ACP_Ball_t";
+        tracersEvery = 1;
+        lastRoundsTracer = 12;
+    };
 
     class fow_30Rnd_45acp : CA_Magazine {
         displayName = "(Legacy For Zeus Spawn) Works in Thompson and Grease Gun";
-        displayNameShort = ".45 ACP";
+        displayNameShort = "Ball";
         descriptionShort = "(Legacy For Zeus Spawn) Works in Thompson and Grease Gun, which is not right";
         ammo = "LIB_B_45ACP_Ball";
         mass = 10.36;
@@ -192,67 +233,89 @@
     };
     class fow_30Rnd_45acp_T : fow_30Rnd_45acp {
         displayName = "(Legacy For Zeus Spawn) Works in Thompson and Grease Gun";
-        displayNameShort = ".45 ACP Ball";
+        displayNameShort = "Tracer";
         descriptionShort = "(Legacy For Zeus Spawn) Works in Thompson and Grease Gun, which is not right";
+        ammo = "LIB_B_45ACP_Ball_t";
         scope = 1;
     };
     class fow_20Rnd_45acp_M1_2PzD : fow_30Rnd_45acp {
         displayName = "Thompson, 20 Round Magazine, Ball (M1911)";
-        displayNameShort = ".45 ACP Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".45 ACP, 20 Rounds, Ball (M1911)<br/>For use in the M1928, M1, or M1A1 Thompson";
+        ammo = "LIB_B_45ACP_Ball";
         count = 20;
         mass = 7;
+        scope = 1;
     };
     class fow_20Rnd_45acp_T_M1_2PzD : fow_30Rnd_45acp_T {
         displayName = "Thompson, 20 Round Magazine, Tracer (M26)";
-        displayNameShort = ".45 ACP Tracer";
+        displayNameShort = "Tracer";
         descriptionShort = ".45 ACP, 20 Rounds, Tracer (M26)<br/>For use in the M1928, M1, or M1A1 Thompson";
+        ammo = "LIB_B_45ACP_Ball_t";
         count = 20;
         mass = 7;
+        scope = 1;
     };
     class fow_30Rnd_45acp_M1_2PzD : fow_30Rnd_45acp {
         displayName = "Thompson, 30 Round Magazine, Ball (M1911)";
-        displayNameShort = ".45 ACP Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".45 ACP, 30 Rounds, Ball (M1911)<br/>For use in the M1928, M1, or M1A1 Thompson";
+        ammo = "LIB_B_45ACP_Ball";
         mass = 10.36;
+        scope = 1;
     };
     class fow_30Rnd_45acp_T_M1_2PzD : fow_30Rnd_45acp_T {
         displayName = "Thompson, 30 Round Magazine, Tracer (M26)";
-        displayNameShort = ".45 ACP Tracer";
+        displayNameShort = "Tracer";
         descriptionShort = ".45 ACP, 30 Rounds, Tracer (M26)<br/>For use in the M1928, M1, or M1A1 Thompson";
+        ammo = "LIB_B_45ACP_Ball_t";
+        scope = 1;
     };
     class fow_30Rnd_45acp_M3_2PzD : fow_30Rnd_45acp {
         displayName = "M3 Grease Gun, 30 Round Magazine, Ball (M1911)";
-        displayNameShort = ".45 ACP Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".45 ACP, 30 Rounds, Ball (M1911)<br/>For use in the M3 Grease Gun";
+        ammo = "LIB_B_45ACP_Ball";
+        scope = 1;
     };
     class fow_30Rnd_45acp_T_M3_2PzD : fow_30Rnd_45acp_T {
         displayName = "M3 Grease Gun, 30 Round Magazine, Tracer (M26)";
-        displayNameShort = ".45 ACP Tracer";
+        displayNameShort = "Tracer";
         descriptionShort = ".45 ACP, 30 Rounds, Tracer (M26)<br/>For use in the M3 Grease Gun";
+        ammo = "LIB_B_45ACP_Ball_t";
+        scope = 1;
     };
 
     class fow_30Rnd_9x19_mab : CA_Magazine {
         displayName = "Beretta Model 38, 30 Round Magazine, Ball";
-        displayNameShort = "9x19mm Ball";
+        displayNameShort = "Ball";
         descriptionShort = "9x19mm, 30 Rounds, Ball<br/>For use in the Beretta Model 38";
         ammo = "LIB_B_9x19_Ball";
         mass = 6.51;
         scope = 1;
     };
+    class fow_30Rnd_9x19_mab_Tracer_2PzD : fow_30Rnd_9x19_mab {
+        displayName = "Beretta Model 38, 30 Round Magazine, Tracer";
+        displayNameShort = "Tracer";
+        descriptionShort = "9x19mm, 30 Rounds, Tracer<br/>For use in the Beretta Model 38";
+        ammo = "LIB_B_9x19_Ball_t";
+        tracersEvery = 1;
+        lastRoundsTracer = 30;
+        scope = 1;
+    };
 
     class fow_32Rnd_8x22 : CA_Magazine {
         displayName = "Type 100, 30 Round Magazine, Ball";
-        displayNameShort = "8x22mm Nambu Ball";
+        displayNameShort = "Ball";
         descriptionShort = "8x22mm Nambu, 30 Rounds, Ball<br/>For use in the Type 100 SMG";
         // ammo = "fow_B_8x22_Ball";  // TODO
         count = 30;
-        // mass = xxx; // TODO
+        mass = 4.5;
     };
 
     class fow_32Rnd_9x19_mp40 : CA_Magazine {
         displayName = "MP40, 32 Round Magazine, Ball (PP08 mE)";
-        displayNameShort = "9x19mm Ball";
+        displayNameShort = "Ball";
         descriptionShort = "9x19mm, 32 Rounds, Ball (PP08 mE)<br/>For use in the MP40";
         ammo = "LIB_B_9x19_Ball";
         mass = 6.11;
@@ -261,7 +324,7 @@
 
     class fow_32Rnd_9x19_sten : CA_Magazine {
         displayName = "Sten Gun, 32 Round Magazine, Ball (Mk Iz)";
-        displayNameShort = "9x19mm Ball";
+        displayNameShort = "Ball";
         descriptionShort = "9x19mm, 32 Rounds, Ball (Mk Iz)<br/>For use in the Sten Gun";
         ammo = "LIB_B_9x19_Ball";
         mass = 6.11;
@@ -272,7 +335,7 @@
 // MG magazines
     class fow_20Rnd_762x63 : CA_Magazine {
         displayName = "M1918A2 BAR, 20 Round Magazine, Ball/Tracer (M2/M1)";
-        displayNameShort = ".30-06 Ball/Tracer";
+        displayNameShort = "Ball/Tracer";
         descriptionShort = ".30-06, 20 Rounds, Mixed Ball/Tracer (M2/M1)<br/>For use in the M1918A2 BAR";
         ammo = "LIB_B_762x63_Ball";
         mass = 5.6;
@@ -282,7 +345,7 @@
 
     class fow_30Rnd_762x63 : CA_Magazine {
         displayName = "M1919, 30 Round Belt, Ball (M2)";
-        displayNameShort = ".30-06 Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".30-06, 30 Rounds, Ball (M2)<br/>For use in the M1919 Machine Guns";
         ammo = "LIB_B_762x63_Ball";
         lastRoundsTracer = 3;
@@ -293,7 +356,7 @@
     };
     class fow_50Rnd_762x63 : fow_30Rnd_762x63 {
         displayName = "M1919, 50 Round Belt, Ball (M2)";
-        displayNameShort = ".30-06 Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".30-06, 50 Rounds, Ball (M2)<br/>For use in the M1919 Machine Guns";
         mass = 14.55;
         scope = 1;
@@ -301,7 +364,7 @@
     };
     class fow_100Rnd_762x63 : fow_30Rnd_762x63 {
         displayName = "M1919, 100 Round Belt, Ball (M2)";
-        displayNameShort = ".30-06 Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".30-06, 100 Rounds, Ball (M2)<br/>For use in the M1919 Machine Guns";
         count = 100;
         mass = 29.1;
@@ -310,7 +373,7 @@
     };
     class fow_250Rnd_M1919_2PzD : fow_100Rnd_762x63 {
         displayName = "M1919, 250 Round Belt, Ball (M2)";
-        displayNameShort = ".30-06 Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".30-06, 250 Rounds, Ball (M2)<br/>For use in the M1919 Machine Guns";
         count = 250;
         mass = 72.75;
@@ -318,7 +381,7 @@
     };
     class fow_200Rnd_M1919_2PzD : fow_250Rnd_M1919_2PzD {
         displayName = "M1919, 200 Round Belt, Ball (M2)";
-        displayNameShort = ".30-06 Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".30-06, 200 Rounds, Ball (M2)<br/>For use in the M1919 Machine Guns";
         count = 200;
         mass = 58.2;
@@ -326,7 +389,7 @@
     };
     class fow_150Rnd_M1919_2PzD : fow_250Rnd_M1919_2PzD {
         displayName = "M1919, 150 Round Belt, Ball (M2)";
-        displayNameShort = ".30-06 Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".30-06, 150 Rounds, Ball (M2)<br/>For use in the M1919 Machine Guns";
         count = 150;
         mass = 43.65;
@@ -334,7 +397,7 @@
     };
     class fow_100Rnd_M1919_2PzD : fow_250Rnd_M1919_2PzD {
         displayName = "M1919, 100 Round Belt, Ball (M2)";
-        displayNameShort = ".30-06 Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".30-06, 100 Rounds, Ball (M2)<br/>For use in the M1919 Machine Guns";
         count = 100;
         mass = 29.1;
@@ -343,7 +406,7 @@
 
     class fow_30Rnd_303_bren : CA_Magazine {
         displayName = "Bren Gun, 30 Round Magazine, Ball (Mk VIIz)";
-        displayNameShort = ".303 British Ball";
+        displayNameShort = "Ball";
         descriptionShort = ".303 British, 30 Rounds Ball (Mk VIIz)<br/>For use in the Bren Gun";
         ammo = "LIB_B_770x56_Ball";
         mass = 8.91;
@@ -355,18 +418,30 @@
 
     class fow_30Rnd_77x58 : CA_Magazine {
         displayName = "Type 99 LMG, 30 Round Magazine, Ball";
-        displayNameShort = "7.7x58mm Ball";
+        displayNameShort = "Ball";
         descriptionShort = "7.7x58mm, 30 Rounds, Ball<br/>For use in the Type 99 LMG";
         ammo = "LIB_B_77x58_Ball";
         mass = 8;
         ace_isbelt = 1;
     };
+    class fow_30Rnd_77x58_Tracer_2PzD : fow_30Rnd_77x58 {
+        displayName = "Type 99 LMG, 30 Round Magazine, Tracer";
+        displayNameShort = "Tracer";
+        descriptionShort = "7.7x58mm, 10 Rounds, Tracer<br/>For use in the Type 99 LMG";
+        ammo = "LIB_B_77x58_Tracer";
+    };
+    class fow_30Rnd_77x58_noTrace_2PzD : fow_30Rnd_77x58 {
+        displayName = "Type 99 LMG, 30 Round Magazine, Ball/Tracer";
+        displayNameShort = "Ball/Tracer";
+        descriptionShort = "7.7x58mm, 10 Rounds, Mixed Ball/Tracer<br/>For use in the Type 99 LMG";
+        ammo = "LIB_B_77x58_Mixed_Ball_Tracer";
+    };
 
     class fow_50Rnd_792x57 : CA_Magazine {
         displayName = "MG34/MG42, 50 Round Drum, Ball (SmE)";
-        displayNameShort = "7.92x57mm Ball";
+        displayNameShort = "Ball";
         descriptionShort = "7.92x57mm, 50 Rounds, Ball (SmE)<br/>For use in the MG34 or MG42";
-        ammo = "LIB_B_792x57_Ball_SmE";
+        ammo = "LIB_B_792x57_Ball";
         mass = 14.55;
         scope = 1;
         ace_isbelt = 1;
@@ -396,41 +471,41 @@
         scope = 2;
         mass = 2.5;
     };
-    class fow_6Rnd_12G_Pellets_No0_Buck : fow_6Rnd_12G_Pellets {
+    class fow_6Rnd_12G_Pellets_No0_Buck_2PzD : fow_6Rnd_12G_Pellets {
         displayName = "12 Gauge, #0 Buckshot, 5 rounds";
         displayNameShort = "#0 Buckshot";
         descriptionShort = "#0 Buckshot, 5 Rounds<br/>For use in the Winchester M12";
-        ammo = "ACE_2Rnd_12Gauge_Pellets_No0_Buck";
+        ammo = "ACE_12Gauge_Pellets_Submunition_No0_Buck";
     };
-    class fow_6Rnd_12G_Pellets_No1_Buck : fow_6Rnd_12G_Pellets {
+    class fow_6Rnd_12G_Pellets_No1_Buck_2PzD : fow_6Rnd_12G_Pellets {
         displayName = "12 Gauge, #1 Buckshot, 5 rounds";
         displayNameShort = "#1 Buckshot";
         descriptionShort = "#1 Buckshot, 5 Rounds<br/>For use in the Winchester M12";
-        ammo = "ACE_2Rnd_12Gauge_Pellets_No1_Buck";
+        ammo = "ACE_12Gauge_Pellets_Submunition_No1_Buck";
     };
-    class fow_6Rnd_12G_Pellets_No2_Buck : fow_6Rnd_12G_Pellets {
+    class fow_6Rnd_12G_Pellets_No2_Buck_2PzD : fow_6Rnd_12G_Pellets {
         displayName = "12 Gauge, #2 Buckshot, 5 rounds";
         displayNameShort = "#2 Buckshot";
         descriptionShort = "#2 Buckshot, 5 Rounds<br/>For use in the Winchester M12";
-        ammo = "ACE_2Rnd_12Gauge_Pellets_No2_Buck";
+        ammo = "ACE_12Gauge_Pellets_Submunition_No2_Buck";
     };
-    class fow_6Rnd_12G_Pellets_No3_Buck : fow_6Rnd_12G_Pellets {
+    class fow_6Rnd_12G_Pellets_No3_Buck_2PzD : fow_6Rnd_12G_Pellets {
         displayName = "12 Gauge, #3 Buckshot, 5 rounds";
         displayNameShort = "#3 Buckshot";
         descriptionShort = "#3 Buckshot, 5 Rounds<br/>For use in the Winchester M12";
-        ammo = "ACE_2Rnd_12Gauge_Pellets_No3_Buck";
+        ammo = "ACE_12Gauge_Pellets_Submunition_No3_Buck";
     };
-    class fow_6Rnd_12G_Pellets_No4_Buck : fow_6Rnd_12G_Pellets {
+    class fow_6Rnd_12G_Pellets_No4_Buck_2PzD : fow_6Rnd_12G_Pellets {
         displayName = "12 Gauge, #4 Buckshot, 5 rounds";
         displayNameShort = "#4 Buckshot";
         descriptionShort = "#4 Buckshot, 5 Rounds<br/>For use in the Winchester M12";
-        ammo = "ACE_2Rnd_12Gauge_Pellets_No4_Buck";
+        ammo = "ACE_12Gauge_Pellets_Submunition_No4_Buck";
     };
-    class fow_6Rnd_12G_Pellets_No4_Bird : fow_6Rnd_12G_Pellets {
+    class fow_6Rnd_12G_Pellets_No4_Bird_2PzD : fow_6Rnd_12G_Pellets {
         displayName = "12 Gauge, #4 Birdshot, 5 rounds";
         displayNameShort = "#4 Birdshot";
         descriptionShort = "#4 Birdshot, 5 Rounds<br/>For use in the Winchester M12";
-        ammo = "ACE_2Rnd_12Gauge_Pellets_No4_Bird";
+        ammo = "ACE_12Gauge_Pellets_Submunition_No4_Bird";
     };
 
     class fow_5Rnd_12G_Slug : fow_6Rnd_12G_Slug {
@@ -451,41 +526,41 @@
         mass = 2;
         scope = 2;
     };
-    class fow_5Rnd_12G_Pellets_No0_Buck : fow_5Rnd_12G_Pellets {
-        displayName = "12 Gauge, #0 Buckshot, 5 rounds";
+    class fow_5Rnd_12G_Pellets_No0_Buck_2PzD : fow_5Rnd_12G_Pellets {
+        displayName = "12 Gauge, #0 Buckshot, 4 rounds";
         displayNameShort = "#0 Buckshot";
         descriptionShort = "#0 Buckshot, 4 Rounds<br/>For use in the Ithaca 37 or Winchester M12";
-        ammo = "ACE_2Rnd_12Gauge_Pellets_No0_Buck";
+        ammo = "ACE_12Gauge_Pellets_Submunition_No0_Buck";
     };
-    class fow_5Rnd_12G_Pellets_No1_Buck : fow_5Rnd_12G_Pellets {
-        displayName = "12 Gauge, #1 Buckshot, 5 rounds";
+    class fow_5Rnd_12G_Pellets_No1_Buck_2PzD : fow_5Rnd_12G_Pellets {
+        displayName = "12 Gauge, #1 Buckshot, 4 rounds";
         displayNameShort = "#1 Buckshot";
         descriptionShort = "#1 Buckshot, 4 Rounds<br/>For use in the Ithaca 37 or Winchester M12";
-        ammo = "ACE_2Rnd_12Gauge_Pellets_No1_Buck";
+        ammo = "ACE_12Gauge_Pellets_Submunition_No1_Buck";
     };
-    class fow_5Rnd_12G_Pellets_No2_Buck : fow_5Rnd_12G_Pellets {
-        displayName = "12 Gauge, #2 Buckshot, 5 rounds";
+    class fow_5Rnd_12G_Pellets_No2_Buck_2PzD : fow_5Rnd_12G_Pellets {
+        displayName = "12 Gauge, #2 Buckshot, 4 rounds";
         displayNameShort = "#2 Buckshot";
         descriptionShort = "#2 Buckshot, 4 Rounds<br/>For use in the Ithaca 37 or Winchester M12";
-        ammo = "ACE_2Rnd_12Gauge_Pellets_No2_Buck";
+        ammo = "ACE_12Gauge_Pellets_Submunition_No2_Buck";
     };
-    class fow_5Rnd_12G_Pellets_No3_Buck : fow_5Rnd_12G_Pellets {
-        displayName = "12 Gauge, #3 Buckshot, 5 rounds";
+    class fow_5Rnd_12G_Pellets_No3_Buck_2PzD : fow_5Rnd_12G_Pellets {
+        displayName = "12 Gauge, #3 Buckshot, 4 rounds";
         displayNameShort = "#3 Buckshot";
         descriptionShort = "#3 Buckshot, 4 Rounds<br/>For use in the Ithaca 37 or Winchester M12";
         ammo = "ACE_12Gauge_Pellets_Submunition_No3_Buck";
     };
-    class fow_5Rnd_12G_Pellets_No4_Buck : fow_5Rnd_12G_Pellets {
-        displayName = "12 Gauge, #4 Buckshot, 5 rounds";
+    class fow_5Rnd_12G_Pellets_No4_Buck_2PzD : fow_5Rnd_12G_Pellets {
+        displayName = "12 Gauge, #4 Buckshot, 4 rounds";
         displayNameShort = "#4 Buckshot";
         descriptionShort = "#4 Buckshot, 4 Rounds<br/>For use in the Ithaca 37 or Winchester M12";
         ammo = "ACE_12Gauge_Pellets_Submunition_No4_Buck";
     };
-    class fow_5Rnd_12G_Pellets_No4_Bird : fow_6Rnd_12G_Pellets {
-        displayName = "12 Gauge, #4 Birdshot, 5 rounds";
+    class fow_5Rnd_12G_Pellets_No4_Bird_2PzD : fow_6Rnd_12G_Pellets {
+        displayName = "12 Gauge, #4 Birdshot, 4 rounds";
         displayNameShort = "#4 Birdshot";
         descriptionShort = "#4 Birdshot, 4 Rounds<br/>For use in the Ithaca 37 or Winchester M12";
-        ammo = "ACE_2Rnd_12Gauge_Pellets_No4_Bird";
+        ammo = "ACE_12Gauge_Pellets_Submunition_No4_Bird";
     };
 
     class fow_1Rnd_m6a1 : CA_LauncherMagazine {
@@ -526,24 +601,28 @@
         displayNameShort = "30m HEAT Warhead";
         // ammo = "LIB_Faustpatrone"; // TODO
         mass = 0;
+        scope = 1;
     };
     class fow_1Rnd_pzfaust_30 : fow_1Rnd_pzfaust_30_klein {
         displayName = "Panzerfaust 30 Warhead";
         displayNameShort = "30m HEAT Warhead";
         // ammo = "LIB_PzFaust_30m"; // TODO
         mass = 0;
+        scope = 1;
     };
     class fow_1Rnd_pzfaust_60 : fow_1Rnd_pzfaust_30 {
         displayName = "Panzerfaust 60 Warhead";
         displayNameShort = "60m HEAT Warhead";
         // ammo = "LIB_PzFaust_60m"; // TODO
         mass = 0;
+        scope = 1;
     };
     class fow_1Rnd_pzfaust_100 : fow_1Rnd_pzfaust_30 {
         displayName = "Panzerfaust 100 Warhead";
         displayNameShort = "100m HEAT Warhead";
         // ammo = "fow_R_pzfaust_100"; // TODO
         mass = 0;
+        scope = 2;
     };
 
     class fow_1Rnd_type10 : CA_Magazine {
@@ -621,8 +700,8 @@
 
     class fow_200Rnd_792x57 : VehicleMagazine {
         displayName = "MG34/MG42, 200 Round Belt, Ball (SmE)";
-        displayNameShort = "7.92x57mm Ball";
-        ammo = "LIB_B_792x57_Ball_SmE";
+        displayNameShort = "7.962x57 Ball";
+        ammo = "LIB_B_792x57_Ball";
     };
 /*
     class fow_20Rnd_20mm_AP : VehicleMagazine {
@@ -643,15 +722,15 @@
 */
     class fow_20Rnd_77x58_Type97 : VehicleMagazine {
         displayName = "Type 97, 20 Round Strip, Ball";
-        displayNameShort = "7.7x58mm Ball";
+        displayNameShort = "7.7x58 Ball";
         ammo = "LIB_B_77x58_Ball";
         scope = 1;
     };
 
     class fow_250Rnd_792x57 : VehicleMagazine {
         displayName = "MG34/MG42, 250 Round Belt, Ball (SmE)";
+        displayNameShort = "7.962x57 Ball";
         descriptionShort = "7.92x57mm, 250 Rounds, Ball (SmE)<br/>For use in the MG34 or MG42";
-        ammo = "LIB_B_792x57_Ball_SmE";
         mass = 72.75;
         count = 250;
         scope = 1;
@@ -673,7 +752,7 @@
     };
 */
     class fow_30Rnd_303_bren_mounted : VehicleMagazine {
-        displayName = "Bren Gun, 30 Round Magazine";
+        displayName = "Bren Gun, 30 Round Magazine, Ball";
         displayNameShort = ".303 British Ball";
         ammo = "LIB_B_770x56_Ball";
         lastRoundsTracer = 3;
@@ -748,7 +827,6 @@
     };
     class fow_250Rnd_M1919 : fow_50Rnd_M1919 {
         displayName = "M1919, 250 Round Belt, Ball (M2)";
-        displayNameShort = ".30-06 Ball";
         descriptionShort = ".30-06, 250 Rounds, Ball (M2)<br/>For use in the M1919 Machine Guns";
         count = 250;
         mass = 72.75;

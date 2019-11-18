@@ -120,7 +120,7 @@
         descriptionShort = "Walther Polizeipistole Kriminalmodell in .32 ACP";
         dispersion = MOA_TO_RAD(15);
         magazines[] = {"fow_7Rnd_765x17"};
-        magazineWell[] = {"CBA_32ACP_PPK"};
+        magazineWell[] = {"CBA_32ACP_PPK","CBA_32ACP_PP"};
         recoil = "recoil_2PzD_pistol_medium";
         scope = 2;
         class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -229,7 +229,7 @@
         displayName = "FG42 Ausf.G";
         descriptionShort = "Fallschirmjagergewehr 42 Ausfuhrung G";
         dispersion = MOA_TO_RAD(4);
-        // fow_burstLength = 3;
+        // fow_burstLength = 2;
         magazines[] = {"fow_20Rnd_792x57"};
         magazineWell[] = {"CBA_792x57_FG42"};
         recoil = "recoil_2PzD_rifle_FG42";
@@ -240,6 +240,12 @@
         };*/
         class WeaponSlotsInfo {
             mass = 109.191;
+        };
+        class OpticsModes {
+            class Ironsights {
+                discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200};
+                discreteDistanceInitIndex = 1;
+            };
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(4);
@@ -291,7 +297,7 @@
         discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200};
         discreteDistanceInitIndex = 2;
         dispersion = MOA_TO_RAD(6);
-        magazineWell[] = {"CBA_792x57_G43","CBA_792x57_G41","CBA_792x57_K98"};
+        magazineWell[] = {"CBA_792x57_G43","CBA_792x57_G41","CBA_792x57_wz38M","CBA_792x57_K98"};
         magazines[] = {"fow_10nd_792x57"};
         picture = "\WW2\Assets_t\Weapons\Equipment_t\Weapons\Rifles\Gear_G43_X_ca.paa";
         recoil = "recoil_2PzD_rifle_semi";
@@ -610,7 +616,7 @@
     class fow_w_m2_carbine_2PzD : fow_w_m1_carbine {
         displayName = "M2 Carbine";
         descriptionShort = "Carbine, Cal .30, M2";
-        fow_burstLength = 2;
+        fow_burstLength = 1;
         magazines[] = {"fow_30Rnd_762x33_2PzD"};
         magazineWell[] = {"CBA_30Carbine_M1Carbine"};
         modes[] = {"Single","Full","Far","Medium","Short"};
@@ -808,7 +814,7 @@
         discreteDistance[] = {100,200,300,400,500,600,700,800};
         discreteDistanceInitIndex = 1;
         dispersion = MOA_TO_RAD(7);
-        // fow_burstLength = 3;
+        // fow_burstLength = 2;
         magazines[] = {"fow_30Rnd_792x33"};
         magazineWell[] = {"CBA_792x33_StG"};
         modes[] = {"Single","Full","Far","Medium","Short"};
@@ -976,7 +982,7 @@
         discreteDistance[] = {100,250};
         discreteDistanceInitIndex = 0;
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"fow_30Rnd_45acp_M1_2PzD"};
         magazineWell[] = {"CBA_45ACP_Thompson_Stick"};
         recoil = "recoil_2PzD_smg_heavy";
@@ -1054,7 +1060,7 @@
     class fow_w_m1_thompson : fow_w_m1a1_thompson {
         displayName = "M1 Thompson";
         descriptionShort = "Submachine Gun, Caliber .45, M1";
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"fow_30Rnd_45acp_M1_2PzD"};
         magazineWell[] = {"CBA_45ACP_Thompson_Stick"};
         recoil = "recoil_2PzD_smg_heavy";
@@ -1140,7 +1146,7 @@
         displayName = "M3 Grease Gun";
         descriptionShort = "Submachine Gun, Caliber .45, M3";
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         modes[] = {"Full","Single","Far","Medium","Short"};
         magazines[] = {"fow_30Rnd_45acp_M3_2PzD"};
         magazineWell[] = {"CBA_45ACP_Grease"};
@@ -1224,7 +1230,7 @@
         discreteDistance[] = {50,100,200,300};
         discreteDistanceInitIndex = 1;
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazineWell[] = {"CBA_45ACP_Reising"};
         magazines[] = {"fow_20Rnd_45acp"};
         recoil = "recoil_2PzD_smg_medium";
@@ -1306,7 +1312,7 @@
         discreteDistance[] = {100,200};
         discreteDistanceInitIndex = 0;
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"fow_32Rnd_9x19_mp40"};
         magazineWell[] = {"CBA_9x19_MP40"};
         recoil = "recoil_2PzD_smg_medium";
@@ -1373,7 +1379,7 @@
         displayName = "Sten Mk II";
         descriptionShort = "Sten Mk II";
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"fow_32Rnd_9x19_sten"};
         magazineWell[] = {"CBA_9x19_STEN"};
         recoil = "recoil_2PzD_smg_medium";
@@ -1446,7 +1452,7 @@
         magazines[] = {"fow_32Rnd_9x19_sten"};
         magazineWell[] = {"CBA_9x19_STEN"};
         recoil = "recoil_2PzD_smg_medium";
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -1516,7 +1522,7 @@
         displayName = "Type 100 SMG";
         descriptionShort = "Type 100 Submachine Gun";
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 3;
+        fow_burstLength = 2;
         magazines[] = {"fow_32Rnd_8x22"};
         magazineWell[] = {"CBA_9x19_STEN"};
         recoil = "recoil_2PzD_smg_light";
@@ -1582,7 +1588,7 @@
         displayName = "Type 100/44 SMG";
         descriptionShort = "Type 100/44 Submachine Gun";
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 5;
+        fow_burstLength = 4;
         magazines[] = {"fow_32Rnd_8x22"};
         magazineWell[] = {"CBA_9x19_STEN"};
         recoil = "recoil_2PzD_smg_light";
@@ -1611,7 +1617,7 @@
         displayName = "Bren Gun Mk II";
         descriptionShort = "BREN L.M.G. Mk II";
         dispersion = MOA_TO_RAD(3);
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"fow_30Rnd_303_bren"};
         magazineWell[] = {"CBA_303B_BREN"};
         modes[] = {"FullAuto","Single","close","short","medium","far_optic1","far_optic2"};
@@ -1715,7 +1721,7 @@
         displayName = "M1918A2 BAR";
         descriptionShort = "Rifle, Caliber .30, Automatic, Browning, M1918A2";
         dispersion = MOA_TO_RAD(3);
-        fow_burstLength = 4;
+        fow_burstLength = 3;
         magazines[] = {"fow_20Rnd_762x63"};
         magazineWell[] = {"CBA_3006_BAR"};
         recoil = "recoil_2PzD_rifle_auto_1";
@@ -1832,7 +1838,7 @@
         // discreteDistance[] = {100,200,400,600,800,1000,1200,1400,1600,1800};
         // discreteDistanceInitIndex = 1;
         dispersion = MOA_TO_RAD(4);
-        fow_burstLength = 8;
+        fow_burstLength = 4;
         magazines[] = {"fow_250Rnd_M1919"};
         magazineWell[] = {"CBA_3006_Belt"};
         recoil = "recoil_2PzD_mmg_1";
@@ -1945,7 +1951,7 @@
         discreteDistance[] = {200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
         discreteDistanceInitIndex = 1;
         dispersion = MOA_TO_RAD(4);
-        fow_burstLength = 6;
+        fow_burstLength = 5;
         magazines[] = {"fow_50Rnd_792x57"};
         magazineWell[] = {"CBA_792x57_LINKS"};
         recoil = "recoil_2PzD_mmg_1";
@@ -2050,7 +2056,7 @@
         displayName = "MG42";
         descriptionShort = "Maschinengewehr 42";
         dispersion = MOA_TO_RAD(5);
-        fow_burstLength = 8;
+        fow_burstLength = 7;
         magazines[] = {"fow_50Rnd_792x57"};
         magazineWell[] = {"CBA_792x57_LINKS"};
         recoil = "recoil_2PzD_mmg_1";
@@ -2142,7 +2148,7 @@
         displayName = "Type 99 LMG";
         descriptionShort = "Type 99 Light Machine Gun";
         dispersion = MOA_TO_RAD(4);
-        fow_burstLength = 5;
+        fow_burstLength = 4;
         magazines[] = {"fow_30Rnd_77x58"};
         magazineWell[] = {"CBA_77x58_Type99"};
         recoil = "recoil_2PzD_mmg_1";
@@ -2256,7 +2262,7 @@
 
     class fow_w_vickers_mounted : HMG_M2 {
         dispersion = MOA_TO_RAD(4);
-        // fow_burstLength = 7;
+        // fow_burstLength = 6;
         /*class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -2327,7 +2333,7 @@
 
     class fow_w_type92 : MGun {
         dispersion = MOA_TO_RAD(4);
-        // fow_burstLength = 7;
+        // fow_burstLength = 6;
         /*class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -2401,6 +2407,8 @@
     class fow_w_ithaca37 : fow_shotgun_base {
         displayName = "Ithaca 37";
         descriptionShort = "Ithaca 37 Trench Shotgun, 12 Gauge";
+        discreteDistance[] = {50};
+        discreteDistanceInitIndex = 0;
         dispersion = MOA_TO_RAD(8);
         magazines[] = {"fow_5Rnd_12G_Pellets"};
         magazineWell[] += {"CBA_12g_4rnds","CBA_12g_3rnds","CBA_12g_2rnds","CBA_12g_1rnd"};
@@ -2431,6 +2439,12 @@
         recoil = "recoil_2PzD_rifle_short";
         class WeaponSlotsInfo {
             mass = 79.412;
+        };
+        class OpticsModes {
+            class Ironsights {
+                discreteDistance[] = {50};
+                discreteDistanceInitIndex = 0;
+            };
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(8);
