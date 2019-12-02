@@ -82,7 +82,7 @@
         ammo = "LIB_B_762x25_Ball";
         mass = 4.76;
     };
-    class LEN_35Rnd_762x25_AP_2PzD : LEN_35Rnd_762x25_2PzD {
+    class LEN_35Rnd_762x25_APT_2PzD : LEN_35Rnd_762x25_2PzD {
         displayName = "PPS-43, 35 Round Magazine, APT (Type P-41)";
         displayNameShort = "APT";
         descriptionShort = "7.62x25mm, 35 Rounds, APT (Type P-41)<br/>For use in the PPS-43";

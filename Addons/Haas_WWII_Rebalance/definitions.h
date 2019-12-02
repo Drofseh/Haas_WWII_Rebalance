@@ -76,7 +76,7 @@
     "LEN_8Rnd_765x17_2PzD", \
     "LEN_8Rnd_9x19_2PzD", \
     "LEN_35Rnd_762x25_2PzD", \
-    "LEN_35Rnd_762x25_ap_2PzD", \
+    "LEN_35Rnd_762x25_APT_2PzD", \
     "LEN_35Rnd_762x25_Tracer_2PzD", \
     "LEN_35Rnd_762x25_Mixed_Ball_Tracer_2PzD", \
     "LIB_6Rnd_9x19_Welrod_Tracer_2PzD", \

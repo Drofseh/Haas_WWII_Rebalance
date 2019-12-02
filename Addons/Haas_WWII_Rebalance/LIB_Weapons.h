@@ -29,7 +29,14 @@
         class WeaponSlotsInfo;
     };
 
-    class LIB_RifleGrenade_Muzzle;
+    class LIB_RifleGrenade_Muzzle : UGL_F {
+        aiDispersionCoefX = 5;
+        aiDispersionCoefY = 10;
+        aiRateOfFire = 25;
+        aiRateOfFireDispersion = 5;
+        aiRateOfFireDistance = 500;
+        dispersion = "((10) * 0.00029088)";
+    };
 
 // Pistols
     class LIB_Colt_M1911 : LIB_PISTOL {
@@ -317,6 +324,11 @@
             dispersion = MOA_TO_RAD(10);
             recoil = "recoil_single_m320";
             recoilProne = "recoil_single_m320";
+            aiDispersionCoefX = 5;
+            aiDispersionCoefY = 10;
+            aiRateOfFire = 25;
+            aiRateOfFireDispersion = 5;
+            aiRateOfFireDistance = 500;
         };
     };
 
@@ -335,6 +347,11 @@
             dispersion = MOA_TO_RAD(10);
             recoil = "recoil_single_m320";
             recoilProne = "recoil_single_m320";
+            aiDispersionCoefX = 5;
+            aiDispersionCoefY = 10;
+            aiRateOfFire = 25;
+            aiRateOfFireDispersion = 5;
+            aiRateOfFireDistance = 500;
         };
     };
 
@@ -403,6 +420,11 @@
             dispersion = MOA_TO_RAD(10);
             recoil = "recoil_single_m320";
             recoilProne = "recoil_single_m320";
+            aiDispersionCoefX = 5;
+            aiDispersionCoefY = 10;
+            aiRateOfFire = 25;
+            aiRateOfFireDispersion = 5;
+            aiRateOfFireDistance = 500;
         };
     };
 
@@ -419,6 +441,11 @@
             dispersion = MOA_TO_RAD(10);
             recoil = "recoil_single_m320";
             recoilProne = "recoil_single_m320";
+            aiDispersionCoefX = 5;
+            aiDispersionCoefY = 10;
+            aiRateOfFire = 25;
+            aiRateOfFireDispersion = 5;
+            aiRateOfFireDistance = 500;
         };
     };
 
@@ -442,6 +469,11 @@
             dispersion = MOA_TO_RAD(10);
             recoil = "recoil_single_m320";
             recoilProne = "recoil_single_m320";
+            aiDispersionCoefX = 5;
+            aiDispersionCoefY = 10;
+            aiRateOfFire = 25;
+            aiRateOfFireDispersion = 5;
+            aiRateOfFireDistance = 500;
         };
     };
 
@@ -517,6 +549,11 @@
             dispersion = MOA_TO_RAD(10);
             recoil = "recoil_single_m320";
             recoilProne = "recoil_single_m320";
+            aiDispersionCoefX = 5;
+            aiDispersionCoefY = 10;
+            aiRateOfFire = 25;
+            aiRateOfFireDispersion = 5;
+            aiRateOfFireDistance = 500;
         };
     };
 
@@ -578,6 +615,11 @@
             dispersion = MOA_TO_RAD(10);
             recoil = "recoil_single_m320";
             recoilProne = "recoil_single_m320";
+            aiDispersionCoefX = 5;
+            aiDispersionCoefY = 10;
+            aiRateOfFire = 25;
+            aiRateOfFireDispersion = 5;
+            aiRateOfFireDistance = 500;
         };
     };
 
@@ -665,6 +707,11 @@
             dispersion = MOA_TO_RAD(10);
             recoil = "recoil_single_m320";
             recoilProne = "recoil_single_m320";
+            aiDispersionCoefX = 5;
+            aiDispersionCoefY = 10;
+            aiRateOfFire = 25;
+            aiRateOfFireDispersion = 5;
+            aiRateOfFireDistance = 500;
         };
     };
 

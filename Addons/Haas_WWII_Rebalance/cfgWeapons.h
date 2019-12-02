@@ -11,6 +11,7 @@ class MGun : MGunCore {
 
 class HMG_M2;
 class GrenadeLauncher;
+class UGL_F;
 class Launcher;
 
 class Launcher_Base_F : Launcher {
