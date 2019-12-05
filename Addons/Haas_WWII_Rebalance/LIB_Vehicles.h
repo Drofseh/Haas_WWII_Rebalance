@@ -3,7 +3,10 @@
 
     class LIB_Boat_base;
 
-    class LIB_Car_base;
+    class LIB_Car_base : Car_F {
+        maximumLoad = 1500;
+        class Turrets;
+    };
 
     class LIB_Plane_base;
 
@@ -11,11 +14,19 @@
         maximumLoad = 5000;
     };
 
-    class LIB_Truck_base;
+    class LIB_Truck_base : Truck_F {
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
 
     class LIB_US_Plane_base;
 
-    class LIB_WheeledTracked_APC_base;
+    class LIB_WheeledTracked_APC_base : LIB_Truck_base {
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
 
     class LIB_C47_Skytrain : LIB_US_Plane_base {
         maximumLoad = 10000;
@@ -31,13 +42,24 @@
 
     class LIB_Halftrack_base : LIB_WheeledTracked_APC_base {
         maximumLoad = 10000;
+        class Turrets : Turrets {
+            class MainTurret : MainTurret {
+                maxHorizontalRotSpeed = 0.5;
+                maxVerticalRotSpeed = 2;
+            };
+        };
     };
 
     class LIB_HORSA : LIB_US_Plane_base {
         maximumLoad = 2000;
     };
 
-    class LIB_Kfz1_base;
+    class LIB_Kfz1_base : LIB_Car_base {
+        maximumLoad = 1500;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
+    };
 
     class LIB_Kfz1 : LIB_Kfz1_base {
         maximumLoad = 2000;
@@ -45,6 +67,12 @@
 
     class LIB_Kfz1_MG42 : LIB_Kfz1_base {
         maximumLoad = 1500;
+        class Turrets : Turrets {
+            class MainTurret : MainTurret {
+                maxHorizontalRotSpeed = 2;
+                maxVerticalRotSpeed = 2;
+            };
+        };
     };
 
     class LIB_LCI : LIB_Boat_base {
@@ -79,6 +107,12 @@
 
     class LIB_Scout_M3_base : LIB_Truck_base {
         maximumLoad = 5000;
+        class Turrets : Turrets {
+            class MainTurret : MainTurret {
+                maxHorizontalRotSpeed = 2;
+                maxVerticalRotSpeed = 2;
+            };
+        };
     };
 
     class LIB_SdKfz_7_base;

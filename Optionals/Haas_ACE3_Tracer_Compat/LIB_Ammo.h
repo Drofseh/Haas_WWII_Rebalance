@@ -239,11 +239,11 @@
         model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
     };
 
-    class LIB_B_792x57_Ball_SMK : LIB_B_792x57_Ball {
+    class LIB_B_792x57_Ball_SmK : LIB_B_792x57_Ball {
         model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
     };
 
-    class LIB_B_792x57_Ball_SMK_NoCartridge : LIB_B_792x57_Ball_SMK {
+    class LIB_B_792x57_Ball_SmK_NoCartridge : LIB_B_792x57_Ball_SmK {
         model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
     };
 
@@ -399,7 +399,7 @@
         model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
     };
 
-    class LIB_S_76L55_APDSMk1 : LIB_ShellAPCR_base {
+    class LIB_S_76L55_APDSmK1 : LIB_ShellAPCR_base {
         model = "\z\ace\addons\tracers\ace_shell_tracer_red.p3d";
     };
 

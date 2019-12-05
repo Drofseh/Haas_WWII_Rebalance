@@ -1640,6 +1640,17 @@
         };*/
     };
 
+    class LIB_M2 : LIB_MLMG_base {
+        class manual : manual {
+            aiDispersionCoefX = 6;
+            aiDispersionCoefY = 8;
+        };
+        class close : close {};
+        class short : short {};
+        class medium : medium {};
+        class far : far {};
+    };
+
     class LIB_PlaneCannon_base : CannonCore {
         class manual;
         class close;

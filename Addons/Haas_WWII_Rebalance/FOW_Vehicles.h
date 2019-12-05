@@ -33,10 +33,19 @@
         attenuationEffectType = "OpenCarAttenuation";
         maximumLoad = 2000;
         tf_isolatedAmount = 0;
+        class Turrets : Turrets {
+            class MainTurret;
+        };
     };
 
     class fow_v_kubelwagen_mg34 : fow_v_kubelwagen {
         maximumLoad = 1500;
+        class Turrets : Turrets {
+            class MainTurret : MainTurret {
+                maxHorizontalRotSpeed = 2;
+                maxVerticalRotSpeed = 2;
+            };
+        };
     };
 
     class fow_v_lvta2 : Tank_F {

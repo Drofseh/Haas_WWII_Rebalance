@@ -1,6 +1,8 @@
 
 class Man;
 
+class Car;
+
 class Tank_F;
 
 class FloatingStructure_F;
@@ -28,9 +30,13 @@ class ReammoBox_F : ThingX {
 
 class Bag_Base;
 
-class Car_F;
+class Car_F : Car {
+    class Turrets;
+};
 
-class Truck_F;
+class Truck_F : Car_F {
+    class Turrets;
+};
 
 class Wheeled_APC_F;
 
