@@ -7,12 +7,14 @@
         displayName = "Webley Mk VI, 6 Rounds, Ball (Mk VI)";
         displayNameShort = "Ball";
         descriptionShort = ".455 Webley, 6 Rounds, Ball (Mk VI)<br/>For use in the Webley Mk VI";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_M1895_Ball_ca.paa";
     };
 
     class LIB_6Rnd_9x19_Welrod : CA_Magazine {
         displayName = "Welrod Mk I, 6 Round Magazine, Ball (Mk Iz)";
         displayNameShort = "Ball";
         descriptionShort = "9x19mm, 6 Rounds, Ball (Mk Iz)<br/>For use in the Welrod Mk I";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_Ball_ca.paa";
         mass = 3.8;
     };
     class LIB_6Rnd_9x19_Welrod_Tracer_2PzD : LIB_6Rnd_9x19_Welrod {
@@ -20,6 +22,7 @@
         displayNameShort = "Tracer";
         descriptionShort = "9x19mm, 6 Rounds, Tracer<br/>For use in the Welrod Mk I";
         ammo = "LIB_B_9x19_Ball_t";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_Ball_Green_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 6;
     };
@@ -31,12 +34,15 @@
         displayName = "M1916 C-96 Mauser, 10 Round Magazine, Ball (PP08 mE)";
         displayNameShort = "Ball";
         descriptionShort = "9x19mm, 10 Rounds, Ball (PP08 mE)<br/>For use in the M1916 C-96 Mauser";
+        ammo = "LIB_B_9x19_Ball";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_Ball_ca.paa";
     };
     class LIB_10Rnd_9x19_M1896_Tracer_2PzD : LIB_10Rnd_9x19_M1896 {
         displayName = "M1916 C-96 Mauser, 10 Round Magazine, Tracer";
         displayNameShort = "Tracer";
         descriptionShort = "9x19mm, 10 Rounds, Tracer<br/>For use in the M1916 C-96 Mauser";
         ammo = "LIB_B_9x19_Ball_t";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_Ball_Green_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 10;
     };
@@ -53,6 +59,7 @@
         descriptionShort = "7.63x25mm, 10 Rounds, APT<br/>For use in the M1930 C-96 Mauser";
         ammo = "LIB_B_762x25_p41";
         count = 10;
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_APT_Red_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 10;
     };
@@ -69,6 +76,7 @@
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.63x25mm, 10 Rounds, Mixed Ball/Tracer<br/>For use in the M1930 C-96 Mauser";
         ammo = "LIB_B_762x25_Mixed_pt";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_Ball_Red_ca.paa";
         tracersEvery = 4;
         lastRoundsTracer = 1;
     };
@@ -83,6 +91,7 @@
         displayNameShort = "APT";
         descriptionShort = "7.63x25mm, 20 Rounds, APT<br/>For use in the M712 Schnellfeuer";
         ammo = "LIB_B_762x25_p41";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_APT_Red_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 20;
     };
@@ -91,6 +100,7 @@
         displayNameShort = "Tracer";
         descriptionShort = "7.63x25mm, 20 Rounds, Tracer<br/>For use in the M712 Schnellfeuer";
         ammo = "LIB_B_762x25_pt";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_Tracer_Red_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 20;
     };
@@ -99,6 +109,7 @@
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.63x25mm, 20 Rounds, Mixed Ball/Tracer<br/>For use in the M712 Schnellfeuer";
         ammo = "LIB_B_762x25_Mixed_pt";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_Ball_Red_ca.paa";
         tracersEvery = 4;
         lastRoundsTracer = 1;
     };
@@ -113,6 +124,7 @@
         displayNameShort = "APT";
         descriptionShort = "7.63x25mm, 40 Rounds, APT<br/>For use in the M712 Schnellfeuer";
         ammo = "LIB_B_762x25_p41";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_APT_Red_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 40;
     };
@@ -121,6 +133,7 @@
         displayNameShort = "Tracer";
         descriptionShort = "7.63x25mm, 40 Rounds, Tracer<br/>For use in the M712 Schnellfeuer";
         ammo = "LIB_B_762x25_pt";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_Tracer_Red_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 40;
     };
@@ -129,6 +142,7 @@
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.63x25mm, 40 Rounds, Mixed Ball/Tracer<br/>For use in the M712 Schnellfeuer";
         ammo = "LIB_B_762x25_Mixed_pt";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_Ball_Red_ca.paa";
         tracersEvery = 4;
         lastRoundsTracer = 1;
     };
@@ -137,12 +151,14 @@
         displayName = "M1911A1, 7 Round Magazine, Ball (M1911)";
         displayNameShort = "Ball";
         descriptionShort = ".45 ACP, 7 Rounds, Ball (M1911)<br/>For use in the M1911A1";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_Ball_ca.paa";
     };
     class LIB_7Rnd_45ACP_t : LIB_7Rnd_45ACP {
         displayName = "M1911A1, 7 Round Magazine, Tracer (M26)";
         displayNameShort = "Tracer";
         descriptionShort = ".45 ACP, 7 Rounds, Tracer (M26)<br/>For use in the M1911A1";
         ammo = "LIB_B_45ACP_Ball_t";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_Tracer_Yellow_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 7;
     };
@@ -153,6 +169,7 @@
         descriptionShort = ".32 ACP, 7 Rounds, Ball<br/>For use in the Walther PPK";
         ammo = "LIB_B_765x17_Ball";
         mass = 1.31;
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_Ball_ca.paa";
     };
     class LIB_7Rnd_9x19 : LIB_7Rnd_765x17_PPK {
         scope = 1;
@@ -162,18 +179,21 @@
         displayName = "M1895 Nagant, 7 Rounds, Ball (R hl)";
         displayNameShort = "Ball";
         descriptionShort = "7.62x38mm, 7 Rounds, Ball (R hl)<br/>For use in the M1895 Nagant";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_M1895_Ball_ca.paa";
     };
 
     class LIB_8Rnd_762x25 : CA_Magazine {
         displayName = "TT-33, 8 Round Magazine, Ball (Type P)";
         displayNameShort = "Ball";
         descriptionShort = "7.62x25mm, 8 Rounds, Ball (Type P)<br/>For use in the TT-33 Tokarev";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_TT33_Ball_ca.paa";
     };
     class LIB_8Rnd_762x25_APT_2PzD : LIB_8Rnd_762x25 {
         displayName = "TT-33, 8 Round Magazine, APT (Type P-41)";
         displayNameShort = "APT";
         descriptionShort = "7.62x25mm, 8 Rounds, APT (Type P-41)<br/>For use in the TT-33 Tokarev";
         ammo = "LIB_B_762x25_p41";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_TT33_APT_Redl_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 8;
     };
@@ -182,6 +202,7 @@
         displayNameShort = "Tracer";
         descriptionShort = "7.62x25mm, 8 Rounds, Tracer (Type PT)<br/>For use in the TT-33";
         ammo = "LIB_B_762x25_pt";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_TT33_Tracer_Red_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 8;
     };
@@ -190,6 +211,7 @@
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.62x25mm, 8 Rounds, Mixed Ball/Tracer (Type P/Type PT)<br/>For use in the TT-33";
         ammo = "LIB_B_762x25_Mixed_pt";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_TT33_Ball_Red_ca.paa";
         tracersEvery = 4;
         lastRoundsTracer = 1;
     };
@@ -198,12 +220,14 @@
         displayName = "P38, 8 Round Magazine, Ball (PP08 mE)";
         displayNameShort = "Ball";
         descriptionShort = "9x19mm, 8 Rounds, Ball (PP08 mE)<br/>For use in the P38";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_P38_Ball_ca.paa";
     };
     class LIB_8Rnd_9x19_Tracer_2PzD : LIB_8Rnd_9x19 {
         displayName = "P38, 8 Round Magazine, Tracer";
         displayNameShort = "Tracer";
         descriptionShort = "9x19mm, 8 Rounds, Tracer<br/>For use in the P38";
         ammo = "LIB_B_9x19_Ball_t";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_P38_Tracer_Green_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 8;
     };
@@ -212,12 +236,14 @@
         displayName = "P08, 8 Round Magazine, Ball (PP08 mE)";
         displayNameShort = "Ball";
         descriptionShort = "9x19mm, 8 Rounds, Ball (PP08 mE)<br/>For use in the P08";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_P08_Ball_ca.paa";
     };
     class LIB_8Rnd_9x19_P08_Tracer_2PzD : LIB_8Rnd_9x19_P08 {
         displayName = "P08, 8 Round Magazine, Tracer";
         displayNameShort = "Tracer";
         descriptionShort = "9x19mm, 8 Rounds, Tracer<br/>For use in the P08";
         ammo = "LIB_B_9x19_Ball_t";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_P08_Tracer_Green_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 8;
     };
@@ -228,6 +254,7 @@
         displayName = "PTRD-41, 1 Round, API (B-32)";
         displayNameShort = "API";
         descriptionShort = "14.5x114mm, 1 Round, API (B-32)<br/>For use in the PTRD-41 rifle.";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_PTRD_API_ca.paa";
     };
 
     class LIB_5Rnd_762x54 : CA_Magazine {
@@ -235,24 +262,28 @@
         displayNameShort = "Ball";
         descriptionShort = "7.62x54mm, 5 Rounds, Ball (Type L)<br/>For use in the Mosin Rifles";
         ammo = "LIB_B_762x54_Ball_NoCartridge";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_M9130_Ball_ca.paa";
     };
     class LIB_5Rnd_762x54_D : LIB_5Rnd_762x54 {
         displayName = "Mosin, 5 Round Clip, Heavy Ball (Type D)";
         displayNameShort = "Heavy Ball";
         descriptionShort = "7.62x54mm, 5 Rounds, Heavy Ball (Type D)<br/>For use in the Mosin Rifles";
         ammo = "LIB_B_762x54_Ball_D_NoCartridge";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_M9130_Heavy_ca.paa";
     };
     class LIB_5Rnd_762x54_b30 : LIB_5Rnd_762x54 {
         displayName = "Mosin, 5 Round Clip, AP (B30)";
         displayNameShort = "AP";
         descriptionShort = "7.62x54mm, 5 Rounds, AP (B30)<br/>For use in the Mosin Rifles";
         ammo = "LIB_B_762x54_Ball_b30_NoCartridge";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_M9130_AP_ca.paa";
     };
     class LIB_5Rnd_762x54_t30 : LIB_5Rnd_762x54 {
         displayName = "Mosin, 5 Round Clip, Tracer (T30)";
         displayNameShort = "Tracer";
         descriptionShort = "7.62x54mm, 5 Rounds, Tracer (T30)<br/>For use in the Mosin Rifles";
         ammo = "LIB_B_762x54_Ball_t30_NoCartridge";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_M9130_Tracer_White_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 5;
     };
@@ -261,6 +292,7 @@
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.62x54mm, 5 Rounds, Mixed Ball/Tracer (Type L/T30)<br/>For use in the Mosin Rifles";
         ammo = "LIB_B_762x54_Mixed_t30_NoCartridge";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_M9130_Ball_White_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -269,6 +301,7 @@
         displayNameShort = "Heavy Ball/Tracer";
         descriptionShort = "7.62x54mm, 5 Rounds, Mixed Heavy Ball/Tracer (Type D/T30)<br/>For use in the Mosin Rifles";
         ammo = "LIB_B_762x54_Mixed_D_t30_NoCartridge";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_M9130_Heavy_White_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -277,6 +310,7 @@
         displayNameShort = "AP/Tracer";
         descriptionShort = "7.62x54mm, 5 Rounds, Mixed AP/Tracer (B30/T30)<br/>For use in the Mosin Rifles";
         ammo = "LIB_B_762x54_Mixed_b30_t30";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_M9130_AP_White_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -285,6 +319,7 @@
         displayNameShort = "Tracer";
         descriptionShort = "7.62x54mm, 5 Rounds, Tracer (T46)<br/>For use in the Mosin Rifles";
         ammo = "LIB_B_762x54_Ball_t46_NoCartridge";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_M9130_Tracer_Red_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 5;
     };
@@ -293,6 +328,7 @@
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.62x54mm, 5 Rounds, Mixed Ball/Tracer (Type L/T46)<br/>For use in the Mosin Rifles";
         ammo = "LIB_B_762x54_Mixed_t46_NoCartridge";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_M9130_Ball_Red_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -301,6 +337,7 @@
         displayNameShort = "Heavy Ball/Tracer";
         descriptionShort = "7.62x54mm, 5 Rounds, Mixed Heavy Ball/Tracer (Type D/T46)<br/>For use in the Mosin Rifles";
         ammo = "LIB_B_762x54_Mixed_D_t46_NoCartridge";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_M9130_Heavy_Red_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -309,6 +346,7 @@
         displayNameShort = "AP/Tracer";
         descriptionShort = "7.62x54mm, 5 Rounds, Mixed AP/Tracer (B30/T46)<br/>For use in the Mosin Rifles";
         ammo = "LIB_B_762x54_Mixed_b30_t46_NoCartridge";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_M9130_AP_Red_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -318,24 +356,28 @@
         displayNameShort = "Ball";
         descriptionShort = "7.62x54mm, 10 Rounds, Ball (Type L)<br/>For use in the SVT-40";
         ammo = "LIB_B_762x54_Ball";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Svt40_Ball_ca.paa";
     };
     class LIB_10Rnd_762x54_d : LIB_10Rnd_762x54 {
         displayName = "SVT-40, 10 Round Magazine, Heavy Ball (Type D)";
         displayNameShort = "Heavy Ball";
         descriptionShort = "7.62x54mm, 10 Rounds, Heavy Ball (Type D)<br/>For use in the SVT-40";
         ammo = "LIB_B_762x54_Ball_D";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Svt40_Heavy_ca.paa";
     };
     class LIB_10Rnd_762x54_b30 : LIB_10Rnd_762x54 {
         displayName = "SVT-40, 10 Round Magazine, AP (B30)";
         displayNameShort = "AP";
         descriptionShort = "7.62x54mm, 10 Rounds, AP<br/>For use in the SVT-40";
         ammo = "LIB_B_762x54_Ball_b30";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Svt40_AP_ca.paa";
     };
     class LIB_10Rnd_762x54_t30 : LIB_10Rnd_762x54 {
         displayName = "SVT-40, 10 Round Magazine, Tracer (T30)";
         displayNameShort = "Tracer";
         descriptionShort = "7.62x54mm, 10 Rounds, Tracer (T30)<br/>For use in the SVT-40";
         ammo = "LIB_B_762x54_Ball_t30";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Svt40_Tracer_White_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 10;
     };
@@ -344,6 +386,7 @@
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.62x54mm, 10 Rounds, Mixed Ball/Tracer (Type L/T30)<br/>For use in the SVT-40";
         ammo = "LIB_B_762x54_Mixed_t30";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Svt40_Ball_White_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -352,6 +395,7 @@
         displayNameShort = "Heavy Ball/Tracer";
         descriptionShort = "7.62x54mm, 10 Rounds, Mixed Ball/Tracer (Type D/T30)<br/>For use in the SVT-40";
         ammo = "LIB_B_762x54_Mixed_D_t30";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Svt40_Heavy_White_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -360,6 +404,7 @@
         displayNameShort = "AP/Tracer";
         descriptionShort = "7.62x54mm, 10 Rounds, Mixed Ball/Tracer (B30/T30)<br/>For use in the SVT-40";
         ammo = "LIB_B_762x54_Mixed_b30_t30";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Svt40_AP_White_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -368,6 +413,7 @@
         displayNameShort = "Tracer";
         descriptionShort = "7.62x54mm, 10 Rounds, Tracer (T46)<br/>For use in the SVT-40";
         ammo = "LIB_B_762x54_Ball_t46";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Svt40_Tracer_Red_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 10;
     };
@@ -376,6 +422,7 @@
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.62x54mm, 10 Rounds, Mixed Ball/Tracer (Type L/T46)<br/>For use in the SVT-40";
         ammo = "LIB_B_762x54_Mixed_t46";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Svt40_Ball_Red_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -384,6 +431,7 @@
         displayNameShort = "Heavy Ball/Tracer";
         descriptionShort = "7.62x54mm, 10 Rounds, Mixed Ball/Tracer (Type D/T46)<br/>For use in the SVT-40";
         ammo = "LIB_B_762x54_Mixed_D_t46";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Svt40_Heavy_Red_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -392,6 +440,7 @@
         displayNameShort = "AP/Tracer";
         descriptionShort = "7.62x54mm, 10 Rounds, Mixed AP/Tracer (B30/T46)<br/>For use in the SVT-40";
         ammo = "LIB_B_762x54_Mixed_b30_t46";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Svt40_AP_Red_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -452,12 +501,14 @@
         displayNameShort = "Ball";
         descriptionShort = "7.92x57mm, 5 Rounds, Ball (SmE)<br/>For use in the K98k";
         ammo = "LIB_B_792x57_Ball_SmE_NoCartridge";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_K98_Ball_ca.paa";
     };
     class LIB_5Rnd_792x57_Mixed_SmE_2PzD : LIB_5Rnd_792x57 {
         displayName = "K98k, 5 Round Clip, Ball/Tracer (SmE/LS L'spur)";
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.92x57mm, 5 Rounds, Mixed Ball/Tracer (SmE/LS L'spur)<br/>For use in the K98k";
         ammo = "LIB_B_792x57_Mixed_SmE_NoCartridge";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_K98_Ball_Yellow_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -466,12 +517,14 @@
         displayNameShort = "Ball";
         descriptionShort = "7.92x57mm, 5 Rounds, Ball (sS Patrone)<br/>For use in the K98k";
         ammo = "LIB_B_792x57_Ball_sS_NoCartridge";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_K98_Ball_ca.paa";
     };
     class LIB_5Rnd_792x57_Mixed_sS_2PzD : LIB_5Rnd_792x57_sS {
         displayName = "K98k, 5 Round Clip, Ball/Tracer (sS Patrone/LS L'spur)";
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.92x57mm, 5 Rounds, Mixed Ball/Tracer (sS Patrone/LS L'spur)<br/>For use in the K98k";
         ammo = "LIB_B_792x57_Mixed_sS_NoCartridge";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_K98_Ball_Yellow_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -480,12 +533,14 @@
         displayNameShort = "AP";
         descriptionShort = "7.92x57mm, 5 Rounds, AP (SmK)<br/>For use in the K98k";
         ammo = "LIB_B_792x57_Ball_SmK_NoCartridge";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_K98_AP_ca.paa";
     };
     class LIB_5Rnd_792x57_Mixed_SmK_2PzD : LIB_5Rnd_792x57_SmK {
         displayName = "K98k, 5 Round Clip, AP/Tracer (SmK/LS L'spur)";
         displayNameShort = "AP/Tracer";
         descriptionShort = "7.92x57mm, 5 Rounds, Mixed AP/Tracer (SmK/LS L'spur)<br/>For use in the K98k";
         ammo = "LIB_B_792x57_Mixed_SmK_NoCartridge";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_K98_AP_Yellow_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -494,6 +549,7 @@
         displayNameShort = "Tracer";
         descriptionShort = "7.92x57mm, 5 Rounds, Tracer (LS L'spur)<br/>For use in the K98k";
         ammo = "LIB_B_792x57_Tracer_NoCartridge";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_K98_Tracer_Yellow_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 5;
     };
@@ -502,6 +558,7 @@
         displayName = "De Lisle Carbine, 7 Round Magazine, Ball (Mk Iz)";
         displayNameShort = "Ball";
         descriptionShort = ".45 ACP, 7 Rounds, Ball (Mk Iz)<br/>For use in the De Lisle Carbine";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_Ball_ca.paa";
         scope = 1;
     };
     class LIB_7Rnd_45ACP_2PzD : LIB_7Rnd_45ACP_DeLisle {
@@ -509,12 +566,14 @@
         displayNameShort = "Ball";
         descriptionShort = ".45 ACP, 7 Rounds, Ball (Mk Iz)<br/>For use in the De Lisle Carbine";
         count = 7;
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_Ball_ca.paa";
     };
     class LIB_7Rnd_45ACP_Tracer_2PzD : LIB_7Rnd_45ACP_2PzD {
         displayName = "De Lisle Carbine, 7 Round Magazine, Tracer (M26)";
         displayNameShort = "Tracer";
         descriptionShort = ".45 ACP, 7 Rounds, Tracer (M26)<br/>For use in the De Lisle Carbine";
         ammo = "LIB_B_45ACP_Ball_t";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_Tracer_Yellow_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 7;
     };
@@ -523,12 +582,14 @@
         displayNameShort = "Ball";
         descriptionShort = ".45 ACP, 11 Rounds, Ball (Mk Iz)<br/>For use in the De Lisle Carbine";
         count = 11;
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_Ball_ca.paa";
     };
     class LIB_11Rnd_45ACP_Tracer_2PzD : LIB_11Rnd_45ACP_2PzD {
         displayName = "De Lisle Carbine, 11 Round Magazine, Tracer (M26)";
         displayNameShort = "Tracer";
         descriptionShort = ".45 ACP, 11 Rounds, Tracer (M26)<br/>For use in the De Lisle Carbine";
         ammo = "LIB_B_45ACP_Ball_t";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Colt1911_Tracer_Yellow_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 11;
     };
@@ -589,18 +650,21 @@
         displayNameShort = "Ball";
         descriptionShort = "7.92x57mm, 10 Rounds, Ball (SmE)<br/>For use in the G43";
         ammo = "LIB_B_792x57_Ball_SmE";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_G43_Ball_ca.paa";
     };
     class LIB_10Rnd_792x57_sS : LIB_10Rnd_792x57 {
         displayName = "G43, 10 Round Magazine, Ball (sS Patrone)";
         displayNameShort = "Ball";
         descriptionShort = "7.92x57mm, 10 Rounds, Ball (sS Patrone)<br/>For use in the G43";
         ammo = "LIB_B_792x57_Ball_sS";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_G43_Ball_ca.paa";
     };
     class LIB_10Rnd_792x57_Mixed_sS_2PzD : LIB_10Rnd_792x57_sS {
         displayName = "G43, 10 Round Magazine, Ball/Tracer (sS Patrone/LS L'spur)";
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.92x57mm, 10 Rounds, Mixed Ball/Tracer (sS Patrone/LS L'spur)<br/>For use in the G43";
         ammo = "LIB_B_792x57_Mixed_sS";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_G43_Ball_Yellow_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -609,12 +673,14 @@
         displayNameShort = "AP";
         descriptionShort = "7.92x57mm, 10 Rounds, AP (SmK)<br/>For use in the G43";
         ammo = "LIB_B_792x57_Ball_SmK";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_G43_AP_ca.paa";
     };
     class LIB_10Rnd_792x57_Mixed_SmK_2PzD : LIB_10Rnd_792x57_SmK {
         displayName = "G43, 10 Round Magazine, AP/Tracer (SmK/LS L'spur)";
         displayNameShort = "AP/Tracer";
         descriptionShort = "7.92x57mm, 10 Rounds, Mixed AP/Tracer (SmK/LS L'spur)<br/>For use in the G43";
         ammo = "LIB_B_792x57_Mixed_SmK";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_G43_AP_Yellow_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -623,6 +689,7 @@
         displayNameShort = "Tracer";
         descriptionShort = "7.92x57mm, 10 Rounds, Tracer (LS L'spur)<br/>For use in the G43";
         ammo = "LIB_B_792x57_Tracer";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_G43_Tracer_Yellow_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 10;
     };
@@ -631,6 +698,7 @@
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.92x57mm, 10 Rounds, Mixed Ball/Tracer (SmE/LS L'spur)<br/>For use in the G43";
         ammo = "LIB_B_792x57_Mixed_SmE";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_G43_Ball_Yellow_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -640,12 +708,14 @@
         displayNameShort = "Ball";
         descriptionShort = "7.92x57mm, 10 Rounds, Ball (sS Patrone)<br/>For use in the G41";
         ammo = "LIB_B_792x57_Ball_sS";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_K98_Ball_ca.paa";
     };
     class LIB_10Rnd_792x57_Mixed_sS_clip_2PzD : LIB_10Rnd_792x57_clip {
         displayName = "G41, 2x 5 Round Clips, Ball/Tracer (sS Patrone/LS L'spur)";
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.92x57mm, 10 Rounds, Mixed Ball/Tracer (sS Patrone/LS L'spur)<br/>For use in the G41";
         ammo = "LIB_B_792x57_Mixed_sS";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_K98_Ball_Yellow_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -654,12 +724,14 @@
         displayNameShort = "Ball";
         descriptionShort = "7.92x57mm, 10 Rounds, Ball (SmE)<br/>For use in the G41";
         ammo = "LIB_B_792x57_Ball_SmE";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_K98_Ball_ca.paa";
     };
     class LIB_10Rnd_792x57_Mixed_SmE_clip_2PzD : LIB_10Rnd_792x57_SmE_clip_2PzD {
         displayName = "G41, 2x 5 Round Clips, Ball/Tracer (SmE/LS L'spur)";
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.92x57mm, 10 Rounds, Mixed Ball/Tracer (SmE/LS L'spur)<br/>For use in the G41";
         ammo = "LIB_B_792x57_Mixed_SmE";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_K98_Ball_Yellow_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -668,12 +740,14 @@
         displayNameShort = "AP";
         descriptionShort = "7.92x57mm, 10 Rounds, Ball (AP)<br/>For use in the G41";
         ammo = "LIB_B_792x57_Ball_SmK";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_K98_AP_ca.paa";
     };
     class LIB_10Rnd_792x57_Mixed_SmK_clip_2PzD : LIB_10Rnd_792x57_SmK_clip_2PzD {
         displayName = "G41, 2x 5 Round Clips, AP/Tracer (SmK/LS L'spur)";
         displayNameShort = "AP/Tracer";
         descriptionShort = "7.92x57mm, 10 Rounds, Mixed AP/Tracer (SmK/LS L'spur)<br/>For use in the G41";
         ammo = "LIB_B_792x57_Mixed_SmK";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_K98_AP_Yellow_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
@@ -682,6 +756,7 @@
         displayNameShort = "Tracer";
         descriptionShort = "7.92x57mm, 10 Rounds, Tracer (LS L'spur)<br/>For use in the G41";
         ammo = "LIB_B_792x57_Tracer";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_K98_Tracer_Yellow_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 10;
     };
@@ -759,6 +834,7 @@
         displayNameShort = "Ball";
         descriptionShort = "7.92x57mm, 20 Rounds, Ball (SmE)<br/>For use in the FG42";
         ammo = "LIB_B_792x57_Ball_SmE";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_FG42_Ball_ca.paa";
         tracersEvery = 0;
         lastRoundsTracer = 0;
     };
@@ -767,6 +843,7 @@
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.92x57mm, 20 Rounds, Mixed Ball/Tracer (SmE/LS L'spur)<br/>For use in the FG42";
         ammo = "LIB_B_792x57_Mixed_SmE";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_FG42_Ball_Yellow_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 3;
     };
@@ -775,12 +852,14 @@
         displayNameShort = "Ball";
         descriptionShort = "7.92x57mm, 20 Rounds, Ball (sS Patrone)<br/>For use in the FG42";
         ammo = "LIB_B_792x57_Ball_sS";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_FG42_Ball_ca.paa";
     };
     class LIB_20Rnd_792x57_Mixed_sS_2PzD : LIB_20Rnd_792x57 {
         displayName = "FG42, 20 Round Magazine, Ball/Tracer (sS Patrone/LS L'spur)";
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.92x57mm, 20 Rounds, Mixed Ball/Tracer (sS Patrone/LS L'spur)<br/>For use in the FG42";
         ammo = "LIB_B_792x57_Mixed_sS";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_FG42_Ball_Yellow_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 3;
     };
@@ -789,12 +868,14 @@
         displayNameShort = "AP";
         descriptionShort = "7.92x57mm, 20 Rounds, AP (SmK)<br/>For use in the FG42";
         ammo = "LIB_B_792x57_Ball_SmK";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_FG42_AP_ca.paa";
     };
     class LIB_20Rnd_792x57_Mixed_SmK_2PzD : LIB_20Rnd_792x57 {
         displayName = "FG42, 20 Round Magazine, AP/Tracer (SmK/LS L'spur)";
         displayNameShort = "AP/Tracer";
         descriptionShort = "7.92x57mm, 20 Rounds, Mixed AP/Tracer (SmK/LS L'spur)<br/>For use in the FG42";
         ammo = "LIB_B_792x57_Mixed_SmK";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_FG42_AP_Yellow_ca.paa";
         tracersEvery = 3;
         lastRoundsTracer = 3;
     };
@@ -803,6 +884,7 @@
         displayNameShort = "Tracer";
         descriptionShort = "7.92x57mm, 20 Rounds, Tracer (LS L'spur)<br/>For use in the FG42";
         ammo = "LIB_B_792x57_Tracer";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_FG42_Tracer_Yellow_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 1;
     };
@@ -811,11 +893,13 @@
         displayName = "StG44, 30 Round Magazine, Ball (M43)";
         displayNameShort = "Ball";
         descriptionShort = "7.92x33mm, 30 Rounds,  Ball (M43)<br/>For use in the StG44";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_StG44_Ball_ca.paa";
     };
     class LIB_30rnd_792x33_t : LIB_30Rnd_792x33 {
         displayName = "StG44, 30 Round Magazine, Tracer";
         displayNameShort = "Tracer";
         descriptionShort = "7.92x33mm, 30 Rounds, Tracer<br/>For use in the StG44";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_StG44_Tracer_Yellow_ca.paa";
     };
 // End Rifle magazines
 
@@ -1487,6 +1571,7 @@
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.92x57mm, 50 Rounds, Mixed Ball/Tracer (SmE/LS L'spur)<br/>For use in the MG34 or MG42";
         ammo = "LIB_B_792x57_Mixed_SmE";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_MG42_Ball_Yellow_ca.paa";
         mass = 21.82;
         tracersEvery = 3;
         lastRoundsTracer = 3;
@@ -1497,6 +1582,7 @@
         displayNameShort = "Ball";
         descriptionShort = "7.92x57mm, 50 Rounds, Ball (SmE)<br/>For use in the MG34 or MG42";
         ammo = "LIB_B_792x57_Ball_SmE";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_MG42_Ball_ca.paa";
         tracersEvery = 0;
         lastRoundsTracer = 0;
     };
@@ -1505,12 +1591,14 @@
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.92x57mm, 50 Rounds, Mixed Ball/Tracer (sS Patrone/LS L'spur)<br/>For use in the MG34 or MG42";
         ammo = "LIB_B_792x57_Mixed_sS";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_MG42_Ball_Yellow_ca.paa";
     };
     class LIB_50Rnd_792x57_sS_NoTrace_2PzD : LIB_50Rnd_792x57_sS {
         displayName = "MG34/MG42, 50 Round Drum, Ball (sS Patrone)";
         displayNameShort = "Ball";
         descriptionShort = "7.92x57mm, 50 Rounds, Ball (sS Patrone)<br/>For use in the MG34 or MG42";
         ammo = "LIB_B_792x57_Ball_sS";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_MG42_Ball_ca.paa";
         tracersEvery = 0;
         lastRoundsTracer = 0;
     };
@@ -1519,12 +1607,14 @@
         displayNameShort = "AP/Tracer";
         descriptionShort = "7.92x57mm, 50 Rounds, Mixed AP/Tracer (SmK/LS L'spur)<br/>For use in the MG34 or MG42";
         ammo = "LIB_B_792x57_Mixed_SmK";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_MG42_AP_Yellow_ca.paa";
     };
     class LIB_50Rnd_792x57_SmK_NoTrace_2PzD : LIB_50Rnd_792x57_Mixed_SmK_2PzD {
         displayName = "MG34/MG42, 50 Round Drum, AP (SmK)";
         displayNameShort = "AP";
         descriptionShort = "7.92x57mm, 50 Rounds, AP (SmK)<br/>For use in the MG34 or MG42";
         ammo = "LIB_B_792x57_Ball_SmK";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_MG42_AP_ca.paa";
         tracersEvery = 0;
         lastRoundsTracer = 0;
     };
@@ -1533,6 +1623,7 @@
         displayNameShort = "Tracer";
         descriptionShort = "7.92x57mm, 50 Rounds, Tracer (LS L'spur)<br/>For use in the MG34 or MG42";
         ammo = "LIB_B_792x57_Tracer";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_MG42_Tracer_Yellow_ca.paa";
         tracersEvery = 1;
         lastRoundsTracer = 1;
     };
@@ -1541,6 +1632,7 @@
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.92x57mm, 100 Rounds, Mixed Ball/Tracer (SmE/LS L'spur)<br/>For use in the MG34 or MG42";
         count = 100;
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_MG42_box_Ball_Yellow_ca.paa";
         mass = 29.1;
     };
     class LIB_100Rnd_792x57_SmE_NoTrace_2PzD : LIB_50Rnd_792x57_SmE_NoTrace_2PzD {
@@ -1550,7 +1642,7 @@
         count = 100;
         mass = 29.1;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
-        picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_MG42_box_Ball_ca.paa";
     };
     class LIB_100Rnd_792x57_sS : LIB_50Rnd_792x57_sS {
         displayName = "MG34/MG42, 100 Round Belt, Ball/Tracer (sS Patrone/LS L'spur)";
@@ -1559,7 +1651,7 @@
         count = 100;
         mass = 29.1;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
-        picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_MG42_box_Ball_Yellow_ca.paa";
     };
     class LIB_100Rnd_792x57_sS_NoTrace_2PzD : LIB_50Rnd_792x57_sS_NoTrace_2PzD {
         displayName = "MG34/MG42, 100 Round Belt, Ball (sS Patrone)";
@@ -1568,7 +1660,7 @@
         count = 100;
         mass = 29.1;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
-        picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_MG42_box_Ball_ca.paa";
     };
     class LIB_100Rnd_792x57_Mixed_SmK_2PzD : LIB_50Rnd_792x57_Mixed_SmK_2PzD {
         displayName = "MG34/MG42, 100 Round Belt, AP/Tracer (SmK/LS L'spur)";
@@ -1577,7 +1669,7 @@
         count = 100;
         mass = 29.1;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
-        picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_MG42_box_AP_Yellow_ca.paa";
     };
     class LIB_100Rnd_792x57_SmK_NoTrace_2PzD : LIB_50Rnd_792x57_SmK_NoTrace_2PzD {
         displayName = "MG34/MG42, 100 Round Belt, AP (SmK)";
@@ -1586,7 +1678,7 @@
         count = 100;
         mass = 29.1;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
-        picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_MG42_box_AP_ca.paa";
     };
     class LIB_100Rnd_792x57_TraceOnly_2PzD : LIB_50Rnd_792x57_TraceOnly_2PzD {
         displayName = "MG34/MG42, 100 Round Belt, Tracer (LS L'spur)";
@@ -1596,7 +1688,7 @@
         count = 100;
         mass = 29.1;
         model = "\WW2\Assets_m\Weapons\WeaponsMagazines_m\IF_MG42_Box.p3d";
-        picture = "\WW2\Assets_t\Weapons\Equipment_t\Magazines\MachineGun_Light\M_MG42_box_ca.paa";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_MG42_box_Tracer_Yellow_ca.paa";
     };
     class LIB_150Rnd_792x57_Mixed_SmE_2PzD : LIB_100Rnd_792x57 {
         displayName = "MG34/MG42, 150 Round Belt, Ball/Tracer (SmE/LS L'spur)";
