@@ -33,6 +33,12 @@ class cfgAmmo {
 
 class Eventhandlers;
 
+class CfgFunctions {
+
+    #include "cfgFunctions.h"
+
+};
+
 class CfgMagazineWells {
 
     #include "cfgMagazineWells.h"

@@ -1954,10 +1954,26 @@
     };
 
     class LIB_1Rnd_G_DYAKONOV : LIB_BaseRifleGrenade {
-        displayName = "Dyakonov Rifle Grenade";
-        displayNameShort = "Rifle Grenade";
+        displayName = "Dyakonov Rifle Grenade (Frag)";
+        displayNameShort = "Rifle Grenade (Frag)";
         descriptionShort = "Dyakonov rifle grenade<br/>For use in the Dyakonov grenade launcher.";
         mass = 8;
+    };
+
+    class LIB_1Rnd_G_DYAKONOV_Flare : LIB_1Rnd_flare_white { // TODO add to magwell and magazine
+        displayName = "Dyakonov Rifle Grenade (Flare, White)";
+        displayNameShort = "Rifle Grenade (Flare, White)";
+        descriptionShort = "Dyakonov rifle grenade flare (white)<br/>For use in the Dyakonov grenade launcher.";
+        mass = 3.5;
+        model = "\WW2\Assets_m\Weapons\WeaponsAmmo_m\WW2_GL_DYAKONOV.p3d";
+        modelSpecial = "\WW2\Assets_m\Weapons\Rifles_m\LEN_GL_Mosin_Grenade.p3d";
+        modelSpecialIsProxy = 1;
+        nameSound = "";
+        picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_Mosin_GL_Flare_ca.paa"; // TODO make new icon to indicate flare
+        class LIB_RifleGrenade {
+            attachment = "LIB_ACC_GL_DYAKONOV";
+            initSpeed = 80;
+        };
     };
 
     class LIB_1Rnd_G_MillsBomb : LIB_BaseRifleGrenade {

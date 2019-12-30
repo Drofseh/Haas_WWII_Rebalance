@@ -3,7 +3,13 @@ class Man;
 
 class Car;
 
-class Tank_F;
+class Tank;
+
+class Tank_F : Tank {
+    class Turrets {
+        class MainTurret;
+    };
+};
 
 class FloatingStructure_F;
 

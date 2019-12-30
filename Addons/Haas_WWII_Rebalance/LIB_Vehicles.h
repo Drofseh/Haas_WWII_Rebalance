@@ -26,6 +26,7 @@
         class Turrets : Turrets {
             class MainTurret;
         };
+        class UserActions;
     };
 
     class LIB_C47_Skytrain : LIB_US_Plane_base {
@@ -133,7 +134,64 @@
         maximumLoad = 3000;
     };
 
-    class LIB_SdKfz251_base;
+    class LIB_SdKfz251_base : LIB_WheeledTracked_APC_base {
+        class UserActions : UserActions {
+            class hatches_open {
+                condition = " \
+                    Alive(this) AND \
+                    {this animationPhase ""hatch_rotate"" < 0.5 AND \
+                    {((call ww2_fnc_findPlayer) == driver this) OR \
+                    {([vehicle (call ww2_fnc_findPlayer), (call ww2_fnc_findPlayer)] call Haas_WWII_Rebalance_fnc_checkVehiclePosition) == ""cargo_4"" \
+                    }}} \
+                ";
+                displayName = "Open Driver's Hatch";
+                onlyForplayer = 0;
+                position = "zamerny";
+                radius = 1;
+                showWindow = 0;
+                statement = "this animate [""hatch_rotate"",1]";
+            };
+            class hatches_close : hatches_open {
+                condition = " \
+                    Alive(this) AND \
+                    {this animationPhase ""hatch_rotate"" > 0.5 AND \
+                    {((call ww2_fnc_findPlayer) == driver this) OR \
+                    {([vehicle (call ww2_fnc_findPlayer), (call ww2_fnc_findPlayer)] call Haas_WWII_Rebalance_fnc_checkVehiclePosition) == ""cargo_4"" \
+                    }}} \
+                ";
+                displayName = "Close Driver's Hatch";
+                statement = "this animate [""hatch_rotate"",0]";
+            };
+            class hatchesCommander_open : hatches_open {
+                condition = " \
+                    Alive(this) AND \
+                    {this animationPhase ""hatch2_rotate"" < 0.5 AND \
+                    {((call ww2_fnc_findPlayer) == driver this) OR \
+                    {([vehicle (call ww2_fnc_findPlayer), (call ww2_fnc_findPlayer)] call Haas_WWII_Rebalance_fnc_checkVehiclePosition) == ""cargo_4"" \
+                    }}} \
+                ";
+                displayName = "Open Commander's Hatch";
+                statement = "this animate [""hatch2_rotate"",1]";
+            };
+            class hatchesCommander_close : hatches_open {
+                condition = " \
+                    Alive(this) AND \
+                    {this animationPhase ""hatch2_rotate"" > 0.5 AND \
+                    {((call ww2_fnc_findPlayer) == driver this) OR \
+                    {([vehicle (call ww2_fnc_findPlayer), (call ww2_fnc_findPlayer)] call Haas_WWII_Rebalance_fnc_checkVehiclePosition) == ""cargo_4"" \
+                    }}} \
+                ";
+                displayName = "Close Commander's Hatch";
+                statement = "this animate [""hatch2_rotate"",0]";
+            };
+            class Doors_open {
+                displayName = "Open Doors";
+            };
+            class Doors_close : Doors_open {
+                displayName = "Close Doors";
+            };
+        };
+    };
 
     class LIB_SdKfz251 : LIB_SdKfz251_base {
         maximumLoad = 10000;

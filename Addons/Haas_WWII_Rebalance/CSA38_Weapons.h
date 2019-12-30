@@ -1162,6 +1162,8 @@
     class CSA38_Mp18 : csa38_SMG {
         displayname = "MP18";
         descriptionShort = "Maschinenpistole 18";
+        discreteDistance[] = {100,200};
+        discreteDistanceInitIndex = 0;
         fow_burstLength = 2;
         magazines[] = {"csa38_9_MM_32xMP18"};
         magazineWell[] = {"CBA_9x19_P08"};
@@ -1197,7 +1199,7 @@
         };
         class AI_Burst1 : Mode_Burst {
             dispersion = MOA_TO_RAD(8);
-            reloadTime = RPM_TO_TIME(450); // 450 rpm
+            reloadTime = RPM_TO_TIME(475); // 475 rpm
             class BaseSoundModeType;
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"\CSA38II_sounds\w_mp38\fire01.ogg",2.81838,1,1200};

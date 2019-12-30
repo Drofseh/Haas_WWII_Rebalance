@@ -1,7 +1,7 @@
 ## Haas WWII Rebalance
 <p align="left">
     <a href="https://github.com/Drofseh/Haas_WWII_Rebalance/releases/latest">
-        <img src="https://img.shields.io/badge/Version-1.27.1-blue.svg" alt="Haas WWII Rebalance Version">
+        <img src="https://img.shields.io/badge/Version-1.27.2-blue.svg" alt="Haas WWII Rebalance Version">
     </a>
     <a href="https://2pzd.net/">
         <img src="https://img.shields.io/badge/2PzD-Website-yellow.svg" alt="2PzD Website">

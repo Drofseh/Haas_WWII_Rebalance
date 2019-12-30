@@ -612,6 +612,7 @@
 
     class LIB_M9130_DYAKONOV : LIB_M9130 {
         class LIB_M9130_RG : LIB_RifleGrenade_Muzzle {
+            magazines[] = {"LIB_1Rnd_G_DYAKONOV","LIB_1Rnd_G_DYAKONOV_Flare"};
             dispersion = MOA_TO_RAD(10);
             recoil = "recoil_single_m320";
             recoilProne = "recoil_single_m320";

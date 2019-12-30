@@ -70,6 +70,13 @@
         attenuationEffectType = "SemiOpenCarAttenuation";
         maximumLoad = 10000;
         tf_isolatedAmount = 0.5;
+        class Turrets : Turrets {
+            class MainTurret : MainTurret {
+                turretInfoType = "RscWeaponZeroing";
+                discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200};
+                discreteDistanceInitIndex = 1;
+            };
+        };
     };
 
     class fow_v_sdkfz_222 : Wheeled_APC_F {
