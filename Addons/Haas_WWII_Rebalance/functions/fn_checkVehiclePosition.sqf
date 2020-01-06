@@ -15,7 +15,7 @@
  * Public: No
  */
 
-params ["_vehicle", "_unit", "_fullCrew", "_rolePrep", "_role"];
+params ["_vehicle", "_unit", "_fullCrew", "_role", "_rolePrep"];
 
 _fullCrew = fullCrew [_vehicle, "", true];
 _role = "";
@@ -24,16 +24,20 @@ _role = "";
     if (_unit isEqualTo (_x select 0)) then {
         _rolePrep = toLower (_x select 1);
 
+        if (isTurnedOut _unit) exitWith {
+            _role = format ["turnedout_%1", _rolePrep];
+        };
+
+        if (_rolePrep  in ["driver", "gunner", "commander"]) exitWith {
+            _role = format ["%1", _rolePrep];
+        };
+
         if (_rolePrep in ["cargo", "turret"]) then {
             if (_rolePrep isEqualTo "cargo") then {
                 _role = format ["%1_%2", _rolePrep, _x select 2];
             } else {
-                _role = format ["%1_%2", _rolePrep, _x select 3];
+                _role = format ["%1_%2", _rolePrep, _x select 3 select 0];
             };
-        };
-
-        if (isTurnedOut _unit) then {
-            _role = format ["turnedout_%1", _rolePrep];
         };
     };
 } forEach _fullCrew;
