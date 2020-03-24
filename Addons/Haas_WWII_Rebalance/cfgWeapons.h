@@ -11,7 +11,29 @@ class MGun : MGunCore {
 
 class HMG_M2;
 class GrenadeLauncher;
-class UGL_F;
+//class UGL_F;
+
+class UGL_F : GrenadeLauncher {
+    dispersion = MOA_TO_RAD(50);
+    recoil = "recoil_single_m320";
+    recoilProne = "recoil_single_m320";
+    aiDispersionCoefX = 5;
+    aiDispersionCoefY = 10;
+    aiRateOfFire = 5;
+    aiRateOfFireDispersion = 5;
+    aiRateOfFireDistance = 200;
+    class Single : Mode_SemiAuto {
+        dispersion = MOA_TO_RAD(50);
+        recoil = "recoil_single_m320";
+        recoilProne = "recoil_single_m320";
+        aiDispersionCoefX = 5;
+        aiDispersionCoefY = 10;
+        aiRateOfFire = 5;
+        aiRateOfFireDispersion = 5;
+        aiRateOfFireDistance = 200;
+    };
+};
+
 class Launcher;
 
 class Launcher_Base_F : Launcher {
@@ -43,11 +65,6 @@ class Pistol_Base_F : Pistol {
     class Single;
 };
 
-class ItemCore;
-class InventoryItem_Base_F;
-class UniformItem;
-class VestItem;
-
 class hgun_P07_F : Pistol_Base_F {
     class WeaponSlotsInfo;
     class Single;
@@ -74,6 +91,15 @@ class sgun_HunterShotgun_01_sawedoff_base_F : sgun_HunterShotgun_01_base_F {
     class MagazineCoef {
         initSpeed = 0.75;
     };
+};
+
+class ItemCore;
+class InventoryItem_Base_F;
+class UniformItem;
+class VestItem;
+
+class muzzle_snds_H : ItemCore {
+    class ItemInfo;
 };
 
 class Uniform_Base : ItemCore {

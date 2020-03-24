@@ -1,6 +1,6 @@
 name = "Haas WWII Rebalance";
 author = "Wilhelm Haas (2PzD)";
-description = "Haas WWII Rebalance - Version 1.27.3";
+description = "Haas WWII Rebalance - Version 1.28.0";
 overview = "Haas WWII Rebalance correct, enhances, or adds compatibility for IFA3, FOW, and LEN.";
 logo = "Images\logo.paa";
 logoOver = "Images\logo.paa";

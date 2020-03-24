@@ -5,7 +5,7 @@ class CfgPatches {
     class Haas_WWII_Rebalance {
         author = "Wilhelm Haas (Drofseh)";
         authors[] = {"Wilhelm Haas (Drofseh)"};
-        units[] = {};
+        units[] = {"Weapon_CSA38_SMLE_Bayonet","Weapon_CSA38_SMLE2_Bayonet"};
         magazineWell[] = {};
         magazines[] = {MagazinesArray};
         weapons[] = {WeaponsArray};
@@ -15,13 +15,15 @@ class CfgPatches {
 
 #include "RscDisplayMain.h"
 
+class BaseSoundModeType;
+
+class Eventhandlers;
+
 class Mode_SemiAuto;
 
 class Mode_Burst;
 
 class Mode_FullAuto;
-
-class BaseSoundModeType;
 
 class SlotInfo;
 
@@ -30,8 +32,6 @@ class cfgAmmo {
     #include "cfgAmmo.h"
 
 };
-
-class Eventhandlers;
 
 class CfgFunctions {
 

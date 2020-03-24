@@ -23,19 +23,19 @@
     class CSA38_7_92MauserR : CSA38_7_92Mauser {
         model = "xxxxxxxxxxxxxxx";
     };*/
-    class CSA38_8_00Mannlicher : csa38_Bullet {
+    class CSA38_8_00Mannlicher : CSA38_7_92Mauser {
         model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
     };/*
     class CSA38_8_00MannlicherR : CSA38_8_00Mannlicher {
         model = "xxxxxxxxxxxxxxx";
     };*/
-    class CSA38_7_92Mauser2 : csa38_Bullet {
+    class CSA38_7_92Mauser2 : CSA38_7_92Mauser {
         model = "\z\ace\addons\tracers\ace_TracerYellow2.p3d";
     };/*
     class CSA38_7_92Mauser2R : CSA38_7_92Mauser2 {
         model = "xxxxxxxxxxxxxxx";
     };*/
-    class CSA38_7_92Mauser3 : csa38_Bullet {
+    class CSA38_7_92Mauser3 : CSA38_7_92Mauser {
         model = "\z\ace\addons\tracers\ace_TracerRed2.p3d";
     };
     class CSA38_9mmPara : csa38_Bullet {

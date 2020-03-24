@@ -61,14 +61,14 @@
 
     class w39_LMGA3_base : MGun {
         class EventHandlers;
-        class WeaponSlotsInfo : WeaponSlotsInfo {
-            class CowsSlot : SlotInfo {
+        class WeaponSlotsInfo {
+            class CowsSlot {
                 compatibleItems[] = {};
             };
-            class MuzzleSlot : SlotInfo {
+            class MuzzleSlot {
                 compatibleItems[] = {};
             };
-            class PointerSlot : SlotInfo {
+            class PointerSlot {
                 compatibleItems[] = {};
             };
         };

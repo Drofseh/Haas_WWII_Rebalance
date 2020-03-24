@@ -30,13 +30,30 @@
     };
 
     class LIB_RifleGrenade_Muzzle : UGL_F {
+        /*
+        dispersion = MOA_TO_RAD(50);
+        recoil = "recoil_single_m320";
+        recoilProne = "recoil_single_m320";
         aiDispersionCoefX = 5;
         aiDispersionCoefY = 10;
         aiRateOfFire = 25;
         aiRateOfFireDispersion = 5;
         aiRateOfFireDistance = 500;
-        dispersion = "((10) * 0.00029088)";
+        class Single : Mode_SemiAuto {
+            dispersion = MOA_TO_RAD(50);
+            recoil = "recoil_single_m320";
+            recoilProne = "recoil_single_m320";
+            aiDispersionCoefX = 5;
+            aiDispersionCoefY = 10;
+            aiRateOfFire = 25;
+            aiRateOfFireDispersion = 5;
+            aiRateOfFireDistance = 500;
+        };
+        */
     };
+
+    class LIB_Bayonet_base;
+    class LIB_SAFE_BASE;
 
 // Pistols
     class LIB_Colt_M1911 : LIB_PISTOL {
@@ -318,7 +335,7 @@
         class Medium;
         class Far;
     };
-
+/*
     class LIB_K98_GW : LIB_K98 {
         class LIB_K98_RG : LIB_RifleGrenade_Muzzle {
             dispersion = MOA_TO_RAD(10);
@@ -331,7 +348,7 @@
             aiRateOfFireDistance = 500;
         };
     };
-
+*/
     class LIB_K98_Late : LIB_K98 {
         displayName = "Kar98k";
         descriptionShort = "Karabiner 98 kurz, 1939 upgrade";
@@ -341,7 +358,7 @@
             mass = 87.993;
         };
     };
-
+/*
     class LIB_K98_Late_GW : LIB_K98_Late {
         class LIB_K98_RG : LIB_RifleGrenade_Muzzle {
             dispersion = MOA_TO_RAD(10);
@@ -354,7 +371,7 @@
             aiRateOfFireDistance = 500;
         };
     };
-
+*/
     class LIB_G3340 : LIB_K98 {
         displayName = "G33/40(t)";
         descriptionShort = "Puška vz. 16/33, known as the Gewehr 33/40(t) in Wehrmacht service";
@@ -414,7 +431,7 @@
             dispersion = MOA_TO_RAD(4);
         };
     };
-
+/*
     class LIB_LeeEnfield_No4_CUP : LIB_LeeEnfield_No4 {
         class LIB_LeeEnfield_No4_RG : LIB_RifleGrenade_Muzzle {
             dispersion = MOA_TO_RAD(10);
@@ -427,7 +444,7 @@
             aiRateOfFireDistance = 500;
         };
     };
-
+*/
     class LIB_LeeEnfield_No1 : LIB_LeeEnfield_No4 {
         displayName = "Lee Enfield No. 1 Mk III";
         descriptionShort = "Rifle, No. 1 Mk III";
@@ -435,7 +452,7 @@
             mass = 86.2;
         };
     };
-
+/*
     class LIB_LeeEnfield_No1_CUP : LIB_LeeEnfield_No1 {
         class LIB_LeeEnfield_No4_RG : LIB_RifleGrenade_Muzzle {
             dispersion = MOA_TO_RAD(10);
@@ -448,7 +465,7 @@
             aiRateOfFireDistance = 500;
         };
     };
-
+*/
     class LIB_LeeEnfield_No4_Scoped : LIB_SRIFLE {
         displayName = "Lee Enfield No. 4 Mk I (T)";
         descriptionShort = "Rifle, No. 4 Mk I (T) with No.32 Scope";
@@ -463,7 +480,7 @@
             dispersion = MOA_TO_RAD(2.5);
         };
     };
-
+/*
     class LIB_LeeEnfield_No4_Scoped_CUP : LIB_LeeEnfield_No4_Scoped {
         class LIB_LeeEnfield_No4_RG : LIB_RifleGrenade_Muzzle {
             dispersion = MOA_TO_RAD(10);
@@ -476,7 +493,7 @@
             aiRateOfFireDistance = 500;
         };
     };
-
+*/
     class LIB_M1_Carbine : LIB_RIFLE {
         displayName = "M1 Carbine";
         descriptionShort = "Carbine, Caliber .30, M1";
@@ -543,7 +560,7 @@
             dispersion = MOA_TO_RAD(4);
         };
     };
-
+/*
     class LIB_M1_Garand_M7 : LIB_M1_Garand {
         class LIB_M1_Garand_RG : LIB_RifleGrenade_Muzzle {
             dispersion = MOA_TO_RAD(10);
@@ -556,7 +573,7 @@
             aiRateOfFireDistance = 500;
         };
     };
-
+*/
     class LIB_M1903A3_Springfield : LIB_RIFLE {
         displayName = "M1903A3 Springfield";
         descriptionShort = "Rifle, Caliber .30, M1903A3";
@@ -609,7 +626,7 @@
     class LIB_M9130_Bayonet : LIB_M9130 {
         class WeaponSlotsInfo;
     };
-
+/*
     class LIB_M9130_DYAKONOV : LIB_M9130 {
         class LIB_M9130_RG : LIB_RifleGrenade_Muzzle {
             magazines[] = {"LIB_1Rnd_G_DYAKONOV","LIB_1Rnd_G_DYAKONOV_Flare"};
@@ -623,7 +640,7 @@
             aiRateOfFireDistance = 500;
         };
     };
-
+*/
     class LIB_M38 : LIB_M9130 {
         displayName = "Mosin M38";
         descriptionShort = "Mosin M38";
@@ -702,7 +719,7 @@
             reloadTime = RPM_TO_TIME(575); // 575 rpm
         };*/
     };
-
+/*
     class LIB_MP44_GW : LIB_MP44 {
         class LIB_MP44_RG : LIB_RifleGrenade_Muzzle {
             dispersion = MOA_TO_RAD(10);
@@ -715,7 +732,7 @@
             aiRateOfFireDistance = 500;
         };
     };
-
+*/
     class LIB_SVT_40 : LIB_RIFLE {
         displayName = "SVT-40";
         descriptionShort = "Samozaryadnaya Vintovka Tokareva, Obrazets 1940 goda";

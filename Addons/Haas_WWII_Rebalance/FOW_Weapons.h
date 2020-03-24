@@ -650,13 +650,26 @@
             mass = 95.074;
         };
         class fow_w_m7_gl : UGL_F {
+            discreteDistance[] = {50, 75, 100, 125, 150, 200};
+            /*dispersion = MOA_TO_RAD(50);
+            recoil = "recoil_single_m320";
+            recoilProne = "recoil_single_m320";
             aiDispersionCoefX = 5;
-            aiDispersionCoefY = 10;
+            aiDispersionCoefY = 100;
             aiRateOfFire = 25;
             aiRateOfFireDispersion = 5;
             aiRateOfFireDistance = 500;
-            dispersion = "((10) * 0.00029088)";
-            discreteDistance[] = {50, 75, 100, 125, 150, 200};
+            class Single : Mode_SemiAuto {
+                dispersion = MOA_TO_RAD(50);
+                recoil = "recoil_single_m320";
+                recoilProne = "recoil_single_m320";
+                aiDispersionCoefX = 5;
+                aiDispersionCoefY = 100;
+                aiRateOfFire = 25;
+                aiRateOfFireDispersion = 5;
+                aiRateOfFireDistance = 500;
+            };
+            */
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(4);
@@ -913,13 +926,26 @@
             mass = 82.500;
         };
         class fow_w_type2_gl : UGL_F {
+            discreteDistance[] = {50, 75, 100, 125, 150, 200};
+            /*dispersion = MOA_TO_RAD(50);
+            recoil = "recoil_single_m320";
+            recoilProne = "recoil_single_m320";
             aiDispersionCoefX = 5;
-            aiDispersionCoefY = 10;
+            aiDispersionCoefY = 100;
             aiRateOfFire = 25;
             aiRateOfFireDispersion = 5;
             aiRateOfFireDistance = 500;
-            dispersion = "((10) * 0.00029088)";
-            discreteDistance[] = {50, 75, 100, 125, 150, 200};
+            class Single : Mode_SemiAuto {
+                dispersion = MOA_TO_RAD(50);
+                recoil = "recoil_single_m320";
+                recoilProne = "recoil_single_m320";
+                aiDispersionCoefX = 5;
+                aiDispersionCoefY = 100;
+                aiRateOfFire = 25;
+                aiRateOfFireDispersion = 5;
+                aiRateOfFireDistance = 500;
+            };
+            */
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(4);

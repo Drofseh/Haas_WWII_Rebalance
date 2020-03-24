@@ -1,3 +1,4 @@
+    class CSA38_BaseRifleGrenade;
     class CSA38_Magazine;
     class CSA38_PistolMagazine;
     class CSA38_HandGrenade;
@@ -243,7 +244,7 @@
         lastRoundsTracer = 20;
     };
 
-    class CSA38_7_92_20xMauserCZ : csa38_7_92_5xMauserKAR {
+    class CSA38_7_92_20xMauserCZ : CSA38_7_92_5xMauser {
         displayName = "Mauser, 4x 5 Round Clips, Ball";
         displayNameShort = "Ball";
         descriptionShort = "7.92x57mm, 20 Rounds, Ball<br/>For use in Mauser type rifles";
@@ -252,7 +253,7 @@
         tracersEvery = 0;
         lastRoundsTracer = 0;
     };
-    class CSA38_7_92_20xMauserCZ_Mixed_Ball_2PzD : CSA38_7_92_20xMauserCZ {
+    class CSA38_7_92_20xMauserCZ_Mixed_Ball_2PzD : CSA38_7_92_5xMauser2 {
         displayName = "Mauser, 4x 5 Round Clips, Ball/Tracer";
         displayNameShort = "Ball/Tracer";
         descriptionShort = "7.92x57mm, 20 Rounds, Mixed Ball/Tracer<br/>For use in Mauser type rifles";
@@ -277,7 +278,7 @@
         tracersEvery = 3;
         lastRoundsTracer = 1;
     };
-    class CSA38_7_92_20xMauserCZ2 : csa38_7_92_5xMauserKAR {
+    class CSA38_7_92_20xMauserCZ2 : CSA38_7_92_5xMauser2 {
         displayName = "Mauser, 4x 5 Round Clips, AP";
         displayNameShort = "AP";
         descriptionShort = "7.92x57mm, 20 Rounds, AP<br/>For use in Mauser type rifles";
@@ -446,7 +447,7 @@
         lastRoundsTracer = 0;
     };
 
-    class CSA38_9_mm_96xBrowning : CSA38_Magazine {
+    class CSA38_9_mm_96xBrowning : CSA38_9_mm_36xBrowning {
         displayName = "vz. 38, 96 Round Magazine, Ball";
         displayNameShort = "Ball";
         descriptionShort = ".380 ACP, 96 Rounds, Ball<br/>For use in the vz. 38 SMG";
@@ -884,6 +885,13 @@
         ammo = "fow_e_m24";
         initSpeed = 24;
         mass = 13.117;
+    };
+
+    class CSA38_PRG21 : CSA38_BaseRifleGrenade {
+        class LIB_RifleGrenade {
+            initSpeed = 50;
+            attachment = "CSA38_PGvz23";
+        };
     };
 // End Grenades
 

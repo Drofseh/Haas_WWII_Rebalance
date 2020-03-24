@@ -1,5 +1,9 @@
 
-class Man;
+class Land;
+
+class Man : Land {
+    class UserActions;
+};
 
 class Car;
 
@@ -47,7 +51,7 @@ class Truck_F : Car_F {
 class Wheeled_APC_F;
 
 class CAManBase : Man {
-    class UserActions {
+    class UserActions : UserActions {
         delete CSA38_lp08son;
         delete CSA38_lp08off;
         delete CSA38_p08son;
@@ -195,5 +199,7 @@ class LIB_Target_base : TargetBase { // ["LIB_Target_base","TargetBase","Static"
 #include "FOW_Vehicles.h"
 
 #include "LIB_Vehicles.h"
+
+#include "CSA38_Vehicles.h"
 
 #include "FOW_Structures.h"

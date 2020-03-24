@@ -8,6 +8,7 @@
 #define RequiredAddonsArray \
     "A3_Data_F_Enoch_Loadorder", \
     "A3_Data_F_Mod_Loadorder", \
+    "A3_Weapons_F", \
     "ace_captives", \
     "ace_common", \
     "ace_frag", \
