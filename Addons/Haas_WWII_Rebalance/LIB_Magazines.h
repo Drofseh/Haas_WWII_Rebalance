@@ -2065,7 +2065,7 @@
     };
 
     class LIB_MillsBomb : LIB_HandGrenade_base {
-        displayName = "No. 36 Mk. 1 (Rifle Grenade)";
+        displayName = "No. 36 Mk. 1 (Frag)";
         displayNameShort = "No. 36 Mk. 1 (Frag)";
         descriptionShort = "No. 36 Mk. 1, standard British fragmentation grenade";
         initSpeed = 18;
@@ -2136,6 +2136,7 @@
         ammo = "fow_e_m24";
         initSpeed = 24;
         mass = 13.117;
+        scope = 1;
     };
 
     class LIB_Shg24x7 : LIB_Shg24 {
@@ -2145,6 +2146,7 @@
         ammo = "fow_e_m24_at";
         initSpeed = 10;
         mass = 91.822;
+        scope = 1;
     };
 
     class LIB_US_M18 : LIB_SmokeShell_base {

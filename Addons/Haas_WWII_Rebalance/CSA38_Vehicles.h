@@ -58,3 +58,9 @@ class csa38_valentineMkII;
 class csa38_valentineMkIIRU1 : csa38_valentineMkII {
     crew = "LIB_sov_tank_overall_crew";
 };
+
+class CSA38_brenmkiit;
+
+class CSA38_brenmkiit2 : CSA38_brenmkiit {
+    scope = 1;
+};

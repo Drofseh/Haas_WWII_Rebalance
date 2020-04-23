@@ -107,7 +107,7 @@
         ace_frag_skip = 1;
         hit = 0;
         indirectHit = 2;
-        indirectHitRange = 1.5;
+        indirectHitRange = 2;
         explosionTime = 0;
         fuseDistance = 2;
         explosionEffects = "LIB_WPExplosion";
@@ -117,6 +117,11 @@
         LIB_WP_Intensity = 0.08;
         LIB_WP_BurnTime = 35;
         LIB_WP_Range = 2;
+        class EventHandlers {
+            class WW2_GAS {
+                fired = "_this spawn WW2_fnc_fired_Gas";
+            };
+        };
     };
 
     class fow_e_no79 : SmokeShell {

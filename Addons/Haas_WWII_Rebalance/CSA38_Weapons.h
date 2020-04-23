@@ -38,6 +38,16 @@
         };
     };
 
+
+    class CSA38_LMGA3_base : MGun {
+        class EventHandlers;
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            delete CowsSlot;
+            delete MuzzleSlot;
+            delete PointerSlot;
+        };
+    };
+
     class CSA38_HMGA3_base : MGun {
         class EventHandlers;
         class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -942,26 +952,6 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "LIB_GestureReload_k98k_GL";
             reloadMagazineSound[] = {"\WW2\Assets_s\Weapons\Rifles_s\RifleGrenades\blank_reload",5,1,10};
-
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         class LinkedItems {
             class LinkedItemsMuzzle {
@@ -1033,26 +1023,6 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "LIB_GestureReload_k98k_GL";
             reloadMagazineSound[] = {"\WW2\Assets_s\Weapons\Rifles_s\RifleGrenades\blank_reload",5,1,10};
-
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         class LinkedItems {
             class LinkedItemsMuzzle {
@@ -1108,26 +1078,6 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "LIB_GestureReload_k98k_GL";
             reloadMagazineSound[] = {"\WW2\Assets_s\Weapons\Rifles_s\RifleGrenades\blank_reload",5,1,10};
-
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         class LinkedItems {
             class LinkedItemsMuzzle {
@@ -1201,26 +1151,6 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "LIB_GestureReload_k98k_GL";
             reloadMagazineSound[] = {"\WW2\Assets_s\Weapons\Rifles_s\RifleGrenades\blank_reload",5,1,10};
-
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         class LinkedItems {
             class LinkedItemsMuzzle {
@@ -1274,26 +1204,6 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "LIB_GestureReload_k98k_GL";
             reloadMagazineSound[] = {"\WW2\Assets_s\Weapons\Rifles_s\RifleGrenades\blank_reload",5,1,10};
-
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         class LinkedItems {
             class LinkedItemsMuzzle {
@@ -1349,26 +1259,6 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "LIB_GestureReload_k98k_GL";
             reloadMagazineSound[] = {"\WW2\Assets_s\Weapons\Rifles_s\RifleGrenades\blank_reload",5,1,10};
-
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         class LinkedItems {
             class LinkedItemsMuzzle {
@@ -1424,26 +1314,6 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "LIB_GestureReload_k98k_GL";
             reloadMagazineSound[] = {"\WW2\Assets_s\Weapons\Rifles_s\RifleGrenades\blank_reload",5,1,10};
-
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         class LinkedItems {
             class LinkedItemsMuzzle {
@@ -1497,26 +1367,6 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "LIB_GestureReload_k98k_GL";
             reloadMagazineSound[] = {"\WW2\Assets_s\Weapons\Rifles_s\RifleGrenades\blank_reload",5,1,10};
-
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         class LinkedItems {
             class LinkedItemsMuzzle {
@@ -1588,26 +1438,6 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "LIB_GestureReload_k98k_GL";
             reloadMagazineSound[] = {"\WW2\Assets_s\Weapons\Rifles_s\RifleGrenades\blank_reload",5,1,10};
-
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         class LinkedItems {
             class LinkedItemsMuzzle {
@@ -1663,26 +1493,6 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "LIB_GestureReload_k98k_GL";
             reloadMagazineSound[] = {"\WW2\Assets_s\Weapons\Rifles_s\RifleGrenades\blank_reload",5,1,10};
-
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         class LinkedItems {
             class LinkedItemsMuzzle {
@@ -1756,26 +1566,6 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "LIB_GestureReload_k98k_GL";
             reloadMagazineSound[] = {"\WW2\Assets_s\Weapons\Rifles_s\RifleGrenades\blank_reload",5,1,10};
-
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         class LinkedItems {
             class LinkedItemsMuzzle {
@@ -1854,26 +1644,6 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "LIB_GestureReload_k98k_GL";
             reloadMagazineSound[] = {"\WW2\Assets_s\Weapons\Rifles_s\RifleGrenades\blank_reload",5,1,10};
-
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         class LinkedItems {
             class LinkedItemsMuzzle {
@@ -1938,26 +1708,6 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "LIB_GestureReload_k98k_GL";
             reloadMagazineSound[] = {"\WW2\Assets_s\Weapons\Rifles_s\RifleGrenades\blank_reload",5,1,10};
-
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         class LinkedItems {
             class LinkedItemsMuzzle {
@@ -2025,26 +1775,6 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "LIB_GestureReload_k98k_GL";
             reloadMagazineSound[] = {"\WW2\Assets_s\Weapons\Rifles_s\RifleGrenades\blank_reload",5,1,10};
-
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         class LinkedItems {
             class LinkedItemsMuzzle {
@@ -2116,26 +1846,6 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "LIB_GestureReload_LeeEnfield_GL";
             reloadMagazineSound[] = {"\WW2\Assets_s\Weapons\Rifles_s\RifleGrenades\blank_reload",5,1,10};
-
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         baseWeapon = "CSA38_SMLE";
         class LinkedItems {
@@ -2194,26 +1904,6 @@
             discreteDistanceInitIndex = 1;
             reloadAction = "LIB_GestureReload_LeeEnfield_GL";
             reloadMagazineSound[] = {"\WW2\Assets_s\Weapons\Rifles_s\RifleGrenades\blank_reload",5,1,10};
-
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         class LinkedItems {
             class LinkedItemsMuzzle {
@@ -2270,7 +1960,7 @@
     class csa38_kpvz38P : csa38_SMG {
         displayname = "vz. 38";
         descriptionShort = "Kulometná Pistole vz. 38 with stick magazine";
-        fow_burstLength = 2;
+        fow_burstLenght = 2;
         magazines[] = {"csa38_9_mm_36xBrowning"};
         magazineWell[] = {"CBA_380ACP_Vz38SMG"};
         recoil = "recoil_2PzD_smg_light";
@@ -2310,7 +2000,7 @@
     class csa38_mas38 : csa38_SMG {
         displayname = "MAS 38";
         descriptionShort = "MAS 38, known as the MP722(f) in Wehrmacht service";
-        fow_burstLength = 2;
+        fow_burstLenght = 2;
         magazines[] = {"CSA38_mas38mag"};
         magazineWell[] = {"CBA_765x20mmLongue_MAS38"};
         recoil = "recoil_2PzD_smg_light";
@@ -2337,7 +2027,7 @@
         descriptionShort = "Maschinenpistole 18";
         discreteDistance[] = {100,200};
         discreteDistanceInitIndex = 0;
-        fow_burstLength = 2;
+        fow_burstLenght = 2;
         magazines[] = {"csa38_9_MM_32xMP18"};
         magazineWell[] = {"CBA_9x19_P08"};
         recoil = "recoil_2PzD_smg_medium";
@@ -2388,7 +2078,7 @@
     class CSA38_Mp28 : CSA38_Mp18 {
         displayname = "MP28";
         descriptionShort = "Maschinenpistole 28/II";
-        fow_burstLength = 2;
+        fow_burstLenght = 2;
         magazines[] = {"csa38_9_MM_32xMP28"};
         magazineWell[] = {"CBA_9x19_MP28"};
         reloadAction = "LIB_GestureReload_Sten";
@@ -2433,7 +2123,7 @@
     class CSA38_Mp35 : CSA38_Mp28 {
         displayname = "MP35";
         descriptionShort = "Maschinenpistole 35";
-        fow_burstLength = 2;
+        fow_burstLenght = 2;
         magazines[] = {"csa38_9_MM_32xMP35"};
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 93.48;
@@ -2501,7 +2191,7 @@
         displayName = "MP38 (Folded)";
         descriptionShort = "Maschinenpistole 38 with stock folded";
         discreteDistance[] = {100,200};
-        fow_burstLength = 2;
+        fow_burstLenght = 2;
         magazines[] = {"csa38_9_MM_32xPARA"};
         magazineWell[] = {"CBA_9x19_MP40"};
         recoil = "recoil_2PzD_smg_heavy";
@@ -2641,7 +2331,7 @@
         displayName = "Sten Mk II";
         descriptionShort = "Sten Mk II";
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 2;
+        fow_burstLenght = 2;
         magazines[] = {"csa38_32_9x19"};
         magazineWell[] = {"CBA_9x19_STEN"};
         recoil = "recoil_2PzD_smg_medium";
@@ -2718,7 +2408,7 @@
         displayName = "Bren Gun Mk II";
         descriptionShort = "BREN L.M.G. Mk II";
         dispersion = MOA_TO_RAD(3);
-        fow_burstLength = 3;
+        fow_burstLenght = 3;
         magazines[] = {"CSA38_7_7_30x56R"};
         magazineWell[] = {"CBA_303B_BREN"};
         recoil = "recoil_2PzD_mmg_1";
@@ -2809,7 +2499,7 @@
         displayName = "vz. 7/24";
         descriptionShort = "Schwarzlose-Janeček vz. 7/24";
         dispersion = MOA_TO_RAD(4);
-        fow_burstLength = 3;
+        fow_burstLenght = 3;
         magazines[] = {"CSA38_TKVZ24mag","CSA38_TKVZ24mag2"};
         magazineWell[] = {"CBA_792x57_vz7_24"};
         recoil = "recoil_2PzD_mmg_1";
@@ -2840,7 +2530,7 @@
         displayName = "vz. 37";
         descriptionShort = "vz. 37, known as the MG 37(t) in Wehrmacht service";
         dispersion = MOA_TO_RAD(4);
-        fow_burstLength = 3;
+        fow_burstLenght = 3;
         magazines[] = {"CSA38_ZB53mg5", "CSA38_ZB53mg6"};
         magazineWell[] = {"CBA_792x57_ZB53"};
         modes[] = {"FullAuto","FastAuto","close","short","medium","far"};
@@ -2888,7 +2578,7 @@
         displayName = "vz. 26";
         descriptionShort = "vz. 26, known as the MG 26(t) in Wehrmacht service";
         dispersion = MOA_TO_RAD(3);
-        fow_burstLength = 3;
+        fow_burstLenght = 3;
         magazines[] = {"CSA38_7_92_20xMauser","CSA38_7_92_20xMauser2"};
         magazineWell[] = {"CBA_792x57_ZB26"};
         recoil = "recoil_2PzD_mmg_1";
@@ -2945,7 +2635,7 @@
         displayName = "MG30";
         descriptionShort = "Maschinengewehr 30";
         dispersion = MOA_TO_RAD(3);
-        fow_burstLength = 3;
+        fow_burstLenght = 3;
         magazines[] = {"CSA38_7_92_30xMauserMG","CSA38_7_92_30xMauserMGAP"};
         magazineWell[] = {"CBA_792x57_MG30"};
         recoil = "recoil_2PzD_mmg_1";
@@ -2988,7 +2678,7 @@
         discreteDistance[] = {200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
         discreteDistanceInitIndex = 1;
         dispersion = MOA_TO_RAD(4);
-        fow_burstLength = 5;
+        fow_burstLenght = 5;
         magazines[] = {"CSA38_7_92_30xMauserMG","CSA38_7_92_30xMauserMGAP"};
         magazineWell[] = {"CBA_792x57_LINKS"};
         recoil = "recoil_2PzD_mmg_1";
@@ -3082,15 +2772,34 @@
 // End Other Weapons, Tripods, Launchers
 
 // Vehicle Weapons
+    class csa38_Brenmg : CSA38_LMGA3_base {
+        fow_burstLenght = 6;
+        class Eventhandlers {
+            class fow_mgRoF {
+                fired = "_this spawn fow_main_fnc_mgRoFStatic;";
+            };
+        };
+        class manual : CSA38_LMGA3_base {
+            dispersion = MOA_TO_RAD(3);
+            reloadTime = RPM_TO_TIME(510); // 510 rpm
+        };
+    };
+
     class csa38_MG34MG : CSA38_HMGA3_base {
         displayName = "MG34 Lafette";
-        descriptionShort = "Maschinengewehr 34 on Laffete Tripod";
+        descriptionShort = "Maschinengewehr 34 on Lafette Tripod";
         discreteDistance[] = {200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
         discreteDistanceInitIndex = 1;
         dispersion = MOA_TO_RAD(4);
+        fow_burstLenght = 6;
         magazines[] = {"CSA38_MG34mg","CSA38_MG34mg2","CSA38_MG34mg3","CSA38_MG34mg4","CSA38_MG34mgAP","CSA38_MG34mg2AP","CSA38_MG34mg3AP","CSA38_MG34mg4AP","lib_250Rnd_792x57","lib_250Rnd_792x57_sS","lib_250Rnd_792x57_SmK","LIB_50Rnd_792x57_Veh","LIB_100Rnd_792x57","LIB_50Rnd_792x57","lib_50Rnd_792x57_SmK","lib_50Rnd_792x57_sS"};
         magazineWell[] = {"CBA_792x57_LINKS"};
         recoil = "recoil_2PzD_mmg_1";
+        class Eventhandlers {
+            class fow_mgRoF {
+                fired = "_this spawn fow_main_fnc_mgRoFStatic;";
+            };
+        };
         class manual : CSA38_HMGA3_base {
             dispersion = MOA_TO_RAD(4);
             reloadTime = RPM_TO_TIME(850); // 850 rpm
@@ -3125,9 +2834,15 @@
         displayName = "vz. 7/24";
         descriptionShort = "Schwarzlose-Janeček vz. 7/24";
         dispersion = MOA_TO_RAD(4);
+        fow_burstLenght = 3;
         magazines[] = {"CSA38_TKVZ24mag2","CSA38_TKVZ24mag"};
         magazineWell[] = {"CBA_792x57_vz7_24"};
         recoil = "recoil_2PzD_mmg_1";
+        class Eventhandlers {
+            class fow_mgRoF {
+                fired = "_this spawn fow_main_fnc_mgRoFStatic;";
+            };
+        };
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 507.06;
         };
@@ -3141,10 +2856,16 @@
         displayName = "vz. 37";
         descriptionShort = "vz. 37, known as the MG 37(t) in Wehrmacht service";
         dispersion = MOA_TO_RAD(4);
+        fow_burstLenght = 3;
         magazines[] = {"CSA38_ZB53mg2","CSA38_ZB53mg","CSA38_ZB53mg4","CSA38_ZB53mg3","CSA38_ZB53mg6","CSA38_ZB53mg5","CSA38_ZB53mg2G","CSA38_ZB53mgG","CSA38_ZB53mg4G","CSA38_ZB53mg3G","CSA38_ZB53mg6G","CSA38_ZB53mg5G"};
         magazineWell[] = {"CBA_792x57_ZB53"};
         modes[] = {"manual","manual2","close","short","medium","far"};
         recoil = "recoil_2PzD_mmg_1";
+        class Eventhandlers {
+            class fow_mgRoF {
+                fired = "_this spawn fow_main_fnc_mgRoFStatic;";
+            };
+        };
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 418.88;
         };

@@ -121,16 +121,48 @@
         maximumLoad = 150;
     };
 
-    class B_LIB_SOV_RA_Rucksack_Green : B_LIB_SOV_RA_Rucksack {
-        maximumLoad = 150;
+    class B_LIB_SOV_RA_Rucksack_Gas_Kit : B_LIB_SOV_RA_Rucksack {
+        maximumLoad = 250;
     };
 
     class B_LIB_SOV_RA_Rucksack2 : B_LIB_SOV_RA_Rucksack {
         maximumLoad = 150;
     };
 
+    class B_LIB_SOV_RA_Rucksack2_Gas_Kit : B_LIB_SOV_RA_Rucksack2 {
+        maximumLoad = 250;
+    };
+
+    class B_LIB_SOV_RA_Rucksack2_Shinel : B_LIB_SOV_RA_Rucksack2 {
+        maximumLoad = 200;
+    };
+
+    class B_LIB_SOV_RA_Rucksack2_Gas_Kit_Shinel : B_LIB_SOV_RA_Rucksack2 {
+        maximumLoad = 300;
+    };
+
+    class B_LIB_SOV_RA_Rucksack_Green : B_LIB_SOV_RA_Rucksack {
+        maximumLoad = 150;
+    };
+
+    class B_LIB_SOV_RA_Rucksack_Gas_Kit_Green : B_LIB_SOV_RA_Rucksack_Green {
+        maximumLoad = 250;
+    };
+
     class B_LIB_SOV_RA_Rucksack2_Green : B_LIB_SOV_RA_Rucksack2 {
         maximumLoad = 150;
+    };
+
+    class B_LIB_SOV_RA_Rucksack2_Gas_Kit_Green : B_LIB_SOV_RA_Rucksack2_Green {
+        maximumLoad = 250;
+    };
+
+    class B_LIB_SOV_RA_Rucksack2_Shinel_Green : B_LIB_SOV_RA_Rucksack2_Green {
+        maximumLoad = 200;
+    };
+
+    class B_LIB_SOV_RA_Rucksack2_Gas_Kit_Shinel_Green : B_LIB_SOV_RA_Rucksack2_Green {
+        maximumLoad = 300;
     };
 
     class B_LIB_SOV_RA_Shinel : B_LIB_SOV_RA_Rucksack {

@@ -351,7 +351,9 @@
             "fow_20Rnd_45acp_M1_2PzD",
             "fow_20Rnd_45acp_T_M1_2PzD",
             "fow_30Rnd_45acp",
-            "fow_30Rnd_45acp_T"
+            "fow_30Rnd_45acp_T",
+            "fow_50Rnd_45acp",
+            "fow_50Rnd_45acp_T"
         };
         IFA3_mags[] = {
             "LIB_30Rnd_45ACP",

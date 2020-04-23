@@ -236,6 +236,8 @@
         displayNameShort = "Tracer";
         descriptionShort = "(Legacy For Zeus Spawn) Works in Thompson and Grease Gun, which is not right";
         ammo = "LIB_B_45ACP_Ball_t";
+        tracersEvery = 1;
+        lastRoundsTracer = 30;
         scope = 1;
     };
     class fow_20Rnd_45acp_M1_2PzD : fow_30Rnd_45acp {
@@ -254,6 +256,8 @@
         ammo = "LIB_B_45ACP_Ball_t";
         count = 20;
         mass = 7;
+        tracersEvery = 1;
+        lastRoundsTracer = 20;
         scope = 1;
     };
     class fow_30Rnd_45acp_M1_2PzD : fow_30Rnd_45acp {
@@ -269,6 +273,8 @@
         displayNameShort = "Tracer";
         descriptionShort = ".45 ACP, 30 Rounds, Tracer (M26)<br/>For use in the M1928, M1, or M1A1 Thompson";
         ammo = "LIB_B_45ACP_Ball_t";
+        tracersEvery = 1;
+        lastRoundsTracer = 30;
         scope = 1;
     };
     class fow_30Rnd_45acp_M3_2PzD : fow_30Rnd_45acp {
@@ -283,6 +289,23 @@
         displayNameShort = "Tracer";
         descriptionShort = ".45 ACP, 30 Rounds, Tracer (M26)<br/>For use in the M3 Grease Gun";
         ammo = "LIB_B_45ACP_Ball_t";
+        tracersEvery = 1;
+        lastRoundsTracer = 30;
+        scope = 1;
+    };
+    class fow_50Rnd_45acp : fow_30Rnd_45acp {
+        displayName = "Thompson M1928, 50 Round Magazine, Ball (M1911)";
+        displayNameShort = "Ball";
+        descriptionShort = ".45 ACP, 50 Rounds, Ball (M1911)<br/>For use in the M1928 Thompson";
+        scope = 1;
+    };
+    class fow_50Rnd_45acp_T : fow_50Rnd_45acp {
+        displayName = "Thompson M1928, 20 Round Magazine, Tracer (M26)";
+        displayNameShort = "Tracer";
+        descriptionShort = ".45 ACP, 50 Rounds, Tracer (M26)<br/>For use in the M1928 Thompson";
+        ammo = "LIB_B_45ACP_Ball_t";
+        tracersEvery = 1;
+        lastRoundsTracer = 50;
         scope = 1;
     };
 
@@ -330,6 +353,11 @@
         mass = 6.11;
         scope = 1;
     };
+    /*
+    class fow_33Rnd_9x19_owen : CA_Magazine {
+        //TODO
+    };
+    */
 // End SMG magazines
 
 // MG magazines
@@ -624,6 +652,11 @@
         mass = 0;
         scope = 2;
     };
+    /*
+    class fow_1Rnd_rpzb : CA_LauncherMagazine {
+        //TODO
+    };
+    */
 
     class fow_1Rnd_type10 : CA_Magazine {
         displayName = "Type 10 Flare Pistol, White Flare";
@@ -913,6 +946,7 @@
         descriptionShort = "Mk 2 Grenade, the standard US fragmentation grenade.";
         initSpeed = 20;
         mass = 13.117;
+        scope = 1;
     };
 
     class fow_e_nb39b : HandGrenade {
@@ -921,6 +955,7 @@
         descriptionShort = "Nebelhandgranate 39, German smoke grenade, 120 second burn time.";
         initSpeed = 20;
         mass = 18.739;
+        scope = 1;
     };
 
     class fow_e_no36mk1 : HandGrenade {
@@ -929,6 +964,7 @@
         descriptionShort = "No. 36 Mk. 1, standard British fragmentation grenade.";
         initSpeed = 18;
         mass = 16.865;
+        scope = 1;
     };
 
     class fow_e_no69 : HandGrenade {
@@ -954,6 +990,7 @@
         ammo = "LIB_No77";
         initSpeed = 25;
         mass = 8.444;
+        scope = 1;
     };
 
     class fow_e_no79 : HandGrenade {
@@ -971,6 +1008,7 @@
         ammo = "LIB_No82";
         initSpeed = 15;
         mass = 27.337;
+        scope = 1;
     };
 
     class fow_e_tnt_halfpound : HandGrenade {

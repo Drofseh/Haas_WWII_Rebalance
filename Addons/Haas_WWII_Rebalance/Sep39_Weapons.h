@@ -296,7 +296,7 @@
         displayName = "wz. 39 Mors";
         descriptionShort = "Pistolet maszynowy wz. 39 Mors";
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 3;
+        fow_burstLenght = 3;
         magazines[] = {"w39_9_MM_24xPARA"};
         magazineWell[] = {"CBA_9x19_wz39Mors"};
         recoil = "recoil_2PzD_smg_medium";
@@ -359,7 +359,7 @@
         discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500};
         discreteDistanceInitIndex = 1;
         dispersion = MOA_TO_RAD(3);
-        fow_burstLength = 3;
+        fow_burstLenght = 3;
         magazines[] = {"w39_7_92_20xMauserS","w39_7_92_20xMauserP"};
         magazineWell[] = {"CBA_792x57_wz28"};
         recoil = "recoil_2PzD_rifle_auto_1";
@@ -416,12 +416,17 @@
 // End Machine Guns
 
 // Other Weapons, Tripods, Launchers
-/*
+// End Other Weapons, Tripods, Launchers
+
+// Vehicle Weapons
     class w39_CKMwz25mg : w39_LMGA3_base {
         displayName = "CKM wz.25";
         class manual : w39_LMGA3_base {
+            dispersion = MOA_TO_RAD(3);
+            reloadTime = RPM_TO_TIME(480); // 480 rpm
+        };
     };
-
+/*
     class w39_ckmwz25veh : w39_CKMwz25mg {
         scope = 1;
         displayName = "CKM wz.25";
@@ -434,8 +439,5 @@
         cursoraim = "mg";
         showAimCursorInternal = 1;
     };
-*/
-// End Other Weapons, Tripods, Launchers
-
-// Vehicle Weapons
+/*
 // End Vehicle Weapons

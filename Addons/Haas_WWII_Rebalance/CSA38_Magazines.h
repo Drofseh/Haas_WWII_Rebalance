@@ -497,15 +497,15 @@
         lastRoundsTracer = 3;
         ace_isbelt = 1;
         mass = 32;
-        scope = 2;
+        scope = 1;
     };
     class CSA38_7_7_100x56RAP : CSA38_7_7_100x56R {
         displayName = "Bren Gun, 100 Round Magazine, AP/Tracer (W Iz/G IIz)";
         displayNameShort = "AP/Tracer";
-        descriptionShort = ".1003 British, 100 Rounds, Mixed AP/Tracer (W Iz/G IIz)<br/>For use in the Bren Gun";
+        descriptionShort = ".303 British, 100 Rounds, Mixed AP/Tracer (W Iz/G IIz)<br/>For use in the Bren Gun";
         ammo = "LIB_B_770x56_Mixed_AP_Tracer";
         picture = "\CSA38II_weapons2\data\csa38_zgb34mag3.paa";
-        scope = 2;
+        scope = 1;
     };
     class CSA38_7_7_100x56R_MKVIII_2PzD : CSA38_7_7_100x56R {
         displayName = "Bren Gun, 100 Round Magazine, Long Range/Tracer (Mk IIIz/G IIz)";
@@ -843,6 +843,7 @@
         descriptionShort = "F-1 Grenade, Russian copy of a French hand grenade.";
         initSpeed = 20;
         mass = 13.228;
+        scope = 1;
     };
 
     class CSA38_rg34 :  CSA38_HandGrenade {
@@ -876,6 +877,7 @@
         ammo = "fow_e_m24_spli";
         initSpeed = 22;
         mass = 17.527;
+        scope = 1;
     };
 
     class CSA38_shg24t :  CSA38_HandGrenade {
@@ -885,6 +887,7 @@
         ammo = "fow_e_m24";
         initSpeed = 24;
         mass = 13.117;
+        scope = 1;
     };
 
     class CSA38_PRG21 : CSA38_BaseRifleGrenade {

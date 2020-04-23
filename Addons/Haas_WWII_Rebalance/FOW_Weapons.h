@@ -229,15 +229,10 @@
         displayName = "FG42 Ausf.G";
         descriptionShort = "Fallschirmjagergewehr 42 Ausfuhrung G";
         dispersion = MOA_TO_RAD(4);
-        // fow_burstLength = 2;
+        // fow_burstLenght = 2;
         magazines[] = {"fow_20Rnd_792x57"};
         magazineWell[] = {"CBA_792x57_FG42"};
         recoil = "recoil_2PzD_rifle_FG42";
-        /*class Eventhandlers : Eventhandlers {
-            class fow_mgRoF {
-                fired = "_this spawn fow_main_fnc_mgRoF;";
-            };
-        };*/
         class WeaponSlotsInfo {
             mass = 109.191;
         };
@@ -315,43 +310,7 @@
                 soundSetShot[] = {"IFA3_G43_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-        };/*
-        class Far : Single {
-            dispersion = MOA_TO_RAD(6);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_G43_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
         };
-        class Medium : Single {
-            dispersion = MOA_TO_RAD(6);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_G43_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class Short : Single {
-            dispersion = MOA_TO_RAD(6);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_G43_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
     };
 
     class fow_w_k98 : fow_rifleBolt_base {
@@ -377,47 +336,11 @@
                 soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-        };/*
-        class Far : Single {
-            dispersion = MOA_TO_RAD(5);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
         };
-        class Medium : Single {
-            dispersion = MOA_TO_RAD(5);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class Short : Single {
-            dispersion = MOA_TO_RAD(5);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
     };
 
     class fow_w_k98_scoped : fow_w_k98 {
-        displayName = "Kar98k, Zf41 Sight";
+        displayName = "Kar98k (Zf41)";
         descriptionShort = "Karabiner 98 kurz with Zf41 sight";
         dispersion = MOA_TO_RAD(3.5);
         magazines[] = {"fow_5Rnd_792x57"};
@@ -425,6 +348,27 @@
         recoil = "recoil_2PzD_rifle_bolt";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 89;
+        };
+        class OpticsModes {
+            class Optic {
+                opticsZoomInit = 0.166;
+                opticsZoomMax = 0.166;
+                opticsZoomMin = 0.166;
+            };
+            class IronSight : Optic {
+                opticsZoomInit = 0.75;
+                opticsZoomMax = 1.25;
+                opticsZoomMin = 0.25;
+            };
+        };
+        class Far : Single {
+            dispersion = MOA_TO_RAD(3.5);
+        };
+        class Medium : Single {
+            dispersion = MOA_TO_RAD(3.5);
+        };
+        class Short : Single {
+            dispersion = MOA_TO_RAD(3.5);
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(3.5);
@@ -438,43 +382,7 @@
                 soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-        };/*
-        class Far : Single {
-            dispersion = MOA_TO_RAD(3.5);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
         };
-        class Medium : Single {
-            dispersion = MOA_TO_RAD(3.5);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class Short : Single {
-            dispersion = MOA_TO_RAD(3.5);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
     };
 
     class fow_w_leeenfield_no4mk1 : fow_rifleBolt_base {
@@ -501,44 +409,6 @@
                 weaponSoundEffect = "DefaultRifle";
             };
         };
-        /*
-        class Far : Single {
-            dispersion = MOA_TO_RAD(4);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_nagant_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class Medium : Single {
-            dispersion = MOA_TO_RAD(4);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_nagant_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class Short : Single {
-            dispersion = MOA_TO_RAD(4);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_nagant_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        */
     };
     class fow_w_leeenfield_no4mk1_redwood : fow_w_leeenfield_no4mk1 {
         displayName = "Lee Enfield No. 4 Mk I";
@@ -574,49 +444,12 @@
                 soundSetShot[] = {"IFA3_M1Car_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-        };/*
-        class Far : Single {
-            dispersion = MOA_TO_RAD(5);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_M1Car_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
         };
-        class Medium : Single {
-            dispersion = MOA_TO_RAD(5);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_M1Car_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class Short : Single {
-            dispersion = MOA_TO_RAD(5);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_M1Car_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        */
     };
     class fow_w_m2_carbine_2PzD : fow_w_m1_carbine {
         displayName = "M2 Carbine";
         descriptionShort = "Carbine, Cal .30, M2";
-        fow_burstLength = 1;
+        fow_burstLenght = 1;
         magazines[] = {"fow_30Rnd_762x33_2PzD"};
         magazineWell[] = {"CBA_30Carbine_M1Carbine"};
         modes[] = {"Single","Full","Far","Medium","Short"};
@@ -651,63 +484,8 @@
         };
         class fow_w_m7_gl : UGL_F {
             discreteDistance[] = {50, 75, 100, 125, 150, 200};
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         class Single : Mode_SemiAuto {
-            dispersion = MOA_TO_RAD(4);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_M1_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class Far : Single {
-            dispersion = MOA_TO_RAD(4);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_M1_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class Medium : Single {
-            dispersion = MOA_TO_RAD(4);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_M1_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class Short : Single {
             dispersion = MOA_TO_RAD(4);
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
@@ -765,46 +543,9 @@
                 weaponSoundEffect = "DefaultRifle";
             };
         };
-        class Far;
-        class Medium;
-        class Short;
-        /*
-        class Far : Single {
-            dispersion = MOA_TO_RAD(3);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_M1903A4_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class Medium : Single {
-            dispersion = MOA_TO_RAD(3);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_M1903A4_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class Short : Single {
-            dispersion = MOA_TO_RAD(3);
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_M1903A4_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
+        class Far : Single {};
+        class Medium : Single {};
+        class Short : Single {};
     };
 
     class fow_w_m1903A1_sniper : fow_w_m1903A1 {
@@ -819,15 +560,9 @@
         class Single : Single {
             dispersion = MOA_TO_RAD(2);
         };
-        class Far : Far {
-            dispersion = MOA_TO_RAD(2);
-        };
-        class Medium : Medium {
-            dispersion = MOA_TO_RAD(2);
-        };
-        class Short : Short {
-            dispersion = MOA_TO_RAD(2);
-        };
+        class Far : Far {};
+        class Medium : Medium {};
+        class Short : Short {};
     };
 
     class fow_w_stg44 : fow_rifle_base {
@@ -836,16 +571,11 @@
         discreteDistance[] = {100,200,300,400,500,600,700,800};
         discreteDistanceInitIndex = 1;
         dispersion = MOA_TO_RAD(7);
-        // fow_burstLength = 2;
+        // fow_burstLenght = 2;
         magazines[] = {"fow_30Rnd_792x33"};
         magazineWell[] = {"CBA_792x33_StG"};
-        modes[] = {"Single","Full","Far","Medium","Short"};
+        //modes[] = {"Single","Full","Burst_AI"};
         recoil = "recoil_2PzD_rifle_light";
-        /*class Eventhandlers : Eventhandlers {
-            class fow_mgRoF {
-                fired = "_this spawn fow_main_fnc_mgRoF;";
-            };
-        };*/
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 97.588;
         };
@@ -862,6 +592,20 @@
                 weaponSoundEffect = "DefaultRifle";
             };
         };
+        class Burst_AI : Mode_Burst {
+            dispersion = MOA_TO_RAD(7);
+            reloadTime = RPM_TO_TIME(575); // 575 rpm
+            showToPlayer = 0;
+            class StandardSound : BaseSoundModeType {
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"IFA3_STG44_Shot_SoundSet","IFA3_mmg1_Tail_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
+            };
+        };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(7);
             reloadTime = RPM_TO_TIME(575); // 575 rpm
@@ -874,43 +618,7 @@
                 soundSetShot[] = {"IFA3_STG44_Shot_SoundSet","IFA3_mmg1_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-        };/*
-        class Far : Single {
-            reloadTime = RPM_TO_TIME(575); // 575 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_STG44_Shot_SoundSet","IFA3_mmg1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
         };
-        class Medium : Single {
-            reloadTime = RPM_TO_TIME(575); // 575 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_STG44_Shot_SoundSet","IFA3_mmg1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class Short : Single {
-            reloadTime = RPM_TO_TIME(575); // 575 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_STG44_Shot_SoundSet","IFA3_mmg1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
     };
 
     class fow_w_type99 : fow_rifleBolt_base {
@@ -927,25 +635,6 @@
         };
         class fow_w_type2_gl : UGL_F {
             discreteDistance[] = {50, 75, 100, 125, 150, 200};
-            /*dispersion = MOA_TO_RAD(50);
-            recoil = "recoil_single_m320";
-            recoilProne = "recoil_single_m320";
-            aiDispersionCoefX = 5;
-            aiDispersionCoefY = 100;
-            aiRateOfFire = 25;
-            aiRateOfFireDispersion = 5;
-            aiRateOfFireDistance = 500;
-            class Single : Mode_SemiAuto {
-                dispersion = MOA_TO_RAD(50);
-                recoil = "recoil_single_m320";
-                recoilProne = "recoil_single_m320";
-                aiDispersionCoefX = 5;
-                aiDispersionCoefY = 100;
-                aiRateOfFire = 25;
-                aiRateOfFireDispersion = 5;
-                aiRateOfFireDistance = 500;
-            };
-            */
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(4);
@@ -959,11 +648,20 @@
                 weaponSoundEffect = "DefaultRifle";
             };
         };
-        class Far;
-        class Medium;
-        class Short;/*
+    };
+    class fow_w_type99_sniper : fow_w_type99 {
+        displayName = "Type 99 Sniper";
+        descriptionShort = "Type 99 Arisaka Sniper";
+        discreteDistance[] = {300};
+        discreteDistanceInitIndex = 0;
+        magazines[] = {"fow_5Rnd_77x58"};
+        magazineWell[] = {"CBA_77x58_Arisaka"};
+        class WeaponSlotsInfo : WeaponSlotsInfo {
+            mass = 105.500;
+        };
         class Far : Single {
-            dispersion = MOA_TO_RAD(4);
+            dispersion = MOA_TO_RAD(3);
+            sounds[] = {"StandardSound"};
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -975,7 +673,8 @@
             };
         };
         class Medium : Single {
-            dispersion = MOA_TO_RAD(4);
+            dispersion = MOA_TO_RAD(3);
+            sounds[] = {"StandardSound"};
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -987,7 +686,8 @@
             };
         };
         class Short : Single {
-            dispersion = MOA_TO_RAD(4);
+            dispersion = MOA_TO_RAD(3);
+            sounds[] = {"StandardSound"};
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -997,24 +697,19 @@
                 soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-        };*/
-    };
-    class fow_w_type99_sniper : fow_w_type99 {
-        displayName = "Type 99 Sniper";
-        descriptionShort = "Type 99 Arisaka Sniper";
-        magazines[] = {"fow_5Rnd_77x58"};
-        magazineWell[] = {"CBA_77x58_Arisaka"};
-        class WeaponSlotsInfo : WeaponSlotsInfo {
-            mass = 105.500;
         };
-        class Far : Single {
+        class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(3);
-        };
-        class Medium : Single {
-            dispersion = MOA_TO_RAD(3);
-        };
-        class Short : Short {
-            dispersion = MOA_TO_RAD(3);
+            sounds[] = {"StandardSound"};
+            class StandardSound : BaseSoundModeType {
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
+            };
         };
     };
 // End Rifles
@@ -1026,7 +721,7 @@
         discreteDistance[] = {100,250};
         discreteDistanceInitIndex = 0;
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 3;
+        fow_burstLenght = 3;
         magazines[] = {"fow_30Rnd_45acp_M1_2PzD"};
         magazineWell[] = {"CBA_45ACP_Thompson_Stick"};
         recoil = "recoil_2PzD_smg_heavy";
@@ -1037,6 +732,19 @@
         };
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 105.882;
+        };
+        class Single : Mode_SemiAuto {
+            dispersion = MOA_TO_RAD(8);
+            reloadTime = RPM_TO_TIME(700); // 700 rpm
+            class StandardSound {
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"IFA3_thompson_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
+            };
         };
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(8);
@@ -1051,9 +759,10 @@
                 weaponSoundEffect = "DefaultRifle";
             };
         };
-        class Single : Mode_SemiAuto {
+        class Burst_AI : Mode_Burst {
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(700); // 700 rpm
+            showToPlayer = 0;
             class StandardSound {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -1064,47 +773,11 @@
                 weaponSoundEffect = "DefaultRifle";
             };
         };
-        class Far;/* : Single {
-            reloadTime = RPM_TO_TIME(700); // 700 rpm
-            class StandardSound {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_thompson_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
-        class Medium;/* : Single {
-            reloadTime = RPM_TO_TIME(700); // 700 rpm
-            class StandardSound {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_thompson_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
-        class Short;/* : Single {
-            reloadTime = RPM_TO_TIME(700); // 700 rpm
-            class StandardSound {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_thompson_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
     };
     class fow_w_m1_thompson : fow_w_m1a1_thompson {
         displayName = "M1 Thompson";
         descriptionShort = "Submachine Gun, Caliber .45, M1";
-        fow_burstLength = 3;
+        fow_burstLenght = 3;
         magazines[] = {"fow_30Rnd_45acp_M1_2PzD"};
         magazineWell[] = {"CBA_45ACP_Thompson_Stick"};
         recoil = "recoil_2PzD_smg_heavy";
@@ -1116,35 +789,10 @@
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 108;
         };
-        class Single : Single {
+        class Single : Mode_SemiAuto {
+            dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(780); // 780 rpm
-            /*
-            class StandardSound {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_thompson_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };*/
-        };
-        class Far : Far {
-            reloadTime = RPM_TO_TIME(780); // 780 rpm
-            /*
-            class StandardSound {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_thompson_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };*/
-        };
-        class Medium : Medium {
-            reloadTime = RPM_TO_TIME(780); // 780 rpm
-            /*
+            sounds[] = {"StandardSound"};
             class StandardSound {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -1154,11 +802,11 @@
                 soundSetShot[] = {"IFA3_thompson_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-            */
         };
-        class Short : Short {
+        class Full : Mode_FullAuto {
+            dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(780); // 780 rpm
-            /*
+            sounds[] = {"StandardSound"};
             class StandardSound {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -1168,11 +816,12 @@
                 soundSetShot[] = {"IFA3_thompson_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-            */
         };
-        class Full : Full {
+        class Burst_AI : Mode_Burst {
+            dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(780); // 780 rpm
-            /*
+            sounds[] = {"StandardSound"};
+            showToPlayer = 0;
             class StandardSound {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -1182,7 +831,6 @@
                 soundSetShot[] = {"IFA3_thompson_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-            */
         };
     };
 
@@ -1190,8 +838,7 @@
         displayName = "M3 Grease Gun";
         descriptionShort = "Submachine Gun, Caliber .45, M3";
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 2;
-        modes[] = {"Full","Single","Far","Medium","Short"};
+        fow_burstLenght = 2;
         magazines[] = {"fow_30Rnd_45acp_M3_2PzD"};
         magazineWell[] = {"CBA_45ACP_Grease"};
         recoil = "recoil_2PzD_smg_medium";
@@ -1216,46 +863,24 @@
                 soundSetShot[] = {"SMGVermin_Shot_SoundSet","SMGVermin_Tail_SoundSet","SMGVermin_InteriorTail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-        };/*
-        class Far : Single {
-            reloadTime = RPM_TO_TIME(451); // 451 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"SMGVermin_Shot_SoundSet","SMGVermin_Tail_SoundSet","SMGVermin_InteriorTail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
         };
-        class Medium : Single {
-            reloadTime = RPM_TO_TIME(451); // 451 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"SMGVermin_Shot_SoundSet","SMGVermin_Tail_SoundSet","SMGVermin_InteriorTail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class Short : Single {
-            reloadTime = RPM_TO_TIME(451); // 451 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"SMGVermin_Shot_SoundSet","SMGVermin_Tail_SoundSet","SMGVermin_InteriorTail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(451); // 451 rpm
+            class StandardSound : BaseSoundModeType {
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"SMGVermin_Shot_SoundSet","SMGVermin_Tail_SoundSet","SMGVermin_InteriorTail_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
+            };
+        };
+        class Burst_AI : Mode_Burst {
+            dispersion = MOA_TO_RAD(8);
+            reloadTime = RPM_TO_TIME(451); // 451 rpm
+            showToPlayer = 0;
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -1274,7 +899,7 @@
         discreteDistance[] = {50,100,200,300};
         discreteDistanceInitIndex = 1;
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 3;
+        fow_burstLenght = 3;
         magazineWell[] = {"CBA_45ACP_Reising"};
         magazines[] = {"fow_20Rnd_45acp"};
         recoil = "recoil_2PzD_smg_medium";
@@ -1298,46 +923,24 @@
                 soundSetShot[] = {"IFA3_thompson_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-        };/*
-        class Far : Single {
-            reloadTime = RPM_TO_TIME(800); // 800 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_thompson_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
         };
-        class Medium : Single {
-            reloadTime = RPM_TO_TIME(800); // 800 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_thompson_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class Short : Single {
-            reloadTime = RPM_TO_TIME(800); // 800 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_thompson_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(800); // 800 rpm
+            class StandardSound : BaseSoundModeType {
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"IFA3_thompson_Shot_SoundSet","IFA3_rifle1_Tail_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
+            };
+        };
+        class Burst_AI : Mode_Burst {
+            dispersion = MOA_TO_RAD(8);
+            reloadTime = RPM_TO_TIME(800); // 800 rpm
+            showToPlayer = 0;
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -1356,7 +959,7 @@
         discreteDistance[] = {100,200};
         discreteDistanceInitIndex = 0;
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 2;
+        fow_burstLenght = 2;
         magazines[] = {"fow_32Rnd_9x19_mp40"};
         magazineWell[] = {"CBA_9x19_MP40"};
         recoil = "recoil_2PzD_smg_medium";
@@ -1380,9 +983,11 @@
                 soundSetShot[] = {"IFA3_MP40_Shot_SoundSet","IFA3_pistol1_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-        };/*
-        class Far : Full {
+        };
+        class Burst_AI : Mode_Burst {
+            dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(525); // 525 rpm
+            showToPlayer = 0;
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -1393,37 +998,13 @@
                 weaponSoundEffect = "DefaultRifle";
             };
         };
-        class Medium : Full {
-            reloadTime = RPM_TO_TIME(525); // 525 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_MP40_Shot_SoundSet","IFA3_pistol1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class Short : Full {
-            reloadTime = RPM_TO_TIME(525); // 525 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_MP40_Shot_SoundSet","IFA3_pistol1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
     };
 
     class fow_w_sten_mk2 : fow_rifle_base {
         displayName = "Sten Mk II";
         descriptionShort = "Sten Mk II";
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 2;
+        fow_burstLenght = 2;
         magazines[] = {"fow_32Rnd_9x19_sten"};
         magazineWell[] = {"CBA_9x19_STEN"};
         recoil = "recoil_2PzD_smg_medium";
@@ -1448,36 +1029,23 @@
                 weaponSoundEffect = "DefaultRifle";
             };
         };
-        class Far;/* : Single {
-            reloadTime = RPM_TO_TIME(550); // 550 rpm
-            class StandardSound : BaseSoundModeType {
-                closure1[] = {"A3\sounds_f\weapons\closure\closure_rifle_4",1.35397,1,3};
-                closure2[] = {"A3\sounds_f\weapons\closure\closure_rifle_3",1.35397,1,3};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"Rogue9_Shot_SoundSet","Rogue9_Tail_SoundSet","Rogue9_InteriorTail_SoundSet"};
-            };
-        };*/
-        class Medium;/* : Single {
-            reloadTime = RPM_TO_TIME(550); // 550 rpm
-            class StandardSound : BaseSoundModeType {
-                closure1[] = {"A3\sounds_f\weapons\closure\closure_rifle_4",1.35397,1,3};
-                closure2[] = {"A3\sounds_f\weapons\closure\closure_rifle_3",1.35397,1,3};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"Rogue9_Shot_SoundSet","Rogue9_Tail_SoundSet","Rogue9_InteriorTail_SoundSet"};
-            };
-        };*/
-        class Short;/* : Single {
-            reloadTime = RPM_TO_TIME(550); // 550 rpm
-            class StandardSound : BaseSoundModeType {
-                closure1[] = {"A3\sounds_f\weapons\closure\closure_rifle_4",1.35397,1,3};
-                closure2[] = {"A3\sounds_f\weapons\closure\closure_rifle_3",1.35397,1,3};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"Rogue9_Shot_SoundSet","Rogue9_Tail_SoundSet","Rogue9_InteriorTail_SoundSet"};
-            };
-        };*/
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(550); // 550 rpm
+            class StandardSound : BaseSoundModeType {
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"WW2_Sten_Shot_SoundSet","WW2_rifle_small_Tail_SoundSet","WW2_Sten_stereoLayer_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
+            };
+        };
+        class Burst_AI : Mode_Burst {
+            dispersion = MOA_TO_RAD(8);
+            reloadTime = RPM_TO_TIME(550); // 550 rpm
+            showToPlayer = 0;
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -1496,7 +1064,7 @@
         magazines[] = {"fow_32Rnd_9x19_sten"};
         magazineWell[] = {"CBA_9x19_STEN"};
         recoil = "recoil_2PzD_smg_medium";
-        fow_burstLength = 2;
+        fow_burstLenght = 2;
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -1505,60 +1073,48 @@
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 79.632;
         };
-        class Single : Single {
+        class Single : Mode_SemiAuto {
+            dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(600); // 600 rpm
-            /*
+            sounds[] = {"StandardSound"};
             class StandardSound : BaseSoundModeType {
-                closure1[] = {"A3\sounds_f\weapons\closure\closure_rifle_4",1.35397,1,3};
-                closure2[] = {"A3\sounds_f\weapons\closure\closure_rifle_3",1.35397,1,3};
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"Rogue9_Shot_SoundSet","Rogue9_Tail_SoundSet","Rogue9_InteriorTail_SoundSet"};
+                soundSetShot[] = {"WW2_Sten_Shot_SoundSet","WW2_rifle_small_Tail_SoundSet","WW2_Sten_stereoLayer_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
             };
-            */
         };
-        class Far : Far {
+        class Full : Mode_FullAuto {
+            dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(600); // 600 rpm
-            /*
+            sounds[] = {"StandardSound"};
             class StandardSound : BaseSoundModeType {
-                closure1[] = {"A3\sounds_f\weapons\closure\closure_rifle_4",1.35397,1,3};
-                closure2[] = {"A3\sounds_f\weapons\closure\closure_rifle_3",1.35397,1,3};
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"Rogue9_Shot_SoundSet","Rogue9_Tail_SoundSet","Rogue9_InteriorTail_SoundSet"};
+                soundSetShot[] = {"WW2_Sten_Shot_SoundSet","WW2_rifle_small_Tail_SoundSet","WW2_Sten_stereoLayer_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
             };
-            */
         };
-        class Medium : Medium {
+        class Burst_AI : Mode_Burst {
+            dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(600); // 600 rpm
-            /*
+            showToPlayer = 0;
+            sounds[] = {"StandardSound"};
             class StandardSound : BaseSoundModeType {
-                closure1[] = {"A3\sounds_f\weapons\closure\closure_rifle_4",1.35397,1,3};
-                closure2[] = {"A3\sounds_f\weapons\closure\closure_rifle_3",1.35397,1,3};
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
                 soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"Rogue9_Shot_SoundSet","Rogue9_Tail_SoundSet","Rogue9_InteriorTail_SoundSet"};
+                soundSetShot[] = {"WW2_Sten_Shot_SoundSet","WW2_rifle_small_Tail_SoundSet","WW2_Sten_stereoLayer_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
             };
-            */
-        };
-        class Short : Short {
-            reloadTime = RPM_TO_TIME(600); // 600 rpm
-            /*
-            class StandardSound : BaseSoundModeType {
-                closure1[] = {"A3\sounds_f\weapons\closure\closure_rifle_4",1.35397,1,3};
-                closure2[] = {"A3\sounds_f\weapons\closure\closure_rifle_3",1.35397,1,3};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"Rogue9_Shot_SoundSet","Rogue9_Tail_SoundSet","Rogue9_InteriorTail_SoundSet"};
-            };
-            */
-        };
-        class Full : Full {
-            reloadTime = RPM_TO_TIME(600); // 600 rpm
-            /*
-            class StandardSound : BaseSoundModeType {
-                closure1[] = {"A3\sounds_f\weapons\closure\closure_rifle_4",1.35397,1,3};
-                closure2[] = {"A3\sounds_f\weapons\closure\closure_rifle_3",1.35397,1,3};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"Rogue9_Shot_SoundSet","Rogue9_Tail_SoundSet","Rogue9_InteriorTail_SoundSet"};
-            };
-            */
         };
     };
 
@@ -1566,17 +1122,25 @@
         displayName = "Type 100 SMG";
         descriptionShort = "Type 100 Submachine Gun";
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 2;
+        fow_burstLenght = 2;
         magazines[] = {"fow_32Rnd_8x22"};
         magazineWell[] = {"CBA_9x19_STEN"};
         recoil = "recoil_2PzD_smg_light";
-        /*class Eventhandlers : Eventhandlers {
-            class fow_mgRoF {
-                fired = "_this spawn fow_main_fnc_mgRoF;";
-            };
-        };*/
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 75.000;
+        };
+        class Single : Mode_SemiAuto {
+            dispersion = MOA_TO_RAD(8);
+            reloadTime = RPM_TO_TIME(400); // 400 rpm
+            class StandardSound : BaseSoundModeType {
+                begin1[] = {"",0,1};
+                closure1[] = {"",1,1,10};
+                closure2[] = {"",1,1,10};
+                soundBegin[] = {"begin1",1};
+                soundClosure[] = {"closure1",0.5,"closure2",0.5};
+                soundSetShot[] = {"IFA3_MP40_Shot_SoundSet","IFA3_pistol1_Tail_SoundSet"};
+                weaponSoundEffect = "DefaultRifle";
+            };
         };
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(8);
@@ -1590,9 +1154,11 @@
                 soundSetShot[] = {"IFA3_MP40_Shot_SoundSet","IFA3_pistol1_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-        };/*
-        class Far : Full {
+        };
+        class Burst_AI : Mode_Burst {
+            dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(400); // 400 rpm
+            showToPlayer = 0;
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -1603,36 +1169,12 @@
                 weaponSoundEffect = "DefaultRifle";
             };
         };
-        class Medium : Full {
-            reloadTime = RPM_TO_TIME(400); // 400 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_MP40_Shot_SoundSet","IFA3_pistol1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class Short : Full {
-            reloadTime = RPM_TO_TIME(400); // 400 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_MP40_Shot_SoundSet","IFA3_pistol1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
     };
     class fow_w_type100_44_2PzD : fow_w_type100 {
         displayName = "Type 100/44 SMG";
         descriptionShort = "Type 100/44 Submachine Gun";
         dispersion = MOA_TO_RAD(8);
-        fow_burstLength = 4;
+        fow_burstLenght = 4;
         magazines[] = {"fow_32Rnd_8x22"};
         magazineWell[] = {"CBA_9x19_STEN"};
         recoil = "recoil_2PzD_smg_light";
@@ -1641,16 +1183,13 @@
                 fired = "_this spawn fow_main_fnc_mgRoF;";
             };
         };
-        class Far : Full {
-            reloadTime = RPM_TO_TIME(800); // 800 rpm
-        };
-        class Medium : Full {
-            reloadTime = RPM_TO_TIME(800); // 800 rpm
-        };
-        class Short : Full {
+        class Single : Single {
             reloadTime = RPM_TO_TIME(800); // 800 rpm
         };
         class Full : Full {
+            reloadTime = RPM_TO_TIME(800); // 800 rpm
+        };
+        class Burst_AI : Burst_AI {
             reloadTime = RPM_TO_TIME(800); // 800 rpm
         };
     };
@@ -1661,7 +1200,7 @@
         displayName = "Bren Gun Mk II";
         descriptionShort = "BREN L.M.G. Mk II";
         dispersion = MOA_TO_RAD(3);
-        fow_burstLength = 3;
+        fow_burstLenght = 3;
         magazines[] = {"fow_30Rnd_303_bren"};
         magazineWell[] = {"CBA_303B_BREN"};
         modes[] = {"FullAuto","Single","close","short","medium","far_optic1","far_optic2"};
@@ -1698,74 +1237,14 @@
             minRange = 0;
             minRangeProbab = 0.01;
             textureType = "semi";
-        };/*
-        class close : FullAuto {
-            reloadTime = RPM_TO_TIME(510); // 510 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_dp_Shot_SoundSet","IFA3_MMG1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
         };
-        class far_optic1 : close {
-            reloadTime = RPM_TO_TIME(510); // 510 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_dp_Shot_SoundSet","IFA3_MMG1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class far_optic2 : far_optic1 {
-            reloadTime = RPM_TO_TIME(510); // 510 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_dp_Shot_SoundSet","IFA3_MMG1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class short : close {
-            reloadTime = RPM_TO_TIME(510); // 510 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_dp_Shot_SoundSet","IFA3_MMG1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class medium : close {
-            reloadTime = RPM_TO_TIME(510); // 510 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_dp_Shot_SoundSet","IFA3_MMG1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
     };
 
     class fow_w_m1918a2 : fow_rifle_base {
         displayName = "M1918A2 BAR";
         descriptionShort = "Rifle, Caliber .30, Automatic, Browning, M1918A2";
         dispersion = MOA_TO_RAD(3);
-        fow_burstLength = 3;
+        fow_burstLenght = 3;
         magazines[] = {"fow_20Rnd_762x63"};
         magazineWell[] = {"CBA_3006_BAR"};
         recoil = "recoil_2PzD_rifle_auto_1";
@@ -1792,6 +1271,9 @@
                 weaponSoundEffect = "DefaultRifle";
             };
         };
+        class close : FullAuto_300 {
+            reloadTime = RPM_TO_TIME(650); // 650 rpm
+        };
         class FullAuto_650 : Mode_FullAuto {
             dispersion = MOA_TO_RAD(3);
             reloadTime = RPM_TO_TIME(650); // 650 rpm
@@ -1811,67 +1293,7 @@
                 soundSetShot[] = {"IFA3_BAR_Shot_SoundSet","IFA3_mmg1_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-        };/*
-        class close : FullAuto_300 {
-            reloadTime = RPM_TO_TIME(650); // 650 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_BAR_Shot_SoundSet","IFA3_mmg1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
         };
-        class far_optic1 : close {
-            reloadTime = RPM_TO_TIME(300); // 300 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_BAR_Shot_SoundSet","IFA3_mmg1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class far_optic2 : far_optic1 {
-            reloadTime = RPM_TO_TIME(300); // 300 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_BAR_Shot_SoundSet","IFA3_mmg1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class short : close {
-            reloadTime = RPM_TO_TIME(650); // 650 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_BAR_Shot_SoundSet","IFA3_mmg1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class medium : close {
-            reloadTime = RPM_TO_TIME(300); // 300 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_BAR_Shot_SoundSet","IFA3_mmg1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
     };
     class fow_w_m1918a2_bak : fow_w_m1918a2 {
         displayName = "M1918A2 BAR";
@@ -1882,7 +1304,7 @@
         // discreteDistance[] = {100,200,400,600,800,1000,1200,1400,1600,1800};
         // discreteDistanceInitIndex = 1;
         dispersion = MOA_TO_RAD(4);
-        fow_burstLength = 4;
+        fow_burstLenght = 4;
         magazines[] = {"fow_250Rnd_M1919"};
         magazineWell[] = {"CBA_3006_Belt"};
         recoil = "recoil_2PzD_mmg_1";
@@ -1906,72 +1328,7 @@
                 soundSetShot[] = {"IFA3_M1919_Shot_SoundSet","IFA3_MMG1_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-        };/*
-        class close : FullAuto {
-            reloadTime = RPM_TO_TIME(430); // 430 rpm
-            class BaseSoundModeType;
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_M1919_Shot_SoundSet","IFA3_MMG1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
         };
-        class far_optic1 : close {
-            reloadTime = RPM_TO_TIME(430); // 430 rpm
-            class BaseSoundModeType;
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_M1919_Shot_SoundSet","IFA3_MMG1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class far_optic2 : far_optic1 {
-            reloadTime = RPM_TO_TIME(430); // 430 rpm
-            class BaseSoundModeType;
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_M1919_Shot_SoundSet","IFA3_MMG1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class short : close {
-            reloadTime = RPM_TO_TIME(430); // 430 rpm
-            class BaseSoundModeType;
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_M1919_Shot_SoundSet","IFA3_MMG1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class medium : close {
-            reloadTime = RPM_TO_TIME(430); // 430 rpm
-            class BaseSoundModeType;
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_M1919_Shot_SoundSet","IFA3_MMG1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
     };
 
     class fow_w_m1919a4 : fow_w_m1919 {
@@ -1995,7 +1352,7 @@
         discreteDistance[] = {200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000};
         discreteDistanceInitIndex = 1;
         dispersion = MOA_TO_RAD(4);
-        fow_burstLength = 5;
+        fow_burstLenght = 5;
         magazines[] = {"fow_50Rnd_792x57"};
         magazineWell[] = {"CBA_792x57_LINKS"};
         recoil = "recoil_2PzD_mmg_1";
@@ -2033,74 +1390,14 @@
                 soundSetShot[] = {"IFA3_MG34_Shot_SoundSet","IFA3_MMG1_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-        };/*
-        class close : FullAuto {
-            reloadTime = RPM_TO_TIME(850); // 850 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_MG34_Shot_SoundSet","IFA3_MMG1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
         };
-        class short : close {
-            reloadTime = RPM_TO_TIME(850); // 850 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_MG34_Shot_SoundSet","IFA3_MMG1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class medium : close {
-            reloadTime = RPM_TO_TIME(850); // 850 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_MG34_Shot_SoundSet","IFA3_MMG1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class far_optic1 : close {
-            reloadTime = RPM_TO_TIME(850); // 850 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_MG34_Shot_SoundSet","IFA3_MMG1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class far_optic2 : far_optic1 {
-            reloadTime = RPM_TO_TIME(850); // 850 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_MG34_Shot_SoundSet","IFA3_MMG1_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
     };
 
     class fow_w_mg42 : fow_rifle_base {
         displayName = "MG42";
         descriptionShort = "Maschinengewehr 42";
         dispersion = MOA_TO_RAD(5);
-        fow_burstLength = 7;
+        fow_burstLenght = 7;
         magazines[] = {"fow_50Rnd_792x57"};
         magazineWell[] = {"CBA_792x57_LINKS"};
         recoil = "recoil_2PzD_mmg_1";
@@ -2125,74 +1422,14 @@
                 soundSetShot[] = {"IFA3_MG42_delayed_Shot_SoundSet","IFA3_MMG1_delayed_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-        };/*
-        class close : FullAuto {
-            reloadTime = RPM_TO_TIME(1200); // 1200 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_MG42_delayed_Shot_SoundSet","IFA3_MMG1_delayed_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
         };
-        class far_optic1 : close {
-            reloadTime = RPM_TO_TIME(1200); // 1200 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_MG42_delayed_Shot_SoundSet","IFA3_MMG1_delayed_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class far_optic2 : far_optic1 {
-            reloadTime = RPM_TO_TIME(1200); // 1200 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_MG42_delayed_Shot_SoundSet","IFA3_MMG1_delayed_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class short : close {
-            reloadTime = RPM_TO_TIME(1200); // 1200 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_MG42_delayed_Shot_SoundSet","IFA3_MMG1_delayed_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class medium : close {
-            reloadTime = RPM_TO_TIME(1200); // 1200 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_MG42_delayed_Shot_SoundSet","IFA3_MMG1_delayed_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
     };
 
     class fow_w_type99_lmg : fow_rifle_base {
         displayName = "Type 99 LMG";
         descriptionShort = "Type 99 Light Machine Gun";
         dispersion = MOA_TO_RAD(4);
-        fow_burstLength = 4;
+        fow_burstLenght = 4;
         magazines[] = {"fow_30Rnd_77x58"};
         magazineWell[] = {"CBA_77x58_Type99"};
         recoil = "recoil_2PzD_mmg_1";
@@ -2217,67 +1454,7 @@
                 soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
-        };/*
-        class close : FullAuto {
-            reloadTime = RPM_TO_TIME(700); // 700 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
         };
-        class far_optic1 : close {
-            reloadTime = RPM_TO_TIME(700); // 700 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class far_optic2 : far_optic1 {
-            reloadTime = RPM_TO_TIME(700); // 700 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class short : close {
-            reloadTime = RPM_TO_TIME(700); // 700 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
-        class medium : close {
-            reloadTime = RPM_TO_TIME(700); // 700 rpm
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"IFA3_K98_Shot_SoundSet","IFA3_rifle2_Tail_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };*/
     };
 // End Machine Guns
 
@@ -2482,6 +1659,37 @@
 // End Other Weapons, Tripods, Launchers
 
 // Vehicle Weapons
+    class fow_w_besa_mg_mounted : HMG_M2 {
+        displayName = "Besa MG";
+        class slow : MGun {
+            displayName = "Besa (Low)";
+            dispersion = MOA_TO_RAD(3);
+            reloadTime = RPM_TO_TIME(500); // 500 rpm
+            textureType = "fullAuto";
+        };
+        class fast : slow {
+            displayName = "Besa (High)";
+            dispersion = MOA_TO_RAD(3);
+            reloadTime = RPM_TO_TIME(800); // 800 rpm
+            textureType = "fastAuto";
+        };
+        class close : slow {
+            dispersion = MOA_TO_RAD(3);
+            reloadTime = RPM_TO_TIME(800); // 800 rpm
+        };
+        class short : close {
+            dispersion = MOA_TO_RAD(3);
+            reloadTime = RPM_TO_TIME(800); // 800 rpm
+        };
+        class medium : close {
+            dispersion = MOA_TO_RAD(3);
+            reloadTime = RPM_TO_TIME(500); // 500 rpm
+        };
+        class far : close {
+            dispersion = MOA_TO_RAD(3);
+            reloadTime = RPM_TO_TIME(500); // 500 rpm
+        };
+    };
 
     class fow_w_bren_mounted : HMG_M2 {
         displayName = "Bren Gun Mk II";
@@ -2507,7 +1715,7 @@
         };
     };
 
-    class fow_w_m1919a4_mounted : HMG_M2 {
+    class fow_w_m1919a4_mounted : MGun {
         displayName = "M1919A4";
         discreteDistance[] = {100,200,400,600,800,1000,1200,1400,1600,1800};
         discreteDistanceInitIndex = 1;
@@ -2517,12 +1725,12 @@
             dispersion = MOA_TO_RAD(4);
             reloadTime = RPM_TO_TIME(430); // 430 rpm
         };
-        // class close : manual {};
-        // class short : close {};
-        // class medium : close {};
-        // class far : close {};
+        class close : manual {};
+        class short : close {};
+        class medium : close {};
+        class far : close {};
     };
-    // class fow_w_m1919a4_static : fow_w_m1919a4_mounted {};
+    class fow_w_m1919a4_static : fow_w_m1919a4_mounted {};
 
     class fow_w_mg34_mounted : HMG_M2 {
         displayName = "MG34";
@@ -2535,10 +1743,10 @@
             descriptionShort = "Maschinengewehr 34";
             dispersion = MOA_TO_RAD(4);
         };
-        // class close : manual {};
-        // class short : close {};
-        // class medium : close {};
-        // class far : close {};
+        class close : manual {};
+        class short : close {};
+        class medium : close {};
+        class far : close {};
     };
 
     class fow_w_mg42_mounted : HMG_M2 {
@@ -2547,25 +1755,23 @@
         discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500};
         discreteDistanceInitIndex = 1;
         dispersion = MOA_TO_RAD(4);
-        class manual : MGun {
+        class FullAuto : Mode_FullAuto {
             displayName = "MG42";
             descriptionShort = "Maschinengewehr 42";
             dispersion = MOA_TO_RAD(4);
         };
-        // class close : manual {};
-        // class short : close {};
-        // class medium : close {};
-        // class far : close {};
+        class close : FullAuto {};
+        class short : close {};
+        class medium : close {};
+        class far_optic1 : close {};
+        class far_optic2 : far_optic1 {};
     };
 
     class fow_w_vickers_mounted : HMG_M2 {
+        displayName = "Vicker Gun";
+        descriptionShort = "Vicker Machine Gun";
         dispersion = MOA_TO_RAD(4);
-        // fow_burstLength = 6;
-        /*class Eventhandlers : Eventhandlers {
-            class fow_mgRoF {
-                fired = "_this spawn fow_main_fnc_mgRoF;";
-            };
-        };*/
+        // fow_burstLenght = 6;
         class manual : MGun {
             dispersion = MOA_TO_RAD(4);
             reloadTime = RPM_TO_TIME(475); // 475 rpm
@@ -2631,12 +1837,7 @@
 
     class fow_w_type92 : MGun {
         dispersion = MOA_TO_RAD(4);
-        // fow_burstLength = 6;
-        /*class Eventhandlers : Eventhandlers {
-            class fow_mgRoF {
-                fired = "_this spawn fow_main_fnc_mgRoF;";
-            };
-        };*/
+        // fow_burstLenght = 6;
         class manual : MGun {
             dispersion = MOA_TO_RAD(4);
             reloadTime = RPM_TO_TIME(425); // 425 rpm

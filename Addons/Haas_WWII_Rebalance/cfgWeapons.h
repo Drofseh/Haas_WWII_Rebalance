@@ -9,9 +9,30 @@ class MGun : MGunCore {
     class WeaponSlotsInfo;
 };
 
-class HMG_M2;
+class HMG_01;
+
+class HMG_M2 : HMG_01 {
+    class manual;
+};
+
+class HMG_M2_Mounted : HMG_M2 {
+    fow_burstLenght = 6;
+    class Eventhandlers {
+        class fow_mgRoF {
+            fired = "_this spawn fow_main_fnc_mgRoFStatic;";
+        };
+    };
+    class manual : manual {
+        dispersion = MOA_TO_RAD(4);
+        reloadTime = RPM_TO_TIME(525); // 525 rpm
+    };
+    class close : manual {};
+    class short : close {};
+    class medium : close {};
+    class far : close {};
+};
+
 class GrenadeLauncher;
-//class UGL_F;
 
 class UGL_F : GrenadeLauncher {
     dispersion = MOA_TO_RAD(50);
