@@ -23,6 +23,18 @@ class Mode_FullAuto;
 
 class SlotInfo;
 
+class cfgAmmo {
+
+    #include "cfgAmmo.h"
+
+};
+
+class cfgSoundShaders {
+
+    #include "cfgSoundShaders.h"
+
+};
+
 class cfgWeapons {
 
     #include "cfgWeapons.h"
