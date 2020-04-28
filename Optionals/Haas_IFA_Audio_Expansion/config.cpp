@@ -23,6 +23,12 @@ class Mode_FullAuto;
 
 class SlotInfo;
 
+class cfgAmmo {
+
+    #include "cfgAmmo.h"
+
+};
+
 class cfgWeapons {
 
     #include "cfgWeapons.h"

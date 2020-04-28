@@ -5,9 +5,7 @@ class MGunCore;
 class CannonCore;
 class RocketPods;
 
-class MGun : MGunCore {
-    class WeaponSlotsInfo;
-};
+class MGun : MGunCore {};
 
 class HMG_01;
 
@@ -15,103 +13,28 @@ class HMG_M2 : HMG_01 {
     class manual;
 };
 
-class HMG_M2_Mounted : HMG_M2 {
-    fow_burstLenght = 6;
-    class Eventhandlers {
-        class fow_mgRoF {
-            fired = "_this spawn fow_main_fnc_mgRoFStatic;";
-        };
-    };
-    class manual : manual {
-        dispersion = MOA_TO_RAD(4);
-        reloadTime = RPM_TO_TIME(525); // 525 rpm
-    };
-    class close : manual {};
-    class short : close {};
-    class medium : close {};
-    class far : close {};
-};
+class HMG_M2_Mounted;
 
 class GrenadeLauncher;
 
-class UGL_F : GrenadeLauncher {
-    dispersion = MOA_TO_RAD(50);
-    recoil = "recoil_single_m320";
-    recoilProne = "recoil_single_m320";
-    aiDispersionCoefX = 5;
-    aiDispersionCoefY = 10;
-    aiRateOfFire = 5;
-    aiRateOfFireDispersion = 5;
-    aiRateOfFireDistance = 200;
-    class Single : Mode_SemiAuto {
-        dispersion = MOA_TO_RAD(50);
-        recoil = "recoil_single_m320";
-        recoilProne = "recoil_single_m320";
-        aiDispersionCoefX = 5;
-        aiDispersionCoefY = 10;
-        aiRateOfFire = 5;
-        aiRateOfFireDispersion = 5;
-        aiRateOfFireDistance = 200;
-    };
-};
+class UGL_F;
 
 class Launcher;
 
-class Launcher_Base_F : Launcher {
-    class WeaponSlotsInfo;
-};
+class Launcher_Base_F;
 
-class Rifle : RifleCore {
-    class WeaponSlotsInfo;
-};
+class Rifle;
 
-class Rifle_Base_F : Rifle {
-    class WeaponSlotsInfo;
-};
+class Rifle_Base_F;
 
-class Rifle_Short_Base_F : Rifle_Base_F {
-    class WeaponSlotsInfo;
-};
+class Rifle_Short_Base_F;
 
-class Rifle_Long_Base_F : Rifle_Base_F {
-    class WeaponSlotsInfo;
-};
+class Rifle_Long_Base_F;
 
-class Pistol : PistolCore {
-    class WeaponSlotsInfo;
-};
+class Pistol : PistolCore {};
 
 class Pistol_Base_F : Pistol {
-    class WeaponSlotsInfo;
     class Single;
-};
-
-class hgun_P07_F : Pistol_Base_F {
-    class WeaponSlotsInfo;
-    class Single;
-};
-
-class hgun_Rook40_F : Pistol_Base_F {
-    class WeaponSlotsInfo;
-    class Single;
-};
-
-class sgun_HunterShotgun_01_base_F : Rifle_Long_Base_F {
-    displayName = "Browning Superposed";
-    descriptionShort = "The Browning Superposed was the first over-under shotgun design.";
-    discreteDistance[] = {50};
-    discreteDistanceInitIndex = 0;
-    magazineWell[] += {"CBA_12g_2rnds","CBA_12g_1rnd"};
-};
-
-class sgun_HunterShotgun_01_sawedoff_base_F : sgun_HunterShotgun_01_base_F {
-    displayName = "Browning Superposed (Sawn Off)";
-    descriptionShort = "The Browning Superposed was the first over-under shotgun design. Someone has cut down the barrel and stock on this one.";
-    discreteDistance[] = {25};
-    discreteDistanceInitIndex = 0;
-    class MagazineCoef {
-        initSpeed = 0.75;
-    };
 };
 
 class ItemCore;
@@ -138,8 +61,6 @@ class Vest_Camo_Base : ItemCore {
 class CBA_MiscItem_ItemInfo;
 class ACE_ItemCore;
 
-#include "ACE_Weapons.h"
-
 #include "FOW_Weapons.h"
 
 #include "LIB_Weapons.h"
@@ -149,15 +70,3 @@ class ACE_ItemCore;
 #include "CSA38_Weapons.h"
 
 #include "Sep39_Weapons.h"
-
-#include "CSA38_Uniforms.h"
-
-#include "FOW_Uniforms.h"
-
-#include "FOW_Vests.h"
-
-#include "LIB_Vests.h"
-
-#include "CSA38_Vests.h"
-
-#include "Sep39_Vests.h"
