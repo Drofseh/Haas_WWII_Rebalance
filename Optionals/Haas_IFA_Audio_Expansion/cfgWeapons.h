@@ -37,6 +37,14 @@ class Pistol_Base_F : Pistol {
     class Single;
 };
 
+class hgun_P07_F : Pistol_Base_F {
+    class Single;
+};
+
+class hgun_Rook40_F : Pistol_Base_F {
+    class Single;
+};
+
 class ItemCore;
 class InventoryItem_Base_F;
 class UniformItem;
