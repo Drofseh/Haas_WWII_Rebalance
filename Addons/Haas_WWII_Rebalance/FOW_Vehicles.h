@@ -2,6 +2,7 @@
     class fow_truppenfahrrad : Car_F {
         attenuationEffectType = "OpenCarAttenuation";
         maximumLoad = 500;
+        maxSpeed = 50;
         tf_isolatedAmount = 0;
     };
 

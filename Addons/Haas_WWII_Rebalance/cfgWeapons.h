@@ -96,7 +96,8 @@ class hgun_Rook40_F : Pistol_Base_F {
     class Single;
 };
 
-class sgun_HunterShotgun_01_base_F : Rifle_Long_Base_F {
+class sgun_HunterShotgun_01_base_F;
+class sgun_HunterShotgun_01_F : sgun_HunterShotgun_01_base_F {
     displayName = "Browning Superposed";
     descriptionShort = "The Browning Superposed was the first over-under shotgun design.";
     discreteDistance[] = {50};
@@ -104,7 +105,8 @@ class sgun_HunterShotgun_01_base_F : Rifle_Long_Base_F {
     magazineWell[] += {"CBA_12g_2rnds","CBA_12g_1rnd"};
 };
 
-class sgun_HunterShotgun_01_sawedoff_base_F : sgun_HunterShotgun_01_base_F {
+class sgun_HunterShotgun_01_sawedoff_base_F;
+class sgun_HunterShotgun_01_sawedoff_F : sgun_HunterShotgun_01_sawedoff_base_F {
     displayName = "Browning Superposed (Sawn Off)";
     descriptionShort = "The Browning Superposed was the first over-under shotgun design. Someone has cut down the barrel and stock on this one.";
     discreteDistance[] = {25};
