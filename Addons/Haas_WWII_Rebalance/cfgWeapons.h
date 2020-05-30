@@ -103,6 +103,7 @@ class sgun_HunterShotgun_01_F : sgun_HunterShotgun_01_base_F {
     discreteDistance[] = {50};
     discreteDistanceInitIndex = 0;
     magazineWell[] += {"CBA_12g_2rnds","CBA_12g_1rnd"};
+    allowedSlots[] = {701,901};
 };
 
 class sgun_HunterShotgun_01_sawedoff_base_F;
@@ -111,6 +112,7 @@ class sgun_HunterShotgun_01_sawedoff_F : sgun_HunterShotgun_01_sawedoff_base_F {
     descriptionShort = "The Browning Superposed was the first over-under shotgun design. Someone has cut down the barrel and stock on this one.";
     discreteDistance[] = {25};
     discreteDistanceInitIndex = 0;
+    allowedSlots[] = {701,801,901};
     class MagazineCoef {
         initSpeed = 0.75;
     };
