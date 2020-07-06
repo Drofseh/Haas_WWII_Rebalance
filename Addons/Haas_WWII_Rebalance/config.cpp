@@ -13,8 +13,6 @@ class CfgPatches {
     };
 }; // End CfgPatches
 
-#include "RscDisplayMain.h"
-
 class BaseSoundModeType;
 
 class Eventhandlers;
