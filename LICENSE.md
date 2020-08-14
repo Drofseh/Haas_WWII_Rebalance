@@ -1,3 +1,7 @@
+This project is licenced under the CUP v1.0 License.
+Some folders of this project may contain a separate LICENSE file.
+Should that be the case, everything in that folder and all subfolders is subject to that license instead.
+
 # CUP-License (CUP-L), Version 1.0  
 ## TL:DR Version:  
 ## You are allowed to:  

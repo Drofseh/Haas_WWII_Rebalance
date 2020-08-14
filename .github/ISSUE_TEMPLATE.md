@@ -4,6 +4,8 @@
 
 **FOW Version:** `x.x.x` (stable / dev)
 
+**CSA Version:** `x.x.x` (stable / dev)
+
 **Haas WWII Rebalance Version:** `1.x.x` (stable / dev)
 
 **Mods:**
@@ -13,6 +15,7 @@
 - IFA
 - FOW
 - LEN
+- CSA
 - Haas WWII Rebalance
 ```
 

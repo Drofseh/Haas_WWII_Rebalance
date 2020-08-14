@@ -10,3 +10,5 @@ texHeaders.bin
 *.png
 Thumbs.db
 CHANGELOG.md
+.vscode
+source/*
