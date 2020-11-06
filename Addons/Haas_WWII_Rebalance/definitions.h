@@ -13,7 +13,6 @@
     "ace_common", \
     "ace_frag", \
     "ace_overpressure", \
-    "ace_trenches", \
     "CSA38II_weapons_c", \
     "CSA38II_weapons2_c", \
     "fow_characters_c", \

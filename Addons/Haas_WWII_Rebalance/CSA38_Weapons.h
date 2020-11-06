@@ -2125,6 +2125,7 @@
         descriptionShort = "Maschinenpistole 35";
         fow_burstLenght = 2;
         magazines[] = {"csa38_9_MM_32xMP35"};
+        magazineWell[] = {"CBA_9x19_MP35"};
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 93.48;
             class CowsSlot : SlotInfo {

@@ -21,8 +21,6 @@ class ThingX;
 
 class ReammoBox;
 
-class BagFence_base_F;
-
 class TargetBase;
 
 class Land_Camping_Light_F: FloatingStructure_F {
@@ -162,15 +160,6 @@ class Boat_F;
 
 class B_LIB_AssaultPack_Base;
 
-class ACE_envelope_small: BagFence_base_F {
-    ace_trenches_diggingDuration = 90;
-    ace_trenches_removalDuration = 30;
-};
-
-class ACE_envelope_big: BagFence_base_F {
-    ace_trenches_diggingDuration = 90;
-    ace_trenches_removalDuration = 30;
-};
 /*
 class LIB_ReammoBox_base : ReammoBox_F {
     maximumLoad = 4000;

@@ -733,9 +733,11 @@
         };
         class Far : Full {
             reloadTime = RPM_TO_TIME(675); // 675 rpm
+            showToPlayer = 0;
         };
         class Medium : Full {
             reloadTime = RPM_TO_TIME(675); // 675 rpm
+            showToPlayer = 0;
         };
         class Short : Medium {
             reloadTime = RPM_TO_TIME(675); // 675 rpm
