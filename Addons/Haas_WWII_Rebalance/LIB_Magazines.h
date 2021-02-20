@@ -179,6 +179,7 @@
         displayName = "M1895 Nagant, 7 Rounds, Ball (R hl)";
         displayNameShort = "Ball";
         descriptionShort = "7.62x38mm, 7 Rounds, Ball (R hl)<br/>For use in the M1895 Nagant";
+        ammo = "LIB_B_762x38_Ball";
         picture = "\Haas_WWII_Rebalance\UI\Gear_Magazine_M1895_Ball_ca.paa";
     };
 
@@ -935,7 +936,7 @@
         descriptionShort = ".45 ACP, 50 Rounds, Ball (M1911)<br/>For use in the M1928 Thompson";
     };
     class LIB_50Rnd_45ACP_Tracer_2PzD : LIB_50Rnd_45ACP {
-        displayName = "Thompson M1928, 20 Round Magazine, Tracer (M26)";
+        displayName = "Thompson M1928, 50 Round Magazine, Tracer (M26)";
         displayNameShort = "Tracer";
         descriptionShort = ".45 ACP, 50 Rounds, Tracer (M26)<br/>For use in the M1928 Thompson";
         ammo = "LIB_B_45ACP_Ball_t";
@@ -1032,9 +1033,8 @@
 // End SMG magazines
 
 // MG magazines
-
     class LIB_20Rnd_762x63 : CA_Magazine {
-        displayName = "M1918A2 BAR, 20 Round Clip, Ball/Tracer (M2/M1)";
+        displayName = "M1918A2 BAR, 20 Round Magazine, Ball/Tracer (M2/M1)";
         displayNameShort = "Ball/Tracer";
         descriptionShort = ".30-06, 20 Rounds, Ball/Tracer (M2/M1)<br/>For use in the M1918A2 BAR";
         ammo = "LIB_B_762x63_Mixed_Ball_Tracer";
@@ -1042,19 +1042,19 @@
         lastRoundsTracer = 3;
     };
     class LIB_20Rnd_762x63_M1 : LIB_20Rnd_762x63 {
-        displayName = "M1918A2 BAR, 20 Round Clip, Heavy Ball/Tracer (M1/M1)";
+        displayName = "M1918A2 BAR, 20 Round Magazine, Heavy Ball/Tracer (M1/M1)";
         displayNameShort = "Heavy Ball/Tracer";
         descriptionShort = ".30-06, 20 Rounds, Heavy Ball/Tracer (M1/M1)<br/>For use in the M1918A2 BAR";
         ammo = "LIB_B_762x63_Mixed_HeavyBall_Tracer";
     };
     class LIB_20Rnd_762x63_Mixed_AP_2PzD : LIB_20Rnd_762x63 {
-        displayName = "M1918A2 BAR, 20 Round Clip, AP/Tracer (M2/M1)";
+        displayName = "M1918A2 BAR, 20 Round Magazine, AP/Tracer (M2/M1)";
         displayNameShort = "AP/Tracer";
         descriptionShort = ".30-06, 20 Rounds, AP/Tracer (M2/M1)<br/>For use in the M1918A2 BAR";
         ammo = "LIB_B_762x63_Mixed_AP_Tracer";
     };
     class LIB_20Rnd_762x63_Tracer_2PzD : LIB_20Rnd_762x63 {
-        displayName = "M1918A2 BAR, 20 Round Clip, Tracer (M1)";
+        displayName = "M1918A2 BAR, 20 Round Magazine, Tracer (M1)";
         displayNameShort = "Tracer";
         descriptionShort = ".30-06, 20 Rounds, Tracer (M1)<br/>For use in the M1918A2 BAR";
         ammo = "LIB_B_762x63_Ball_t";
@@ -1062,7 +1062,7 @@
         lastRoundsTracer = 0;
     };
     class LIB_20Rnd_762x63_Ball_M2_NoTrace_2PzD : LIB_20Rnd_762x63 {
-        displayName = "M1918A2 BAR, 20 Round Clip, Ball (M2)";
+        displayName = "M1918A2 BAR, 20 Round Magazine, Ball (M2)";
         displayNameShort = "Ball";
         descriptionShort = ".30-06, 20 Rounds, Ball (M2)<br/>For use in the M1918A2 BAR";
         ammo = "LIB_B_762x63_Ball";
@@ -1070,7 +1070,7 @@
         lastRoundsTracer = 0;
     };
     class LIB_20Rnd_762x63_HeavyBall_M1_NoTrace_2PzD : LIB_20Rnd_762x63_M1 {
-        displayName = "M1918A2 BAR, 20 Round Clip, Heavy Ball (M1)";
+        displayName = "M1918A2 BAR, 20 Round Magazine, Heavy Ball (M1)";
         displayNameShort = "Heavy Ball";
         descriptionShort = ".30-06, 20 Rounds, Heavy Ball (M1)<br/>For use in the M1918A2 BAR";
         ammo = "LIB_B_762x63_Ball_M1";
@@ -1078,7 +1078,7 @@
         lastRoundsTracer = 0;
     };
     class LIB_20Rnd_762x63_AP_NoTrace_2PzD : LIB_20Rnd_762x63 {
-        displayName = "M1918A2 BAR, 20 Round Clip, AP (M2)";
+        displayName = "M1918A2 BAR, 20 Round Magazine, AP (M2)";
         displayNameShort = "AP";
         descriptionShort = ".30-06, 20 Rounds, AP (M2)<br/>For use in the M1918A2 BAR";
         ammo = "LIB_B_762x63_Ball_M2_AP";
@@ -1837,7 +1837,7 @@
         count = 250;
         mass = 72.75;
     };
-
+/*
     class LIB_75Rnd_792x57 : LIB_50Rnd_792x57 {
         displayName = "MG34 (PT34), 75 Round Magazine, Ball/Tracer (SmE/LS L'spur)";
         displayNameShort = "Ball/Tracer";
@@ -1886,6 +1886,7 @@
         tracersEvery = 1;
         lastRoundsTracer = 1;
     };
+*/
 // End MG magazines
 
 // Other magazines

@@ -1,7 +1,7 @@
 ## Haas WWII Rebalance
 <p align="left">
     <a href="https://github.com/Drofseh/Haas_WWII_Rebalance/releases/latest">
-        <img src="https://img.shields.io/badge/Version-1.29.3-blue.svg" alt="Haas WWII Rebalance Version">
+        <img src="https://img.shields.io/badge/Version-1.30.0-blue.svg" alt="Haas WWII Rebalance Version">
     </a>
     <a href="https://2pzd.net/">
         <img src="https://img.shields.io/badge/2PzD-Website-yellow.svg" alt="2PzD Website">
@@ -20,7 +20,7 @@
 * [ACE3](https://github.com/acemod/ACE3) v3.12.6, Common, Captives, Fragmentation, Overpressure
 * [CSA38](https://steamcommunity.com/workshop/filedetails/?id=641305739) - Update: 22 Jan 2020
 * [FOW](https://forums.bistudio.com/forums/topic/198194-faces-of-war-ww2/) - Release VI
-* [IFA3 Lite](https://forums.bistudio.com/forums/topic/190809-iron-front-in-arm3-lite-preview-versions/) - Preview v38 hotfix 4
+* [IFA3 Lite](https://forums.bistudio.com/forums/topic/190809-iron-front-in-arm3-lite-preview-versions/) - Preview v40
 * [IFA3/Ace3 Compat](https://github.com/bux/IFA3_ACE_COMPAT) v37.0
 * [LEN Weapons](https://forums.bistudio.com/forums/topic/200914-len-weapons-pack-for-ifa3-lite/) v1.0
 * [September 39](https://steamcommunity.com/sharedfiles/filedetails/?id=1348553859) - v1.11

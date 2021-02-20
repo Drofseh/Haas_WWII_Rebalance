@@ -233,6 +233,7 @@
         magazines[] = {"fow_20Rnd_792x57"};
         magazineWell[] = {"CBA_792x57_FG42"};
         recoil = "recoil_2PzD_rifle_FG42";
+        ZOOM_NAKED_EYE;
         class WeaponSlotsInfo {
             mass = 109.191;
         };
@@ -240,6 +241,7 @@
             class Ironsights {
                 discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200};
                 discreteDistanceInitIndex = 1;
+                ZOOM_NAKED_EYE;
             };
         };
         class Single : Mode_SemiAuto {
@@ -341,24 +343,21 @@
 
     class fow_w_k98_scoped : fow_w_k98 {
         displayName = "Kar98k (Zf41)";
-        descriptionShort = "Karabiner 98 kurz with Zf41 sight";
+        descriptionShort = "Karabiner 98 kurz with Zf41 1.5x power telescopic sight";
         dispersion = MOA_TO_RAD(3.5);
         magazines[] = {"fow_5Rnd_792x57"};
         magazineWell[] = {"CBA_792x57_K98"};
         recoil = "recoil_2PzD_rifle_bolt";
+        ZOOM_NAKED_EYE;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 89;
         };
         class OpticsModes {
             class Optic {
-                opticsZoomInit = 0.166;
-                opticsZoomMax = 0.166;
-                opticsZoomMin = 0.166;
+                ZOOM_POWER(1.5, 1.5, 1.5);
             };
             class IronSight : Optic {
-                opticsZoomInit = 0.75;
-                opticsZoomMax = 1.25;
-                opticsZoomMin = 0.25;
+                ZOOM_NAKED_EYE;
             };
         };
         class Far : Single {
@@ -418,6 +417,7 @@
         displayName = "Lee Enfield No. 5 Mk I";
         descriptionShort = "Rifle, No. 5 Mk I";
         recoil = "recoil_2PzD_rifle_short";
+        picture = "\fow\fow_weapons\lee_enfield\data\ui\w_enfield_ca.paa";
     };
 
     class fow_w_m1_carbine : fow_rifle_base {
@@ -549,13 +549,22 @@
     };
 
     class fow_w_m1903A1_sniper : fow_w_m1903A1 {
-        displayName = "M1903A1 Springfield, Unertl Sight";
-        descriptionShort = "Rifle, Caliber .30, M1903A1 with Unertl sight";
+        displayName = "M1903A1 Springfield (Unertl)";
+        descriptionShort = "Rifle, Caliber .30, M1903A1 with Unertl 8x power telescopic sight";
         dispersion = MOA_TO_RAD(2);
         magazines[] = {"fow_5Rnd_762x63"};
         magazineWell[] = {"CBA_3006_Spring"};
+        ZOOM_NAKED_EYE;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 96;
+        };
+        class OpticsModes {
+            class Snip {
+                ZOOM_POWER(8, 8, 8);
+            };
+            class Ironsights {
+                ZOOM_NAKED_EYE;
+            };
         };
         class Single : Single {
             dispersion = MOA_TO_RAD(2);
@@ -582,6 +591,7 @@
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(7);
             reloadTime = RPM_TO_TIME(575); // 575 rpm
+            /*
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -591,11 +601,13 @@
                 soundSetShot[] = {"IFA3_STG44_Shot_SoundSet","IFA3_mmg1_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
+            */
         };
         class Burst_AI : Mode_Burst {
             dispersion = MOA_TO_RAD(7);
             reloadTime = RPM_TO_TIME(575); // 575 rpm
             showToPlayer = 0;
+            /*
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -605,10 +617,12 @@
                 soundSetShot[] = {"IFA3_STG44_Shot_SoundSet","IFA3_mmg1_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
+            */
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(7);
             reloadTime = RPM_TO_TIME(575); // 575 rpm
+            /*
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -618,6 +632,7 @@
                 soundSetShot[] = {"IFA3_STG44_Shot_SoundSet","IFA3_mmg1_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
+            */
         };
     };
 
@@ -650,14 +665,23 @@
         };
     };
     class fow_w_type99_sniper : fow_w_type99 {
-        displayName = "Type 99 Sniper";
-        descriptionShort = "Type 99 Arisaka Sniper";
+        displayName = "Type 99 Arisaka Sniper";
+        descriptionShort = "Type 99 Arisaka Sniper with 2.5 power telescopic sight";
         discreteDistance[] = {300};
         discreteDistanceInitIndex = 0;
         magazines[] = {"fow_5Rnd_77x58"};
         magazineWell[] = {"CBA_77x58_Arisaka"};
+        ZOOM_NAKED_EYE;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 105.500;
+        };
+        class OpticsModes {
+            class Scope {
+                ZOOM_POWER(2.5, 2.5, 2.5); // typically 4x but the model is the earlier 2.5x optic form the Type 97
+            };
+            class Ironsights {
+                ZOOM_NAKED_EYE;
+            };
         };
         class Far : Single {
             dispersion = MOA_TO_RAD(3);
@@ -780,6 +804,7 @@
         fow_burstLenght = 3;
         magazines[] = {"fow_30Rnd_45acp_M1_2PzD"};
         magazineWell[] = {"CBA_45ACP_Thompson_Stick"};
+        picture = "\fow\fow_weapons\m1a1\data\ui\w_m1a1_ca.paa";
         recoil = "recoil_2PzD_smg_heavy";
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
@@ -854,6 +879,7 @@
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(451); // 451 rpm
             showToPlayer = 0;
+            /*
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -863,10 +889,12 @@
                 soundSetShot[] = {"SMGVermin_Shot_SoundSet","SMGVermin_Tail_SoundSet","SMGVermin_InteriorTail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
+            */
         };
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(451); // 451 rpm
+            /*
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -876,11 +904,13 @@
                 soundSetShot[] = {"SMGVermin_Shot_SoundSet","SMGVermin_Tail_SoundSet","SMGVermin_InteriorTail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
+            */
         };
         class Burst_AI : Mode_Burst {
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(451); // 451 rpm
             showToPlayer = 0;
+            /*
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -890,6 +920,7 @@
                 soundSetShot[] = {"SMGVermin_Shot_SoundSet","SMGVermin_Tail_SoundSet","SMGVermin_InteriorTail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
+            */
         };
     };
 
@@ -974,6 +1005,7 @@
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(525); // 525 rpm
+            /*
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -983,11 +1015,13 @@
                 soundSetShot[] = {"IFA3_MP40_Shot_SoundSet","IFA3_pistol1_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
+            */
         };
         class Burst_AI : Mode_Burst {
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(525); // 525 rpm
             showToPlayer = 0;
+            /*
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -997,12 +1031,13 @@
                 soundSetShot[] = {"IFA3_MP40_Shot_SoundSet","IFA3_pistol1_Tail_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
+            */
         };
     };
 
     class fow_w_sten_mk2 : fow_rifle_base {
-        displayName = "Sten Mk II";
-        descriptionShort = "Sten Mk II";
+        displayName = "Sten Mk II (Canadian)";
+        descriptionShort = "Sten Mk II (Canadian)";
         dispersion = MOA_TO_RAD(8);
         fow_burstLenght = 2;
         magazines[] = {"fow_32Rnd_9x19_sten"};
@@ -1019,6 +1054,7 @@
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(550); // 550 rpm
+            /*
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -1028,10 +1064,12 @@
                 soundSetShot[] = {"WW2_Sten_Shot_SoundSet","WW2_rifle_small_Tail_SoundSet","WW2_Sten_stereoLayer_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
+            */
         };
         class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(550); // 550 rpm
+            /*
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -1041,11 +1079,13 @@
                 soundSetShot[] = {"WW2_Sten_Shot_SoundSet","WW2_rifle_small_Tail_SoundSet","WW2_Sten_stereoLayer_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
+            */
         };
         class Burst_AI : Mode_Burst {
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(550); // 550 rpm
             showToPlayer = 0;
+            /*
             class StandardSound : BaseSoundModeType {
                 begin1[] = {"",0,1};
                 closure1[] = {"",1,1,10};
@@ -1055,6 +1095,7 @@
                 soundSetShot[] = {"WW2_Sten_Shot_SoundSet","WW2_rifle_small_Tail_SoundSet","WW2_Sten_stereoLayer_SoundSet"};
                 weaponSoundEffect = "DefaultRifle";
             };
+            */
         };
     };
     class fow_w_sten_mk5 : fow_w_sten_mk2 {
@@ -1492,6 +1533,7 @@
         magazines[] = {"fow_6Rnd_12G_Pellets"};
         magazineWell[] += {"CBA_12g_5rnds","CBA_12g_4rnds","CBA_12g_3rnds","CBA_12g_2rnds","CBA_12g_1rnd"};
         recoil = "recoil_2PzD_rifle_short";
+        ZOOM_NAKED_EYE;
         class WeaponSlotsInfo {
             mass = 79.412;
         };
@@ -1499,6 +1541,7 @@
             class Ironsights {
                 discreteDistance[] = {50};
                 discreteDistanceInitIndex = 0;
+                ZOOM_NAKED_EYE;
             };
         };
         class Single : Mode_SemiAuto {

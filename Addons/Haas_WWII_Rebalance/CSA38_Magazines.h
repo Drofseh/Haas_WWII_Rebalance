@@ -94,7 +94,7 @@
         displayName = "Lee Enfield, 2x 5 Round Clips, AP (W Mark Iz)";
         displayNameShort = "AP";
         descriptionShort = ".303 British, 10 Rounds, AP (W Mark Iz)<br/>For use in the Lee Enfield";
-        ammo = "LIB_B_770x56_Ball_NoCartridge_AP";
+        ammo = "LIB_B_770x56_AP_NoCartridge";
         scope = 1;
     };
 

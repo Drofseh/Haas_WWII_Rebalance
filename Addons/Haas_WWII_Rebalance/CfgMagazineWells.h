@@ -127,7 +127,7 @@
         };
     };
 
-    class CBA_9x19_MP28 {                       // MP18 Straight Magazines, MP28, MP35
+    class CBA_9x19_MP28 {                       // MP18 Straight Magazines, MP28
         CSA38_mags[] = {
             "csa38_9_MM_32xMP28",
             "csa38_9_MM_32xMP28_Tracer_2PzD",
@@ -136,7 +136,7 @@
         };
     };
 
-    class CBA_9x19_MP35 {                       // MP18 Straight Magazines, MP28, MP35
+    class CBA_9x19_MP35 {                       // MP35
         CSA38_mags[] = {
             "csa38_9_MM_32xMP35",
             "csa38_9_MM_32xMP35_Tracer_2PzD",
@@ -827,7 +827,7 @@
             "csa38_7_92_30xMauserMG_TraceOnly_2PzD"
         };
     };
-
+/*
     class CBA_792x57_TROMMEL {                  // MG34 Patronentrommel 34
         IFA3_mags[] = {
             "LIB_75Rnd_792x57",
@@ -839,7 +839,7 @@
             "LIB_75Rnd_792x57_TraceOnly_2PzD"
         };
     };
-
+*/
     class CBA_792x57_vz7_24 {                   // Schwarzlose-Janeček vz. 7/24
         CSA38_mags[] = {
             "CSA38_TKVZ24mag",

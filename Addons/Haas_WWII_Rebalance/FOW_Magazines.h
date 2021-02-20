@@ -300,7 +300,7 @@
         scope = 1;
     };
     class fow_50Rnd_45acp_T : fow_50Rnd_45acp {
-        displayName = "Thompson M1928, 20 Round Magazine, Tracer (M26)";
+        displayName = "Thompson M1928, 50 Round Magazine, Tracer (M26)";
         displayNameShort = "Tracer";
         descriptionShort = ".45 ACP, 50 Rounds, Tracer (M26)<br/>For use in the M1928 Thompson";
         ammo = "LIB_B_45ACP_Ball_t";

@@ -1,4 +1,10 @@
 
+    class csa38_Put : Put {
+        class csa38_PutMuzzle : Default {
+            ZOOM_NAKED_EYE;
+        };
+    };
+
     class csa38_Pistol : Pistol_Base_F {
         class EventHandlers;
         class WeaponSlotsInfo : WeaponSlotsInfo {
@@ -18,6 +24,7 @@
     };
 
     class csa38_SMG : Rifle_Base_F {
+        ZOOM_NAKED_EYE;
         class EventHandlers;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             class CowsSlot : SlotInfo {
@@ -113,6 +120,7 @@
         magazines[] = {"CSA38_9mm_8xBrowning"};
         magazineWell[] = {"CBA_380ACP_Vz22Pistol"};
         recoil = "recoil_2PzD_pistol_light";
+        ZOOM_NAKED_EYE;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 13.98;
         };
@@ -440,10 +448,11 @@
     };
 
     class CSA38_vz24ii : CSA38_vz24 {
-        displayname = "vz. 24 (Scope)";
-        descriptionShort = "Puska vz. 24 with scope, known as the G24(t) in Wehrmacht service.";
+        displayname = "vz. 24 (Zf39)";
+        descriptionShort = "Puska vz. 24, known as the G24(t) in Wehrmacht service, with Zf39 4x power telescopic sight.";
         LIB_bayonetOffset[] = {-4.7,65,5};
         LIB_fixedBayonet = "CSA38_vz24ii_Bayonet";
+        ZOOM_NAKED_EYE;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 94.95;
             class CowsSlot {
@@ -456,6 +465,14 @@
             };
             class PointerSlot {
                 compatibleItems[] = {};
+            };
+        };
+        class OpticsModes {
+            class csa38_vz24_scope {
+                ZOOM_POWER(4, 4, 4);
+            };
+            class csa38_vz24_iron {
+                ZOOM_NAKED_EYE;
             };
         };
         class Single : Mode_SemiAuto {
@@ -869,10 +886,12 @@
         magazines[] = {};
         magazineWell[] = {};
         recoil = "recoil_2PzD_rifle_at";
+        ZOOM_NAKED_EYE;
         class GVZ23Muzzle : GrenadeLauncher {
             dispersion = MOA_TO_RAD(10);
             recoil = "recoil_single_m320";
             recoilProne = "recoil_single_m320";
+            ZOOM_NAKED_EYE;
         };
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 77.206;
@@ -963,9 +982,18 @@
 
     class CSA38_kar98k2 : CSA38_kar98k {
         displayName = "Kar98k (pre-war) (Zf39)";
-        descriptionShort = "Karabiner 98 kurz, pre-war model with Zf39 scope";
+        descriptionShort = "Karabiner 98 kurz, pre-war model with Zf39 4x power telescopic sight";
         LIB_fixedBayonet = "CSA38_kar98k2_Bayonet";
         LIB_GW1 = "CSA38_kar98k2_GW2";
+        ZOOM_NAKED_EYE;
+        class OpticsModes {
+            class csa38_kar98_scope {
+                ZOOM_POWER(4, 4, 4);
+            };
+            class csa38_kar98_iron {
+                ZOOM_NAKED_EYE;
+            };
+        };
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 92.773;
         };
@@ -1378,11 +1406,16 @@
 
     class CSA38_g98ii : CSA38_g98 {
         displayName = "Gewehr 98 (Scope)";
-        descriptionShort = "Gewehr 98 with scope";
+        descriptionShort = "Gewehr 98 with 4x power telescopic sight";
         LIB_fixedBayonet = "CSA38_g98ii_Bayonet";
         LIB_GW1 = "CSA38_g98ii_GW";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 95.22;
+        };
+        class OpticsModes {
+            class csa38_kar98_scope {
+                ZOOM_POWER(4, 4, 4);
+            };
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(3.5);
@@ -1504,13 +1537,18 @@
 
     class CSA38_g98iv : CSA38_g98 {
         displayName = "Gewehr 98 (Scope, Trench Mag)";
-        descriptionShort = "Gewehr 98 with scope and trench magazine";
+        descriptionShort = "Gewehr 98 with 4x power telescopic sight and trench magazine";
         magazines[] = {"CSA38_7_92_20xMauserCZ"};
         magazineWell[] = {"CBA_792x57_K98","CBA_792x57_K98_Trench"};
         LIB_fixedBayonet = "CSA38_g98iv_Bayonet";
         LIB_GW1 = "CSA38_g98iv_GW";
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 91.22;
+        };
+        class OpticsModes {
+            class csa38_kar98_scope {
+                ZOOM_POWER(4, 4, 4);
+            };
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(3.5);
@@ -2155,6 +2193,8 @@
             };
         };
         class FullAuto2 : Mode_SemiAuto {
+            dispersion = MOA_TO_RAD(8);
+            reloadTime = RPM_TO_TIME(540); // 540 rpm
             sounds[] = {"StandardSound"};
             class BaseSoundModeType {
                 closure1[] = {"A3\sounds_f\weapons\closure\closure_handgun_3", 0.501187, 1, 10};
@@ -2167,8 +2207,6 @@
                 soundSetShot[] = {"IFA3_MP40_Shot_SoundSet","IFA3_pistol1_Tail_SoundSet"};
                 soundBegin[] = {"begin1", 0.2, "begin2", 0.2};
             };
-            dispersion = MOA_TO_RAD(8);
-            reloadTime = RPM_TO_TIME(540); // 540 rpm
         };
         class AI_Burst1 : Mode_Burst {
             dispersion = MOA_TO_RAD(8);
@@ -2186,6 +2224,8 @@
                 soundBegin[] = {"begin1", 0.2, "begin2", 0.2};
             };
         };
+        class AI_Burst2 : AI_Burst1 {};
+        class AI_Burst3 : AI_Burst1 {};
     };
 
     class CSA38_Mp38 : csa38_SMG {
@@ -2345,7 +2385,7 @@
         class WeaponSlotsInfo {
             mass = 65.074;
         };
-        class FullAuto : Mode_FullAuto {
+        class Full : Mode_FullAuto {
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(550); // 550 rpm
             class BaseSoundModeType {
@@ -2362,7 +2402,7 @@
                 weaponSoundEffect = "DefaultRifle";
             };
         };
-        class FullAuto2 : Mode_SemiAuto {
+        class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(8);
             reloadTime = RPM_TO_TIME(550); // 550 rpm
             class BaseSoundModeType {
@@ -2379,28 +2419,25 @@
                 weaponSoundEffect = "DefaultRifle";
             };
         };
-        class AI_Burst1 : Mode_Burst {
-            dispersion = MOA_TO_RAD(8);
-            reloadTime = RPM_TO_TIME(550); // 550 rpm
-            class BaseSoundModeType {
-                closure1[] = {"A3\sounds_f\weapons\closure\closure_handgun_3",3,1,10};
-                soundClosure[] = {"closure1", 1};
-            };
-            class StandardSound : BaseSoundModeType {
-                begin1[] = {"",0,1};
-                closure1[] = {"",1,1,10};
-                closure2[] = {"",1,1,10};
-                soundBegin[] = {"begin1",1};
-                soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                soundSetShot[] = {"WW2_Sten_Shot_SoundSet","WW2_rifle_small_Tail_SoundSet","WW2_Sten_stereoLayer_SoundSet"};
-                weaponSoundEffect = "DefaultRifle";
-            };
-        };
+        class Far : Full {};
+        class Medium : Full {};
+        class Short : Medium {};
     };
 
     class CSA38_stenMkIIs : CSA38_stenMkII {
         displayName = "Sten Mk IIS";
         descriptionShort = "Sten Mk IIS";
+        class Full : Mode_FullAuto {
+            dispersion = MOA_TO_RAD(8);
+            reloadTime = RPM_TO_TIME(451); // 451 rpm
+        };
+        class Single : Single {
+            dispersion = MOA_TO_RAD(8);
+            reloadTime = RPM_TO_TIME(451); // 451 rpm
+        };
+        class Far : Far {};
+        class Medium : Medium {};
+        class Short : Short {};
     };
 // End SMGs
 

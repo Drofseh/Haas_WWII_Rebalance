@@ -30,6 +30,7 @@
     };
 
     class w39_SMG : Rifle_Base_F {
+        ZOOM_NAKED_EYE;
         class EventHandlers;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             class CowsSlot : SlotInfo {
@@ -97,6 +98,7 @@
         magazines[] = {"w39_9mm_8xPARAVIS"};
         magazineWell[] = {"CBA_9x19_Vis"};
         recoil = "recoil_2PzD_pistol_medium";
+        ZOOM_NAKED_EYE;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 20.94;
             class CowsSlot : SlotInfo {
@@ -439,5 +441,5 @@
         cursoraim = "mg";
         showAimCursorInternal = 1;
     };
-/*
+*/
 // End Vehicle Weapons

@@ -231,6 +231,12 @@
     class LIB_B_762x25_pt;
     class LIB_B_762x25_Mixed_pt : LIB_B_762x25_pt {};
 
+    //7.62x38mmR Nagant
+    class LIB_B_762x38_Ball : LIB_B_762x25_Ball {
+        cartridge = "";
+        hit = 3;
+    };
+
     class LIB_B_9x18_Ball;
 
     class LIB_B_9x19_Ball; /* : LIB_B_9x18_Ball {};*/
@@ -239,7 +245,7 @@
         hit = 120;
         indirectHit = 5;
         indirectHitRange = 0.25;
-        explosive = 0.05
+        explosive = 0.05;
     };
 
     class LIB_M2_Flamethrower_Ammo : BulletBase_NonAceAB {

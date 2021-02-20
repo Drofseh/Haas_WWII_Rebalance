@@ -57,6 +57,7 @@
     class LIB_M1895 : LIB_PISTOL {
         displayName = "Nagant M1895";
         descriptionShort = "Nagant M1895 Revolver";
+        discreteDistance[] = {25};
         dispersion = MOA_TO_RAD(15);
         magazineWell[] = {"CBA_762x38R_Nagant"};
         recoil = "recoil_2PzD_pistol_light";
@@ -361,26 +362,23 @@
 
     class LIB_K98ZF39 : LIB_SRIFLE {
         displayName = "Kar98k (Zf39)";
-        descriptionShort = "Karabiner 98 kurz with Zf39 scope";
+        descriptionShort = "Karabiner 98 kurz with Zf39 4x power telescopic sight";
         dispersion = MOA_TO_RAD(3.5);
         magazines[] = {"lib_5Rnd_792x57"};
         magazineWell[] = {"CBA_792x57_K98"};
         recoil = "recoil_2PzD_rifle_bolt";
+        ZOOM_NAKED_EYE;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 93.066;
         };
-        /*class OpticsModes {
+        class OpticsModes {
             class Scope {
-                opticsZoomInit = 0.0625‬;
-                opticsZoomMax = 0.0625‬;
-                opticsZoomMin = 0.0625‬;
+                ZOOM_POWER(4, 4, 4);
             };
             class Ironsights {
-                opticsZoomInit = 0.75;
-                opticsZoomMax = 1.25;
-                opticsZoomMin = 0.25;
+                ZOOM_NAKED_EYE;
             };
-        };*/
+        };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(3.5);
         };
@@ -415,13 +413,22 @@
 */
     class LIB_LeeEnfield_No4_Scoped : LIB_SRIFLE {
         displayName = "Lee Enfield No. 4 Mk I (T)";
-        descriptionShort = "Rifle, No. 4 Mk I (T) with No.32 Scope";
+        descriptionShort = "Rifle, No. 4 Mk I (T) with No.32 Scope 3.5x power telescopic sight";
         dispersion = MOA_TO_RAD(2.5);
         magazines[] = {"LIB_10Rnd_770x56"};
         magazineWell[] = {"CBA_303B_LeeEn"};
         recoil = "recoil_2PzD_rifle_bolt";
+        ZOOM_NAKED_EYE;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 109.924;
+        };
+        class OpticsModes {
+            class Scope {
+                ZOOM_POWER(3.5, 3.5, 3.5);
+            };
+            class Ironsights {
+                ZOOM_NAKED_EYE;
+            };
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(2.5);
@@ -518,11 +525,12 @@
 
     class LIB_M1903A4_Springfield : LIB_SRIFLE {
         displayName = "M1903A4 Springfield";
-        descriptionShort = "Rifle, Caliber .30, M1903A4";
+        descriptionShort = "Rifle, Caliber .30, M1903A4 with M82 2.5x power telescopic sight";
         dispersion = MOA_TO_RAD(2);
         magazines[] = {"LIB_5Rnd_762x63"};
         magazineWell[] = {"CBA_3006_Spring"};
         recoil = "recoil_2PzD_rifle_bolt";
+        ZOOM_POWER(2.5, 2.5, 2.5);
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 91.985;
         };
@@ -582,13 +590,22 @@
 
     class LIB_M9130PU : LIB_SRIFLE {
         displayName = "Mosin M91/30 PU";
-        descriptionShort = "Mosin M91/30 with PU scope";
+        descriptionShort = "Mosin M91/30 with PU 3.5x power telescopic sight";
         dispersion = MOA_TO_RAD(3);
         magazines[] = {"LIB_5Rnd_762x54"};
         magazineWell[] = {"CBA_762x54R_Mosin"};
         recoil = "recoil_2PzD_rifle_bolt";
+        ZOOM_NAKED_EYE;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 92.426;
+        };
+        class OpticsModes {
+            class Scope {
+                ZOOM_POWER(3.5, 3.5, 3.5);
+            };
+            class Ironsights {
+                ZOOM_NAKED_EYE;
+            };
         };
         class Single : Mode_SemiAuto {
             dispersion = MOA_TO_RAD(3);
@@ -733,11 +750,9 @@
         };
         class Far : Full {
             reloadTime = RPM_TO_TIME(675); // 675 rpm
-            showToPlayer = 0;
         };
         class Medium : Full {
             reloadTime = RPM_TO_TIME(675); // 675 rpm
-            showToPlayer = 0;
         };
         class Short : Medium {
             reloadTime = RPM_TO_TIME(675); // 675 rpm
@@ -1022,11 +1037,12 @@
 
     class LIB_DT_OPTIC : LIB_DT {
         displayName = "DT (Optic)";
-        descriptionShort = "Degtyaryova Tankovy Machine Gun with optic";
+        descriptionShort = "Degtyaryova Tankovy Machine Gun with PPU-8T 1.5x power telescopic sight";
         fow_burstLenght = 3;
         magazines[] = {"LIB_63Rnd_762x54"};
         magazineWell[] = {"CBA_762x54R_DT"};
         recoil = "recoil_2PzD_mmg_1";
+        ZOOM_POWER(1.5, 1.5, 1.5);
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -1134,7 +1150,7 @@
             reloadTime = RPM_TO_TIME(850); // 850 rpm
         };
     };
-
+/*
     class LIB_MG34_PT : LIB_MG34 {
         displayName = "MG34 (PT34)";
         descriptionShort = "Maschinengewehr 34";
@@ -1152,7 +1168,7 @@
             mass = 271.82;
         };
     };
-
+*/
     class LIB_MG42 : LIB_LMG {
         displayName = "MG42";
         descriptionShort = "Maschinengewehr 42";
@@ -1200,6 +1216,7 @@
         descriptionShort = "Projector, Infantry, Anti Tank Mk I";
         magazines[] = {"LIB_1Rnd_89m_G_PIAT"};
         magazineWell[] = {"CBA_PIAT"};
+        ZOOM_NAKED_EYE;
     };
 
     class LIB_PIAT : LIB_LAUNCHER {
@@ -1208,6 +1225,7 @@
         magazines[] = {"LIB_1Rnd_89m_PIAT"};
         magazineWell[] = {"CBA_PIAT"};
         scope = 1;
+        ZOOM_NAKED_EYE;
     };
 
     class LIB_M1A1_Bazooka : LIB_LAUNCHER {
@@ -1219,6 +1237,7 @@
         ace_overpressure_range = 10;
         ace_overpressure_damage = 0.4;
         ace_reloadlaunchers_enabled = 1;
+        ZOOM_NAKED_EYE;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 127.941;
         };
@@ -1231,6 +1250,7 @@
         ace_overpressure_range = 5;
         ace_overpressure_damage = 0.3;
         ace_reloadlaunchers_enabled = 0;
+        ZOOM_NAKED_EYE;
         class WeaponSlotsInfo : WeaponSlotsInfo {
             mass = 115.147;
         };
@@ -1896,37 +1916,37 @@
     class LIB_ACC_base;
 
     class LIB_ACC_GL_DYAKONOV_Empty : LIB_ACC_base {
-        displayName = "Dyakonov grenade launcher";
+        displayName = "Mosin M91/30 Dyakonov grenade launcher";
         descriptionShort = "Dyakonov grenade launcher for Mosin M91/30";
     };
 
     class LIB_ACC_GL_DYAKONOV : LIB_ACC_GL_DYAKONOV_Empty {
-        displayName = "Dyakonov grenade launcher (Loaded)";
+        displayName = "Mosin M91/30 Dyakonov grenade launcher (Loaded)";
         descriptionShort = "Dyakonov grenade launcher for Mosin M91/30";
     };
 
     class LIB_ACC_GL_Enfield_CUP_Empty : LIB_ACC_base {
-        displayName = "Enfield No1 Grenade Cup Launcher";
+        displayName = "Lee Enfield No1 Grenade Cup Launcher";
         descriptionShort = "Enfield No1 Grenade Cup Launcher for Lee Enfield";
     };
 
     class LIB_ACC_GL_Enfield_CUP : LIB_ACC_GL_Enfield_CUP_Empty {
-        displayName = "Enfield No1 Grenade Cup Launcher (Loaded)";
+        displayName = "Lee Enfield No1 Grenade Cup Launcher (Loaded)";
         descriptionShort = "Enfield No1 Grenade Cup Launcher for Lee Enfield";
     };
 
     class LIB_ACC_GL_M7 : LIB_ACC_base {
-        displayName = "M7 Grenade Launcher";
+        displayName = "M1 Garand M7 Grenade Launcher";
         descriptionShort = "M7 Grenade Launcher for M1 Garand";
     };
 
     class LIB_ACC_GL_M9A1 : LIB_ACC_GL_M7 {
-        displayName = "M9A1 Grenade on M7 Grenade Launcher";
+        displayName = "M1 Garand M9A1 Grenade on M7 Grenade Launcher";
         descriptionShort = "M7 Grenade Launcher for M1 Garand";
     };
 
     class LIB_ACC_GL_MK2 : LIB_ACC_GL_M7 {
-        displayName = "Mk 2 Grenade on M7 Grenade Launcher";
+        displayName = "M1 Garand Mk 2 Grenade on M7 Grenade Launcher";
         descriptionShort = "M7 Grenade Launcher for M1 Garand";
     };
 
@@ -1951,12 +1971,12 @@
     };
 
     class LIB_ACC_M44_Bayo : LIB_ACC_base {
-        displayName = "Mosin-Nagant M44 Bayonet";
-        descriptionShort = "Mosin-Nagant M44 Bayonet";
+        displayName = "Mosin M44 Bayonet";
+        descriptionShort = "Bayonet for Mosin M44";
     };
 
     class LIB_ACC_K98_Bayo : LIB_ACC_M44_Bayo {
-        displayName = "S84/98 III Bayonet";
+        displayName = "Kar98k S84/98 III Bayonet";
         descriptionShort = "S84/98 III Bayonet for Kar98k";
     };
 
@@ -1966,17 +1986,29 @@
     };
 
     class LIB_ACC_M1891_Bayo : LIB_ACC_M44_Bayo {
-        displayName = "M1891 Bayonet";
+        displayName = "Mosin M1891 Bayonet";
         descriptionShort = "M1891 Bayonet for Mosin M91/30";
     };
 
     class LIB_ACC_No4_Mk2_Bayo : LIB_ACC_M44_Bayo {
-        displayName = "No.4 Mk II Bayonet";
+        displayName = "Lee Enfield No.4 Mk II Bayonet";
         descriptionShort = "No.4 Mk II Bayonet for Lee Enfield No. 4 Mk I";
     };
 
     class LIB_ACC_P1903_Bayo : LIB_ACC_M44_Bayo {
-        displayName = "P1903 Bayonet";
+        displayName = "Lee Enfield No. 1 MkIII P1903 Bayonet";
         descriptionShort = "P1903 Bayonet for Lee Enfield No. 1 Mk III";
+    };
+
+    class LIB_Optic_Zf4 : ItemCore {
+        displayName = "ZF4 (FG42)";
+        descriptionShort = "ZF4 4x power telescopic sight on a mount for FG42";
+        class ItemInfo : InventoryOpticsItem_Base_F {
+            class OpticsModes {
+                class ZF4 {
+                    ZOOM_POWER(4, 4, 4);
+                };
+            };
+        };
     };
 // End Accessories

@@ -5,6 +5,25 @@
 #define RPM_TO_TIME(rpm) (60 / (rpm))
 // reloadTime = RPM_TO_TIME(650);
 
+#define ZOOM_NAKED_EYE \
+    opticsZoomInit = 0.75; \
+    opticsZoomMax = 1.25; \
+    opticsZoomMin = 0.25
+// ZOOM_NAKED_EYE;
+
+#define ZOOM_POWER(min, init, max) \
+    opticsZoomInit = (0.25 / (init)); \
+    opticsZoomMax = (0.25 / (max)); \
+    opticsZoomMin = (0.25 / (min))
+// ZOOM_POWER(3, 3, 3);
+
+#define QUOTE(var1) #var1
+
+#define YEAR(x) class Number##x { \
+    name = QUOTE(x); \
+    value = x; \
+}
+
 #define RequiredAddonsArray \
     "A3_Data_F_Enoch_Loadorder", \
     "A3_Data_F_Mod_Loadorder", \
@@ -501,10 +520,3 @@
     "V_LIB_WP_OfficerVest", \
     "V_LIB_WP_SniperBela", \
     "V_LIB_WP_STGVest"
-
-#define QUOTE(var1) #var1
-
-#define YEAR(x) class Number##x {\
-    name = QUOTE(x);\
-    value = x;\
-}

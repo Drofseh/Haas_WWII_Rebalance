@@ -83,6 +83,7 @@
         scope = 1;
         scopeCurator = 0;
         scopeArsenal = 0;
+        ZOOM_NAKED_EYE;
         /*class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -95,6 +96,7 @@
             class Ironsights {
                 discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200};
                 discreteDistanceInitIndex = 1;
+                ZOOM_NAKED_EYE;
             };
         };
         class Single : Mode_SemiAuto {
@@ -151,18 +153,20 @@
     class LEN_SMLE_No4Mk1 : LIB_K98 {
         displayName = "Lee Enfield No. 4 Mk I";
         descriptionShort = "Rifle, No. 4 Mk I";
-        class OpticsModes {
-            class Ironsights {
-                discreteDistance[] = {300,600};
-                discreteDistanceInitIndex = 0;
-            };
-        };
         magazines[] = {"LEN_10Rnd_303"};
         magazineWell[] = {"CBA_303B_LeeEn"};
         recoil = "recoil_2PzD_rifle_bolt";
         scope = 1;
         scopeCurator = 0;
         scopeArsenal = 0;
+        ZOOM_NAKED_EYE;
+        class OpticsModes {
+            class Ironsights {
+                discreteDistance[] = {300,600};
+                discreteDistanceInitIndex = 0;
+                ZOOM_NAKED_EYE;
+            };
+        };
         class WeaponSlotsInfo {
             mass = 88.037;
         };
@@ -173,15 +177,24 @@
     };
     class LEN_SMLE_No4Mk1T : LEN_SMLE_No4Mk1 {
         displayName = "Lee Enfield No. 4 Mk I (T)";
-        descriptionShort = "Rifle, No. 4 Mk I (T) with No.32 Scope";
+        descriptionShort = "Rifle, No. 4 Mk I (T) with No.32 Scope 3.5x power telescopic sight";
         dispersion = MOA_TO_RAD(2.5);
         magazines[] = {"LEN_10Rnd_303"};
         magazineWell[] = {"CBA_303B_LeeEn"};
         // modes[] = {"Single","Far","Medium","Short"};
         recoil = "recoil_2PzD_rifle_bolt";
         scope = 1;
+        ZOOM_NAKED_EYE;
         class WeaponSlotsInfo {
             mass = 109.924;
+        };
+        class OpticsModes {
+            class Scope {
+                ZOOM_POWER(3.5, 3.5, 3.5);
+            };
+            class Ironsights : Scope {
+                ZOOM_NAKED_EYE;
+            };
         };
         class Single : Single {
             dispersion = MOA_TO_RAD(2.5);
@@ -218,6 +231,7 @@
         magazineWell[] = {"CBA_45ACP_Grease"};
         recoil = "recoil_2PzD_smg_medium";
         scope = 2;
+        ZOOM_NAKED_EYE;
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -230,6 +244,7 @@
             class Ironsights {
                 discreteDistance[] = {100};
                 discreteDistanceInitIndex = 0;
+                ZOOM_NAKED_EYE;
             };
         };
         class Full : Mode_FullAuto {
@@ -279,16 +294,16 @@
     };
 
     class LEN_StenMk2 : LIB_MP40 {
-        displayName = "Sten Mk II";
-        descriptionShort = "Sten Mk II";
+        displayName = "Sten Mk II (Canadian)";
+        descriptionShort = "Sten Mk II (Canadian)";
         dispersion = MOA_TO_RAD(8);
         fow_burstLength = 2;
         magazines[] = {"LEN_32Rnd_9x19"};
         magazineWell[] = {"CBA_9x19_STEN"};
         recoil = "recoil_2PzD_smg_medium";
-        scope = 1;
-        scopeCurator = 0;
-        scopeArsenal = 0;
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
         class Eventhandlers : Eventhandlers {
             class fow_mgRoF {
                 fired = "_this spawn fow_main_fnc_mgRoF;";
@@ -307,8 +322,8 @@
         };
     };
     class LEN_StenMk2S : LEN_StenMk2 {
-        displayName = "Sten Mk IIS";
-        descriptionShort = "Sten Mk IIS";
+        displayName = "Sten Mk IIS (Canadian)";
+        descriptionShort = "Sten Mk IIS (Canadian)";
         dispersion = MOA_TO_RAD(8);
         fow_burstLength = 3;
         magazines[] = {"LEN_32Rnd_9x19"};
@@ -375,6 +390,7 @@
         scope = 1;
         scopeCurator = 0;
         scopeArsenal = 0;
+        ZOOM_NAKED_EYE;
         class WeaponSlotsInfo {
             mass = 79.412;
         };
@@ -382,7 +398,48 @@
             class Ironsights {
                 discreteDistance[] = {50};
                 discreteDistanceInitIndex = 0;
+                ZOOM_NAKED_EYE;
             };
         };
     };
 // End Other Weapons
+
+// Accessories
+    class LEN_optic_SVT_PU : ItemCore {
+        scope = 1;
+        descriptionShort = "PU 3.5x power telescopic sight on a mount for the SVT-40";
+        class ItemInfo : InventoryOpticsItem_Base_F {
+            modelOptics = "\WW2\Assets_m\Weapons\Optics_m\WW2_Optika_pu.p3d";
+            class OpticsModes {
+                class Scope {
+                    OpticsID = 1;
+                    UseModelOptics = 1;
+                    MemoryPointCamera = "Eye";
+                    opticsPPEffects[] = {"LIB_Sniper_OpticsCHAbera", "LIB_Sniper_OpticsBlur"};
+                    OpticsFlare = 1;
+                    opticsDisablePeripherialVision = 1;
+                    ZOOM_POWER(3.5, 3.5, 3.5);
+                    distanceZoomMin = 300;
+                    distanceZoomMax = 300;
+                    discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000};
+                    discreteDistanceInitIndex = 2;
+                    VisionMode[] = {"Normal"};
+                    CameraDir = "";
+                };
+                class Ironsights {
+                    OpticsID = 2;
+                    UseModelOptics = 0;
+                    MemoryPointCamera = "Eye";
+                    OpticsPPEffects[] = {};
+                    OpticsFlare = 0;
+                    OpticsDisablePeripherialVision = 0;
+                    ZOOM_NAKED_EYE;
+                    DistanceZoomMin = 100;
+                    DistanceZoomMax = 100;
+                    VisionMode[] = {};
+                    CameraDir = "";
+                };
+            };
+        };
+    };
+// End Accessories

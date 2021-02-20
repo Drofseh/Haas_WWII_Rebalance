@@ -139,9 +139,9 @@
         class UserActions : UserActions {
             class hatches_open {
                 condition = " \
-                    Alive(this) AND \
-                    {this animationPhase ""hatch_rotate"" < 0.5 AND \
-                    {((call ww2_fnc_findPlayer) == driver this) OR \
+                    alive this && \
+                    {this animationPhase ""hatch_rotate"" < 0.5 && \
+                    {((call ww2_fnc_findPlayer) == driver this) || \
                     {([vehicle (call ww2_fnc_findPlayer), (call ww2_fnc_findPlayer)] call Haas_WWII_Rebalance_fnc_checkVehiclePosition) == ""cargo_4"" \
                     }}} \
                 ";
@@ -154,9 +154,9 @@
             };
             class hatches_close : hatches_open {
                 condition = " \
-                    Alive(this) AND \
-                    {this animationPhase ""hatch_rotate"" > 0.5 AND \
-                    {((call ww2_fnc_findPlayer) == driver this) OR \
+                    alive this && \
+                    {this animationPhase ""hatch_rotate"" > 0.5 && \
+                    {((call ww2_fnc_findPlayer) == driver this) || \
                     {([vehicle (call ww2_fnc_findPlayer), (call ww2_fnc_findPlayer)] call Haas_WWII_Rebalance_fnc_checkVehiclePosition) == ""cargo_4"" \
                     }}} \
                 ";
@@ -165,9 +165,9 @@
             };
             class hatchesCommander_open : hatches_open {
                 condition = " \
-                    Alive(this) AND \
-                    {this animationPhase ""hatch2_rotate"" < 0.5 AND \
-                    {((call ww2_fnc_findPlayer) == driver this) OR \
+                    alive this && \
+                    {this animationPhase ""hatch2_rotate"" < 0.5 && \
+                    {((call ww2_fnc_findPlayer) == driver this) || \
                     {([vehicle (call ww2_fnc_findPlayer), (call ww2_fnc_findPlayer)] call Haas_WWII_Rebalance_fnc_checkVehiclePosition) == ""cargo_4"" \
                     }}} \
                 ";
@@ -176,9 +176,9 @@
             };
             class hatchesCommander_close : hatches_open {
                 condition = " \
-                    Alive(this) AND \
-                    {this animationPhase ""hatch2_rotate"" > 0.5 AND \
-                    {((call ww2_fnc_findPlayer) == driver this) OR \
+                    alive this && \
+                    {this animationPhase ""hatch2_rotate"" > 0.5 && \
+                    {((call ww2_fnc_findPlayer) == driver this) || \
                     {([vehicle (call ww2_fnc_findPlayer), (call ww2_fnc_findPlayer)] call Haas_WWII_Rebalance_fnc_checkVehiclePosition) == ""cargo_4"" \
                     }}} \
                 ";
@@ -198,9 +198,9 @@
         class UserActions : UserActions {
             class hatches_open {
                 condition = " \
-                    Alive(this) AND \
-                    {this animationPhase ""hatch_rotate"" < 0.5 AND \
-                    {((call ww2_fnc_findPlayer) == driver this) OR \
+                    alive this && \
+                    {this animationPhase ""hatch_rotate"" < 0.5 && \
+                    {((call ww2_fnc_findPlayer) == driver this) || \
                     {([vehicle (call ww2_fnc_findPlayer), (call ww2_fnc_findPlayer)] call Haas_WWII_Rebalance_fnc_checkVehiclePosition) == ""cargo_3"" \
                     }}} \
                 ";
@@ -213,9 +213,9 @@
             };
             class hatches_close : hatches_open {
                 condition = " \
-                    Alive(this) AND \
-                    {this animationPhase ""hatch_rotate"" > 0.5 AND \
-                    {((call ww2_fnc_findPlayer) == driver this) OR \
+                    alive this && \
+                    {this animationPhase ""hatch_rotate"" > 0.5 && \
+                    {((call ww2_fnc_findPlayer) == driver this) || \
                     {([vehicle (call ww2_fnc_findPlayer), (call ww2_fnc_findPlayer)] call Haas_WWII_Rebalance_fnc_checkVehiclePosition) == ""cargo_3"" \
                     }}} \
                 ";
@@ -224,9 +224,9 @@
             };
             class hatchesCommander_open : hatches_open {
                 condition = " \
-                    Alive(this) AND \
-                    {this animationPhase ""hatch2_rotate"" < 0.5 AND \
-                    {((call ww2_fnc_findPlayer) == driver this) OR \
+                    alive this && \
+                    {this animationPhase ""hatch2_rotate"" < 0.5 && \
+                    {((call ww2_fnc_findPlayer) == driver this) || \
                     {([vehicle (call ww2_fnc_findPlayer), (call ww2_fnc_findPlayer)] call Haas_WWII_Rebalance_fnc_checkVehiclePosition) == ""cargo_3"" \
                     }}} \
                 ";
@@ -235,9 +235,9 @@
             };
             class hatchesCommander_close : hatches_open {
                 condition = " \
-                    Alive(this) AND \
-                    {this animationPhase ""hatch2_rotate"" > 0.5 AND \
-                    {((call ww2_fnc_findPlayer) == driver this) OR \
+                    alive this && \
+                    {this animationPhase ""hatch2_rotate"" > 0.5 && \
+                    {((call ww2_fnc_findPlayer) == driver this) || \
                     {([vehicle (call ww2_fnc_findPlayer), (call ww2_fnc_findPlayer)] call Haas_WWII_Rebalance_fnc_checkVehiclePosition) == ""cargo_3"" \
                     }}} \
                 ";

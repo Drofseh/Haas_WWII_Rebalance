@@ -1,9 +1,16 @@
 
+class Default;
 class PistolCore;
 class RifleCore;
 class MGunCore;
 class CannonCore;
 class RocketPods;
+
+class Put : Default {
+    class csa38_PutMuzzle : Default {
+        ZOOM_NAKED_EYE;
+    };
+};
 
 class MGun : MGunCore {
     class WeaponSlotsInfo;
@@ -120,6 +127,7 @@ class sgun_HunterShotgun_01_sawedoff_F : sgun_HunterShotgun_01_sawedoff_base_F {
 
 class ItemCore;
 class InventoryItem_Base_F;
+class InventoryOpticsItem_Base_F;
 class UniformItem;
 class VestItem;
 
