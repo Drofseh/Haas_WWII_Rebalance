@@ -12,3 +12,4 @@ Thumbs.db
 CHANGELOG.md
 .vscode
 source/*
+!Backup/*
