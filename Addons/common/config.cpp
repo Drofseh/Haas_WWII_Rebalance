@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {REQUIRED_ADDONS_ARRAY};
+        requiredAddons[] = {"haas_wwii_rebalance_main"};
         author = "Wilhelm Haas (Drofseh)";
         authors[] = {"Wilhelm Haas (Drofseh)"};
         authorUrl = "https://github.com/Drofseh/Haas_WWII_Rebalance";
@@ -15,4 +15,3 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
-#include "CfgModuleCategories.hpp"

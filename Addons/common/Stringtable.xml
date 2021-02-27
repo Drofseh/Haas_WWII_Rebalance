@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="2PzDHouse">
+    <Package name="Haas_WWII_Rebalance">
+        <Key ID="STR_Haas_Solothurn_31M">
+            <Original>Solothurn 31.M Golyószóró</Original>
+        </Key>
+        <Key ID="STR_Haas_Ger_Feld_StG">
+            <Original>GER Feldausrüstung (StG44)</Original>
+        </Key>
+        <Key ID="STR_Haas_DAK_Feld_StG">
+            <Original>GER DAK Feldausrüstung (StG44)</Original>
+        </Key>
+    </Package>
+</Project>
