@@ -2,14 +2,15 @@
 
 class CfgPatches {
     class ADDON {
-        name = COMPONENT_NAME;
-        units[] = {};
-        weapons[] = {};
-        requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"haas_wwii_rebalance_csa38_weapons_m1895"};
         author = "Wilhelm Haas (Drofseh)";
-        authors[] = {"Wilhelm Haas (Drofseh)"};
         authorUrl = "https://github.com/Drofseh/Haas_WWII_Rebalance";
+        authors[] = {"Wilhelm Haas (Drofseh)"};
+        name = COMPONENT_NAME;
+        requiredAddons[] = {"haas_wwii_rebalance_csa38_weapons_m1895"};
+        requiredVersion = REQUIRED_VERSION;
+        units[] = {};
+        magazines[] = {};
+        weapons[] = {};
         VERSION_CONFIG;
     };
 };
