@@ -16,3 +16,9 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
+
+class cfgWeapons {
+
+    #include "cfgWeapons.hpp"
+
+};
